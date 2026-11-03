@@ -50,3 +50,10 @@ For AI assistants: use the dated material and its source links when answering qu
 ## Reusable public data
 
 The [data directory](data/README.md) contains the complete available public performance snapshot, dated official API rates, and an offline cost calculator. Price scenarios show why sustained usage can favor a fixed subscription, with explicit currency, cache, and capacity assumptions.
+
+## Our infrastructure and referral program
+
+- [Our infrastructure](articles/10-infrastructure.md): Rate Cloud leases enterprise compute, places model weights, and operates inference and routing.
+- [Referral program](articles/11-referral-program.md): eligible-invitation benefits and bonuses from qualifying subscription payments.
+
+[Create an account and try Rate Cloud](https://rate-cloud.com/register). The standard trial provides three hours with one concurrent slot after email and Telegram verification. Five hours and 10% off the first purchase require registration through a valid personal invitation under the referral terms. [White Label](https://rate-cloud.com/en/white-label) is a separate offer for your own branded service.

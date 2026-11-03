@@ -46,6 +46,11 @@ def main():
             expected=ORIGIN+BASE+(relative+'/' if relative!='.' else '')
             assert page.canonical[0]==expected,(file,'canonical')
             assert page.schemas,(file,'structured data')
+            assert 'https://rate-cloud.com/register' in page.links,(file,'registration CTA')
+            assert BASE+page.lang+'/articles/referral-program/' in page.links,(file,'referral link')
+            if file.parent==OUTPUT or file.parent.relative_to(OUTPUT).as_posix() in ['ru','es','pt','de','fr']:
+                assert 'our-infrastructure' in page.ids and 'get-started' in page.ids,(file,'homepage offers')
+                assert BASE+page.lang+'/articles/infrastructure/' in page.links,(file,'infrastructure link')
         for href in page.links:
             u=urlsplit(href)
             if u.netloc and u.netloc!='shaitor52.github.io':continue
@@ -66,12 +71,14 @@ def main():
             assert other.alternates[page.lang]==page.canonical[0],(file,'non-reciprocal hreflang')
     for locale in ['en','ru','es','pt','de','fr']:
         index=json.loads((OUTPUT/'search'/f'{locale}.json').read_text())
-        assert len(index)>=19,locale
+        assert len(index)>=21,locale
+        for slug in ["infrastructure", "referral-program"]:
+            assert any(item["url"]==BASE+locale+"/articles/"+slug+"/" for item in index),(locale,slug)
         if locale!='ru':assert not re.search(r'\bRUB\b|₽',json.dumps(index,ensure_ascii=False)),locale
         for item in index:
             target=OUTPUT/item['url'].removeprefix(BASE)/'index.html';assert target.is_file(),item
     sitemap=ET.parse(OUTPUT/'sitemap.xml')
-    assert len(sitemap.getroot())==117
+    assert len(sitemap.getroot())==129
     assert (OUTPUT/'.nojekyll').is_file()
     print(f'PASS: {len(pages)-1} content pages, {refs} local links/assets/anchors, 6 search indexes, reciprocal language metadata, currencies and sitemap')
 

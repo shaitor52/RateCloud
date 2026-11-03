@@ -62,10 +62,18 @@ No. El sitio indica expresamente que no se garantiza la disponibilidad continua 
 
 ## ¿Puedo probarlo antes de pagar?
 
-La prueba inicial publicada ofrece las primeras tres horas con un espacio simultáneo tras registrarse y verificar el correo electrónico y Telegram. Confirma el estado de la prueba en el panel.
+La prueba estándar publicada ofrece las primeras tres horas con un espacio simultáneo después del registro, la verificación del correo electrónico y la vinculación de Telegram. [Regístrate aquí](https://rate-cloud.com/register) y confirma el estado de la prueba en el panel. Una invitación personal válida puede ofrecer a una cuenta nueva cinco horas de prueba y un 10 % de descuento en la primera suscripción, según las [condiciones de referidos](articles/11-referral-program.md).
+
+## ¿Qué infraestructura opera Rate Cloud?
+
+Rate Cloud alquila capacidad de cómputo empresarial, despliega los pesos de modelos, prepara perfiles de precisión, comprueba réplicas y enruta las solicitudes. La lista publicada de hardware es una descripción de plataformas, no un inventario en directo ni una garantía de que cada modelo se ejecute en cada dispositivo. Consulta [la arquitectura de infraestructura](articles/10-infrastructure.md).
 
 ## ¿Puedo vender suscripciones con mi propia marca?
 
-Rate Cloud ofrece servicios White Label con marca propia, sitio y panel, pagos e infraestructura técnica. Consulta [el artículo White Label](articles/07-white-label.md) y [la oferta oficial actual](https://rate-cloud.com/white-label).
+Rate Cloud ofrece servicios White Label con marca propia, sitio y panel, pagos e infraestructura técnica. Consulta [el artículo White Label](articles/07-white-label.md) y [la oferta oficial actual](https://rate-cloud.com/white-label). White Label es distinto del programa de referidos y sus ventajas no se acumulan automáticamente.
+
+## ¿Cómo funciona el programa de referidos?
+
+Una invitación personal válida da a una cuenta nueva cinco horas de prueba y un 10 % de descuento en la primera compra de una suscripción. Las bonificaciones publicadas para quien recomienda son 10 %, 3 % y 1 % en tres niveles, sobre pagos elegibles. No hay pago por el registro solamente; se aplican un periodo pendiente de 14 días, atribución del primer enlace válido y un mínimo de retiro equivalente a USD 30. Consulta [las condiciones completas](articles/11-referral-program.md). Usa el enlace personal real antes de registrarte; el enlace general de registro no asigna un referido.
 
 Fuentes: [página principal](https://rate-cloud.com/), [cómo funciona](https://rate-cloud.com/how-it-works) y [guía de API](https://rate-cloud.com/docs).

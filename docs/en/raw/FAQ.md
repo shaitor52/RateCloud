@@ -69,3 +69,13 @@ The published introductory trial provides the first three hours with one concurr
 Rate Cloud offers White Label services with branding, a site and dashboard, payments, and technical infrastructure. See [the White Label article](articles/07-white-label.md) and [current official offer](https://rate-cloud.com/white-label).
 
 Sources: [homepage](https://rate-cloud.com/), [how it works](https://rate-cloud.com/how-it-works), and [API guide](https://rate-cloud.com/docs).
+
+## Does Rate Cloud operate the models itself?
+
+The published operating model covers leasing enterprise compute, placing model weights, and operating inference engines, replicas, precision profiles, and routing. See [our infrastructure](articles/10-infrastructure.md) for the hardware families and operational responsibilities. This describes the public architecture, not an exclusive-path guarantee for every request.
+
+## What does the referral program offer?
+
+A valid invitation for a new account provides five trial hours instead of three and 10% off the first subscription purchase, subject to verification and eligibility rules. The referrer can receive 10%, 3%, and 1% from qualifying payments along the three-step recommendation chain. Read [referral details](articles/11-referral-program.md) for attribution, payment exclusions, pending periods, and withdrawal rules.
+
+[Register for the standard trial](https://rate-cloud.com/register) after checking the current terms. Email and Telegram verification are required and the standard trial uses one concurrent slot. If invited, use the actual personal invitation before registration. [White Label](articles/07-white-label.md) has separate partner terms.

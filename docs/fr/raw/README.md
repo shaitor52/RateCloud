@@ -25,6 +25,8 @@ Ce guide public présente Rate Cloud en français. Il rassemble des articles, de
 | [Offres White Label](articles/07-white-label.md) | Créer une activité d’abonnement IA sous sa propre marque |
 | [Comparaison des coûts avec les API officielles](articles/08-cost-and-service-comparison.md) | Prix par token, seuils de rentabilité et compromis de service |
 | [20 flux pratiques](articles/09-unlimited-use-cases.md) | Qualité logicielle, surveillance, documents et recherche |
+| [Notre infrastructure](articles/10-infrastructure.md) | Capacité louée, familles matérielles, déploiement et exploitation de l’inférence |
+| [Programme de parrainage](articles/11-referral-program.md) | Essai sur invitation, bonus, attribution et retraits |
 
 ## Guides pratiques
 
@@ -32,12 +34,12 @@ Les [guides d’intégration](guides/README.md) couvrent OpenCode, Claude Code e
 
 ## Commencer avec Rate Cloud
 
-1. Visitez [rate-cloud.com](https://rate-cloud.com/) et ouvrez votre espace client.
+1. [Créez un compte](https://rate-cloud.com/register) ou ouvrez votre [espace client](https://rate-cloud.com/).
 2. Inscrivez-vous et confirmez votre adresse e-mail et votre adresse Telegram pour l’essai.
 3. Choisissez un modèle, créez une clé API et connectez une application compatible.
 4. Consultez le [guide officiel de connexion](https://rate-cloud.com/docs) pour les étapes à jour.
 
-L’essai publié permet de tester les modèles pendant les trois premières heures après les vérifications requises, avec un seul créneau simultané. Les abonnements payants ont leurs propres durées et limites de concurrence.
+L’essai standard permet de tester les modèles pendant trois heures après vérification de l’adresse e-mail et liaison de Telegram, avec un seul créneau simultané. Un lien personnel d’invitation admissible donne cinq heures d’essai et 10 % de réduction sur le premier achat, selon les conditions du programme. Les abonnements payants ont leurs propres durées et limites de concurrence. Voir le [programme de parrainage](articles/11-referral-program.md).
 
 ## Sources et actualité
 

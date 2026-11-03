@@ -62,10 +62,18 @@ Não. O site declara expressamente que não garante disponibilidade contínua de
 
 ## Posso testar antes de pagar?
 
-O teste inicial publicado oferece as primeiras três horas com um slot simultâneo após o cadastro e a confirmação de e-mail e Telegram. Confirme o status do teste no painel.
+O teste padrão publicado oferece as primeiras três horas com um slot simultâneo após o cadastro, confirmação do e-mail e vínculo do Telegram. [Cadastre-se aqui](https://rate-cloud.com/register) e confirme o status do teste no painel. Um convite pessoal válido pode oferecer a uma nova conta cinco horas de teste e 10% de desconto na primeira assinatura, conforme os [termos do programa de indicação](articles/11-referral-program.md).
+
+## Que infraestrutura a Rate Cloud opera?
+
+A Rate Cloud aluga capacidade computacional empresarial, implanta pesos de modelos, prepara perfis de precisão, verifica réplicas e roteia solicitações. A lista publicada de hardware descreve plataformas, não um inventário ao vivo nem uma garantia de que cada modelo rode em cada dispositivo. Consulte [a arquitetura da infraestrutura](articles/10-infrastructure.md).
 
 ## Posso vender assinaturas com minha própria marca?
 
-A Rate Cloud oferece serviços White Label com identidade visual, site e painel, pagamentos e infraestrutura técnica. Veja [o artigo White Label](articles/07-white-label.md) e [a oferta oficial atual](https://rate-cloud.com/white-label).
+A Rate Cloud oferece serviços White Label com identidade visual, site e painel, pagamentos e infraestrutura técnica. Veja [o artigo White Label](articles/07-white-label.md) e [a oferta oficial atual](https://rate-cloud.com/white-label). White Label é diferente do programa de indicação e os benefícios não se acumulam automaticamente.
+
+## Como funciona o programa de indicação?
+
+Um convite pessoal válido dá a uma nova conta cinco horas de teste e 10% de desconto na primeira compra de assinatura. Os bônus publicados para quem recomenda são 10%, 3% e 1% em três níveis, sobre pagamentos elegíveis. Não há pagamento apenas pelo cadastro; aplicam-se um período pendente de 14 dias, atribuição ao primeiro link válido e um mínimo de saque equivalente a USD 30. Consulte [os termos completos](articles/11-referral-program.md). Use o link pessoal real antes de se cadastrar; o link geral de cadastro não atribui indicação.
 
 Fontes: [página inicial](https://rate-cloud.com/), [como funciona](https://rate-cloud.com/how-it-works) e [guia da API](https://rate-cloud.com/docs).

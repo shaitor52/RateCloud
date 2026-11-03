@@ -25,6 +25,8 @@ Este repositorio público explica el servicio en español. Contiene artículos, 
 | [Servicios White Label](articles/07-white-label.md) | Crear un negocio de suscripciones de IA con tu propia marca |
 | [Rate Cloud frente a las API oficiales](articles/08-cost-and-service-comparison.md) | Tarifas publicadas, punto de equilibrio ilustrativo y compromisos de servicio |
 | [20 flujos con tokens ilimitados](articles/09-unlimited-use-cases.md) | Ejemplos prácticos y límites operativos para trabajo sostenido |
+| [Nuestra infraestructura](articles/10-infrastructure.md) | Capacidad empresarial alquilada, despliegue de modelos, hardware y operación de inferencia |
+| [Programa de referidos](articles/11-referral-program.md) | Prueba ampliada, descuento inicial, bonificaciones y condiciones de atribución |
 
 ## Guías prácticas de conexión
 
@@ -32,12 +34,12 @@ Empieza por las [guías de integración](guides/README.md) para OpenCode, Claude
 
 ## Cómo empezar
 
-1. Visita [rate-cloud.com](https://rate-cloud.com/) y abre el panel de cuenta.
+1. [Regístrate en Rate Cloud](https://rate-cloud.com/register) y abre el panel de cuenta.
 2. Regístrate y verifica tu correo electrónico y tu dirección de Telegram para obtener la prueba inicial.
 3. Elige un modelo, crea una clave de API y conecta una aplicación compatible.
 4. Consulta la [guía oficial de conexión](https://rate-cloud.com/docs) para ver los pasos de configuración vigentes.
 
-La prueba publicada ofrece tres horas para probar los modelos con un espacio simultáneo, después de completar las verificaciones necesarias. El acceso de pago tiene periodos de suscripción y límites de concurrencia diferentes.
+La prueba estándar publicada ofrece tres horas para probar los modelos con un espacio simultáneo, tras verificar el correo electrónico y vincular Telegram. Una invitación personal válida puede ofrecer a una cuenta nueva una prueba de cinco horas y un 10 % de descuento en la primera suscripción, sujeto a las condiciones del programa de [referidos](articles/11-referral-program.md). El acceso de pago tiene periodos de suscripción y límites de concurrencia diferentes.
 
 ## Fuentes y vigencia
 

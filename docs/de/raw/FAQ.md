@@ -64,6 +64,14 @@ Nein. Die Website garantiert nicht die dauernde Verfügbarkeit jedes Modells. Di
 
 Der veröffentlichte Testzugang bietet nach Registrierung sowie E-Mail- und Telegram-Bestätigung die ersten drei Stunden mit einem gleichzeitigen Slot. Prüfen Sie den Status im Dashboard.
 
+## Welche Infrastruktur betreibt Rate Cloud?
+
+Rate Cloud mietet Rechenkapazität von Unternehmen, stellt Modellgewichte bereit, validiert Ausführungsprofile und verwaltet Inferenzreplikate sowie Anfrage-Routing. Die veröffentlichten Beschreibungen von Huawei-Atlas- und Ascend-Hardware nennen Plattformrollen, kein Live-Inventar und keine Garantie, dass jedes Modell auf jedem Gerät läuft. Siehe [Infrastrukturüberblick](articles/10-infrastructure.md).
+
+## Wie funktionieren Empfehlungslinks?
+
+Ein neues Konto, das über einen gültigen persönlichen Einladungslink erstellt wird, kann fünf statt der regulären drei Teststunden und 10 % Rabatt auf den ersten Abonnementkauf erhalten. E-Mail-Bestätigung, Telegram-Verknüpfung, Testberechtigung und geltende IP-Beschränkungen bleiben erforderlich; der Rabatt ist nicht mit Aktionscodes kombinierbar. Eine gewöhnliche Registrierung lässt sich nicht nachträglich zuordnen. Werbende können aus berechtigten Zahlungen über drei Stufen 10 %, 3 % und 1 % erhalten. Boni werden nach 14 Tagen verfügbar; die Zuordnung über einen Link kann bis zu 180 Tage bestehen. Siehe [Empfehlungsprogramm](articles/11-referral-program.md) und [Registrierung](https://rate-cloud.com/register).
+
 ## Kann ich Abonnements unter eigener Marke verkaufen?
 
 Rate Cloud bietet White-Label-Leistungen mit Branding, Website und Dashboard, Zahlungen und technischer Infrastruktur. Siehe den [White-Label-Artikel](articles/07-white-label.md) und das [aktuelle Angebot](https://rate-cloud.com/white-label).

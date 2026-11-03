@@ -45,3 +45,9 @@
 ## Interpretation
 
 Unlimited tokens means no cumulative token quota during an active subscription. Context, deadlines, concurrency, and availability remain finite. Historical performance is not guaranteed. Architectural descriptions are not an independent production audit. Refer to the live website and applicable terms for current conditions.
+
+## Infrastructure and offers
+
+- [Our infrastructure](articles/10-infrastructure.md): compute leasing, model deployment, hardware families and inference operations.
+- [Referral program](articles/11-referral-program.md): invitation benefits and eligible-payment bonuses, distinct from White Label.
+- [Register and try Rate Cloud](https://rate-cloud.com/register): standard trial subject to verification and eligibility.

@@ -35,3 +35,7 @@ Price calculations use dated public facts, explicit token proportions, and dated
 Client guides cite official configuration references and label the scope of static verification. Documentation review does not establish that a particular client version and every model feature have been tested end to end against Rate Cloud.
 
 Non-Russian editions use USD only, using the [public display-currency API](https://rate-cloud.com/api/public/display-currency) snapshot dated November 3, 2026. Russian pricing data and its exchange-rate scenario calculator are kept under `ru/data/` and `ru/tools/`.
+
+## Infrastructure, invitations, and trial offers
+
+The infrastructure article follows the public [operating architecture](https://rate-cloud.com/how-it-works). Hardware roles are published platform descriptions, not a current inventory or an exclusive-path guarantee. Referral percentages, attribution, invitation benefits, pending periods, payment exclusions, and withdrawal rules come from section 9 of the [official agreement](https://rate-cloud.com/offer), checked November 3, 2026. The standard trial remains three hours with required verification and one slot; five hours and the first-purchase discount require an eligible invitation for a new account. White Label remains a separate offer. General signup links do not include a personal referral code or claim to apply invitation benefits automatically.

@@ -64,6 +64,14 @@ Non. Le site ne garantit pas la disponibilité permanente de chaque modèle. La 
 
 L’essai publié donne accès aux modèles pendant les trois premières heures après inscription et vérification de l’adresse e-mail et de Telegram, avec un créneau simultané. Vérifiez son état dans l’espace client.
 
+## Quelle infrastructure Rate Cloud exploite-t-il ?
+
+Rate Cloud loue de la capacité informatique d’entreprise, déploie les poids des modèles, valide des profils d’exécution et gère les réplicas d’inférence ainsi que le routage des requêtes. Les descriptions publiques du matériel Huawei Atlas et Ascend indiquent des rôles de plateforme ; elles ne constituent ni un inventaire en direct ni une garantie que chaque modèle fonctionne sur chaque appareil. Voir [la présentation de l’infrastructure](articles/10-infrastructure.md).
+
+## Comment fonctionnent les invitations de parrainage ?
+
+Un nouveau compte créé par un lien personnel valide peut recevoir cinq heures d’essai au lieu des trois heures standard et 10 % de réduction sur son premier abonnement. La vérification de l’adresse e-mail, la liaison Telegram, l’admissibilité à l’essai et les restrictions IP applicables restent requises ; la remise ne se cumule pas avec les codes promo. Une inscription ordinaire ne peut pas être rattachée rétroactivement. Le parrainage peut créditer 10 %, 3 % et 1 % des paiements admissibles sur trois niveaux. Les bonus sont disponibles après 14 jours ; l’attribution par lien peut persister jusqu’à 180 jours. Voir le [guide du programme de parrainage](articles/11-referral-program.md) et [l’inscription](https://rate-cloud.com/register).
+
 ## Puis-je vendre des abonnements sous ma marque ?
 
 Rate Cloud propose un service White Label avec identité visuelle, site et espace client, paiements et infrastructure technique. Voir l’[article White Label](articles/07-white-label.md) et l’[offre actuelle](https://rate-cloud.com/white-label).

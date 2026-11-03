@@ -25,6 +25,8 @@ Este repositório público explica o serviço em português. Ele reúne artigos,
 | [Serviços White Label](articles/07-white-label.md) | Criar um negócio de assinaturas de IA com sua própria marca |
 | [Rate Cloud versus APIs oficiais](articles/08-cost-and-service-comparison.md) | Tarifas publicadas, ponto de equilíbrio ilustrativo e compensações do serviço |
 | [20 fluxos com tokens ilimitados](articles/09-unlimited-use-cases.md) | Exemplos práticos e limites operacionais para trabalho contínuo |
+| [Nossa infraestrutura](articles/10-infrastructure.md) | Capacidade empresarial alugada, implantação de modelos, hardware e operação de inferência |
+| [Programa de indicação](articles/11-referral-program.md) | Teste estendido, desconto inicial, bônus e regras de atribuição |
 
 ## Guias práticos de conexão
 
@@ -32,12 +34,12 @@ Comece pelos [guias de integração](guides/README.md) para OpenCode, Claude Cod
 
 ## Como começar
 
-1. Acesse [rate-cloud.com](https://rate-cloud.com/) e abra o painel da conta.
+1. [Cadastre-se na Rate Cloud](https://rate-cloud.com/register) e abra o painel da conta.
 2. Cadastre-se e confirme seu e-mail e endereço do Telegram para obter o teste inicial.
 3. Escolha um modelo, crie uma chave de API e conecte um aplicativo compatível.
 4. Consulte o [guia oficial de conexão](https://rate-cloud.com/docs) para ver as etapas de configuração atuais.
 
-O teste publicado oferece três horas para experimentar os modelos com um slot simultâneo, após as verificações necessárias. O acesso pago tem períodos de assinatura e limites de concorrência diferentes.
+O teste padrão publicado oferece três horas para experimentar os modelos com um slot simultâneo, após a confirmação do e-mail e o vínculo do Telegram. Um convite pessoal válido pode oferecer a uma nova conta um teste de cinco horas e 10% de desconto na primeira assinatura, sujeito aos termos do [programa de indicação](articles/11-referral-program.md). O acesso pago tem períodos de assinatura e limites de concorrência diferentes.
 
 ## Fontes e atualização
 

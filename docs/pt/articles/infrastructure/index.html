@@ -1,0 +1,94 @@
+<!doctype html><html lang="pt"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Nossa infraestrutura: alugamos capacidade, implantamos modelos e operamos a inferência | Rate Cloud Docs</title><meta name="description" content="A Rate Cloud aluga capacidade computacional empresarial, implanta pesos de modelos e gerencia sua execução. Nosso trabalho cobre a infraestrutura e o fluxo de inferência: escolher hardware e ambi"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://shaitor52.github.io/RateCloud/pt/articles/infrastructure/"><link rel="alternate" hreflang="en" href="https://shaitor52.github.io/RateCloud/en/articles/infrastructure/"><link rel="alternate" hreflang="ru" href="https://shaitor52.github.io/RateCloud/ru/articles/infrastructure/"><link rel="alternate" hreflang="es" href="https://shaitor52.github.io/RateCloud/es/articles/infrastructure/"><link rel="alternate" hreflang="pt" href="https://shaitor52.github.io/RateCloud/pt/articles/infrastructure/"><link rel="alternate" hreflang="de" href="https://shaitor52.github.io/RateCloud/de/articles/infrastructure/"><link rel="alternate" hreflang="fr" href="https://shaitor52.github.io/RateCloud/fr/articles/infrastructure/"><link rel="alternate" hreflang="x-default" href="https://shaitor52.github.io/RateCloud/en/articles/infrastructure/"><meta name="theme-color" content="#151719"><meta property="og:type" content="article"><meta property="og:title" content="Nossa infraestrutura: alugamos capacidade, implantamos modelos e operamos a inferência | Rate Cloud Docs"><meta property="og:description" content="A Rate Cloud aluga capacidade computacional empresarial, implanta pesos de modelos e gerencia sua execução. Nosso trabalho cobre a infraestrutura e o fluxo de inferência: escolher hardware e ambi"><meta property="og:url" content="https://shaitor52.github.io/RateCloud/pt/articles/infrastructure/"><meta property="og:image" content="https://shaitor52.github.io/RateCloud/assets/brand-hero.webp"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/RateCloud/assets/brand-logo.png"><link rel="stylesheet" href="/RateCloud/assets/docs.css?v=833e1244f73b"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Nossa infraestrutura: alugamos capacidade, implantamos modelos e operamos a inferência", "description": "A Rate Cloud aluga capacidade computacional empresarial, implanta pesos de modelos e gerencia sua execução. Nosso trabalho cobre a infraestrutura e o fluxo de inferência: escolher hardware e ambi", "inLanguage": "pt", "url": "https://shaitor52.github.io/RateCloud/pt/articles/infrastructure/", "isPartOf": {"@type": "WebSite", "name": "Rate Cloud Documentation", "url": "https://shaitor52.github.io/RateCloud/"}, "publisher": {"@type": "Organization", "name": "Rate Cloud", "url": "https://rate-cloud.com/"}}</script><script src="/RateCloud/assets/docs.js?v=3d9193980cec" defer></script></head>
+        <body data-base="/RateCloud/" data-lang="pt" data-copy="Copiar" data-copied="Copiado"><a class="skip-link" href="#main">Ir para o conteúdo</a><header class="topbar"><a class="brand" href="/RateCloud/pt/"><img class="brand-mark" src="/RateCloud/assets/brand-logo.png" width="32" height="32" alt=""><span>Rate Cloud<small>Documentação</small></span></a><div class="header-actions"><button id="menu-toggle" class="icon-button" aria-label="Menu" aria-controls="sidebar" aria-expanded="false" data-open-label="Menu" data-close-label="Fechar">☰</button><button class="icon-button" data-search-open aria-label="Buscar documentação"><span>⌕</span><span class="search-label">Buscar documentação</span><kbd class="search-shortcut">⌘ K</kbd></button><label class="sr-only" for="language-switch">Idioma</label><select id="language-switch"><option value="/RateCloud/en/articles/infrastructure/">English</option><option value="/RateCloud/ru/articles/infrastructure/">Русский</option><option value="/RateCloud/es/articles/infrastructure/">Español</option><option value="/RateCloud/pt/articles/infrastructure/" selected>Português</option><option value="/RateCloud/de/articles/infrastructure/">Deutsch</option><option value="/RateCloud/fr/articles/infrastructure/">Français</option></select><a class="header-site" href="https://rate-cloud.com/pt">Site principal ↗</a></div></header>
+        <div class="layout"><nav id="sidebar" class="sidebar" aria-label="Documentação"><div class="sidebar-group"><h2>Visão geral</h2><a class="nav-link" href="/RateCloud/pt/">Visão geral</a></div><div class="sidebar-group"><h2>Conheça a Rate Cloud</h2><a class="nav-link" href="/RateCloud/pt/articles/about-rate-cloud/">O que a Rate Cloud oferece</a><a class="nav-link" href="/RateCloud/pt/articles/models/">Modelos e como escolher</a><a class="nav-link" href="/RateCloud/pt/articles/routing-and-quantization/">Como funcionam o roteamento inteligente e a quantização</a><a class="nav-link" href="/RateCloud/pt/articles/performance/">Velocidade e desempenho da Rate Cloud</a><a class="nav-link" href="/RateCloud/pt/articles/api-and-integrations/">Conectar ferramentas e aplicativos à Rate Cloud</a><a class="nav-link" href="/RateCloud/pt/articles/privacy-and-reliability/">Privacidade, tratamento de dados e disponibilidade</a><a class="nav-link" href="/RateCloud/pt/articles/white-label/">White Label: um serviço de assinatura de IA com sua marca</a><a class="nav-link" href="/RateCloud/pt/articles/cost-and-service-comparison/">Rate Cloud versus APIs oficiais: custo fixo para trabalho contínuo</a><a class="nav-link" href="/RateCloud/pt/articles/unlimited-use-cases/">Onde o acesso com tokens ilimitados é útil: 20 fluxos práticos</a><a class="nav-link active" href="/RateCloud/pt/articles/infrastructure/" aria-current="page">Nossa infraestrutura: alugamos capacidade, implantamos modelos e operamos a inferência</a><a class="nav-link" href="/RateCloud/pt/articles/referral-program/">Programa de indicação: convide pessoas para conhecer a Rate Cloud</a></div><div class="sidebar-group"><h2>Conecte suas ferramentas</h2><a class="nav-link" href="/RateCloud/pt/guides/claude-code/">Conectar o Claude Code à Rate Cloud</a><a class="nav-link" href="/RateCloud/pt/guides/continue/">Conectar o Continue à Rate Cloud</a><a class="nav-link" href="/RateCloud/pt/guides/deepseek-harness/">Conectar o DeepSeek Harness à Rate Cloud</a><a class="nav-link" href="/RateCloud/pt/guides/hermes-agent/">Conectar o Hermes Agent à Rate Cloud</a><a class="nav-link" href="/RateCloud/pt/guides/http-python/">Acesso HTTP e Python genérico</a><a class="nav-link" href="/RateCloud/pt/guides/openclaw/">Conectar o OpenClaw à Rate Cloud</a><a class="nav-link" href="/RateCloud/pt/guides/opencode/">Conectar o OpenCode à Rate Cloud</a></div><div class="sidebar-group"><h2>Fontes e dados</h2><a class="nav-link" href="/RateCloud/pt/faq/">Rate Cloud: perguntas frequentes</a></div><div class="sidebar-group"><a class="nav-link" href="/RateCloud/en/sources/">Fontes e dados</a><a class="nav-link" href="https://github.com/shaitor52/RateCloud">GitHub ↗</a></div></nav><main id="main" class=""><div class="breadcrumb"><a href="/RateCloud/pt/">Documentação</a><span>/</span>Conheça a Rate Cloud</div><p class="eyebrow">RATE CLOUD / Documentação</p><h1 class="page-title">Nossa infraestrutura: alugamos capacidade, implantamos modelos e operamos a inferência</h1><div class="article-grid"><article class="article-content"><p><strong>A Rate Cloud aluga capacidade computacional empresarial, implanta pesos de modelos e gerencia sua execução.</strong> Nosso trabalho cobre a infraestrutura e o fluxo de inferência: escolher hardware e ambientes de execução compatíveis, preparar perfis de modelo, colocar réplicas em serviço, rotear solicitações e gerenciar recuperação.</p>
+<p>Os clientes escolhem um modelo e conectam suas ferramentas pela API. A Rate Cloud opera a camada computacional por trás desse acesso. O hardware é alugado de proprietários empresariais; a propriedade do equipamento alugado e as responsabilidades operacionais do ambiente que executa os modelos são diferentes.</p>
+<h2 id="o-que-a-rate-cloud-gerencia">O que a Rate Cloud gerencia</h2>
+<div class="table-scroll" tabindex="0"><table>
+<thead>
+<tr>
+<th>Área</th>
+<th>Nosso trabalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Capacidade computacional</td>
+<td>Alugar capacidade empresarial e combinar uma reserva estável com recursos adicionais disponíveis</td>
+</tr>
+<tr>
+<td>Implantação de modelos</td>
+<td>Posicionar pesos de modelo compatíveis e preparar o mecanismo de inferência para a versão selecionada</td>
+</tr>
+<tr>
+<td>Perfis de precisão</td>
+<td>Validar perfis elegíveis do formato original, de precisão mista ou quantizados do mesmo modelo</td>
+</tr>
+<tr>
+<td>Prontidão de réplicas</td>
+<td>Carregar os pesos, aquecer a execução, verificar a prontidão e admitir somente réplicas adequadas</td>
+</tr>
+<tr>
+<td>Roteamento de solicitações</td>
+<td>Considerar contexto, imagens, ferramentas, formato de saída, memória, fila e saúde da réplica</td>
+</tr>
+<tr>
+<td>Operação e recuperação</td>
+<td>Monitorar a execução, retirar réplicas não saudáveis e, quando possível, recuperar dentro do prazo original da operação</td>
+</tr>
+</tbody>
+</table></div>
+<p>Por isso, a descrição do serviço inclui posicionamento de pesos, ambientes de inferência, precisão e ciclo de vida de réplicas, além do endpoint de API. Essas responsabilidades operacionais são centrais na arquitetura pública.</p>
+<h2 id="famílias-de-hardware-na-arquitetura-publicada">Famílias de hardware na arquitetura publicada</h2>
+<p>A arquitetura cita sistemas Huawei Atlas e aceleradores Ascend. São descrições públicas de plataformas, não um inventário ao vivo de todas as máquinas nem uma promessa de que todos os modelos funcionem em todos os dispositivos listados.</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead>
+<tr>
+<th>Plataforma</th>
+<th>Função publicada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Atlas 800I A2</td>
+<td>Inferência de modelos grandes; oito NPUs de 64 GB cada</td>
+</tr>
+<tr>
+<td>Atlas 800I A3</td>
+<td>Inferência de modelos grandes; oito NPUs físicas de 128 GB cada, apresentadas como dezesseis dispositivos lógicos</td>
+</tr>
+<tr>
+<td>Atlas 900 A2 PoD e A3 SuperPoD</td>
+<td>Grupos de aceleradores distribuídos para execução de modelos grandes</td>
+</tr>
+<tr>
+<td>Atlas 500 e 500 A2</td>
+<td>Tarefas de serviço menores</td>
+</tr>
+<tr>
+<td>Atlas 800 com Atlas 300I Duo</td>
+<td>Classe de compatibilidade separada, avaliada de forma independente</td>
+</tr>
+</tbody>
+</table></div>
+<p>As descrições físicas e lógicas do A3 referem-se à mesma memória e não devem ser somadas. A compatibilidade é verificada para cada combinação de modelo, formato de pesos, mecanismo e hardware. Cálculos fortemente acoplados usam uma rede local compatível; mover solicitações inteiras entre sites é uma operação distinta.</p>
+<h2 id="dos-pesos-do-modelo-a-uma-api-utilizável">Dos pesos do modelo a uma API utilizável</h2>
+<p>Uma réplica precisa da versão correta e de um ambiente de execução compatível, memória suficiente, recursos permitidos, aquecimento concluído e verificação de prontidão bem-sucedida. Hardware livre, por si só, não significa que haja um modelo disponível.</p>
+<p>O roteador seleciona um perfil validado adequado do modelo solicitado pelo usuário. A qualidade tem prioridade para código difícil, matemática, ferramentas, esquemas estritos e solicitações incertas. Flash e Pro continuam sendo modelos diferentes. Consulte <a href="/RateCloud/pt/articles/routing-and-quantization/">roteamento e quantização</a> para ver o processo de seleção.</p>
+<p>Grupos estáveis dão suporte à carga básica e à recuperação. Recursos adicionais interrompíveis ampliam a capacidade disponível. Um aviso de revogação de recursos interrompe novas atribuições à réplica afetada. Antes do início da saída, a recuperação pode repetir a solicitação em uma réplica compatível dentro do prazo original. Uma transmissão interrompida deve continuar visivelmente incompleta.</p>
+<h2 id="por-que-isso-viabiliza-o-acesso-por-assinatura">Por que isso viabiliza o acesso por assinatura</h2>
+<p>Operar conjuntamente capacidade computacional, perfis de modelo e roteamento permite à Rate Cloud controlar como os recursos adequados são utilizados. Os clientes pagam pelo acesso ao modelo e pela concorrência durante um período de assinatura, sem cota acumulada de tokens. O processamento permanece limitado pela velocidade do modelo, contexto, prazos de operação, slots e disponibilidade; isso não garante um volume mensal fixo nem serviço ininterrupto 24/7.</p>
+<p>Este artigo descreve o modelo operacional público e as responsabilidades assumidas pela Rate Cloud. Ele não afirma que cada solicitação use um único caminho de execução exclusivo nem certifica o inventário atual de equipamentos. A arquitetura e os termos oficiais atuais continuam sendo a referência.</p>
+<h2 id="conheça-o-serviço">Conheça o serviço</h2>
+<p><a href="https://rate-cloud.com/register">Crie uma conta e teste a Rate Cloud</a>. O teste padrão de três horas exige confirmação do e-mail e vínculo do Telegram, e usa um slot simultâneo. Consulte <a href="/RateCloud/pt/articles/referral-program/">os benefícios por convite</a> para conhecer as condições separadas de convites elegíveis.</p>
+<p>Já tem uma conta? <a href="https://rate-cloud.com/user/instructions">Abra as instruções de conexão</a>. Quer criar um serviço com sua marca? <a href="https://rate-cloud.com/en/white-label">Conheça White Label</a>.</p>
+<p>Fontes, consultadas em 3 de novembro de 2026: <a href="https://rate-cloud.com/how-it-works">como a Rate Cloud funciona</a>, <a href="https://rate-cloud.com/offer">termos de serviço</a> e <a href="https://rate-cloud.com/">acesso aos modelos</a>. <a href="/RateCloud/pt/">Voltar à documentação</a>.</p></article><aside class="toc" aria-label="Nesta página"><h2>Nesta página</h2><div class="toc-list">
+<ul>
+<li><a href="#o-que-a-rate-cloud-gerencia">O que a Rate Cloud gerencia</a></li>
+<li><a href="#famílias-de-hardware-na-arquitetura-publicada">Famílias de hardware na arquitetura publicada</a></li>
+<li><a href="#dos-pesos-do-modelo-a-uma-api-utilizável">Dos pesos do modelo a uma API utilizável</a></li>
+<li><a href="#por-que-isso-viabiliza-o-acesso-por-assinatura">Por que isso viabiliza o acesso por assinatura</a></li>
+<li><a href="#conheça-o-serviço">Conheça o serviço</a></li>
+</ul>
+</div>
+</aside></div><section class="article-cta" aria-label="Experimente os modelos antes de assinar"><h2>Experimente os modelos antes de assinar</h2><p>O período de teste inicial oferece três horas de acesso com um único slot concorrente depois da verificação do e-mail e da conta do Telegram. Consulte a disponibilidade e as condições atuais na Rate Cloud.</p><div class="offer-actions"><a class="button primary" href="https://rate-cloud.com/register">Criar uma conta ↗</a><a href="/RateCloud/pt/articles/referral-program/">Ver detalhes do programa de indicações →</a><a href="https://rate-cloud.com/pt/white-label">White Label ↗</a></div></section><footer class="page-footer"><p>Informações públicas consultadas em 3 de novembro de 2026. Confira as condições atuais no site principal.</p><div><a href="/RateCloud/pt/raw/articles/10-infrastructure.md">Ler Markdown</a> · <a href="https://github.com/shaitor52/RateCloud/blob/main/pt/articles/10-infrastructure.md">Ver fonte</a></div><p><a href="https://rate-cloud.com/pt">Site principal ↗</a> · <a href="https://rate-cloud.com/user/instructions">Abrir painel ↗</a></p></footer></main></div>
+        <dialog id="search-dialog" aria-labelledby="search-title"><div class="search-dialog-header"><h2 id="search-title">Buscar documentação</h2><button class="icon-button" id="search-close" aria-label="Fechar">×</button></div><label class="sr-only" for="search-input">Buscar documentação</label><input id="search-input" placeholder="Buscar artigos, modelos ou ferramentas" type="search" autocomplete="off"><ul id="search-results" aria-live="polite" data-empty="Nenhuma página encontrada."></ul></dialog></body></html>

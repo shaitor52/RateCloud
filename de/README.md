@@ -25,6 +25,8 @@ Dieses öffentliche Nachschlagewerk beschreibt Rate Cloud auf Deutsch. Es enthä
 | [White-Label-Angebote](articles/07-white-label.md) | Ein KI-Abonnementgeschäft unter eigener Marke |
 | [Kostenvergleich mit offiziellen APIs](articles/08-cost-and-service-comparison.md) | Preis pro Token, Break-even-Schwellen und Leistungsabwägungen |
 | [20 praktische Einsatzabläufe](articles/09-unlimited-use-cases.md) | Softwarequalität, Überwachung, Dokumente und Recherche |
+| [Unsere Infrastruktur](articles/10-infrastructure.md) | Mietkapazität, Hardwarefamilien, Modellbereitstellung und Inferenzbetrieb |
+| [Empfehlungsprogramm](articles/11-referral-program.md) | Einladungszugang, Empfehlungsboni, Zuordnung und Auszahlung |
 
 ## Praktische Anleitungen
 
@@ -32,12 +34,12 @@ Die [Integrationsanleitungen](guides/README.md) behandeln OpenCode, Claude Code 
 
 ## Rate Cloud nutzen
 
-1. Besuchen Sie [rate-cloud.com](https://rate-cloud.com/) und öffnen Sie das Konto-Dashboard.
+1. [Erstellen Sie ein Konto](https://rate-cloud.com/register) oder öffnen Sie das [Konto-Dashboard](https://rate-cloud.com/).
 2. Registrieren Sie sich und bestätigen Sie Ihre E-Mail-Adresse sowie Ihre Telegram-Adresse für den Testzugang.
 3. Wählen Sie ein Modell, erstellen Sie einen API-Schlüssel und verbinden Sie eine kompatible Anwendung.
 4. Nutzen Sie die [offizielle Anleitung](https://rate-cloud.com/docs) für die aktuellen Einrichtungsschritte.
 
-Der veröffentlichte Testzugang ermöglicht nach den erforderlichen Bestätigungen drei Stunden Modelltests mit einem gleichzeitigen Slot. Für kostenpflichtige Zugänge gelten eigene Laufzeiten und Parallelitätskontingente.
+Der reguläre Testzugang ermöglicht nach E-Mail-Bestätigung und Verknüpfung von Telegram drei Stunden Modelltests mit einem gleichzeitigen Slot. Ein gültiger persönlicher Einladungslink bietet abweichend davon fünf Stunden Testzugang und 10 % Rabatt auf den ersten Kauf, jeweils gemäß Teilnahmebedingungen. Für kostenpflichtige Zugänge gelten eigene Laufzeiten und Parallelitätskontingente. Siehe [Empfehlungsprogramm](articles/11-referral-program.md).
 
 ## Quellen und Aktualität
 

@@ -1,0 +1,6 @@
+model,api_id,typical_complete_response_seconds,typical_effective_tokens_per_second,fastest_decile_effective_tokens_per_second,retrieved_date,source_url
+GLM 5.3,glm-5.3,21.48,14.05,58.47,2026-11-03,https://rate-cloud.com/
+GLM 5.3 Flash,glm-5.3-flash,23.32,14.58,61.92,2026-11-03,https://rate-cloud.com/
+DeepSeek V4 Pro,deepseek-v4-pro,15.67,25.83,127.84,2026-11-03,https://rate-cloud.com/
+DeepSeek V4.1 Flash,deepseek-v4.1-flash,14.99,19.22,78.38,2026-11-03,https://rate-cloud.com/
+Qwen 3.8 Max,qwen-3.8-max,21.37,13.13,80.68,2026-11-03,https://rate-cloud.com/

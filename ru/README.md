@@ -1,6 +1,6 @@
 # Rate Cloud
 
-[English version](../README.md)
+[English](../README.md) · Русский · [Español](../es/README.md) · [Português](../pt/README.md) · [Deutsch](../de/README.md) · [Français](../fr/README.md)
 
 **Ваши модели. Безлимитные токены. Одна подписка.**
 
@@ -43,3 +43,9 @@ Rate Cloud предоставляет доступ по подписке к API 
 
 - [Пошаговые инструкции для программ и API](guides/README.md).
 - [Частые вопросы о Rate Cloud](FAQ.md).
+
+## Сравнения, сценарии и данные
+
+- [Rate Cloud и официальные API](articles/08-cost-and-service-comparison.md): тарифы, объёмы, кеширование, точка окупаемости и преимущество фиксированной цены.
+- [20 сценариев безлимита](articles/09-unlimited-use-cases.md): тестирование репозиториев, ревью, мониторинг, документы и анализ.
+- [Данные для повторного использования](../data/README.md): CSV скорости, JSON тарифов и локальный калькулятор стоимости.

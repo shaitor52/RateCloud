@@ -39,3 +39,18 @@ Four paid slots allow independent operations to progress at the same time. They 
 For a practical evaluation, measure your own time to a useful result, output correctness, incomplete requests, errors, and the proportion of tasks requiring retries. Record the model, input size, output size, concurrency, and observation period so results remain interpretable.
 
 Source: [Rate Cloud's published performance table and explanations](https://rate-cloud.com/). See also [the connection documentation](https://rate-cloud.com/docs). [Back to overview](../README.md).
+
+## Complete available public results and downloadable data
+
+The table above contains all 15 numeric results published in the homepage's five-model performance table at retrieval. A [CSV snapshot](../data/performance-2026-11-03.csv) preserves the model IDs, units, retrieval date, and source URL for reuse. No new benchmark was run to create it.
+
+| Evidence item | Available in this snapshot? |
+| --- | --- |
+| Typical full response duration, all five models | Yes, table and CSV |
+| Typical effective token rate including waiting, all five models | Yes, table and CSV |
+| Fastest-decile effective token rate, all five models | Yes, table and CSV |
+| Raw per-request timings, sample size, and observation interval | Not supplied alongside the public table |
+| Time to first token, pure decode speed, latency percentiles | Not supplied in the public table |
+| Controlled same-workload comparison with official providers | Not available in this repository |
+
+The homepage links its methodology to `/docs#statistics`; at retrieval the current connection documentation did not expose a matching detailed statistics section. We preserve that evidence gap rather than invent additional results. For the pricing tradeoff, see [official API comparison](08-cost-and-service-comparison.md).

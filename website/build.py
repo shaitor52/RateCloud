@@ -15,6 +15,7 @@ from markdown.extensions.toc import slugify_unicode
 
 ROOT = Path(__file__).resolve().parents[1]
 LANGS = {'en':'English', 'ru':'Русский', 'es':'Español', 'pt':'Português', 'de':'Deutsch', 'fr':'Français'}
+EN_HOME_DESCRIPTION = "Explore Rate Cloud models with unlimited tokens, compare 3-, 7- and 30-day subscriptions, and connect your tools with practical API guides."
 LABELS = ['docs','home','articles','guides','search','toc','website','start','copy','copied','close','menu','empty','raw','source','next','previous','hero','intro','explore','api','image','snapshot','data','skip','language','searchhint']
 TEXT = {
 'en': ['Documentation','Overview','Explore Rate Cloud','Connect your tools','Search documentation','On this page','Main website','Open dashboard','Copy','Copied','Close','Menu','No matching pages found.','Read Markdown','View source','Next','Previous','Let your agents work.','Models, practical guides, and API access with unlimited tokens.','Explore the models','Connect a tool','The official connection guide, shown in English.','Public information snapshot: November 3, 2026. Check current terms on the main website.','Sources and data','Skip to content','Language','Search articles, models, or tools'],
@@ -66,6 +67,8 @@ def main():
             raw = source.read_text()
             title = re.search(r'^# (.+)$', raw, re.M).group(1)
             desc = next((plain(line) for line in raw.splitlines() if len(plain(line)) > 100 and not line.startswith(('#', '|', '- ', 'Sources:', 'Источник'))), UI[lang]['intro'])[:195]
+            if lang == 'en' and rel == 'README.md':
+                desc = EN_HOME_DESCRIPTION
             page = dict(source=source, lang=lang, rel=rel, route=route, raw=raw, title=title, desc=desc)
             pages.append(page); routes[source.resolve()] = route
     for source, route in [(ROOT/'SOURCES.md','en/sources/'), (ROOT/'data/README.md','en/data/'), (ROOT/'ru/data/README.md','ru/data/')]:

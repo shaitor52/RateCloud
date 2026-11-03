@@ -37,6 +37,14 @@ class Page(HTMLParser):
 
 def main():
     pages={f:Page(f.read_text()) for f in OUTPUT.rglob('*.html')}
+    home_description = pages[OUTPUT/'index.html'].descriptions[0]
+    assert home_description.endswith('.') and 80 <= len(home_description) <= 180, 'Complete English homepage description required'
+    assert 'unlimited tokens' in home_description and '3-, 7- and 30-day' in home_description, 'Homepage description must explain the offer'
+    assert pages[OUTPUT/'index.html'].schemas[0]['description'] == home_description, 'Homepage schema description parity'
+    og_description = re.search(r'<meta property="og:description" content="([^"]*)"', (OUTPUT/'index.html').read_text()).group(1)
+    assert html.unescape(og_description) == home_description, 'Homepage Open Graph description parity'
+    for source in (ROOT/'ru').rglob('*.md'):
+        assert not re.search(r'\b(?:суммарн\w*|общ\w*\s+накопительн\w*)\s+квот\w*\b', source.read_text(), re.I), (source, 'Use clear unlimited-token wording instead of cumulative-quota wording')
     refs=0
     for file,page in pages.items():
         text=file.read_text()

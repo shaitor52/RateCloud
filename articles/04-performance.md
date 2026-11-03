@@ -1,5 +1,7 @@
 # Understanding Rate Cloud speed and performance
 
+English · [Русский](../ru/articles/04-performance.md)
+
 The useful performance question is how long it takes to receive a usable result for your workload. A high token rate during generation alone does not describe the complete experience: waiting, input processing, output length, and recovery all contribute.
 
 ## Published performance snapshot

@@ -1,5 +1,7 @@
 # White Label: an AI subscription service under your brand
 
+English · [Русский](../ru/articles/07-white-label.md)
+
 Rate Cloud's White Label offering lets a partner sell model subscriptions under their own brand while Rate Cloud supplies and maintains the technical service. The partner focuses on branding, pricing, and customer acquisition.
 
 ## What the published offer includes

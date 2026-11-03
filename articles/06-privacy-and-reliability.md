@@ -1,5 +1,7 @@
 # Privacy, data handling, and availability
 
+English · [Русский](../ru/articles/06-privacy-and-reliability.md)
+
 Rate Cloud's public architecture distinguishes request content, temporary computation state, operational metadata, and account or payment records. These categories serve different purposes and have different retention rules. This article summarizes the published policy and design rather than an independent security audit.
 
 ## Request content and temporary buffers

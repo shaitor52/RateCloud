@@ -1,5 +1,7 @@
 # Connecting tools and applications to Rate Cloud
 
+English · [Русский](../ru/articles/05-api-and-integrations.md)
+
 Rate Cloud offers an OpenAI-compatible HTTP API and dedicated compatibility endpoints for supported coding clients. The official dashboard supplies application-specific setup instructions. Use those instructions for the installed client version and operating system.
 
 ## Published endpoints

@@ -1,5 +1,7 @@
 # Models and choosing the right one
 
+English · [Русский](../ru/articles/02-models.md)
+
 Rate Cloud's published catalog contains five models. Each has a separate subscription and an exact identifier for direct HTTP requests. Select a model by the work you need it to perform, then test representative inputs.
 
 ## Published catalog

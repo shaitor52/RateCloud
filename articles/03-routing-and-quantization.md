@@ -1,5 +1,7 @@
 # How intelligent routing and quantization work
 
+English · [Русский](../ru/articles/03-routing-and-quantization.md)
+
 Rate Cloud's public architecture describes a combination of stable compute capacity, additional available enterprise capacity, approved model precision profiles, and request-aware routing. The objective is to use resources efficiently while preserving the identity and functional requirements of the selected model.
 
 This article explains the published architecture. It is not an independent verification of every production deployment or a promise that every hardware and precision combination is always available.

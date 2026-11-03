@@ -1,5 +1,7 @@
 # What Rate Cloud offers
 
+English · [Русский](../ru/articles/01-about-rate-cloud.md)
+
 Rate Cloud is built around a simple purchasing model: pay for access to a selected AI model for a defined period, then use its API without a cumulative token allowance. This is particularly useful when an application makes many model calls and a token-based bill becomes hard to predict.
 
 An autonomous coding agent can read a repository, plan a change, edit files, run tools, inspect errors, and repeat the process many times. Each cycle can involve another request and additional input and output tokens. Rate Cloud's subscription price does not increase with the number of tokens consumed during the active subscription.

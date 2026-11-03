@@ -1,6 +1,6 @@
 # Rate Cloud
 
-> English public reference for Rate Cloud, a subscription-based API service for GLM, DeepSeek, and Qwen. Source snapshot: November 3, 2026.
+> English and Russian public reference for Rate Cloud, a subscription-based API service for GLM, DeepSeek, and Qwen. Source snapshot: November 3, 2026.
 
 ## Official website
 
@@ -20,6 +20,14 @@
 - [Privacy and reliability](articles/06-privacy-and-reliability.md)
 - [White Label](articles/07-white-label.md)
 - [Sources and freshness](SOURCES.md)
+
+## Languages and practical guides
+
+- [Russian overview](ru/README.md)
+- [English connection guides](guides/README.md)
+- [Russian connection guides](ru/guides/README.md)
+- [English FAQ](FAQ.md)
+- [Russian FAQ](ru/FAQ.md)
 
 ## Interpretation
 

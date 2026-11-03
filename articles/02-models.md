@@ -8,13 +8,13 @@ Rate Cloud's published catalog contains five models. Each has a separate subscri
 
 | Model | Direct API ID | Main positioning | Image input | Published 30-day price |
 | --- | --- | --- | --- | ---: |
-| GLM 5.3 | `glm-5.3` | Complex development and autonomous agents | No | RUB 2,784 |
-| GLM 5.3 Flash | `glm-5.3-flash` | Frequent requests, daily coding, automation, subagents | Yes | RUB 2,442 |
-| DeepSeek V4.1 Flash | `deepseek-v4.1-flash` | Coding agents and parallel programming tasks | Yes | RUB 2,442 |
-| DeepSeek V4 Pro | `deepseek-v4-pro` | Multistep reasoning, architecture, and code review | No | RUB 2,232 |
-| Qwen 3.8 Max | `qwen-3.8-max` | Large repositories, documents, research, and long context | Yes | RUB 2,550 |
+| GLM 5.3 | `glm-5.3` | Complex development and autonomous agents | No | $34.38 |
+| GLM 5.3 Flash | `glm-5.3-flash` | Frequent requests, daily coding, automation, subagents | Yes | $30.16 |
+| DeepSeek V4.1 Flash | `deepseek-v4.1-flash` | Coding agents and parallel programming tasks | Yes | $30.16 |
+| DeepSeek V4 Pro | `deepseek-v4-pro` | Multistep reasoning, architecture, and code review | No | $27.56 |
+| Qwen 3.8 Max | `qwen-3.8-max` | Large repositories, documents, research, and long context | Yes | $31.49 |
 
-Prices and capabilities above reflect the website on November 3, 2026. Confirm current purchase conditions in the dashboard. Each listed paid subscription includes four concurrent requests and no cumulative token quota during its term. Image input means the model accepts images; it does not imply image generation.
+USD display prices come from the [public currency endpoint](https://rate-cloud.com/api/public/display-currency), retrieved November 3, 2026. They are dated display equivalents and can change before checkout. Capabilities reflect the website on the same date. Confirm current purchase conditions in the dashboard. Each listed paid subscription includes four concurrent requests and no cumulative token quota during its term. Image input means the model accepts images; it does not imply image generation.
 
 ## Matching a model to a workflow
 

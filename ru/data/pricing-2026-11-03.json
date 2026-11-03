@@ -1,0 +1,74 @@
+{
+  "checked_date": "2026-11-03",
+  "currency": "USD",
+  "unit": "per 1 million tokens",
+  "input_fraction": 0.8,
+  "output_fraction": 0.2,
+  "notes": "Uncached standard real-time text API rates; DeepSeek peak/off-peak separated. Qwen implicit cache price is recorded separately. Excludes taxes, tools, batch, cache writes, long-context surcharges, special discounts. GPT is a different-model alternative, not a Rate Cloud offering. FX is user-supplied, not a live market quote.",
+  "providers": [
+    {
+      "label": "Z.ai GLM-5.3",
+      "input_usd": 1.4,
+      "output_usd": 4.4,
+      "cached_input_usd": 0.26,
+      "ratecloud_30_day_rub": 2784,
+      "source": "https://docs.z.ai/guides/overview/pricing"
+    },
+    {
+      "label": "Z.ai GLM-5.3-Flash",
+      "input_usd": 0.15,
+      "output_usd": 0.5,
+      "cached_input_usd": 0.03,
+      "ratecloud_30_day_rub": 2442,
+      "source": "https://docs.z.ai/guides/overview/pricing"
+    },
+    {
+      "label": "DeepSeek Flash off-peak",
+      "input_usd": 0.15,
+      "output_usd": 0.6,
+      "cached_input_usd": 0.003,
+      "ratecloud_30_day_rub": 2442,
+      "source": "https://api-docs.deepseek.com/quick_start/pricing/"
+    },
+    {
+      "label": "DeepSeek Flash peak",
+      "input_usd": 0.3,
+      "output_usd": 1.2,
+      "cached_input_usd": 0.006,
+      "ratecloud_30_day_rub": 2442,
+      "source": "https://api-docs.deepseek.com/quick_start/pricing/"
+    },
+    {
+      "label": "DeepSeek Pro off-peak",
+      "input_usd": 0.66,
+      "output_usd": 1.98,
+      "cached_input_usd": 0.022,
+      "ratecloud_30_day_rub": 2232,
+      "source": "https://api-docs.deepseek.com/quick_start/pricing/"
+    },
+    {
+      "label": "DeepSeek Pro peak",
+      "input_usd": 1.32,
+      "output_usd": 3.96,
+      "cached_input_usd": 0.044,
+      "ratecloud_30_day_rub": 2232,
+      "source": "https://api-docs.deepseek.com/quick_start/pricing/"
+    },
+    {
+      "label": "QwenCloud Qwen3.8-Max Singapore",
+      "input_usd": 2,
+      "output_usd": 6,
+      "cached_input_usd": 0.25,
+      "ratecloud_30_day_rub": 2550,
+      "source": "https://www.qwencloud.com/models/qwen3.8-max"
+    },
+    {
+      "label": "OpenAI GPT-6.1 Sol Standard",
+      "input_usd": 2,
+      "output_usd": 10,
+      "cached_input_usd": 0.1,
+      "ratecloud_30_day_rub": null,
+      "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol"
+    }
+  ]
+}

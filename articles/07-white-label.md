@@ -12,11 +12,11 @@ The public page also presents application and assistant concepts. It explicitly 
 
 ## Commercial model
 
-As published on November 3, 2026, setup costs RUB 8,000 once, with no mandatory monthly maintenance fee. Model subscriptions still have their base cost. Included maintenance does not make access to the models free.
+As published on November 3, 2026, setup costs $98.80 once, with no mandatory monthly maintenance fee. The USD setup amount is a dated display equivalent using the website's currency metadata on November 3, 2026; confirm the current price before purchase. Model subscriptions still have their base cost. Included maintenance does not make access to the models free.
 
 A partner adds a markup to the base Rate Cloud subscription price. The website describes partner accruals on each paid subscription, including repeat purchases, and monthly payouts. Advertising, taxes, and other partner expenses remain separate.
 
-For the site's example, a RUB 2,784 base subscription with a 20% markup produces a RUB 3,340.80 customer price and a RUB 556.80 partner accrual before the partner's own expenses and taxes. A 20% markup on cost is not a 20% margin on the final selling price. Sales volume and profit are not guaranteed.
+For the site's example, a $34.38 base subscription with a 20% markup produces a $41.26 customer price and a $6.88 partner accrual before the partner's own expenses and taxes. A 20% markup on cost is not a 20% margin on the final selling price. Sales volume and profit are not guaranteed.
 
 ## Responsibilities and launch
 

@@ -8,17 +8,17 @@ Bei geringer Nutzung ist Rate Cloud nicht automatisch günstiger. Offizielle Anb
 
 ## Offizielle API-Preise und Rate-Cloud-Abonnements
 
-USD-Preise gelten je einer Million Tokens. Die Eingabepreise sind **ohne Cache**. Rate-Cloud-Preise sind RUB je 30 Tage für ein Modellabonnement mit vier Slots. Währungen sind ausdrücklich getrennt.
+USD-Preise gelten je einer Million Tokens. Die Eingabepreise sind **ohne Cache**. Die USD-Anzeige der Rate-Cloud-Website wurde am 3. November 2026 geprüft. Sie zeigt Preise je 30 Tage für ein Modellabonnement mit vier Slots. Diese Anzeige ist kein garantierter USD-Festpreis vor dem Checkout.
 
-| Offizielle API und Abrechnungsbedingung | Eingabe USD/M | Ausgabe USD/M | Rate-Cloud-Modell / RUB für 30 Tage |
+| Offizielle API und Abrechnungsbedingung | Eingabe USD/M | Ausgabe USD/M | Rate-Cloud-Modell / USD-Anzeige für 30 Tage |
 | --- | ---: | ---: | --- |
-| Z.ai GLM-5.3 | 1,40 | 4,40 | GLM 5.3 / 2 784 |
-| Z.ai GLM-5.3-Flash | 0,15 | 0,50 | GLM 5.3 Flash / 2 442 |
-| DeepSeek V4.1 Flash, Nebenzeit | 0,15 | 0,60 | DeepSeek V4.1 Flash / 2 442 |
-| DeepSeek V4.1 Flash, Hauptzeit | 0,30 | 1,20 | DeepSeek V4.1 Flash / 2 442 |
-| DeepSeek V4 Pro, Nebenzeit | 0,66 | 1,98 | DeepSeek V4 Pro / 2 232 |
-| DeepSeek V4 Pro, Hauptzeit | 1,32 | 3,96 | DeepSeek V4 Pro / 2 232 |
-| QwenCloud Qwen3.8-Max, Endpunkt Singapur | 2,00 | 6,00 | Qwen 3.8 Max / 2 550 |
+| Z.ai GLM-5.3 | 1,40 | 4,40 | GLM 5.3 / $34,38 |
+| Z.ai GLM-5.3-Flash | 0,15 | 0,50 | GLM 5.3 Flash / $30,16 |
+| DeepSeek V4.1 Flash, Nebenzeit | 0,15 | 0,60 | DeepSeek V4.1 Flash / $30,16 |
+| DeepSeek V4.1 Flash, Hauptzeit | 0,30 | 1,20 | DeepSeek V4.1 Flash / $30,16 |
+| DeepSeek V4 Pro, Nebenzeit | 0,66 | 1,98 | DeepSeek V4 Pro / $27,56 |
+| DeepSeek V4 Pro, Hauptzeit | 1,32 | 3,96 | DeepSeek V4 Pro / $27,56 |
+| QwenCloud Qwen3.8-Max, Endpunkt Singapur | 2,00 | 6,00 | Qwen 3.8 Max / $31,49 |
 | OpenAI GPT-6.1 Sol, Standard mit kurzem Kontext | 2,00 | 10,00 | Alternative mit anderem Modell; GPT wird hier nicht verkauft |
 
 Quellen: [Z.ai-Preise](https://docs.z.ai/guides/overview/pricing), [DeepSeek-Preise und Zeitfenster](https://api-docs.deepseek.com/quick_start/pricing/), [QwenCloud-Modellpreise und Singapur-Endpunkt](https://www.qwencloud.com/models/qwen3.8-max), [GPT-6.1-Sol-Preise](https://developers.openai.com/api/docs/models/gpt-6.1-sol) und [Rate-Cloud-Katalog](https://rate-cloud.com/).
@@ -38,31 +38,31 @@ Annahme: 80 % der abrechenbaren Tokens sind Eingabe, 20 % Ausgabe; keine Cachetr
 | Qwen3.8-Max | $28 | $280 | $1 400 | $2 800 |
 | GPT-6.1 Sol Standard | $36 | $360 | $1 800 | $3 600 |
 
-**Die aufgeführten Rate-Cloud-Preise für 30 Tage bleiben bei diesen Volumenszenarien zwischen RUB 2 232 und 2 784.** Das beschreibt die Preisstruktur, garantiert aber nicht die Verarbeitung einer Milliarde Tokens. Mehrere Modellabonnements, zusätzliche Slots, Client-Hosting, Websuche, CI-Rechenleistung und andere Werkzeuge Ihrer Anwendung können weitere Kosten verursachen.
+**Die bei Abruf angezeigten Rate-Cloud-Preise für 30 Tage lagen bei diesen Volumenszenarien zwischen $27,56 und $34,38.** Das ist ein USD-Anzeige-Snapshot, kein garantierter USD-Festpreis vor dem Checkout und keine Garantie der Verarbeitung einer Milliarde Tokens. Mehrere Modellabonnements, zusätzliche Slots, Client-Hosting, Websuche, CI-Rechenleistung und andere Werkzeuge Ihrer Anwendung können weitere Kosten verursachen.
 
 ## Break-even statt pauschaler Ersparnisbehauptung
 
-Bei einer rein beispielhaften Wechselkursannahme von **RUB 100 je USD** kosten 500 Mio. uncached Tokens über die offizielle GLM-5.3-API RUB 100 000 gegenüber RUB 2 784 für ein Rate-Cloud-GLM-Abonnement, also etwa das 35,9-Fache der Modellzugangskosten. Über die günstige DeepSeek-Flash-API in Nebenzeiten ergibt dieselbe Rechnung RUB 12 000 gegenüber RUB 2 442, etwa das 4,9-Fache. Dieser Wechselkurs ist eine Annahme und kein aktueller Kurs; Ergebnisse ändern sich mit Wechselkurs und Arbeitslast.
+Bei der Website-Währungsanzeige vom 3. November 2026 kosteten 500 Mio. Tokens ohne Cache auf der offiziellen GLM-5.3-API $1 000 gegenüber $34,38 für das angezeigte Rate-Cloud-Abonnement, etwa das 29,1-Fache der Modellzugangskosten. Für die günstige DeepSeek-Flash-API in Nebenzeiten ergibt dieselbe Rechnung $120 gegenüber $30,16, etwa das 4,0-Fache. Das ist ein Snapshot der USD-Anzeige und kein garantierter Festpreis vor dem Checkout; tatsächliche Kosten hängen vom Abrechnungstarif und der Arbeitslast ab.
 
-Bei dieser Annahme liegt der Break-even ohne Cache bei etwa 13,92 Mio. Tokens für GLM-5.3, 111 Mio. für GLM Flash, 101,75 Mio. für DeepSeek Flash in Nebenzeiten, 24,16 Mio. für DeepSeek Pro in Nebenzeiten und 9,11 Mio. für Qwen. Unterhalb der jeweiligen Schwelle kann die offizielle Tokenabrechnung günstiger sein. Eine hohe Cachetrefferquote verschiebt die Schwellen nach oben.
+Bei den angezeigten USD-Preisen liegt der Break-even ohne Cache bei etwa 17,19 Mio. Tokens für GLM-5.3, 137,09 Mio. für GLM Flash, 125,67 Mio. für DeepSeek Flash in Nebenzeiten, 29,83 Mio. für DeepSeek Pro in Nebenzeiten und 11,25 Mio. für Qwen. Unterhalb der jeweiligen Schwelle kann die offizielle Tokenabrechnung günstiger sein. Eine hohe Cachetrefferquote verschiebt die Schwellen nach oben.
 
 Allgemeine Formel, Volumen in Millionen:
 
 ```text
 weighted USD per million = input_fraction * input_price + output_fraction * output_price
-break_even_millions = subscription_RUB / (RUB_per_USD * weighted_USD_per_million)
+break_even_millions = subscription_USD / weighted_USD_per_million
 ```
 
-Ein Sensitivitätsbeispiel mit 100 % Cachetreffern auf Eingaben bei DeepSeek Flash außerhalb der Hauptzeit setzt $0,003 für Eingabe und $0,60 für Ausgabe an: 500 Mio. Tokens bei 80/20 kosten $61,20 statt $120. Beim angenommenen Wechselkurs sind dies RUB 6 120 gegenüber RUB 2 442. Reale Cachefähigkeit ist nicht garantiert; Cache-Schreibvorgänge und weitere Gebühren können zählen. Qwen, Z.ai und OpenAI bieten ebenfalls Cache-Rabatte. OpenAI bietet günstigere Batch-/Flex-Preise und berechnet für Langkontext-/Fast-Modi mehr. Vergleichen Sie den tatsächlich genutzten Tarif.
+Ein Sensitivitätsbeispiel mit 100 % Cachetreffern auf Eingaben bei DeepSeek Flash außerhalb der Hauptzeit setzt $0,003 für Eingabe und $0,60 für Ausgabe an: 500 Mio. Tokens bei 80/20 kosten $61,20 statt $120. Dies entspricht etwa dem 2,0-Fachen der angezeigten Rate-Cloud-Kosten von $30,16. Reale Cachefähigkeit ist nicht garantiert; Cache-Schreibvorgänge und weitere Gebühren können zählen. Qwen, Z.ai und OpenAI bieten ebenfalls Cache-Rabatte. OpenAI bietet günstigere Batch-/Flex-Preise und berechnet für Langkontext-/Fast-Modi mehr. Vergleichen Sie den tatsächlich genutzten Tarif.
 
 Szenarien offline mit den [datierten Preisdaten](../../data/pricing-2026-11-03.json) und dem [Rechner](../../tools/compare_costs.py) reproduzieren:
 
 ```sh
-python3 tools/compare_costs.py --rub-per-usd 100 --million-tokens 500
-python3 tools/compare_costs.py --rub-per-usd 100 --million-tokens 500 --cached-input-share 1
+python3 tools/compare_costs.py --million-tokens 500
+python3 tools/compare_costs.py --million-tokens 500 --cached-input-share 1
 ```
 
-Führen Sie die Befehle im Repository-Stammverzeichnis aus. Es werden keine API-Anfragen gesendet. Geben Sie einen eigenen Wechselkurs an.
+Führen Sie die Befehle im Repository-Stammverzeichnis aus. Es werden keine API-Anfragen gesendet. Die Ausgabe verwendet USD-Preise.
 
 ## Abwägungen bei Geschwindigkeit und Dienst
 

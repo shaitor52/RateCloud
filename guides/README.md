@@ -9,7 +9,7 @@ Practical English setup instructions for Rate Cloud API users. Start with the gu
 - [Hermes Agent](hermes-agent.md): the custom endpoint configuration and key environment variable.
 - [DeepSeek Harness](deepseek-harness.md): a custom OpenAI Chat Completions model API in the Web UI.
 - [Continue](continue.md): a local YAML model catalog with Continue's supported secret references.
-- [Fixed-price cost comparison](../articles/08-cost-and-service-comparison.md): price scenarios, exchange-rate assumption, break-even, and service tradeoffs.
+- [Fixed-price cost comparison](../articles/08-cost-and-service-comparison.md): price scenarios, dated USD prices, break-even, and service tradeoffs.
 - [20 unlimited-token workflows](../articles/09-unlimited-use-cases.md): practical examples and operating boundaries.
 
 Russian translations: [Русские инструкции](../ru/guides/README.md).

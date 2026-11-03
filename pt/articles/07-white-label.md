@@ -10,11 +10,11 @@ A página pública também apresenta conceitos de aplicativos e assistentes. Ela
 
 ## Modelo comercial
 
-Conforme publicado em 3 de novembro de 2026, a configuração custa 8.000 RUB uma única vez, sem taxa mensal obrigatória de manutenção. As assinaturas dos modelos continuam tendo seu custo-base. A manutenção incluída não torna gratuito o acesso aos modelos.
+Segundo a exibição em USD do site em 3 de novembro de 2026, a configuração custa $98,80 uma única vez, sem taxa mensal obrigatória de manutenção. Os preços-base das assinaturas dos modelos são exibidos em USD abaixo. Os preços podem mudar antes do pagamento. A manutenção incluída não torna gratuito o acesso aos modelos.
 
 O parceiro acrescenta uma margem ao preço-base da assinatura da Rate Cloud. O site descreve créditos ao parceiro em cada assinatura paga, inclusive compras repetidas, com pagamentos mensais. Publicidade, impostos e demais despesas do parceiro são separados.
 
-No exemplo do site, uma assinatura-base de 2.784 RUB com margem de 20% resulta em preço de 3.340,80 RUB para o cliente e crédito de 556,80 RUB ao parceiro, antes das próprias despesas e impostos. Uma margem de 20% sobre o custo não equivale a margem de 20% sobre o preço final de venda. Volume de vendas e lucro não são garantidos.
+No exemplo do site com preços em USD, uma assinatura-base de $34,38 com acréscimo de 20% resulta em preço de $41,26 para o cliente e crédito de $6,88 ao parceiro, antes das próprias despesas e impostos. Um acréscimo de 20% sobre o custo não equivale a margem de 20% sobre o preço final de venda. Volume de vendas e lucro não são garantidos.
 
 ## Responsabilidades e lançamento
 

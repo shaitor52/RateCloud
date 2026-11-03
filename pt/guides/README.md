@@ -9,7 +9,7 @@ Instruções práticas de configuração para usuários da API da Rate Cloud. Es
 - [Hermes Agent](hermes-agent.md): configuração do endpoint personalizado e variável de ambiente da chave.
 - [DeepSeek Harness](deepseek-harness.md): modelo OpenAI Chat Completions personalizado pela interface web.
 - [Continue](continue.md): catálogo local de modelos YAML com referências de segredo compatíveis com o Continue.
-- [Comparação de custos com preço fixo](../articles/08-cost-and-service-comparison.md): cenários de preço, hipótese cambial, ponto de equilíbrio e compensações do serviço.
+- [Comparação de custos com preço fixo](../articles/08-cost-and-service-comparison.md): tarifas publicadas em USD, ponto de equilíbrio e compensações do serviço.
 - [20 fluxos com tokens ilimitados](../articles/09-unlimited-use-cases.md): exemplos práticos e limites operacionais.
 
 Versões em outros idiomas: [English](../../guides/README.md) · [Русский](../../ru/guides/README.md) · [Español](../../es/guides/README.md).

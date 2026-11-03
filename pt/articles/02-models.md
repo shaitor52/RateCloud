@@ -6,13 +6,13 @@ O catálogo publicado da Rate Cloud contém cinco modelos. Cada um tem uma assin
 
 | Modelo | ID da API direta | Foco principal | Entrada de imagem | Preço publicado por 30 dias |
 | --- | --- | --- | --- | ---: |
-| GLM 5.3 | `glm-5.3` | Desenvolvimento complexo e agentes autônomos | Não | 2.784 RUB |
-| GLM 5.3 Flash | `glm-5.3-flash` | Solicitações frequentes, programação diária, automação e subagentes | Sim | 2.442 RUB |
-| DeepSeek V4.1 Flash | `deepseek-v4.1-flash` | Agentes de programação e tarefas paralelas de desenvolvimento | Sim | 2.442 RUB |
-| DeepSeek V4 Pro | `deepseek-v4-pro` | Raciocínio em várias etapas, arquitetura e revisão de código | Não | 2.232 RUB |
-| Qwen 3.8 Max | `qwen-3.8-max` | Grandes repositórios, documentos, pesquisa e contexto longo | Sim | 2.550 RUB |
+| GLM 5.3 | `glm-5.3` | Desenvolvimento complexo e agentes autônomos | Não | $34,38 USD |
+| GLM 5.3 Flash | `glm-5.3-flash` | Solicitações frequentes, programação diária, automação e subagentes | Sim | $30,16 USD |
+| DeepSeek V4.1 Flash | `deepseek-v4.1-flash` | Agentes de programação e tarefas paralelas de desenvolvimento | Sim | $30,16 USD |
+| DeepSeek V4 Pro | `deepseek-v4-pro` | Raciocínio em várias etapas, arquitetura e revisão de código | Não | $27,56 USD |
+| Qwen 3.8 Max | `qwen-3.8-max` | Grandes repositórios, documentos, pesquisa e contexto longo | Sim | $31,49 USD |
 
-Os preços e recursos acima refletem o site em 3 de novembro de 2026. Confirme as condições atuais de compra no painel. Cada assinatura paga listada inclui quatro solicitações simultâneas e não tem cota acumulada de tokens durante sua vigência. Entrada de imagem significa que o modelo aceita imagens; não significa geração de imagens.
+Os preços em USD e recursos acima refletem a exibição de moeda do site em 3 de novembro de 2026. Os preços podem mudar antes do pagamento; confira o painel antes de comprar. Cada assinatura paga listada inclui quatro solicitações simultâneas e não tem cota acumulada de tokens durante sua vigência. Entrada de imagem significa que o modelo aceita imagens; não significa geração de imagens.
 
 ## Escolha um modelo para seu fluxo de trabalho
 

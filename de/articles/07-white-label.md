@@ -12,11 +12,11 @@ Die öffentliche Seite zeigt außerdem Konzepte für Anwendungen und Assistenten
 
 ## Geschäftsmodell
 
-Laut Veröffentlichung vom 3. November 2026 kostet die Einrichtung einmalig RUB 8.000; eine monatliche Wartungsgebühr ist nicht verpflichtend. Die Basispreise der Modellabonnements fallen weiterhin an. Eingeschlossene Wartung macht den Modellzugang nicht kostenlos.
+Die USD-Anzeige auf der Website vom 3. November 2026 nennt einmalig $98,80 für die Einrichtung und keinen verpflichtenden monatlichen Wartungsbeitrag. Der angezeigte Grundpreis eines Modellabonnements beträgt $34,38. Die Beträge sind ein Snapshot der Website-Währungsanzeige, keine garantierten USD-Festpreise vor dem Checkout. Eingeschlossene Wartung macht den Modellzugang nicht kostenlos.
 
 Ein Partner schlägt auf den Basispreis des Rate-Cloud-Abonnements auf. Die Website beschreibt Gutschriften für jedes bezahlte Abonnement einschließlich Verlängerungskäufen sowie monatliche Auszahlungen. Werbung, Steuern und sonstige Partnerkosten bleiben separat.
 
-Im Website-Beispiel kostet ein Basisabonnement für RUB 2.784 bei 20 % Aufschlag RUB 3.340,80 für den Kunden; die Partnergutschrift beträgt vor eigenen Kosten und Steuern RUB 556,80. Ein Aufschlag von 20 % auf den Einkaufspreis ist keine Marge von 20 % auf den Verkaufspreis. Absatz und Gewinn sind nicht garantiert.
+Bei der angezeigten Basis von $34,38 kostet ein Abonnement mit 20 % Aufschlag $41,26 für den Kunden; die Partnergutschrift beträgt vor eigenen Kosten und Steuern $6,88. Ein Aufschlag von 20 % auf den Einkaufspreis ist keine Marge von 20 % auf den Verkaufspreis. Absatz und Gewinn sind nicht garantiert.
 
 ## Zuständigkeiten und Start
 

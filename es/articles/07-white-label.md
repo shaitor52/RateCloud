@@ -10,11 +10,11 @@ La página pública también presenta conceptos de aplicaciones y asistentes. In
 
 ## Modelo comercial
 
-Según la publicación del 3 de noviembre de 2026, la configuración cuesta 8.000 RUB una vez y no hay una cuota mensual obligatoria de mantenimiento. Las suscripciones a modelos siguen teniendo su coste base. El mantenimiento incluido no hace gratuito el acceso a los modelos.
+Según la visualización en USD del sitio el 3 de noviembre de 2026, la configuración cuesta $98,80 una vez y no hay una cuota mensual obligatoria de mantenimiento. Los precios base de las suscripciones a modelos se muestran en USD más abajo. Los precios pueden cambiar antes del pago. El mantenimiento incluido no hace gratuito el acceso a los modelos.
 
 El socio añade un recargo al precio base de suscripción de Rate Cloud. El sitio describe ingresos para el socio por cada suscripción pagada, incluidas las compras repetidas, con pagos mensuales. La publicidad, los impuestos y los demás gastos del socio son independientes.
 
-En el ejemplo del sitio, una suscripción base de 2.784 RUB con un recargo del 20 % da un precio de 3.340,80 RUB para el cliente y un ingreso de 556,80 RUB para el socio, antes de sus propios gastos e impuestos. Un recargo del 20 % sobre el coste no equivale a un margen del 20 % sobre el precio de venta final. No se garantizan ventas ni beneficios.
+En el ejemplo del sitio con precios en USD, una suscripción base de $34,38 con un recargo del 20 % da un precio de $41,26 para el cliente y un ingreso de $6,88 para el socio, antes de sus propios gastos e impuestos. Un recargo del 20 % sobre el coste no equivale a un margen del 20 % sobre el precio de venta final. No se garantizan ventas ni beneficios.
 
 ## Responsabilidades y lanzamiento
 

@@ -12,11 +12,11 @@ La page publique présente aussi des concepts d’application et d’assistant. 
 
 ## Modèle commercial
 
-Selon les informations publiées au 3 novembre 2026, la configuration coûte 8 000 RUB une seule fois, sans frais mensuels de maintenance obligatoires. Le prix de base des abonnements aux modèles reste dû. La maintenance incluse ne rend pas l’accès aux modèles gratuit.
+L’affichage en USD du site au 3 novembre 2026 indique 98,80 $ de frais de configuration uniques, sans maintenance mensuelle obligatoire. Le prix de base affiché pour un abonnement modèle est de 34,38 $. Ces montants sont un instantané de l’affichage monétaire du site, pas des prix fixes en USD garantis avant paiement. La maintenance incluse ne rend pas l’accès aux modèles gratuit.
 
 Le partenaire ajoute une marge au prix de base de l’abonnement Rate Cloud. Le site décrit des commissions sur chaque abonnement payé, y compris les renouvellements, avec des versements mensuels. Publicité, impôts et autres dépenses du partenaire restent à sa charge.
 
-Dans l’exemple du site, un abonnement de base à 2 784 RUB avec une majoration de 20 % revient à 3 340,80 RUB pour le client et génère 556,80 RUB de commission partenaire avant ses propres frais et impôts. Une majoration de 20 % sur le coût n’est pas une marge de 20 % sur le prix final. Les ventes et les bénéfices ne sont pas garantis.
+Sur la base affichée de 34,38 $, un abonnement majoré de 20 % coûte 41,26 $ au client et génère 6,88 $ de commission partenaire avant ses propres frais et impôts. Une majoration de 20 % sur le coût n’est pas une marge de 20 % sur le prix final. Les ventes et les bénéfices ne sont pas garantis.
 
 ## Responsabilités et lancement
 

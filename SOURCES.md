@@ -30,6 +30,8 @@ Rates checked November 3, 2026:
 - [QwenCloud Qwen3.8-Max rates and Singapore endpoint](https://www.qwencloud.com/models/qwen3.8-max).
 - [OpenAI GPT-6.1 Sol model and Standard API pricing](https://developers.openai.com/api/docs/models/gpt-6.1-sol).
 
-Price calculations use dated public facts, explicit token proportions, and a user-supplied exchange-rate assumption. They are not measured customer bills, a live FX quotation, quality equivalence, or guaranteed monthly capacity. Competitor speed is not supplied as a measured ranking because no controlled paired dataset is available here. The use-case article contains proposed workflow designs rather than customer testimonials.
+Price calculations use dated public facts, explicit token proportions, and dated USD subscription display prices. They are not measured customer bills, a live price quotation, quality equivalence, or guaranteed monthly capacity. Competitor speed is not supplied as a measured ranking because no controlled paired dataset is available here. The use-case article contains proposed workflow designs rather than customer testimonials.
 
 Client guides cite official configuration references and label the scope of static verification. Documentation review does not establish that a particular client version and every model feature have been tested end to end against Rate Cloud.
+
+Non-Russian editions use USD only, using the [public display-currency API](https://rate-cloud.com/api/public/display-currency) snapshot dated November 3, 2026. Russian pricing data and its exchange-rate scenario calculator are kept under `ru/data/` and `ru/tools/`.

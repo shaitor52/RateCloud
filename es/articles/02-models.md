@@ -6,13 +6,13 @@ El catálogo publicado de Rate Cloud contiene cinco modelos. Cada uno tiene una 
 
 | Modelo | ID de API directa | Enfoque principal | Entrada de imagen | Precio publicado por 30 días |
 | --- | --- | --- | --- | ---: |
-| GLM 5.3 | `glm-5.3` | Desarrollo complejo y agentes autónomos | No | 2.784 RUB |
-| GLM 5.3 Flash | `glm-5.3-flash` | Solicitudes frecuentes, programación diaria, automatización y subagentes | Sí | 2.442 RUB |
-| DeepSeek V4.1 Flash | `deepseek-v4.1-flash` | Agentes de programación y tareas de programación en paralelo | Sí | 2.442 RUB |
-| DeepSeek V4 Pro | `deepseek-v4-pro` | Razonamiento en varios pasos, arquitectura y revisión de código | No | 2.232 RUB |
-| Qwen 3.8 Max | `qwen-3.8-max` | Repositorios grandes, documentos, investigación y contexto largo | Sí | 2.550 RUB |
+| GLM 5.3 | `glm-5.3` | Desarrollo complejo y agentes autónomos | No | $34,38 USD |
+| GLM 5.3 Flash | `glm-5.3-flash` | Solicitudes frecuentes, programación diaria, automatización y subagentes | Sí | $30,16 USD |
+| DeepSeek V4.1 Flash | `deepseek-v4.1-flash` | Agentes de programación y tareas de programación en paralelo | Sí | $30,16 USD |
+| DeepSeek V4 Pro | `deepseek-v4-pro` | Razonamiento en varios pasos, arquitectura y revisión de código | No | $27,56 USD |
+| Qwen 3.8 Max | `qwen-3.8-max` | Repositorios grandes, documentos, investigación y contexto largo | Sí | $31,49 USD |
 
-Los precios y capacidades reflejan el sitio web del 3 de noviembre de 2026. Confirma las condiciones actuales de compra en el panel. Cada suscripción de pago indicada incluye cuatro solicitudes simultáneas y no tiene una cuota acumulada de tokens durante su vigencia. La entrada de imagen significa que el modelo acepta imágenes; no implica generación de imágenes.
+Los precios en USD y las capacidades reflejan la visualización de moneda del sitio el 3 de noviembre de 2026. Los precios pueden cambiar antes de pagar; comprueba el panel antes de comprar. Cada suscripción de pago indicada incluye cuatro solicitudes simultáneas y no tiene una cuota acumulada de tokens durante su vigencia. La entrada de imagen significa que el modelo acepta imágenes; no implica generación de imágenes.
 
 ## Elegir un modelo para tu flujo de trabajo
 

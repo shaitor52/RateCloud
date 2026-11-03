@@ -8,13 +8,13 @@ Le catalogue publié par Rate Cloud comprend cinq modèles. Chacun a son propre 
 
 | Modèle | ID API direct | Positionnement principal | Image en entrée | Prix publié pour 30 jours |
 | --- | --- | --- | --- | ---: |
-| GLM 5.3 | `glm-5.3` | Développement complexe et agents autonomes | Non | 2 784 RUB |
-| GLM 5.3 Flash | `glm-5.3-flash` | Requêtes fréquentes, programmation quotidienne, automatisation, sous-agents | Oui | 2 442 RUB |
-| DeepSeek V4.1 Flash | `deepseek-v4.1-flash` | Agents de programmation et tâches parallèles | Oui | 2 442 RUB |
-| DeepSeek V4 Pro | `deepseek-v4-pro` | Raisonnement en plusieurs étapes, architecture et revue de code | Non | 2 232 RUB |
-| Qwen 3.8 Max | `qwen-3.8-max` | Grands dépôts, documents, recherche et contexte long | Oui | 2 550 RUB |
+| GLM 5.3 | `glm-5.3` | Développement complexe et agents autonomes | Non | $34,38 |
+| GLM 5.3 Flash | `glm-5.3-flash` | Requêtes fréquentes, programmation quotidienne, automatisation, sous-agents | Oui | $30,16 |
+| DeepSeek V4.1 Flash | `deepseek-v4.1-flash` | Agents de programmation et tâches parallèles | Oui | $30,16 |
+| DeepSeek V4 Pro | `deepseek-v4-pro` | Raisonnement en plusieurs étapes, architecture et revue de code | Non | $27,56 |
+| Qwen 3.8 Max | `qwen-3.8-max` | Grands dépôts, documents, recherche et contexte long | Oui | $31,49 |
 
-Les tarifs et fonctionnalités correspondent au site au 3 novembre 2026. Vérifiez les conditions actuelles dans l’espace client. Chaque abonnement payant indiqué comprend quatre requêtes simultanées et aucun quota cumulé de tokens pendant sa durée. La prise en charge des images en entrée signifie que le modèle accepte des images, pas qu’il en génère.
+L’affichage en USD du site a été vérifié le 3 novembre 2026. Tarifs et fonctionnalités peuvent évoluer ; l’affichage en USD ne garantit pas un prix fixe avant le paiement. Vérifiez les conditions actuelles dans l’espace client. Chaque abonnement payant indiqué comprend quatre requêtes simultanées et aucun quota cumulé de tokens pendant sa durée. La prise en charge des images en entrée signifie que le modèle accepte des images, pas qu’il en génère.
 
 ## Choisir selon le flux de travail
 

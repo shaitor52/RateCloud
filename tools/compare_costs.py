@@ -28,8 +28,6 @@ def fraction(value):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--rub-per-usd", type=positive, required=True,
-                        help="Your explicit exchange-rate assumption; not fetched live.")
     parser.add_argument("--million-tokens", type=positive, default=Decimal("500"))
     parser.add_argument("--cached-input-share", type=fraction, default=Decimal("0"),
                         help="Fraction of input tokens billed as cache hits; cache writes excluded.")
@@ -37,7 +35,7 @@ def main():
     path = Path(__file__).resolve().parents[1] / "data/pricing-2026-11-03.json"
     data = json.loads(path.read_text(), parse_float=Decimal)
     print(f"Snapshot {data['checked_date']}; 80% input / 20% output; "
-          f"{args.million_tokens}M tokens; assumed RUB/USD {args.rub_per_usd}; "
+          f"{args.million_tokens}M tokens; USD display-price snapshot; "
           f"input cache-hit share {args.cached_input_share}.")
     print("Illustrative cost only. No throughput or quality equivalence is assumed.")
     for row in data["providers"]:
@@ -45,11 +43,11 @@ def main():
                            + Decimal(str(row["cached_input_usd"])) * args.cached_input_share)
         unit = Decimal("0.8") * effective_input + Decimal("0.2") * Decimal(str(row["output_usd"]))
         usd = args.million_tokens * unit
-        print(f"{row['label']}: ${usd:.2f} = RUB {usd * args.rub_per_usd:.2f}")
-        subscription = row["ratecloud_30_day_rub"]
+        print(f"{row['label']}: ${usd:.2f}")
+        subscription = row["ratecloud_30_day_usd"]
         if subscription is not None:
-            threshold = Decimal(subscription) / (args.rub_per_usd * unit)
-            print(f"  Rate Cloud RUB {subscription}/30 days; break-even {threshold:.2f}M tokens.")
+            threshold = Decimal(str(subscription)) / unit
+            print(f"  Rate Cloud ${subscription:.2f}/30 days; break-even {threshold:.2f}M tokens.")
     print("Excludes taxes, tools, cache writes, batch and special/long-context rates.")
 
 

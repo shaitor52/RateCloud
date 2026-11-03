@@ -43,8 +43,12 @@ def main():
     assert pages[OUTPUT/'index.html'].schemas[0]['description'] == home_description, 'Homepage schema description parity'
     og_description = re.search(r'<meta property="og:description" content="([^"]*)"', (OUTPUT/'index.html').read_text()).group(1)
     assert html.unescape(og_description) == home_description, 'Homepage Open Graph description parity'
-    for source in (ROOT/'ru').rglob('*.md'):
-        assert not re.search(r'\b(?:суммарн\w*|общ\w*\s+накопительн\w*)\s+квот\w*\b', source.read_text(), re.I), (source, 'Use clear unlimited-token wording instead of cumulative-quota wording')
+    cumulative_quota = re.compile(r'\b(?:суммарн\w*|общ\w*\s+накопительн\w*)\s+квот\w*\b', re.I)
+    for source in [*(ROOT/'ru').rglob('*.md'), *(ROOT/'website').glob('*.json')]:
+        assert not cumulative_quota.search(source.read_text()), (source, 'Use clear unlimited-token wording instead of cumulative-quota wording')
+    ru_home = (OUTPUT/'ru/index.html').read_text()
+    visible_ru_home = html.unescape(re.sub(r'<[^>]+>', ' ', re.sub(r'<(?:script|style)\b[^>]*>.*?</(?:script|style)>', '', ru_home, flags=re.I | re.S)))
+    assert not cumulative_quota.search(visible_ru_home), 'RU homepage must use clear unlimited-token wording'
     refs=0
     for file,page in pages.items():
         text=file.read_text()

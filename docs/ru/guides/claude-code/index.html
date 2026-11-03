@@ -1,0 +1,91 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Подключение Claude Code к Rate Cloud | Rate Cloud Docs</title><meta name="description" content="Claude Code использует отдельный адрес совместимости Rate Cloud и имена моделей с префиксом клиента. Через Rate Cloud вы получаете API-доступ к GLM, DeepSeek или Qwen. Это не делает эти модели мо"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://shaitor52.github.io/RateCloud/ru/guides/claude-code/"><link rel="alternate" hreflang="en" href="https://shaitor52.github.io/RateCloud/en/guides/claude-code/"><link rel="alternate" hreflang="ru" href="https://shaitor52.github.io/RateCloud/ru/guides/claude-code/"><link rel="alternate" hreflang="es" href="https://shaitor52.github.io/RateCloud/es/guides/claude-code/"><link rel="alternate" hreflang="pt" href="https://shaitor52.github.io/RateCloud/pt/guides/claude-code/"><link rel="alternate" hreflang="de" href="https://shaitor52.github.io/RateCloud/de/guides/claude-code/"><link rel="alternate" hreflang="fr" href="https://shaitor52.github.io/RateCloud/fr/guides/claude-code/"><link rel="alternate" hreflang="x-default" href="https://shaitor52.github.io/RateCloud/en/guides/claude-code/"><meta name="theme-color" content="#151719"><meta property="og:type" content="article"><meta property="og:title" content="Подключение Claude Code к Rate Cloud | Rate Cloud Docs"><meta property="og:description" content="Claude Code использует отдельный адрес совместимости Rate Cloud и имена моделей с префиксом клиента. Через Rate Cloud вы получаете API-доступ к GLM, DeepSeek или Qwen. Это не делает эти модели мо"><meta property="og:url" content="https://shaitor52.github.io/RateCloud/ru/guides/claude-code/"><meta property="og:image" content="https://shaitor52.github.io/RateCloud/assets/brand-hero.webp"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/RateCloud/assets/brand-logo.png"><link rel="stylesheet" href="/RateCloud/assets/docs.css?v=ab6226e88a62"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Подключение Claude Code к Rate Cloud", "description": "Claude Code использует отдельный адрес совместимости Rate Cloud и имена моделей с префиксом клиента. Через Rate Cloud вы получаете API-доступ к GLM, DeepSeek или Qwen. Это не делает эти модели мо", "inLanguage": "ru", "url": "https://shaitor52.github.io/RateCloud/ru/guides/claude-code/", "isPartOf": {"@type": "WebSite", "name": "Rate Cloud Documentation", "url": "https://shaitor52.github.io/RateCloud/"}, "publisher": {"@type": "Organization", "name": "Rate Cloud", "url": "https://rate-cloud.com/"}}</script><script src="/RateCloud/assets/docs.js?v=3d9193980cec" defer></script></head>
+        <body data-base="/RateCloud/" data-lang="ru" data-copy="Копировать" data-copied="Скопировано"><a class="skip-link" href="#main">Перейти к содержимому</a><header class="topbar"><a class="brand" href="/RateCloud/ru/"><img class="brand-mark" src="/RateCloud/assets/brand-logo.png" width="32" height="32" alt=""><span>Rate Cloud<small>Документация</small></span></a><div class="header-actions"><button id="menu-toggle" class="icon-button" aria-label="Меню" aria-controls="sidebar" aria-expanded="false" data-open-label="Меню" data-close-label="Закрыть">☰</button><button class="icon-button" data-search-open aria-label="Поиск по документации"><span>⌕</span><span class="search-label">Поиск по документации</span><kbd class="search-shortcut">⌘ K</kbd></button><label class="sr-only" for="language-switch">Язык</label><select id="language-switch"><option value="/RateCloud/en/guides/claude-code/">English</option><option value="/RateCloud/ru/guides/claude-code/" selected>Русский</option><option value="/RateCloud/es/guides/claude-code/">Español</option><option value="/RateCloud/pt/guides/claude-code/">Português</option><option value="/RateCloud/de/guides/claude-code/">Deutsch</option><option value="/RateCloud/fr/guides/claude-code/">Français</option></select><a class="header-site" href="https://rate-cloud.com/">Основной сайт ↗</a></div></header>
+        <div class="layout"><nav id="sidebar" class="sidebar" aria-label="Документация"><div class="sidebar-group"><h2>Обзор</h2><a class="nav-link" href="/RateCloud/ru/">Обзор</a></div><div class="sidebar-group"><h2>О сервисе Rate Cloud</h2><a class="nav-link" href="/RateCloud/ru/articles/about-rate-cloud/">Что предлагает Rate Cloud</a><a class="nav-link" href="/RateCloud/ru/articles/models/">Модели и выбор подходящей</a><a class="nav-link" href="/RateCloud/ru/articles/routing-and-quantization/">Как работают интеллектуальная маршрутизация и квантование</a><a class="nav-link" href="/RateCloud/ru/articles/performance/">Скорость и производительность Rate Cloud</a><a class="nav-link" href="/RateCloud/ru/articles/api-and-integrations/">Подключение инструментов и приложений к Rate Cloud</a><a class="nav-link" href="/RateCloud/ru/articles/privacy-and-reliability/">Конфиденциальность, обработка данных и доступность</a><a class="nav-link" href="/RateCloud/ru/articles/white-label/">White Label: сервис подписки на ИИ под вашим брендом</a><a class="nav-link" href="/RateCloud/ru/articles/cost-and-service-comparison/">Rate Cloud и официальные API: фиксированная цена при постоянной нагрузке</a><a class="nav-link" href="/RateCloud/ru/articles/unlimited-use-cases/">Где полезен доступ без суммарной квоты токенов: 20 рабочих сценариев</a></div><div class="sidebar-group"><h2>Подключение программ</h2><a class="nav-link active" href="/RateCloud/ru/guides/claude-code/" aria-current="page">Подключение Claude Code к Rate Cloud</a><a class="nav-link" href="/RateCloud/ru/guides/continue/">Подключение Continue к Rate Cloud</a><a class="nav-link" href="/RateCloud/ru/guides/deepseek-harness/">Подключение DeepSeek Harness к Rate Cloud</a><a class="nav-link" href="/RateCloud/ru/guides/hermes-agent/">Подключение Hermes Agent к Rate Cloud</a><a class="nav-link" href="/RateCloud/ru/guides/http-python/">Доступ через HTTP и Python</a><a class="nav-link" href="/RateCloud/ru/guides/openclaw/">Подключение OpenClaw к Rate Cloud</a><a class="nav-link" href="/RateCloud/ru/guides/opencode/">Подключение OpenCode к Rate Cloud</a></div><div class="sidebar-group"><h2>Источники и данные</h2><a class="nav-link" href="/RateCloud/ru/faq/">Rate Cloud: частые вопросы</a></div><div class="sidebar-group"><a class="nav-link" href="/RateCloud/en/sources/">Источники и данные</a><a class="nav-link" href="https://github.com/shaitor52/RateCloud">GitHub ↗</a></div></nav><main id="main" class=""><div class="breadcrumb"><a href="/RateCloud/ru/">Документация</a><span>/</span>Подключение программ</div><p class="eyebrow">RATE CLOUD / Документация</p><h1 class="page-title">Подключение Claude Code к Rate Cloud</h1><div class="article-grid"><article class="article-content"><p>Claude Code использует отдельный адрес совместимости Rate Cloud и имена моделей с префиксом клиента. Через Rate Cloud вы получаете API-доступ к GLM, DeepSeek или Qwen. Это не делает эти модели моделями Anthropic.</p>
+<p>Официальные источники: <a href="https://rate-cloud.com/docs">инструкция Rate Cloud</a> и <a href="https://docs.anthropic.com/en/docs/claude-code/overview">документация Claude Code</a>.</p>
+<h2 id="создайте-и-подготовьте-api-ключ">Создайте и подготовьте API-ключ</h2>
+<p>В кабинете Rate Cloud создайте ключ и скопируйте полный секрет при создании. Включите флажок <strong>Поддержка Codex / Claude Code</strong>. Разрешите ключу выбранную модель и проверьте, что у аккаунта есть пробный доступ или активная подписка на неё. Список моделей сам по себе не подтверждает доступ к их выполнению.</p>
+<h2 id="имена-моделей-для-claude-code">Имена моделей для Claude Code</h2>
+<p>Claude Code использует префикс <code>ocx-claude-ratecloud--</code>, за которым следует точный ID модели. В прямом HTTP API используется ID без префикса.</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead>
+<tr>
+<th>Модель</th>
+<th>ID прямого API</th>
+<th>Значение <code>ANTHROPIC_MODEL</code> для Claude Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GLM 5.3</td>
+<td><code>glm-5.3</code></td>
+<td><code>ocx-claude-ratecloud--glm-5.3</code></td>
+</tr>
+<tr>
+<td>GLM 5.3 Flash</td>
+<td><code>glm-5.3-flash</code></td>
+<td><code>ocx-claude-ratecloud--glm-5.3-flash</code></td>
+</tr>
+<tr>
+<td>DeepSeek V4.1 Flash</td>
+<td><code>deepseek-v4.1-flash</code></td>
+<td><code>ocx-claude-ratecloud--deepseek-v4.1-flash</code></td>
+</tr>
+<tr>
+<td>DeepSeek V4 Pro</td>
+<td><code>deepseek-v4-pro</code></td>
+<td><code>ocx-claude-ratecloud--deepseek-v4-pro</code></td>
+</tr>
+<tr>
+<td>Qwen 3.8 Max</td>
+<td><code>qwen-3.8-max</code></td>
+<td><code>ocx-claude-ratecloud--qwen-3.8-max</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="запуск-в-macos-или-linux">Запуск в macOS или Linux</h2>
+<p>В терминале Bash или zsh сначала прочитайте ключ без отображения символов. Затем задайте три переменные и запустите Claude Code из этого же терминала. Значения остаются в окружении оболочки, пока вы её не закроете или не удалите переменные.</p>
+<div class="code-block"><button class="code-copy" data-error-label="Копировать" type="button">Копировать</button><pre><code class="language-sh"># Bash
+read -r -s -p 'API-ключ Rate Cloud: ' RATE_CLOUD_API_KEY
+printf '\n'
+</code></pre></div>
+<div class="code-block"><button class="code-copy" data-error-label="Копировать" type="button">Копировать</button><pre><code class="language-sh"># zsh
+read -r -s 'RATE_CLOUD_API_KEY?API-ключ Rate Cloud: '
+printf '\n'
+</code></pre></div>
+<p>В той же оболочке выполните:</p>
+<div class="code-block"><button class="code-copy" data-error-label="Копировать" type="button">Копировать</button><pre><code class="language-sh">export ANTHROPIC_BASE_URL='https://llm.rate-cloud.com/claude'
+export ANTHROPIC_AUTH_TOKEN=&quot;$RATE_CLOUD_API_KEY&quot;
+export ANTHROPIC_MODEL='ocx-claude-ratecloud--glm-5.3'
+claude
+</code></pre></div>
+<p>При необходимости замените значение модели на другое полное имя из таблицы. По завершении закройте терминал или выполните <code>unset RATE_CLOUD_API_KEY ANTHROPIC_AUTH_TOKEN ANTHROPIC_BASE_URL ANTHROPIC_MODEL</code>.</p>
+<h2 id="запуск-в-windows-powershell">Запуск в Windows PowerShell</h2>
+<p>Задайте переменные в том окне PowerShell, из которого запускаете Claude Code. <code>Read-Host</code> отображает вводимые символы. Для скрытого ввода используйте одобренное вами локальное средство хранения секретов.</p>
+<div class="code-block"><button class="code-copy" data-error-label="Копировать" type="button">Копировать</button><pre><code class="language-powershell">$env:RATE_CLOUD_API_KEY = Read-Host 'API-ключ Rate Cloud'
+$env:ANTHROPIC_BASE_URL = 'https://llm.rate-cloud.com/claude'
+$env:ANTHROPIC_AUTH_TOKEN = $env:RATE_CLOUD_API_KEY
+$env:ANTHROPIC_MODEL = 'ocx-claude-ratecloud--glm-5.3'
+claude
+</code></pre></div>
+<p>После выхода из Claude Code удалите переменные из текущей сессии PowerShell:</p>
+<div class="code-block"><button class="code-copy" data-error-label="Копировать" type="button">Копировать</button><pre><code class="language-powershell">Remove-Item Env:RATE_CLOUD_API_KEY, Env:ANTHROPIC_BASE_URL, Env:ANTHROPIC_AUTH_TOKEN, Env:ANTHROPIC_MODEL
+</code></pre></div>
+<h2 id="если-не-работает">Если не работает</h2>
+<ul>
+<li><strong>Ошибка авторизации или совместимости:</strong> проверьте, что у ключа включена опция <strong>Поддержка Codex / Claude Code</strong>. Она обязательна для этого адреса совместимости.</li>
+<li><strong>Неизвестная модель:</strong> укажите полное имя с префиксом <code>ocx-claude-ratecloud--</code> и точным суффиксом из таблицы. Не указывайте в <code>ANTHROPIC_MODEL</code> ID прямого HTTP API без префикса.</li>
+<li><strong>Нет доступа к модели:</strong> проверьте пробный доступ или подписку, разрешённые модели ключа, его срок действия и список разрешённых IP в кабинете.</li>
+<li><strong>В терминале работает, из запуска приложения нет:</strong> переменные из терминала наследуются программами, запущенными из этой оболочки. Запустите Claude Code из настроенного терминала либо используйте актуальную инструкцию кабинета для постоянной настройки клиента.</li>
+<li><strong>Нет соединения:</strong> проверьте точный адрес <code>https://llm.rate-cloud.com/claude</code>. Это адрес совместимости Claude Code, а не общий адрес <code>/v1</code>.</li>
+</ul>
+<p>Для поддержки укажите версию клиента, ОС, имя модели, время и текст ошибки. Сначала удалите API-секреты, заголовки авторизации и личное содержимое запросов.</p></article><aside class="toc" aria-label="На этой странице"><h2>На этой странице</h2><div class="toc-list">
+<ul>
+<li><a href="#создайте-и-подготовьте-api-ключ">Создайте и подготовьте API-ключ</a></li>
+<li><a href="#имена-моделей-для-claude-code">Имена моделей для Claude Code</a></li>
+<li><a href="#запуск-в-macos-или-linux">Запуск в macOS или Linux</a></li>
+<li><a href="#запуск-в-windows-powershell">Запуск в Windows PowerShell</a></li>
+<li><a href="#если-не-работает">Если не работает</a></li>
+</ul>
+</div>
+</aside></div><footer class="page-footer"><p>Публичный снимок информации: 3 ноября 2026 года. Действующие условия проверяйте на основном сайте.</p><div><a href="/RateCloud/ru/raw/guides/claude-code.md">Читать Markdown</a> · <a href="https://github.com/shaitor52/RateCloud/blob/main/ru/guides/claude-code.md">Исходный файл</a></div><p><a href="https://rate-cloud.com/">Основной сайт ↗</a> · <a href="https://rate-cloud.com/user/instructions">Открыть кабинет ↗</a></p></footer></main></div>
+        <dialog id="search-dialog" aria-labelledby="search-title"><div class="search-dialog-header"><h2 id="search-title">Поиск по документации</h2><button class="icon-button" id="search-close" aria-label="Закрыть">×</button></div><label class="sr-only" for="search-input">Поиск по документации</label><input id="search-input" placeholder="Поиск статей, моделей и программ" type="search" autocomplete="off"><ul id="search-results" aria-live="polite" data-empty="Подходящие страницы не найдены."></ul></dialog></body></html>

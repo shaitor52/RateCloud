@@ -1,0 +1,154 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Rate Cloud и официальные API: фиксированная цена при постоянной нагрузке | Rate Cloud Docs</title><meta name="description" content="Преимущество Rate Cloud: фиксированная цена подписки без суммарной квоты токенов. С ростом использования цена подписки на модель не меняется. API с оплатой за токены тарифицирует каждый оплачивае"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://shaitor52.github.io/RateCloud/ru/articles/cost-and-service-comparison/"><link rel="alternate" hreflang="en" href="https://shaitor52.github.io/RateCloud/en/articles/cost-and-service-comparison/"><link rel="alternate" hreflang="ru" href="https://shaitor52.github.io/RateCloud/ru/articles/cost-and-service-comparison/"><link rel="alternate" hreflang="es" href="https://shaitor52.github.io/RateCloud/es/articles/cost-and-service-comparison/"><link rel="alternate" hreflang="pt" href="https://shaitor52.github.io/RateCloud/pt/articles/cost-and-service-comparison/"><link rel="alternate" hreflang="de" href="https://shaitor52.github.io/RateCloud/de/articles/cost-and-service-comparison/"><link rel="alternate" hreflang="fr" href="https://shaitor52.github.io/RateCloud/fr/articles/cost-and-service-comparison/"><link rel="alternate" hreflang="x-default" href="https://shaitor52.github.io/RateCloud/en/articles/cost-and-service-comparison/"><meta name="theme-color" content="#151719"><meta property="og:type" content="article"><meta property="og:title" content="Rate Cloud и официальные API: фиксированная цена при постоянной нагрузке | Rate Cloud Docs"><meta property="og:description" content="Преимущество Rate Cloud: фиксированная цена подписки без суммарной квоты токенов. С ростом использования цена подписки на модель не меняется. API с оплатой за токены тарифицирует каждый оплачивае"><meta property="og:url" content="https://shaitor52.github.io/RateCloud/ru/articles/cost-and-service-comparison/"><meta property="og:image" content="https://shaitor52.github.io/RateCloud/assets/brand-hero.webp"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/RateCloud/assets/brand-logo.png"><link rel="stylesheet" href="/RateCloud/assets/docs.css?v=ab6226e88a62"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Rate Cloud и официальные API: фиксированная цена при постоянной нагрузке", "description": "Преимущество Rate Cloud: фиксированная цена подписки без суммарной квоты токенов. С ростом использования цена подписки на модель не меняется. API с оплатой за токены тарифицирует каждый оплачивае", "inLanguage": "ru", "url": "https://shaitor52.github.io/RateCloud/ru/articles/cost-and-service-comparison/", "isPartOf": {"@type": "WebSite", "name": "Rate Cloud Documentation", "url": "https://shaitor52.github.io/RateCloud/"}, "publisher": {"@type": "Organization", "name": "Rate Cloud", "url": "https://rate-cloud.com/"}}</script><script src="/RateCloud/assets/docs.js?v=3d9193980cec" defer></script></head>
+        <body data-base="/RateCloud/" data-lang="ru" data-copy="Копировать" data-copied="Скопировано"><a class="skip-link" href="#main">Перейти к содержимому</a><header class="topbar"><a class="brand" href="/RateCloud/ru/"><img class="brand-mark" src="/RateCloud/assets/brand-logo.png" width="32" height="32" alt=""><span>Rate Cloud<small>Документация</small></span></a><div class="header-actions"><button id="menu-toggle" class="icon-button" aria-label="Меню" aria-controls="sidebar" aria-expanded="false" data-open-label="Меню" data-close-label="Закрыть">☰</button><button class="icon-button" data-search-open aria-label="Поиск по документации"><span>⌕</span><span class="search-label">Поиск по документации</span><kbd class="search-shortcut">⌘ K</kbd></button><label class="sr-only" for="language-switch">Язык</label><select id="language-switch"><option value="/RateCloud/en/articles/cost-and-service-comparison/">English</option><option value="/RateCloud/ru/articles/cost-and-service-comparison/" selected>Русский</option><option value="/RateCloud/es/articles/cost-and-service-comparison/">Español</option><option value="/RateCloud/pt/articles/cost-and-service-comparison/">Português</option><option value="/RateCloud/de/articles/cost-and-service-comparison/">Deutsch</option><option value="/RateCloud/fr/articles/cost-and-service-comparison/">Français</option></select><a class="header-site" href="https://rate-cloud.com/">Основной сайт ↗</a></div></header>
+        <div class="layout"><nav id="sidebar" class="sidebar" aria-label="Документация"><div class="sidebar-group"><h2>Обзор</h2><a class="nav-link" href="/RateCloud/ru/">Обзор</a></div><div class="sidebar-group"><h2>О сервисе Rate Cloud</h2><a class="nav-link" href="/RateCloud/ru/articles/about-rate-cloud/">Что предлагает Rate Cloud</a><a class="nav-link" href="/RateCloud/ru/articles/models/">Модели и выбор подходящей</a><a class="nav-link" href="/RateCloud/ru/articles/routing-and-quantization/">Как работают интеллектуальная маршрутизация и квантование</a><a class="nav-link" href="/RateCloud/ru/articles/performance/">Скорость и производительность Rate Cloud</a><a class="nav-link" href="/RateCloud/ru/articles/api-and-integrations/">Подключение инструментов и приложений к Rate Cloud</a><a class="nav-link" href="/RateCloud/ru/articles/privacy-and-reliability/">Конфиденциальность, обработка данных и доступность</a><a class="nav-link" href="/RateCloud/ru/articles/white-label/">White Label: сервис подписки на ИИ под вашим брендом</a><a class="nav-link active" href="/RateCloud/ru/articles/cost-and-service-comparison/" aria-current="page">Rate Cloud и официальные API: фиксированная цена при постоянной нагрузке</a><a class="nav-link" href="/RateCloud/ru/articles/unlimited-use-cases/">Где полезен доступ без суммарной квоты токенов: 20 рабочих сценариев</a></div><div class="sidebar-group"><h2>Подключение программ</h2><a class="nav-link" href="/RateCloud/ru/guides/claude-code/">Подключение Claude Code к Rate Cloud</a><a class="nav-link" href="/RateCloud/ru/guides/continue/">Подключение Continue к Rate Cloud</a><a class="nav-link" href="/RateCloud/ru/guides/deepseek-harness/">Подключение DeepSeek Harness к Rate Cloud</a><a class="nav-link" href="/RateCloud/ru/guides/hermes-agent/">Подключение Hermes Agent к Rate Cloud</a><a class="nav-link" href="/RateCloud/ru/guides/http-python/">Доступ через HTTP и Python</a><a class="nav-link" href="/RateCloud/ru/guides/openclaw/">Подключение OpenClaw к Rate Cloud</a><a class="nav-link" href="/RateCloud/ru/guides/opencode/">Подключение OpenCode к Rate Cloud</a></div><div class="sidebar-group"><h2>Источники и данные</h2><a class="nav-link" href="/RateCloud/ru/faq/">Rate Cloud: частые вопросы</a></div><div class="sidebar-group"><a class="nav-link" href="/RateCloud/en/sources/">Источники и данные</a><a class="nav-link" href="https://github.com/shaitor52/RateCloud">GitHub ↗</a></div></nav><main id="main" class=""><div class="breadcrumb"><a href="/RateCloud/ru/">Документация</a><span>/</span>О сервисе Rate Cloud</div><p class="eyebrow">RATE CLOUD / Документация</p><h1 class="page-title">Rate Cloud и официальные API: фиксированная цена при постоянной нагрузке</h1><div class="article-grid"><article class="article-content"><p>Русский · <a href="/RateCloud/en/articles/cost-and-service-comparison/">English</a></p>
+<p><strong>Преимущество Rate Cloud: фиксированная цена подписки без суммарной квоты токенов. С ростом использования цена подписки на модель не меняется.</strong> API с оплатой за токены тарифицирует каждый оплачиваемый токен. При постоянной нагрузке на программирование, анализ и автоматизацию это может сделать Rate Cloud существенно дешевле, если рабочая нагрузка укладывается в её ограничения по скорости, параллельности, функциям и доступности.</p>
+<p>При редком использовании Rate Cloud не обязательно дешевле. Официальные провайдеры предлагают скидки за кеширование, пакетные запросы, непиковые часы и другие условия. В сравнении показаны эти компромиссы. Проверено 3 ноября 2026 года; текущие цены не гарантируются в будущем.</p>
+<h2 id="тарифы-официальных-api-и-подписки-rate-cloud">Тарифы официальных API и подписки Rate Cloud</h2>
+<p>Тарифы в USD указаны за миллион токенов. Тарифы на входные токены в таблице указаны <strong>без кеширования</strong>. Цены Rate Cloud приведены в RUB за 30 дней одной подписки на модель с четырьмя слотами. Валюты указаны раздельно.</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead>
+<tr>
+<th>Официальный API и условие тарификации</th>
+<th style="text-align: right;">Вход, USD/млн</th>
+<th style="text-align: right;">Выход, USD/млн</th>
+<th>Модель Rate Cloud / RUB за 30 дней</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Z.ai GLM-5.3</td>
+<td style="text-align: right;">1,40</td>
+<td style="text-align: right;">4,40</td>
+<td>GLM 5.3 / 2 784</td>
+</tr>
+<tr>
+<td>Z.ai GLM-5.3-Flash</td>
+<td style="text-align: right;">0,15</td>
+<td style="text-align: right;">0,50</td>
+<td>GLM 5.3 Flash / 2 442</td>
+</tr>
+<tr>
+<td>DeepSeek V4.1 Flash, непиковые часы</td>
+<td style="text-align: right;">0,15</td>
+<td style="text-align: right;">0,60</td>
+<td>DeepSeek V4.1 Flash / 2 442</td>
+</tr>
+<tr>
+<td>DeepSeek V4.1 Flash, пиковые часы</td>
+<td style="text-align: right;">0,30</td>
+<td style="text-align: right;">1,20</td>
+<td>DeepSeek V4.1 Flash / 2 442</td>
+</tr>
+<tr>
+<td>DeepSeek V4 Pro, непиковые часы</td>
+<td style="text-align: right;">0,66</td>
+<td style="text-align: right;">1,98</td>
+<td>DeepSeek V4 Pro / 2 232</td>
+</tr>
+<tr>
+<td>DeepSeek V4 Pro, пиковые часы</td>
+<td style="text-align: right;">1,32</td>
+<td style="text-align: right;">3,96</td>
+<td>DeepSeek V4 Pro / 2 232</td>
+</tr>
+<tr>
+<td>QwenCloud Qwen3.8-Max, точка подключения в Сингапуре</td>
+<td style="text-align: right;">2,00</td>
+<td style="text-align: right;">6,00</td>
+<td>Qwen 3.8 Max / 2 550</td>
+</tr>
+<tr>
+<td>OpenAI GPT-6.1 Sol, Standard, короткий контекст</td>
+<td style="text-align: right;">2,00</td>
+<td style="text-align: right;">10,00</td>
+<td>Альтернатива на другой модели; GPT здесь не продаётся</td>
+</tr>
+</tbody>
+</table></div>
+<p>Источники: <a href="https://docs.z.ai/guides/overview/pricing">цены Z.ai</a>, <a href="https://api-docs.deepseek.com/quick_start/pricing/">цены DeepSeek и временные тарифы</a>, <a href="https://www.qwencloud.com/models/qwen3.8-max">цены модели QwenCloud и точка подключения в Сингапуре</a>, <a href="https://developers.openai.com/api/docs/models/gpt-6.1-sol">цены GPT-6.1 Sol</a> и <a href="https://rate-cloud.com/">каталог Rate Cloud</a>.</p>
+<p>Официальное API DeepSeek называет Flash <code>deepseek-flash</code> для версии V4.1-Flash-1017; Rate Cloud использует <code>deepseek-v4.1-flash</code>. Пиковые часы DeepSeek: 01:00-04:00 и 06:00-10:00 UTC с понедельника по пятницу, кроме государственных праздников Китая. В остальное время действует непиковый тариф. Строки GLM и DeepSeek сравнивают соответствующие модели. Qwen имеет общее название семейства, но функции хостинга и профили выполнения могут различаться. GPT рассматривается как альтернативный вариант для похожей работы, а не как идентичные веса, возможности или качество ответа.</p>
+<h2 id="стоимость-при-повторяющейся-нагрузке">Стоимость при повторяющейся нагрузке</h2>
+<p>Предположим, что оплачиваемые токены состоят из 80% входных и 20% выходных, кеш не используется, а инструменты, пакетная обработка, налоги, специальные скидки и надбавка за длинный контекст отсутствуют. Токены рассуждения следует включать в оплачиваемый выход, если это применимо. Это <strong>арифметические сценарии нагрузки</strong>, а не фактическое использование клиентов или обещание, что Rate Cloud обработает такой объём за 30 дней.</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead>
+<tr>
+<th>Официальный API</th>
+<th style="text-align: right;">10 млн всего</th>
+<th style="text-align: right;">100 млн</th>
+<th style="text-align: right;">500 млн</th>
+<th style="text-align: right;">1 млрд</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GLM-5.3</td>
+<td style="text-align: right;">$20</td>
+<td style="text-align: right;">$200</td>
+<td style="text-align: right;">$1 000</td>
+<td style="text-align: right;">$2 000</td>
+</tr>
+<tr>
+<td>GLM-5.3-Flash</td>
+<td style="text-align: right;">$2,20</td>
+<td style="text-align: right;">$22</td>
+<td style="text-align: right;">$110</td>
+<td style="text-align: right;">$220</td>
+</tr>
+<tr>
+<td>DeepSeek Flash, непиковый/пиковый тариф</td>
+<td style="text-align: right;">$2,40 / $4,80</td>
+<td style="text-align: right;">$24 / $48</td>
+<td style="text-align: right;">$120 / $240</td>
+<td style="text-align: right;">$240 / $480</td>
+</tr>
+<tr>
+<td>DeepSeek Pro, непиковый/пиковый тариф</td>
+<td style="text-align: right;">$9,24 / $18,48</td>
+<td style="text-align: right;">$92,40 / $184,80</td>
+<td style="text-align: right;">$462 / $924</td>
+<td style="text-align: right;">$924 / $1 848</td>
+</tr>
+<tr>
+<td>Qwen3.8-Max</td>
+<td style="text-align: right;">$28</td>
+<td style="text-align: right;">$280</td>
+<td style="text-align: right;">$1 400</td>
+<td style="text-align: right;">$2 800</td>
+</tr>
+<tr>
+<td>GPT-6.1 Sol Standard</td>
+<td style="text-align: right;">$36</td>
+<td style="text-align: right;">$360</td>
+<td style="text-align: right;">$1 800</td>
+<td style="text-align: right;">$3 600</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Опубликованные цены подписки Rate Cloud на 30 дней остаются в диапазоне RUB 2 232-2 784 для всех этих сценариев объёма.</strong> Это описание модели цены, а не гарантия обработки миллиарда токенов. Подписки на несколько моделей, дополнительные слоты, хостинг клиента, сервисы веб-поиска, вычисления CI и другие инструменты приложения могут увеличить расходы.</p>
+<h2 id="точка-безубыточности-вместо-универсального-обещания-экономии">Точка безубыточности вместо универсального обещания экономии</h2>
+<p>Для исключительно иллюстративного предположения о курсе <strong>100 RUB за USD</strong> 500 млн токенов без кеширования обойдутся в RUB 100 000 при использовании официального API GLM-5.3 против RUB 2 784 за подписку Rate Cloud GLM: стоимость доступа к модели примерно в 35,9 раза выше. При дешёвом непиковом API DeepSeek Flash та же арифметика даёт RUB 12 000 против RUB 2 442: примерно в 4,9 раза выше. Этот курс является предположением, а не текущей котировкой валюты; результат зависит от курса и нагрузки.</p>
+<p>При таком предположении точка безубыточности для токенов без кеширования составляет примерно 13,92 млн токенов для GLM-5.3, 111 млн для GLM Flash, 101,75 млн для DeepSeek Flash в непиковые часы, 24,16 млн для DeepSeek Pro в непиковые часы и 9,11 млн для Qwen. Ниже соответствующего порога счёт по официальному API может быть меньше. Высокая доля попаданий в кеш повышает эти пороги.</p>
+<p>Общая формула, объём в миллионах:</p>
+<div class="code-block"><button class="code-copy" data-error-label="Копировать" type="button">Копировать</button><pre><code class="language-text">средневзвешенная цена за миллион USD = доля входных * цена входа + доля выходных * цена выхода
+точка безубыточности в миллионах = цена подписки RUB / (RUB за USD * средневзвешенная цена USD за миллион)
+</code></pre></div>
+<p>Пример чувствительности для DeepSeek Flash в непиковое время при попадании всего входа в кеш использует цену $0,003 за миллион входных и $0,60 за миллион выходных токенов: 500 млн при долях 80/20 стоят $61,20, а не $120. При условном курсе это RUB 6 120 против RUB 2 442. Реальное использование кеша не гарантировано, возможны расходы на запись в кеш и другие сборы. Qwen, Z.ai и OpenAI также публикуют скидки на кеширование; OpenAI предлагает более низкие ставки Batch/Flex и повышенные ставки за длинный контекст и режим Fast. Сравнивайте тариф, которым действительно будете пользоваться.</p>
+<p>Воспроизведите сценарии офлайн с помощью <a href="/RateCloud/ru/downloads/data/pricing-2026-11-03.json">датированных данных о ценах</a> и <a href="/RateCloud/ru/downloads/tools/compare_costs.py">калькулятора</a>:</p>
+<div class="code-block"><button class="code-copy" data-error-label="Копировать" type="button">Копировать</button><pre><code class="language-sh">python3 ru/tools/compare_costs.py --rub-per-usd 100 --million-tokens 500
+python3 ru/tools/compare_costs.py --rub-per-usd 100 --million-tokens 500 --cached-input-share 1
+</code></pre></div>
+<p>Запускайте из корня репозитория. API-запросы не выполняются. Укажите собственное предположение о курсе.</p>
+<h2 id="компромиссы-по-скорости-и-сервису">Компромиссы по скорости и сервису</h2>
+<p>Rate Cloud подходит, когда важнее предсказуемая стоимость постоянной нагрузки, чем минимальная задержка каждого ответа. Прямой API провайдера или тариф с приоритетом скорости может подойти лучше, если ваши измерения показывают меньшую задержку либо нужны хостинговые функции или договорные условия. Четыре слота Rate Cloud не равны лимитам параллельных запросов официальных API.</p>
+<p>В этом репозитории <strong>нет контролируемого теста скорости на одинаковых запросах и настройках рассуждений для всех этих сервисов</strong>. Поэтому мы не публикуем выдуманные показатели токенов в секунду конкурентов и не заявляем измеренное универсальное превосходство по скорости. Опубликованный срез скорости Rate Cloud приведён в статье о <a href="/RateCloud/ru/articles/performance/">производительности</a>. Он учитывает ожидание и отличается от чистой скорости генерации токенов. В сравнении явно принимаются компромиссы задержки и ёмкости, но они не выдаются за установленный результат прямого теста.</p>
+<p>Подписки на программные продукты провайдеров и бесплатные чаты отличаются от доступа к API с оплатой за токены. В таблице сравниваются указанные API, а не все планы провайдеров. Оценивайте качество задач и функции наряду с ценой.</p>
+<p><a href="/RateCloud/ru/articles/unlimited-use-cases/">Сценарии, где помогает фиксированная цена за токены</a> · <a href="/RateCloud/ru/">К обзору</a></p></article><aside class="toc" aria-label="На этой странице"><h2>На этой странице</h2><div class="toc-list">
+<ul>
+<li><a href="#тарифы-официальных-api-и-подписки-rate-cloud">Тарифы официальных API и подписки Rate Cloud</a></li>
+<li><a href="#стоимость-при-повторяющейся-нагрузке">Стоимость при повторяющейся нагрузке</a></li>
+<li><a href="#точка-безубыточности-вместо-универсального-обещания-экономии">Точка безубыточности вместо универсального обещания экономии</a></li>
+<li><a href="#компромиссы-по-скорости-и-сервису">Компромиссы по скорости и сервису</a></li>
+</ul>
+</div>
+</aside></div><footer class="page-footer"><p>Публичный снимок информации: 3 ноября 2026 года. Действующие условия проверяйте на основном сайте.</p><div><a href="/RateCloud/ru/raw/articles/08-cost-and-service-comparison.md">Читать Markdown</a> · <a href="https://github.com/shaitor52/RateCloud/blob/main/ru/articles/08-cost-and-service-comparison.md">Исходный файл</a></div><p><a href="https://rate-cloud.com/">Основной сайт ↗</a> · <a href="https://rate-cloud.com/user/instructions">Открыть кабинет ↗</a></p></footer></main></div>
+        <dialog id="search-dialog" aria-labelledby="search-title"><div class="search-dialog-header"><h2 id="search-title">Поиск по документации</h2><button class="icon-button" id="search-close" aria-label="Закрыть">×</button></div><label class="sr-only" for="search-input">Поиск по документации</label><input id="search-input" placeholder="Поиск статей, моделей и программ" type="search" autocomplete="off"><ul id="search-results" aria-live="polite" data-empty="Подходящие страницы не найдены."></ul></dialog></body></html>

@@ -1,0 +1,147 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HTTP- und Python-Zugriff | Rate Cloud Docs</title><meta name="description" content="Rate Cloud bietet eine OpenAI-kompatible API für Clients mit frei konfigurierbarer Basis-URL sowie ein Python-Beispiel mit Standardbibliothek. Die Beispiele installieren keine Pakete und senden e"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://shaitor52.github.io/RateCloud/de/guides/http-python/"><link rel="alternate" hreflang="en" href="https://shaitor52.github.io/RateCloud/en/guides/http-python/"><link rel="alternate" hreflang="ru" href="https://shaitor52.github.io/RateCloud/ru/guides/http-python/"><link rel="alternate" hreflang="es" href="https://shaitor52.github.io/RateCloud/es/guides/http-python/"><link rel="alternate" hreflang="pt" href="https://shaitor52.github.io/RateCloud/pt/guides/http-python/"><link rel="alternate" hreflang="de" href="https://shaitor52.github.io/RateCloud/de/guides/http-python/"><link rel="alternate" hreflang="fr" href="https://shaitor52.github.io/RateCloud/fr/guides/http-python/"><link rel="alternate" hreflang="x-default" href="https://shaitor52.github.io/RateCloud/en/guides/http-python/"><meta name="theme-color" content="#151719"><meta property="og:type" content="article"><meta property="og:title" content="HTTP- und Python-Zugriff | Rate Cloud Docs"><meta property="og:description" content="Rate Cloud bietet eine OpenAI-kompatible API für Clients mit frei konfigurierbarer Basis-URL sowie ein Python-Beispiel mit Standardbibliothek. Die Beispiele installieren keine Pakete und senden e"><meta property="og:url" content="https://shaitor52.github.io/RateCloud/de/guides/http-python/"><meta property="og:image" content="https://shaitor52.github.io/RateCloud/assets/brand-hero.webp"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/RateCloud/assets/brand-logo.png"><link rel="stylesheet" href="/RateCloud/assets/docs.css?v=ab6226e88a62"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "HTTP- und Python-Zugriff", "description": "Rate Cloud bietet eine OpenAI-kompatible API für Clients mit frei konfigurierbarer Basis-URL sowie ein Python-Beispiel mit Standardbibliothek. Die Beispiele installieren keine Pakete und senden e", "inLanguage": "de", "url": "https://shaitor52.github.io/RateCloud/de/guides/http-python/", "isPartOf": {"@type": "WebSite", "name": "Rate Cloud Documentation", "url": "https://shaitor52.github.io/RateCloud/"}, "publisher": {"@type": "Organization", "name": "Rate Cloud", "url": "https://rate-cloud.com/"}}</script><script src="/RateCloud/assets/docs.js?v=3d9193980cec" defer></script></head>
+        <body data-base="/RateCloud/" data-lang="de" data-copy="Kopieren" data-copied="Kopiert"><a class="skip-link" href="#main">Zum Inhalt</a><header class="topbar"><a class="brand" href="/RateCloud/de/"><img class="brand-mark" src="/RateCloud/assets/brand-logo.png" width="32" height="32" alt=""><span>Rate Cloud<small>Dokumentation</small></span></a><div class="header-actions"><button id="menu-toggle" class="icon-button" aria-label="Menü" aria-controls="sidebar" aria-expanded="false" data-open-label="Menü" data-close-label="Schließen">☰</button><button class="icon-button" data-search-open aria-label="Dokumentation durchsuchen"><span>⌕</span><span class="search-label">Dokumentation durchsuchen</span><kbd class="search-shortcut">⌘ K</kbd></button><label class="sr-only" for="language-switch">Sprache</label><select id="language-switch"><option value="/RateCloud/en/guides/http-python/">English</option><option value="/RateCloud/ru/guides/http-python/">Русский</option><option value="/RateCloud/es/guides/http-python/">Español</option><option value="/RateCloud/pt/guides/http-python/">Português</option><option value="/RateCloud/de/guides/http-python/" selected>Deutsch</option><option value="/RateCloud/fr/guides/http-python/">Français</option></select><a class="header-site" href="https://rate-cloud.com/de">Hauptwebsite ↗</a></div></header>
+        <div class="layout"><nav id="sidebar" class="sidebar" aria-label="Dokumentation"><div class="sidebar-group"><h2>Überblick</h2><a class="nav-link" href="/RateCloud/de/">Überblick</a></div><div class="sidebar-group"><h2>Rate Cloud entdecken</h2><a class="nav-link" href="/RateCloud/de/articles/about-rate-cloud/">Das Angebot von Rate Cloud</a><a class="nav-link" href="/RateCloud/de/articles/models/">Modelle und Auswahl</a><a class="nav-link" href="/RateCloud/de/articles/routing-and-quantization/">Intelligentes Routing und Quantisierung</a><a class="nav-link" href="/RateCloud/de/articles/performance/">Geschwindigkeit und Leistung verstehen</a><a class="nav-link" href="/RateCloud/de/articles/api-and-integrations/">Tools und Anwendungen mit Rate Cloud verbinden</a><a class="nav-link" href="/RateCloud/de/articles/privacy-and-reliability/">Datenschutz, Datenverarbeitung und Verfügbarkeit</a><a class="nav-link" href="/RateCloud/de/articles/white-label/">White Label: ein KI-Abonnementdienst unter Ihrer Marke</a><a class="nav-link" href="/RateCloud/de/articles/cost-and-service-comparison/">Rate Cloud im Vergleich zu offiziellen APIs: feste Kosten bei intensiver Nutzung</a><a class="nav-link" href="/RateCloud/de/articles/unlimited-use-cases/">Wo Zugang ohne kumulatives Tokenkontingent hilft: 20 praktische Abläufe</a></div><div class="sidebar-group"><h2>Tools verbinden</h2><a class="nav-link" href="/RateCloud/de/guides/claude-code/">Claude Code mit Rate Cloud verbinden</a><a class="nav-link" href="/RateCloud/de/guides/continue/">Continue mit Rate Cloud verbinden</a><a class="nav-link" href="/RateCloud/de/guides/deepseek-harness/">DeepSeek Harness mit Rate Cloud verbinden</a><a class="nav-link" href="/RateCloud/de/guides/hermes-agent/">Hermes Agent mit Rate Cloud verbinden</a><a class="nav-link active" href="/RateCloud/de/guides/http-python/" aria-current="page">HTTP- und Python-Zugriff</a><a class="nav-link" href="/RateCloud/de/guides/openclaw/">OpenClaw mit Rate Cloud verbinden</a><a class="nav-link" href="/RateCloud/de/guides/opencode/">OpenCode mit Rate Cloud verbinden</a></div><div class="sidebar-group"><h2>Quellen und Daten</h2><a class="nav-link" href="/RateCloud/de/faq/">Rate Cloud: häufig gestellte Fragen</a></div><div class="sidebar-group"><a class="nav-link" href="/RateCloud/en/sources/">Quellen und Daten</a><a class="nav-link" href="https://github.com/shaitor52/RateCloud">GitHub ↗</a></div></nav><main id="main" class=""><div class="breadcrumb"><a href="/RateCloud/de/">Dokumentation</a><span>/</span>Tools verbinden</div><p class="eyebrow">RATE CLOUD / Dokumentation</p><h1 class="page-title">HTTP- und Python-Zugriff</h1><div class="article-grid"><article class="article-content"><p>Rate Cloud bietet eine OpenAI-kompatible API für Clients mit frei konfigurierbarer Basis-URL sowie ein Python-Beispiel mit Standardbibliothek. Die Beispiele installieren keine Pakete und senden erst dann Anfragen, wenn Sie sie ausführen.</p>
+<p>Offizielle Quelle: <a href="https://rate-cloud.com/docs">Rate-Cloud-API- und Verbindungsdokumentation</a>.</p>
+<h2 id="endpunkte">Endpunkte</h2>
+<div class="table-scroll" tabindex="0"><table>
+<thead>
+<tr>
+<th>Zweck</th>
+<th>Methode und URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OpenAI-kompatible Basis-URL</td>
+<td><code>https://llm.rate-cloud.com/v1</code></td>
+</tr>
+<tr>
+<td>Modelle auflisten</td>
+<td><code>GET https://llm.rate-cloud.com/v1/models</code></td>
+</tr>
+<tr>
+<td>Chat Completions</td>
+<td><code>POST https://llm.rate-cloud.com/v1/chat/completions</code></td>
+</tr>
+<tr>
+<td>Responses API</td>
+<td><code>POST https://llm.rate-cloud.com/v1/responses</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>Für <code>/v1</code>-Anfragen senden Sie <code>Authorization: Bearer &lt;API key&gt;</code>. Verwenden Sie eine exakte Modell-ID:</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead>
+<tr>
+<th>Modell</th>
+<th>Direkte API-ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GLM 5.3</td>
+<td><code>glm-5.3</code></td>
+</tr>
+<tr>
+<td>GLM 5.3 Flash</td>
+<td><code>glm-5.3-flash</code></td>
+</tr>
+<tr>
+<td>DeepSeek V4.1 Flash</td>
+<td><code>deepseek-v4.1-flash</code></td>
+</tr>
+<tr>
+<td>DeepSeek V4 Pro</td>
+<td><code>deepseek-v4-pro</code></td>
+</tr>
+<tr>
+<td>Qwen 3.8 Max</td>
+<td><code>qwen-3.8-max</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>Fügen Sie der direkten HTTP-Modell-ID kein Anbieterpräfix wie <code>ratecloud/</code> hinzu. Die Formen <code>ratecloud/</code> und <code>ocx-claude-ratecloud--</code> gelten für bestimmte Clientintegrationen.</p>
+<h2 id="umgebungsvariable-setzen">Umgebungsvariable setzen</h2>
+<p>Nutzen Sie unter macOS oder Linux den Abschnitt für Ihre Shell. Beide Varianten lesen das Geheimnis ohne Anzeige ein. Entfernen Sie die Variable mit <code>unset</code> oder schließen Sie das Terminal.</p>
+<div class="code-block"><button class="code-copy" data-error-label="Kopieren" type="button">Kopieren</button><pre><code class="language-sh"># Bash
+read -r -s -p 'Rate Cloud API key: ' RATE_CLOUD_API_KEY
+printf '\n'
+export RATE_CLOUD_API_KEY
+</code></pre></div>
+<div class="code-block"><button class="code-copy" data-error-label="Kopieren" type="button">Kopieren</button><pre><code class="language-sh"># zsh (macOS-Standardshell)
+read -r -s 'RATE_CLOUD_API_KEY?Rate Cloud API key: '
+printf '\n'
+export RATE_CLOUD_API_KEY
+</code></pre></div>
+<p>Unter Windows PowerShell setzen Sie <code>$env:RATE_CLOUD_API_KEY</code> in der Sitzung, die den Client startet. Speichern Sie keinen echten Schlüssel im Quellcode, in einer eingecheckten <code>.env</code>-Datei oder einem öffentlichen Issue.</p>
+<h2 id="optionale-verbindungskontrolle-mit-curl">Optionale Verbindungskontrolle mit curl</h2>
+<p>Dies sendet eine einfache Anfrage an den Modellkatalog. Sie prüft, ob der Endpunkt antwortet und der Schlüssel akzeptiert wird, beweist aber nicht, dass ein bestimmtes Modell abonniert oder für den Schlüssel freigegeben ist.</p>
+<div class="code-block"><button class="code-copy" data-error-label="Kopieren" type="button">Kopieren</button><pre><code class="language-sh">curl --fail-with-body 'https://llm.rate-cloud.com/v1/models' \
+  -H &quot;Authorization: Bearer $RATE_CLOUD_API_KEY&quot;
+</code></pre></div>
+<h2 id="python-3-mit-standardbibliothek">Python 3 mit Standardbibliothek</h2>
+<p>Speichern Sie den folgenden Code in einer lokalen <code>.py</code>-Datei. Er nutzt nur die Python-Standardbibliothek (<code>urllib.request</code>), liest das Geheimnis aus der Umgebung und sendet beim Ausführen eine kleine Chat-Completions-Anfrage. Ändern Sie <code>MODEL</code> bei Bedarf in eine andere direkte API-ID.</p>
+<div class="code-block"><button class="code-copy" data-error-label="Kopieren" type="button">Kopieren</button><pre><code class="language-python">import json
+import os
+import sys
+from urllib.error import HTTPError, URLError
+from urllib.request import Request, urlopen
+
+BASE_URL = &quot;https://llm.rate-cloud.com/v1&quot;
+MODEL = &quot;glm-5.3&quot;
+API_KEY = os.environ.get(&quot;RATE_CLOUD_API_KEY&quot;)
+
+if not API_KEY:
+    sys.exit(&quot;Set RATE_CLOUD_API_KEY in the environment before running this script.&quot;)
+
+payload = {
+    &quot;model&quot;: MODEL,
+    &quot;messages&quot;: [
+        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Reply with a short greeting.&quot;}
+    ],
+}
+request = Request(
+    f&quot;{BASE_URL}/chat/completions&quot;,
+    data=json.dumps(payload).encode(&quot;utf-8&quot;),
+    headers={
+        &quot;Authorization&quot;: f&quot;Bearer {API_KEY}&quot;,
+        &quot;Content-Type&quot;: &quot;application/json&quot;,
+    },
+    method=&quot;POST&quot;,
+)
+
+try:
+    with urlopen(request, timeout=60) as response:
+        result = json.load(response)
+    print(result[&quot;choices&quot;][0][&quot;message&quot;][&quot;content&quot;])
+except HTTPError as error:
+    # Avoid printing request headers or the API key in diagnostics.
+    print(f&quot;HTTP error: {error.code} {error.reason}&quot;, file=sys.stderr)
+    sys.exit(1)
+except URLError as error:
+    print(f&quot;Connection error: {error.reason}&quot;, file=sys.stderr)
+    sys.exit(1)
+except (KeyError, IndexError, json.JSONDecodeError) as error:
+    print(f&quot;Unexpected response format: {error}&quot;, file=sys.stderr)
+    sys.exit(1)
+</code></pre></div>
+<p>Führen Sie das Skript in der Shell aus, in der <code>RATE_CLOUD_API_KEY</code> gesetzt ist. Schreiben Sie die vollständige Antwort nicht in gemeinsam genutzte Protokolle, wenn Eingaben oder Ausgaben private Daten enthalten können.</p>
+<h2 id="fehlerbehebung">Fehlerbehebung</h2>
+<ul>
+<li><strong>401 oder Authentifizierungsfehler:</strong> Prüfen Sie die Umgebungsvariable im Prozess, Gültigkeit des Schlüssels und den Header <code>Bearer</code>.</li>
+<li><strong>403 oder Zugriff verweigert:</strong> Prüfen Sie Testzugang oder Abonnement für das Modell, Schlüsselrechte, IP-Beschränkungen und erforderliche Client-Kompatibilität.</li>
+<li><strong>404 oder Modell unbekannt:</strong> Prüfen Sie Pfad und Schreibweise. Für diese allgemeinen Beispiele ist <code>/v1</code> richtig, nicht der Codex- oder Claude-Code-Endpunkt.</li>
+<li><strong>Modell im Katalog, aber Generierung abgelehnt:</strong> Der Katalog beweist keine Konto- oder Schlüsselberechtigung. Prüfen Sie Abonnement und Schlüsselzugriff im Dashboard.</li>
+<li><strong>Zeitüberschreitung oder unvollständige Ausgabe:</strong> Prüfen Sie den Anfragezustand vor einem Wiederholungsversuch. Eine Zeitüberschreitung beweist nicht, dass der Vorgang abgeschlossen ist. Wiederholen Sie Anfragen mit Nebenwirkungen nicht blind.</li>
+</ul>
+<p>Nennen Sie dem Support Zeitpunkt, Modell-ID, Endpunkt, HTTP-Status und Anfragekennung, falls vorhanden. Entfernen Sie API-Schlüssel, Autorisierungsheader sowie private Anfrage- und Antwortinhalte.</p></article><aside class="toc" aria-label="Auf dieser Seite"><h2>Auf dieser Seite</h2><div class="toc-list">
+<ul>
+<li><a href="#endpunkte">Endpunkte</a></li>
+<li><a href="#umgebungsvariable-setzen">Umgebungsvariable setzen</a></li>
+<li><a href="#optionale-verbindungskontrolle-mit-curl">Optionale Verbindungskontrolle mit curl</a></li>
+<li><a href="#python-3-mit-standardbibliothek">Python 3 mit Standardbibliothek</a></li>
+<li><a href="#fehlerbehebung">Fehlerbehebung</a></li>
+</ul>
+</div>
+</aside></div><footer class="page-footer"><p>Öffentlicher Informationsstand: 3. November 2026. Aktuelle Bedingungen stehen auf der Hauptwebsite.</p><div><a href="/RateCloud/de/raw/guides/http-python.md">Markdown lesen</a> · <a href="https://github.com/shaitor52/RateCloud/blob/main/de/guides/http-python.md">Quelldatei</a></div><p><a href="https://rate-cloud.com/de">Hauptwebsite ↗</a> · <a href="https://rate-cloud.com/user/instructions">Dashboard öffnen ↗</a></p></footer></main></div>
+        <dialog id="search-dialog" aria-labelledby="search-title"><div class="search-dialog-header"><h2 id="search-title">Dokumentation durchsuchen</h2><button class="icon-button" id="search-close" aria-label="Schließen">×</button></div><label class="sr-only" for="search-input">Dokumentation durchsuchen</label><input id="search-input" placeholder="Artikel, Modelle oder Tools suchen" type="search" autocomplete="off"><ul id="search-results" aria-live="polite" data-empty="Keine passenden Seiten gefunden."></ul></dialog></body></html>

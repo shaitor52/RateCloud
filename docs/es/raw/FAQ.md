@@ -1,0 +1,71 @@
+# Rate Cloud: preguntas frecuentes
+
+[English](../FAQ.md) · [Русский](../ru/FAQ.md) · Español · [Inicio](README.md)
+
+La información del producto refleja el sitio oficial del 3 de noviembre de 2026. Antes de comprar, consulta el panel y las condiciones vigentes.
+
+## ¿Qué es Rate Cloud?
+
+Rate Cloud ofrece acceso por suscripción a las API de GLM, DeepSeek y Qwen para desarrollo, agentes de IA, automatización y aplicaciones. La suscripción selecciona un modelo y un periodo de acceso, en lugar de cobrar por cada millón de tokens. Consulta [la descripción del servicio](articles/01-about-rate-cloud.md).
+
+## ¿Hay un límite de tokens?
+
+Durante una suscripción activa no hay una cuota acumulada de tokens de entrada o salida. Cada operación sigue teniendo una capacidad finita de contexto, un plazo y limitaciones técnicas. El volumen real de procesamiento depende de la velocidad, las longitudes de entrada y salida, los espacios disponibles y la disponibilidad del servicio.
+
+## ¿Cuatro espacios significan solo cuatro solicitudes?
+
+No. Una suscripción de pago permite ejecutar cuatro solicitudes al mismo tiempo. Cuando una termina, libera su espacio para otro trabajo. Varias claves de API de la misma cuenta usan el conjunto compartido del modelo correspondiente.
+
+## ¿Puedo añadir más capacidad paralela?
+
+La oferta pública permite combinar suscripciones. Dos suscripciones al mismo modelo ofrecen ocho espacios para ese modelo. Las suscripciones a modelos distintos tienen conjuntos propios.
+
+## ¿Qué modelos puedo usar?
+
+El catálogo publicado incluye GLM 5.3, GLM 5.3 Flash, DeepSeek V4.1 Flash, DeepSeek V4 Pro y Qwen 3.8 Max. Consulta [el catálogo fechado](articles/02-models.md) para ver los ID exactos de API, precios, usos previstos y compatibilidad con imágenes.
+
+## ¿Un modelo Flash es igual que uno Pro?
+
+No. Son entradas distintas del catálogo. Los perfiles de precisión son variantes de ejecución del modelo seleccionado; no autorizan a sustituir silenciosamente el modelo por otro. Consulta [enrutamiento y cuantización](articles/03-routing-and-quantization.md).
+
+## ¿Cómo elige el enrutamiento inteligente un perfil de precisión?
+
+El diseño publicado comprueba los requisitos de la tarea y las réplicas aptas, prioriza la calidad para trabajos difíciles o inciertos y considera el coste solo entre las rutas adecuadas. La elegibilidad depende del contexto, las imágenes, las herramientas, el formato de salida, la memoria disponible, las colas y el estado de la réplica. La compatibilidad de cada perfil depende del modelo y el hardware concretos.
+
+## ¿La cuantización garantiza respuestas idénticas?
+
+No. La precisión numérica puede afectar la calidad de salida. La arquitectura pública describe una validación frente a la versión de origen y controles de calidad específicos por tarea. Un perfil económico solo es apto cuando su calidad resulta adecuada. La cuantización es independiente de los ajustes de esfuerzo de razonamiento.
+
+## ¿Qué aplicaciones se pueden conectar?
+
+La guía oficial cubre OpenCode, Codex, Claude Code, OpenClaw, Continue, Hermes y otros clientes compatibles. Nuestras [guías prácticas](guides/README.md) cubren algunas configuraciones. Las funciones disponibles dependen del cliente y del modelo; conectarlo no convierte el modelo seleccionado en un modelo propio del proveedor del cliente.
+
+## ¿Qué URL base debe usar mi aplicación?
+
+La URL base general compatible con OpenAI es `https://llm.rate-cloud.com/v1`. Algunos clientes tienen URL de compatibilidad dedicadas. Usa la [documentación oficial](https://rate-cloud.com/docs) y la guía correspondiente, sin mezclar familias de endpoints.
+
+## ¿Por qué se rechaza una solicitud aunque el modelo aparezca en la lista?
+
+La presencia en el catálogo no confirma el acceso de ejecución. Comprueba que haya una prueba o suscripción activa, los permisos de modelo de la clave, su caducidad, las restricciones de IP y los ajustes de compatibilidad del cliente. Revisa también los espacios ocupados y el error recibido. Comparte con soporte la hora y el identificador de solicitud, sin enviar la clave ni contenido privado.
+
+## ¿Qué velocidad tiene Rate Cloud?
+
+El sitio publica una tabla histórica de rendimiento. Mide latencia de la solicitud completa y tasas efectivas de tokens que incluyen la espera. Tu tarea puede ser distinta. Consulta [rendimiento y metodología](articles/04-performance.md); las cifras no son un SLA garantizado ni una comparación controlada con instrucciones idénticas.
+
+## ¿Se usan los prompts para entrenar modelos?
+
+El servicio declara que los datos de usuarios no se usan para entrenar modelos y que no se crea un historial permanente del texto de prompts y respuestas. El procesamiento temporal, la caché de cálculo aislada, los metadatos operativos y los datos de cuenta son categorías separadas. Consulta [privacidad y disponibilidad](articles/06-privacy-and-reliability.md) y la política de privacidad vigente enlazada desde el sitio.
+
+## ¿Se garantiza que todos los modelos estén disponibles 24/7?
+
+No. El sitio indica expresamente que no se garantiza la disponibilidad continua de cada modelo. La regla de compensación publicada cubre una condición específica de interrupción total del sistema, no toda respuesta lenta ni todo error de un modelo concreto. Consulta las condiciones aplicables.
+
+## ¿Puedo probarlo antes de pagar?
+
+La prueba inicial publicada ofrece las primeras tres horas con un espacio simultáneo tras registrarse y verificar el correo electrónico y Telegram. Confirma el estado de la prueba en el panel.
+
+## ¿Puedo vender suscripciones con mi propia marca?
+
+Rate Cloud ofrece servicios White Label con marca propia, sitio y panel, pagos e infraestructura técnica. Consulta [el artículo White Label](articles/07-white-label.md) y [la oferta oficial actual](https://rate-cloud.com/white-label).
+
+Fuentes: [página principal](https://rate-cloud.com/), [cómo funciona](https://rate-cloud.com/how-it-works) y [guía de API](https://rate-cloud.com/docs).

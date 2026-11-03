@@ -1,0 +1,79 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hermes Agent mit Rate Cloud verbinden | Rate Cloud Docs</title><meta name="description" content="Hermes Agent unterstützt eigene OpenAI-kompatible Endpunkte. Diese Anleitung nutzt die dokumentierte Konfiguration eines eigenen Anbieters mit der Chat-Completions-API /v1 von Rate Cloud."><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://shaitor52.github.io/RateCloud/de/guides/hermes-agent/"><link rel="alternate" hreflang="en" href="https://shaitor52.github.io/RateCloud/en/guides/hermes-agent/"><link rel="alternate" hreflang="ru" href="https://shaitor52.github.io/RateCloud/ru/guides/hermes-agent/"><link rel="alternate" hreflang="es" href="https://shaitor52.github.io/RateCloud/es/guides/hermes-agent/"><link rel="alternate" hreflang="pt" href="https://shaitor52.github.io/RateCloud/pt/guides/hermes-agent/"><link rel="alternate" hreflang="de" href="https://shaitor52.github.io/RateCloud/de/guides/hermes-agent/"><link rel="alternate" hreflang="fr" href="https://shaitor52.github.io/RateCloud/fr/guides/hermes-agent/"><link rel="alternate" hreflang="x-default" href="https://shaitor52.github.io/RateCloud/en/guides/hermes-agent/"><meta name="theme-color" content="#151719"><meta property="og:type" content="article"><meta property="og:title" content="Hermes Agent mit Rate Cloud verbinden | Rate Cloud Docs"><meta property="og:description" content="Hermes Agent unterstützt eigene OpenAI-kompatible Endpunkte. Diese Anleitung nutzt die dokumentierte Konfiguration eines eigenen Anbieters mit der Chat-Completions-API /v1 von Rate Cloud."><meta property="og:url" content="https://shaitor52.github.io/RateCloud/de/guides/hermes-agent/"><meta property="og:image" content="https://shaitor52.github.io/RateCloud/assets/brand-hero.webp"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/RateCloud/assets/brand-logo.png"><link rel="stylesheet" href="/RateCloud/assets/docs.css?v=ab6226e88a62"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Hermes Agent mit Rate Cloud verbinden", "description": "Hermes Agent unterstützt eigene OpenAI-kompatible Endpunkte. Diese Anleitung nutzt die dokumentierte Konfiguration eines eigenen Anbieters mit der Chat-Completions-API /v1 von Rate Cloud.", "inLanguage": "de", "url": "https://shaitor52.github.io/RateCloud/de/guides/hermes-agent/", "isPartOf": {"@type": "WebSite", "name": "Rate Cloud Documentation", "url": "https://shaitor52.github.io/RateCloud/"}, "publisher": {"@type": "Organization", "name": "Rate Cloud", "url": "https://rate-cloud.com/"}}</script><script src="/RateCloud/assets/docs.js?v=3d9193980cec" defer></script></head>
+        <body data-base="/RateCloud/" data-lang="de" data-copy="Kopieren" data-copied="Kopiert"><a class="skip-link" href="#main">Zum Inhalt</a><header class="topbar"><a class="brand" href="/RateCloud/de/"><img class="brand-mark" src="/RateCloud/assets/brand-logo.png" width="32" height="32" alt=""><span>Rate Cloud<small>Dokumentation</small></span></a><div class="header-actions"><button id="menu-toggle" class="icon-button" aria-label="Menü" aria-controls="sidebar" aria-expanded="false" data-open-label="Menü" data-close-label="Schließen">☰</button><button class="icon-button" data-search-open aria-label="Dokumentation durchsuchen"><span>⌕</span><span class="search-label">Dokumentation durchsuchen</span><kbd class="search-shortcut">⌘ K</kbd></button><label class="sr-only" for="language-switch">Sprache</label><select id="language-switch"><option value="/RateCloud/en/guides/hermes-agent/">English</option><option value="/RateCloud/ru/guides/hermes-agent/">Русский</option><option value="/RateCloud/es/guides/hermes-agent/">Español</option><option value="/RateCloud/pt/guides/hermes-agent/">Português</option><option value="/RateCloud/de/guides/hermes-agent/" selected>Deutsch</option><option value="/RateCloud/fr/guides/hermes-agent/">Français</option></select><a class="header-site" href="https://rate-cloud.com/de">Hauptwebsite ↗</a></div></header>
+        <div class="layout"><nav id="sidebar" class="sidebar" aria-label="Dokumentation"><div class="sidebar-group"><h2>Überblick</h2><a class="nav-link" href="/RateCloud/de/">Überblick</a></div><div class="sidebar-group"><h2>Rate Cloud entdecken</h2><a class="nav-link" href="/RateCloud/de/articles/about-rate-cloud/">Das Angebot von Rate Cloud</a><a class="nav-link" href="/RateCloud/de/articles/models/">Modelle und Auswahl</a><a class="nav-link" href="/RateCloud/de/articles/routing-and-quantization/">Intelligentes Routing und Quantisierung</a><a class="nav-link" href="/RateCloud/de/articles/performance/">Geschwindigkeit und Leistung verstehen</a><a class="nav-link" href="/RateCloud/de/articles/api-and-integrations/">Tools und Anwendungen mit Rate Cloud verbinden</a><a class="nav-link" href="/RateCloud/de/articles/privacy-and-reliability/">Datenschutz, Datenverarbeitung und Verfügbarkeit</a><a class="nav-link" href="/RateCloud/de/articles/white-label/">White Label: ein KI-Abonnementdienst unter Ihrer Marke</a><a class="nav-link" href="/RateCloud/de/articles/cost-and-service-comparison/">Rate Cloud im Vergleich zu offiziellen APIs: feste Kosten bei intensiver Nutzung</a><a class="nav-link" href="/RateCloud/de/articles/unlimited-use-cases/">Wo Zugang ohne kumulatives Tokenkontingent hilft: 20 praktische Abläufe</a></div><div class="sidebar-group"><h2>Tools verbinden</h2><a class="nav-link" href="/RateCloud/de/guides/claude-code/">Claude Code mit Rate Cloud verbinden</a><a class="nav-link" href="/RateCloud/de/guides/continue/">Continue mit Rate Cloud verbinden</a><a class="nav-link" href="/RateCloud/de/guides/deepseek-harness/">DeepSeek Harness mit Rate Cloud verbinden</a><a class="nav-link active" href="/RateCloud/de/guides/hermes-agent/" aria-current="page">Hermes Agent mit Rate Cloud verbinden</a><a class="nav-link" href="/RateCloud/de/guides/http-python/">HTTP- und Python-Zugriff</a><a class="nav-link" href="/RateCloud/de/guides/openclaw/">OpenClaw mit Rate Cloud verbinden</a><a class="nav-link" href="/RateCloud/de/guides/opencode/">OpenCode mit Rate Cloud verbinden</a></div><div class="sidebar-group"><h2>Quellen und Daten</h2><a class="nav-link" href="/RateCloud/de/faq/">Rate Cloud: häufig gestellte Fragen</a></div><div class="sidebar-group"><a class="nav-link" href="/RateCloud/en/sources/">Quellen und Daten</a><a class="nav-link" href="https://github.com/shaitor52/RateCloud">GitHub ↗</a></div></nav><main id="main" class=""><div class="breadcrumb"><a href="/RateCloud/de/">Dokumentation</a><span>/</span>Tools verbinden</div><p class="eyebrow">RATE CLOUD / Dokumentation</p><h1 class="page-title">Hermes Agent mit Rate Cloud verbinden</h1><div class="article-grid"><article class="article-content"><p>Hermes Agent unterstützt eigene OpenAI-kompatible Endpunkte. Diese Anleitung nutzt die dokumentierte Konfiguration eines eigenen Anbieters mit der Chat-Completions-API <code>/v1</code> von Rate Cloud.</p>
+<p><strong>Dokumentation geprüft:</strong> 3. November 2026. Die Beispiele folgen den aktuellen veröffentlichten Hermes- und Rate-Cloud-Dokumentationen und wurden nicht live mit einer Installation oder einem Konto getestet. Hermes-Dokumentation wird fortlaufend aktualisiert; die geprüften Seiten nannten keine Mindestversion. Die Anbieterkonfiguration hat sich geändert. Verwenden Sie die aktuellen Feldnamen, nicht ältere Beispiele.</p>
+<p>Offizielle Quellen: <a href="https://rate-cloud.com/docs">Rate-Cloud-Verbindungsanleitung</a>, <a href="https://github.com/NousResearch/hermes-agent/blob/main/website/docs/integrations/providers.md">Hermes-Anbieteranleitung</a>, <a href="https://github.com/NousResearch/hermes-agent/blob/main/website/docs/reference/environment-variables.md">Hermes-Umgebungsvariablen</a> und <a href="https://hermes-agent.nousresearch.com/docs">Hermes-Konfigurationsdateien</a>.</p>
+<h2 id="zugang-vorbereiten">Zugang vorbereiten</h2>
+<p>Erstellen Sie im Rate-Cloud-Dashboard einen API-Schlüssel, erlauben Sie das gewünschte Modell und prüfen Sie, dass Testzugang oder Abonnement aktiv sind. Der vollständige Schlüssel wird nur bei Erstellung angezeigt. Halten Sie ihn aus Quellcode und Supportnachrichten heraus.</p>
+<p>Der allgemeine kompatible Endpunkt von Rate Cloud lautet:</p>
+<div class="code-block"><button class="code-copy" data-error-label="Kopieren" type="button">Kopieren</button><pre><code class="language-text">https://llm.rate-cloud.com/v1
+</code></pre></div>
+<p>Verwenden Sie die direkte API-Modell-ID. Hermes benötigt nicht das Präfix <code>ratecloud/</code>, das einige andere Clients nutzen.</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead>
+<tr>
+<th>Modell</th>
+<th>Direkte API-ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GLM 5.3</td>
+<td><code>glm-5.3</code></td>
+</tr>
+<tr>
+<td>GLM 5.3 Flash</td>
+<td><code>glm-5.3-flash</code></td>
+</tr>
+<tr>
+<td>DeepSeek V4.1 Flash</td>
+<td><code>deepseek-v4.1-flash</code></td>
+</tr>
+<tr>
+<td>DeepSeek V4 Pro</td>
+<td><code>deepseek-v4-pro</code></td>
+</tr>
+<tr>
+<td>Qwen 3.8 Max</td>
+<td><code>qwen-3.8-max</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="geheimnis-in-der-lokalen-hermes-umgebungsdatei-ablegen">Geheimnis in der lokalen Hermes-Umgebungsdatei ablegen</h2>
+<p>Die aktuelle Hermes-Dokumentation nennt <code>~/.hermes/.env</code> für benutzerverwaltete Geheimnisse. Fügen Sie lokal diese Zeile hinzu und ersetzen Sie den Platzhalter:</p>
+<div class="code-block"><button class="code-copy" data-error-label="Kopieren" type="button">Kopieren</button><pre><code class="language-dotenv">RATE_CLOUD_API_KEY=&lt;your-key&gt;
+</code></pre></div>
+<p>Unter Windows: <code>%USERPROFILE%\.hermes\.env</code>. Checken Sie diese Datei nicht ein und geben Sie keinen echten Schlüssel in Beispielen weiter. Hermes kann auch eine Prozess-Umgebungsvariable lesen; die Einstellung <code>key_env</code> unten verweist auf sie.</p>
+<h2 id="eigenen-endpunkt-konfigurieren">Eigenen Endpunkt konfigurieren</h2>
+<p>Bearbeiten Sie unter macOS/Linux <code>~/.hermes/config.yaml</code> oder unter Windows <code>%USERPROFILE%\.hermes\config.yaml</code>. Führen Sie diese Felder mit dem bestehenden Abschnitt <code>model</code> zusammen, statt andere Einstellungen zu ersetzen:</p>
+<div class="code-block"><button class="code-copy" data-error-label="Kopieren" type="button">Kopieren</button><pre><code class="language-yaml">model:
+  default: glm-5.3
+  provider: custom
+  base_url: https://llm.rate-cloud.com/v1
+  key_env: RATE_CLOUD_API_KEY
+</code></pre></div>
+<p>Dies verwendet die dokumentierten Hermes-Felder für einen eigenen Endpunkt: <code>provider: custom</code>, <code>base_url</code> und <code>key_env</code>. Der Endpunkt spricht Chat Completions. Stellen Sie ihn nicht auf Anthropic Messages oder Responses um. Ergänzen Sie keine Kontextgrenze ohne verifizierten Dienst- und Modellwert.</p>
+<p>Für ein anderes Rate-Cloud-Modell ändern Sie <code>model.default</code> in eine exakte andere ID aus der Tabelle. Behalten Sie <code>provider: custom</code> und die Rate-Cloud-Basis-URL.</p>
+<h2 id="optionale-interaktive-einrichtung">Optionale interaktive Einrichtung</h2>
+<p>Hermes dokumentiert <code>hermes model</code> als Assistenten für eigene Endpunkte. Er fragt Basis-URL, API-Schlüssel und Modellnamen ab und speichert die Auswahl. Geben Sie <code>https://llm.rate-cloud.com/v1</code> und eine bloße Modell-ID aus der Tabelle ein. Wenn der wörtliche Schlüssel nicht in <code>config.yaml</code> gespeichert werden soll, bevorzugen Sie die obige Konfiguration mit Umgebungsdatei.</p>
+<h2 id="fehlerbehebung">Fehlerbehebung</h2>
+<ul>
+<li><strong>Zugangsdaten fehlen:</strong> Prüfen Sie <code>RATE_CLOUD_API_KEY</code> in <code>~/.hermes/.env</code> oder der Prozessumgebung sowie die identische Schreibweise in <code>key_env</code>.</li>
+<li><strong>Verbindungsfehler:</strong> Basis-URL mit <code>/v1</code> verwenden, nicht <code>/v1/chat/completions</code>; der Client ergänzt den API-Pfad.</li>
+<li><strong>Modell unbekannt oder Zugriff verweigert:</strong> Exakte direkte ID verwenden und Modellrechte des Schlüssels sowie aktiven Testzugang oder Tarif prüfen.</li>
+<li><strong>Werkzeugaufrufe erscheinen als Text:</strong> OpenAI-kompatibler Transport garantiert nicht, dass jedes Modell und jeder Endpunkt Werkzeugaufrufe in der erwarteten Form unterstützt. Prüfen Sie die reale Modellfähigkeit.</li>
+<li><strong>Kontextlimit wirkt falsch:</strong> Hermes kann Metadaten aus <code>/v1/models</code> ableiten, aber die Liste enthält nicht garantiert alle Angaben. Übernehmen Sie keine ungeprüfte Kontextgröße in die Konfiguration.</li>
+<li><strong>Älteres Beispiel gefunden:</strong> Alte Dokumentation zeigt möglicherweise <code>api_key</code> oder eine andere Struktur. Verwenden Sie die aktuelle Hermes-Anbieteranleitung und prüfen Sie die Felder für Ihre Version.</li>
+</ul>
+<p>Bei der Erstellung dieser Anleitung wurden weder API-Aufrufe noch Installationen ausgeführt.</p>
+<p>Version auf Russisch: <a href="/RateCloud/ru/guides/hermes-agent/">Hermes Agent mit Rate Cloud verbinden</a>. Zurück zu <a href="/RateCloud/de/guides/">allen deutschen Anleitungen</a>.</p></article><aside class="toc" aria-label="Auf dieser Seite"><h2>Auf dieser Seite</h2><div class="toc-list">
+<ul>
+<li><a href="#zugang-vorbereiten">Zugang vorbereiten</a></li>
+<li><a href="#geheimnis-in-der-lokalen-hermes-umgebungsdatei-ablegen">Geheimnis in der lokalen Hermes-Umgebungsdatei ablegen</a></li>
+<li><a href="#eigenen-endpunkt-konfigurieren">Eigenen Endpunkt konfigurieren</a></li>
+<li><a href="#optionale-interaktive-einrichtung">Optionale interaktive Einrichtung</a></li>
+<li><a href="#fehlerbehebung">Fehlerbehebung</a></li>
+</ul>
+</div>
+</aside></div><footer class="page-footer"><p>Öffentlicher Informationsstand: 3. November 2026. Aktuelle Bedingungen stehen auf der Hauptwebsite.</p><div><a href="/RateCloud/de/raw/guides/hermes-agent.md">Markdown lesen</a> · <a href="https://github.com/shaitor52/RateCloud/blob/main/de/guides/hermes-agent.md">Quelldatei</a></div><p><a href="https://rate-cloud.com/de">Hauptwebsite ↗</a> · <a href="https://rate-cloud.com/user/instructions">Dashboard öffnen ↗</a></p></footer></main></div>
+        <dialog id="search-dialog" aria-labelledby="search-title"><div class="search-dialog-header"><h2 id="search-title">Dokumentation durchsuchen</h2><button class="icon-button" id="search-close" aria-label="Schließen">×</button></div><label class="sr-only" for="search-input">Dokumentation durchsuchen</label><input id="search-input" placeholder="Artikel, Modelle oder Tools suchen" type="search" autocomplete="off"><ul id="search-results" aria-live="polite" data-empty="Keine passenden Seiten gefunden."></ul></dialog></body></html>

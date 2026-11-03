@@ -1,0 +1,108 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Continue mit Rate Cloud verbinden | Rate Cloud Docs</title><meta name="description" content="Continue unterstützt OpenAI-kompatible Modelle über seinen OpenAI-Anbieter und eine eigene apiBase. Diese Anleitung verwendet das aktuelle config.yaml-Format und speichert den Schlüssel in Contin"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://shaitor52.github.io/RateCloud/de/guides/continue/"><link rel="alternate" hreflang="en" href="https://shaitor52.github.io/RateCloud/en/guides/continue/"><link rel="alternate" hreflang="ru" href="https://shaitor52.github.io/RateCloud/ru/guides/continue/"><link rel="alternate" hreflang="es" href="https://shaitor52.github.io/RateCloud/es/guides/continue/"><link rel="alternate" hreflang="pt" href="https://shaitor52.github.io/RateCloud/pt/guides/continue/"><link rel="alternate" hreflang="de" href="https://shaitor52.github.io/RateCloud/de/guides/continue/"><link rel="alternate" hreflang="fr" href="https://shaitor52.github.io/RateCloud/fr/guides/continue/"><link rel="alternate" hreflang="x-default" href="https://shaitor52.github.io/RateCloud/en/guides/continue/"><meta name="theme-color" content="#151719"><meta property="og:type" content="article"><meta property="og:title" content="Continue mit Rate Cloud verbinden | Rate Cloud Docs"><meta property="og:description" content="Continue unterstützt OpenAI-kompatible Modelle über seinen OpenAI-Anbieter und eine eigene apiBase. Diese Anleitung verwendet das aktuelle config.yaml-Format und speichert den Schlüssel in Contin"><meta property="og:url" content="https://shaitor52.github.io/RateCloud/de/guides/continue/"><meta property="og:image" content="https://shaitor52.github.io/RateCloud/assets/brand-hero.webp"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/RateCloud/assets/brand-logo.png"><link rel="stylesheet" href="/RateCloud/assets/docs.css?v=ab6226e88a62"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Continue mit Rate Cloud verbinden", "description": "Continue unterstützt OpenAI-kompatible Modelle über seinen OpenAI-Anbieter und eine eigene apiBase. Diese Anleitung verwendet das aktuelle config.yaml-Format und speichert den Schlüssel in Contin", "inLanguage": "de", "url": "https://shaitor52.github.io/RateCloud/de/guides/continue/", "isPartOf": {"@type": "WebSite", "name": "Rate Cloud Documentation", "url": "https://shaitor52.github.io/RateCloud/"}, "publisher": {"@type": "Organization", "name": "Rate Cloud", "url": "https://rate-cloud.com/"}}</script><script src="/RateCloud/assets/docs.js?v=3d9193980cec" defer></script></head>
+        <body data-base="/RateCloud/" data-lang="de" data-copy="Kopieren" data-copied="Kopiert"><a class="skip-link" href="#main">Zum Inhalt</a><header class="topbar"><a class="brand" href="/RateCloud/de/"><img class="brand-mark" src="/RateCloud/assets/brand-logo.png" width="32" height="32" alt=""><span>Rate Cloud<small>Dokumentation</small></span></a><div class="header-actions"><button id="menu-toggle" class="icon-button" aria-label="Menü" aria-controls="sidebar" aria-expanded="false" data-open-label="Menü" data-close-label="Schließen">☰</button><button class="icon-button" data-search-open aria-label="Dokumentation durchsuchen"><span>⌕</span><span class="search-label">Dokumentation durchsuchen</span><kbd class="search-shortcut">⌘ K</kbd></button><label class="sr-only" for="language-switch">Sprache</label><select id="language-switch"><option value="/RateCloud/en/guides/continue/">English</option><option value="/RateCloud/ru/guides/continue/">Русский</option><option value="/RateCloud/es/guides/continue/">Español</option><option value="/RateCloud/pt/guides/continue/">Português</option><option value="/RateCloud/de/guides/continue/" selected>Deutsch</option><option value="/RateCloud/fr/guides/continue/">Français</option></select><a class="header-site" href="https://rate-cloud.com/de">Hauptwebsite ↗</a></div></header>
+        <div class="layout"><nav id="sidebar" class="sidebar" aria-label="Dokumentation"><div class="sidebar-group"><h2>Überblick</h2><a class="nav-link" href="/RateCloud/de/">Überblick</a></div><div class="sidebar-group"><h2>Rate Cloud entdecken</h2><a class="nav-link" href="/RateCloud/de/articles/about-rate-cloud/">Das Angebot von Rate Cloud</a><a class="nav-link" href="/RateCloud/de/articles/models/">Modelle und Auswahl</a><a class="nav-link" href="/RateCloud/de/articles/routing-and-quantization/">Intelligentes Routing und Quantisierung</a><a class="nav-link" href="/RateCloud/de/articles/performance/">Geschwindigkeit und Leistung verstehen</a><a class="nav-link" href="/RateCloud/de/articles/api-and-integrations/">Tools und Anwendungen mit Rate Cloud verbinden</a><a class="nav-link" href="/RateCloud/de/articles/privacy-and-reliability/">Datenschutz, Datenverarbeitung und Verfügbarkeit</a><a class="nav-link" href="/RateCloud/de/articles/white-label/">White Label: ein KI-Abonnementdienst unter Ihrer Marke</a><a class="nav-link" href="/RateCloud/de/articles/cost-and-service-comparison/">Rate Cloud im Vergleich zu offiziellen APIs: feste Kosten bei intensiver Nutzung</a><a class="nav-link" href="/RateCloud/de/articles/unlimited-use-cases/">Wo Zugang ohne kumulatives Tokenkontingent hilft: 20 praktische Abläufe</a></div><div class="sidebar-group"><h2>Tools verbinden</h2><a class="nav-link" href="/RateCloud/de/guides/claude-code/">Claude Code mit Rate Cloud verbinden</a><a class="nav-link active" href="/RateCloud/de/guides/continue/" aria-current="page">Continue mit Rate Cloud verbinden</a><a class="nav-link" href="/RateCloud/de/guides/deepseek-harness/">DeepSeek Harness mit Rate Cloud verbinden</a><a class="nav-link" href="/RateCloud/de/guides/hermes-agent/">Hermes Agent mit Rate Cloud verbinden</a><a class="nav-link" href="/RateCloud/de/guides/http-python/">HTTP- und Python-Zugriff</a><a class="nav-link" href="/RateCloud/de/guides/openclaw/">OpenClaw mit Rate Cloud verbinden</a><a class="nav-link" href="/RateCloud/de/guides/opencode/">OpenCode mit Rate Cloud verbinden</a></div><div class="sidebar-group"><h2>Quellen und Daten</h2><a class="nav-link" href="/RateCloud/de/faq/">Rate Cloud: häufig gestellte Fragen</a></div><div class="sidebar-group"><a class="nav-link" href="/RateCloud/en/sources/">Quellen und Daten</a><a class="nav-link" href="https://github.com/shaitor52/RateCloud">GitHub ↗</a></div></nav><main id="main" class=""><div class="breadcrumb"><a href="/RateCloud/de/">Dokumentation</a><span>/</span>Tools verbinden</div><p class="eyebrow">RATE CLOUD / Dokumentation</p><h1 class="page-title">Continue mit Rate Cloud verbinden</h1><div class="article-grid"><article class="article-content"><p>Continue unterstützt OpenAI-kompatible Modelle über seinen OpenAI-Anbieter und eine eigene <code>apiBase</code>. Diese Anleitung verwendet das aktuelle <code>config.yaml</code>-Format und speichert den Schlüssel in Continues lokaler Geheimnisdatei, nicht in YAML.</p>
+<p><strong>Dokumentation geprüft:</strong> 3. November 2026. Dies ist eine statische Konfiguration anhand der Dokumentation, keine Live-Anfrage aus Continue oder einem Rate-Cloud-Konto. Continue empfiehlt aktuell YAML; <code>config.json</code> ist veraltet. Die geprüften Seiten nennen keine Mindestversion. Wenn Ihre Version ein Feld nicht akzeptiert, folgen Sie dem verlinkten aktuellen Schema.</p>
+<p>Offizielle Quellen: <a href="https://rate-cloud.com/docs">Rate-Cloud-Verbindungsanleitung</a>, <a href="https://docs.continue.dev/customize/model-providers/top-level/openai">OpenAI-kompatible Modelle in Continue</a>, <a href="https://docs.continue.dev/reference">Continue-YAML-Referenz</a>, <a href="https://docs.continue.dev/faqs">Continue-FAQ zu Geheimnissen</a> und <a href="https://docs.continue.dev/guides/understanding-configs">Continue-Konfigurationspfade</a>.</p>
+<h2 id="zugriff-und-modell-ids-prüfen">Zugriff und Modell-IDs prüfen</h2>
+<p>Erstellen Sie einen Rate-Cloud-API-Schlüssel, erlauben Sie das benötigte Modell und prüfen Sie aktiven Testzugang oder aktives Abonnement. Der vollständige Schlüssel wird nur bei Erstellung angezeigt. Die Modellliste von Continue gewährt keinen Zugriff.</p>
+<p>Die OpenAI-kompatible Basis-URL von Rate Cloud lautet <code>https://llm.rate-cloud.com/v1</code>. Nutzen Sie die exakten direkten API-IDs unten. Continue zeigt im Auswahlmenü den von Ihnen gesetzten <code>name</code>; das Präfix <code>ratecloud/</code>, das andere Clients verwenden, ist nicht nötig.</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead>
+<tr>
+<th>Modell</th>
+<th>Direkte API-ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GLM 5.3</td>
+<td><code>glm-5.3</code></td>
+</tr>
+<tr>
+<td>GLM 5.3 Flash</td>
+<td><code>glm-5.3-flash</code></td>
+</tr>
+<tr>
+<td>DeepSeek V4.1 Flash</td>
+<td><code>deepseek-v4.1-flash</code></td>
+</tr>
+<tr>
+<td>DeepSeek V4 Pro</td>
+<td><code>deepseek-v4-pro</code></td>
+</tr>
+<tr>
+<td>Qwen 3.8 Max</td>
+<td><code>qwen-3.8-max</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="geheimnis-für-die-ide-erweiterung-speichern">Geheimnis für die IDE-Erweiterung speichern</h2>
+<p>Continues IDE-Erweiterungen lösen <code>${{ secrets.NAME }}</code> aus <code>.env</code>-Dateien auf. Laut Dokumentation gilt diese Suchreihenfolge: Workspace <code>.env</code>, Workspace <code>.continue/.env</code>, dann global <code>~/.continue/.env</code>. IDE-Erweiterungen übernehmen Shell-Umgebungsvariablen nicht direkt.</p>
+<p>Erstellen oder aktualisieren Sie die globale Datei <code>~/.continue/.env</code> (Windows: <code>%USERPROFILE%\.continue\.env</code>) mit folgendem lokalem Eintrag:</p>
+<div class="code-block"><button class="code-copy" data-error-label="Kopieren" type="button">Kopieren</button><pre><code class="language-dotenv">RATE_CLOUD_API_KEY=&lt;your-key&gt;
+</code></pre></div>
+<p>Halten Sie die Datei aus der Versionsverwaltung heraus. Speichern Sie keinen echten Schlüssel in <code>config.yaml</code> und teilen Sie die <code>.env</code>-Datei nicht. Für Continue CLI kann laut Dokumentation auch die Prozessumgebung das Geheimnis auflösen.</p>
+<h2 id="lokale-yaml-für-continue-konfigurieren">Lokale YAML für Continue konfigurieren</h2>
+<p>Continues lokale Konfiguration liegt unter macOS/Linux in <code>~/.continue/config.yaml</code>, unter Windows in <code>%USERPROFILE%\.continue\config.yaml</code>. Öffnen Sie sie mit dem Konfigurationswähler und dem Zahnradsymbol in der Continue-Seitenleiste. Bewahren Sie andere Abschnitte auf. Fügen Sie je gewünschtem Modell einen Eintrag hinzu; dieses Beispiel enthält alle fünf:</p>
+<div class="code-block"><button class="code-copy" data-error-label="Kopieren" type="button">Kopieren</button><pre><code class="language-yaml">name: Rate Cloud
+version: 1.0.0
+schema: v1
+models:
+  - name: Rate Cloud - GLM 5.3
+    provider: openai
+    model: glm-5.3
+    apiBase: https://llm.rate-cloud.com/v1
+    apiKey: ${{ secrets.RATE_CLOUD_API_KEY }}
+    useResponsesApi: false
+    roles: [chat, edit, apply]
+  - name: Rate Cloud - GLM 5.3 Flash
+    provider: openai
+    model: glm-5.3-flash
+    apiBase: https://llm.rate-cloud.com/v1
+    apiKey: ${{ secrets.RATE_CLOUD_API_KEY }}
+    useResponsesApi: false
+    roles: [chat, edit, apply]
+  - name: Rate Cloud - DeepSeek V4.1 Flash
+    provider: openai
+    model: deepseek-v4.1-flash
+    apiBase: https://llm.rate-cloud.com/v1
+    apiKey: ${{ secrets.RATE_CLOUD_API_KEY }}
+    useResponsesApi: false
+    roles: [chat, edit, apply]
+  - name: Rate Cloud - DeepSeek V4 Pro
+    provider: openai
+    model: deepseek-v4-pro
+    apiBase: https://llm.rate-cloud.com/v1
+    apiKey: ${{ secrets.RATE_CLOUD_API_KEY }}
+    useResponsesApi: false
+    roles: [chat, edit, apply]
+  - name: Rate Cloud - Qwen 3.8 Max
+    provider: openai
+    model: qwen-3.8-max
+    apiBase: https://llm.rate-cloud.com/v1
+    apiKey: ${{ secrets.RATE_CLOUD_API_KEY }}
+    useResponsesApi: false
+    roles: [chat, edit, apply]
+</code></pre></div>
+<p><code>useResponsesApi: false</code> wählt den dokumentierten Chat-Completions-Pfad. Die Modelle sind mit Chat-, Editier- und Apply-Rollen aufgeführt. Diese Anleitung aktiviert keine Agenten-/Werkzeugnutzung, da sie von der tatsächlichen Werkzeugaufruf-Unterstützung des Modells und der API abhängt. Aktivieren Sie diese Funktion erst nach Prüfung.</p>
+<p>Speichern Sie die Konfiguration. Laut aktueller Continue-Anleitung werden Änderungen automatisch neu geladen. Wählen Sie im Modellmenü einen Rate-Cloud-Eintrag. Eine Modellanfrage ist nicht nötig, um statische Konfiguration und Auswahl zu prüfen.</p>
+<h2 id="fehlerbehebung">Fehlerbehebung</h2>
+<ul>
+<li><strong>API-Schlüssel wird nicht aufgelöst:</strong> Prüfen Sie Schreibweise <code>RATE_CLOUD_API_KEY</code> und Speicherort der <code>.env</code>-Datei. Bei IDE-Erweiterungen nicht allein auf <code>export</code> im Terminal vertrauen.</li>
+<li><strong>Kein Rate-Cloud-Modell sichtbar:</strong> Prüfen Sie YAML-Pfad, <code>schema: v1</code> und gültige YAML-Syntax. Stellen Sie mit Continues Konfigurationsauswahl sicher, dass Sie die aktive Datei bearbeiten.</li>
+<li><strong>401 oder Zugriff verweigert:</strong> Prüfen Sie aktiven Schlüssel und die Modellberechtigung für Schlüssel und Konto. Ein Modellname in Continue beweist keinen Zugriff.</li>
+<li><strong>404 oder falscher API-Pfad:</strong> <code>apiBase</code> bleibt <code>https://llm.rate-cloud.com/v1</code>; <code>/chat/completions</code> nicht anhängen.</li>
+<li><strong>Agenten-Werkzeugaufrufe schlagen fehl:</strong> <code>roles</code> und Unterstützung von Werkzeugaufrufen sind getrennt. Continue verlangt <code>tool_use</code> für den Agent-Modus; die tatsächliche Rate-Cloud-Kompatibilität wurde hier nicht live getestet. Nicht ohne Prüfung deklarieren.</li>
+<li><strong>Konfiguration in Ihrer Version anders:</strong> Die Continue-Referenz ist maßgeblich für unterstützte YAML-Felder. YAML bevorzugen; JSON-Konfigurationen sind veraltet.</li>
+</ul>
+<p>Entfernen Sie Geheimnisse und private Eingaben aus Protokollen, bevor Sie Diagnosen teilen. Bei Erstellung wurden keine Installationen oder API-Anfragen ausgeführt.</p>
+<p>Version auf Russisch: <a href="/RateCloud/ru/guides/continue/">Continue mit Rate Cloud verbinden</a>. Zurück zu <a href="/RateCloud/de/guides/">allen deutschen Anleitungen</a>.</p></article><aside class="toc" aria-label="Auf dieser Seite"><h2>Auf dieser Seite</h2><div class="toc-list">
+<ul>
+<li><a href="#zugriff-und-modell-ids-prüfen">Zugriff und Modell-IDs prüfen</a></li>
+<li><a href="#geheimnis-für-die-ide-erweiterung-speichern">Geheimnis für die IDE-Erweiterung speichern</a></li>
+<li><a href="#lokale-yaml-für-continue-konfigurieren">Lokale YAML für Continue konfigurieren</a></li>
+<li><a href="#fehlerbehebung">Fehlerbehebung</a></li>
+</ul>
+</div>
+</aside></div><footer class="page-footer"><p>Öffentlicher Informationsstand: 3. November 2026. Aktuelle Bedingungen stehen auf der Hauptwebsite.</p><div><a href="/RateCloud/de/raw/guides/continue.md">Markdown lesen</a> · <a href="https://github.com/shaitor52/RateCloud/blob/main/de/guides/continue.md">Quelldatei</a></div><p><a href="https://rate-cloud.com/de">Hauptwebsite ↗</a> · <a href="https://rate-cloud.com/user/instructions">Dashboard öffnen ↗</a></p></footer></main></div>
+        <dialog id="search-dialog" aria-labelledby="search-title"><div class="search-dialog-header"><h2 id="search-title">Dokumentation durchsuchen</h2><button class="icon-button" id="search-close" aria-label="Schließen">×</button></div><label class="sr-only" for="search-input">Dokumentation durchsuchen</label><input id="search-input" placeholder="Artikel, Modelle oder Tools suchen" type="search" autocomplete="off"><ul id="search-results" aria-live="polite" data-empty="Keine passenden Seiten gefunden."></ul></dialog></body></html>

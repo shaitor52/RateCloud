@@ -1,0 +1,112 @@
+<!doctype html><html lang="pt"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Conectar o OpenClaw à Rate Cloud | Rate Cloud Docs</title><meta name="description" content="O OpenClaw permite registrar um provedor personalizado com URL base compatível com OpenAI. Este guia usa o transporte documentado openai-completions e a API Chat Completions da Rate Cloud compatí"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://shaitor52.github.io/RateCloud/pt/guides/openclaw/"><link rel="alternate" hreflang="en" href="https://shaitor52.github.io/RateCloud/en/guides/openclaw/"><link rel="alternate" hreflang="ru" href="https://shaitor52.github.io/RateCloud/ru/guides/openclaw/"><link rel="alternate" hreflang="es" href="https://shaitor52.github.io/RateCloud/es/guides/openclaw/"><link rel="alternate" hreflang="pt" href="https://shaitor52.github.io/RateCloud/pt/guides/openclaw/"><link rel="alternate" hreflang="de" href="https://shaitor52.github.io/RateCloud/de/guides/openclaw/"><link rel="alternate" hreflang="fr" href="https://shaitor52.github.io/RateCloud/fr/guides/openclaw/"><link rel="alternate" hreflang="x-default" href="https://shaitor52.github.io/RateCloud/en/guides/openclaw/"><meta name="theme-color" content="#151719"><meta property="og:type" content="article"><meta property="og:title" content="Conectar o OpenClaw à Rate Cloud | Rate Cloud Docs"><meta property="og:description" content="O OpenClaw permite registrar um provedor personalizado com URL base compatível com OpenAI. Este guia usa o transporte documentado openai-completions e a API Chat Completions da Rate Cloud compatí"><meta property="og:url" content="https://shaitor52.github.io/RateCloud/pt/guides/openclaw/"><meta property="og:image" content="https://shaitor52.github.io/RateCloud/assets/brand-hero.webp"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/RateCloud/assets/brand-logo.png"><link rel="stylesheet" href="/RateCloud/assets/docs.css?v=ab6226e88a62"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Conectar o OpenClaw à Rate Cloud", "description": "O OpenClaw permite registrar um provedor personalizado com URL base compatível com OpenAI. Este guia usa o transporte documentado openai-completions e a API Chat Completions da Rate Cloud compatí", "inLanguage": "pt", "url": "https://shaitor52.github.io/RateCloud/pt/guides/openclaw/", "isPartOf": {"@type": "WebSite", "name": "Rate Cloud Documentation", "url": "https://shaitor52.github.io/RateCloud/"}, "publisher": {"@type": "Organization", "name": "Rate Cloud", "url": "https://rate-cloud.com/"}}</script><script src="/RateCloud/assets/docs.js?v=3d9193980cec" defer></script></head>
+        <body data-base="/RateCloud/" data-lang="pt" data-copy="Copiar" data-copied="Copiado"><a class="skip-link" href="#main">Ir para o conteúdo</a><header class="topbar"><a class="brand" href="/RateCloud/pt/"><img class="brand-mark" src="/RateCloud/assets/brand-logo.png" width="32" height="32" alt=""><span>Rate Cloud<small>Documentação</small></span></a><div class="header-actions"><button id="menu-toggle" class="icon-button" aria-label="Menu" aria-controls="sidebar" aria-expanded="false" data-open-label="Menu" data-close-label="Fechar">☰</button><button class="icon-button" data-search-open aria-label="Buscar documentação"><span>⌕</span><span class="search-label">Buscar documentação</span><kbd class="search-shortcut">⌘ K</kbd></button><label class="sr-only" for="language-switch">Idioma</label><select id="language-switch"><option value="/RateCloud/en/guides/openclaw/">English</option><option value="/RateCloud/ru/guides/openclaw/">Русский</option><option value="/RateCloud/es/guides/openclaw/">Español</option><option value="/RateCloud/pt/guides/openclaw/" selected>Português</option><option value="/RateCloud/de/guides/openclaw/">Deutsch</option><option value="/RateCloud/fr/guides/openclaw/">Français</option></select><a class="header-site" href="https://rate-cloud.com/pt">Site principal ↗</a></div></header>
+        <div class="layout"><nav id="sidebar" class="sidebar" aria-label="Documentação"><div class="sidebar-group"><h2>Visão geral</h2><a class="nav-link" href="/RateCloud/pt/">Visão geral</a></div><div class="sidebar-group"><h2>Conheça a Rate Cloud</h2><a class="nav-link" href="/RateCloud/pt/articles/about-rate-cloud/">O que a Rate Cloud oferece</a><a class="nav-link" href="/RateCloud/pt/articles/models/">Modelos e como escolher</a><a class="nav-link" href="/RateCloud/pt/articles/routing-and-quantization/">Como funcionam o roteamento inteligente e a quantização</a><a class="nav-link" href="/RateCloud/pt/articles/performance/">Velocidade e desempenho da Rate Cloud</a><a class="nav-link" href="/RateCloud/pt/articles/api-and-integrations/">Conectar ferramentas e aplicativos à Rate Cloud</a><a class="nav-link" href="/RateCloud/pt/articles/privacy-and-reliability/">Privacidade, tratamento de dados e disponibilidade</a><a class="nav-link" href="/RateCloud/pt/articles/white-label/">White Label: um serviço de assinatura de IA com sua marca</a><a class="nav-link" href="/RateCloud/pt/articles/cost-and-service-comparison/">Rate Cloud versus APIs oficiais: custo fixo para trabalho contínuo</a><a class="nav-link" href="/RateCloud/pt/articles/unlimited-use-cases/">Onde o acesso com tokens ilimitados é útil: 20 fluxos práticos</a></div><div class="sidebar-group"><h2>Conecte suas ferramentas</h2><a class="nav-link" href="/RateCloud/pt/guides/claude-code/">Conectar o Claude Code à Rate Cloud</a><a class="nav-link" href="/RateCloud/pt/guides/continue/">Conectar o Continue à Rate Cloud</a><a class="nav-link" href="/RateCloud/pt/guides/deepseek-harness/">Conectar o DeepSeek Harness à Rate Cloud</a><a class="nav-link" href="/RateCloud/pt/guides/hermes-agent/">Conectar o Hermes Agent à Rate Cloud</a><a class="nav-link" href="/RateCloud/pt/guides/http-python/">Acesso HTTP e Python genérico</a><a class="nav-link active" href="/RateCloud/pt/guides/openclaw/" aria-current="page">Conectar o OpenClaw à Rate Cloud</a><a class="nav-link" href="/RateCloud/pt/guides/opencode/">Conectar o OpenCode à Rate Cloud</a></div><div class="sidebar-group"><h2>Fontes e dados</h2><a class="nav-link" href="/RateCloud/pt/faq/">Rate Cloud: perguntas frequentes</a></div><div class="sidebar-group"><a class="nav-link" href="/RateCloud/en/sources/">Fontes e dados</a><a class="nav-link" href="https://github.com/shaitor52/RateCloud">GitHub ↗</a></div></nav><main id="main" class=""><div class="breadcrumb"><a href="/RateCloud/pt/">Documentação</a><span>/</span>Conecte suas ferramentas</div><p class="eyebrow">RATE CLOUD / Documentação</p><h1 class="page-title">Conectar o OpenClaw à Rate Cloud</h1><div class="article-grid"><article class="article-content"><p>O OpenClaw permite registrar um provedor personalizado com URL base compatível com OpenAI. Este guia usa o transporte documentado <code>openai-completions</code> e a API Chat Completions da Rate Cloud compatível com OpenAI.</p>
+<p><strong>Documentação consultada:</strong> 3 de novembro de 2026. Este é um exemplo estático baseado na documentação publicada. Não foi testado ao vivo em uma instalação do OpenClaw ou conta da Rate Cloud. A documentação do OpenClaw é contínua e não especifica aqui uma versão mínima; use o formato atual da configuração da sua versão instalada.</p>
+<p>Referências oficiais: <a href="https://rate-cloud.com/docs">guia de conexão da Rate Cloud</a>, <a href="https://rate-cloud.com/docs">exemplo de OpenClaw da Rate Cloud</a>, <a href="https://docs.openclaw.ai/concepts/model-providers/custom-providers">provedores personalizados do OpenClaw</a>, <a href="https://docs.openclaw.ai/gateway/config-tools/provider-examples">exemplos de provedores do OpenClaw</a> e <a href="https://docs.openclaw.ai/reference/secretref-credential-surface">referências de segredo do OpenClaw</a>.</p>
+<h2 id="requisitos-e-acesso">Requisitos e acesso</h2>
+<p>Crie uma chave de API da Rate Cloud no painel. Permita o modelo que deseja usar, confirme que há teste ou assinatura ativa para ele e copie o segredo completo no momento da criação. A presença no catálogo não concede, por si só, acesso à execução.</p>
+<p>A Rate Cloud documenta este endpoint para solicitações compatíveis com OpenAI:</p>
+<div class="code-block"><button class="code-copy" data-error-label="Copiar" type="button">Copiar</button><pre><code class="language-text">https://llm.rate-cloud.com/v1
+</code></pre></div>
+<p>Selecione o adaptador <code>openai-completions</code>. Não acrescente <code>/chat/completions</code> à URL base. Os IDs diretos de modelo da Rate Cloud são:</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead>
+<tr>
+<th>Modelo</th>
+<th>ID da API direta</th>
+<th>Referência do modelo no OpenClaw</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GLM 5.3</td>
+<td><code>glm-5.3</code></td>
+<td><code>ratecloud/glm-5.3</code></td>
+</tr>
+<tr>
+<td>GLM 5.3 Flash</td>
+<td><code>glm-5.3-flash</code></td>
+<td><code>ratecloud/glm-5.3-flash</code></td>
+</tr>
+<tr>
+<td>DeepSeek V4.1 Flash</td>
+<td><code>deepseek-v4.1-flash</code></td>
+<td><code>ratecloud/deepseek-v4.1-flash</code></td>
+</tr>
+<tr>
+<td>DeepSeek V4 Pro</td>
+<td><code>deepseek-v4-pro</code></td>
+<td><code>ratecloud/deepseek-v4-pro</code></td>
+</tr>
+<tr>
+<td>Qwen 3.8 Max</td>
+<td><code>qwen-3.8-max</code></td>
+<td><code>ratecloud/qwen-3.8-max</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>A referência de modelo do OpenClaw inclui o ID do provedor; a solicitação enviada ao serviço usa o ID de modelo sem o prefixo.</p>
+<h2 id="forneça-a-chave-sem-colocá-la-na-configuração">Forneça a chave sem colocá-la na configuração</h2>
+<p>O OpenClaw aceita substituição <code>${VARIABLE_NAME}</code> em valores <code>apiKey</code> do provedor. Defina <code>RATE_CLOUD_API_KEY</code> no ambiente do processo Gateway do OpenClaw. O prompt do shell ajuda a não registrar o segredo no histórico:</p>
+<div class="code-block"><button class="code-copy" data-error-label="Copiar" type="button">Copiar</button><pre><code class="language-sh"># Bash
+read -r -s -p 'Rate Cloud API key: ' RATE_CLOUD_API_KEY
+printf '\n'
+export RATE_CLOUD_API_KEY
+</code></pre></div>
+<div class="code-block"><button class="code-copy" data-error-label="Copiar" type="button">Copiar</button><pre><code class="language-sh"># zsh
+read -r -s 'RATE_CLOUD_API_KEY?Rate Cloud API key: '
+printf '\n'
+export RATE_CLOUD_API_KEY
+</code></pre></div>
+<p>Então inicie ou reinicie o Gateway a partir desse ambiente. Para um gerenciador de serviços ou Windows, configure a variável pelo mecanismo local seguro de segredos desse ambiente. Não coloque a chave literal em um <code>openclaw.json</code> compartilhado, repositório de código ou issue pública.</p>
+<h2 id="adicione-o-provedor-personalizado">Adicione o provedor personalizado</h2>
+<p>Abra o <code>~/.openclaw/openclaw.json</code> existente no macOS/Linux ou <code>%USERPROFILE%\.openclaw\openclaw.json</code> no Windows. Faça uma cópia de segurança e mescle os campos <code>models</code> e <code>agents</code> abaixo na configuração existente. Não substitua configurações não relacionadas. O OpenClaw usa JSON5, portanto este exemplo sem comentários também é JSON válido.</p>
+<div class="code-block"><button class="code-copy" data-error-label="Copiar" type="button">Copiar</button><pre><code class="language-json">{
+  &quot;models&quot;: {
+    &quot;mode&quot;: &quot;merge&quot;,
+    &quot;providers&quot;: {
+      &quot;ratecloud&quot;: {
+        &quot;baseUrl&quot;: &quot;https://llm.rate-cloud.com/v1&quot;,
+        &quot;apiKey&quot;: &quot;${RATE_CLOUD_API_KEY}&quot;,
+        &quot;api&quot;: &quot;openai-completions&quot;,
+        &quot;models&quot;: [
+          { &quot;id&quot;: &quot;glm-5.3&quot;, &quot;name&quot;: &quot;GLM 5.3&quot; },
+          { &quot;id&quot;: &quot;glm-5.3-flash&quot;, &quot;name&quot;: &quot;GLM 5.3 Flash&quot; },
+          { &quot;id&quot;: &quot;deepseek-v4.1-flash&quot;, &quot;name&quot;: &quot;DeepSeek V4.1 Flash&quot; },
+          { &quot;id&quot;: &quot;deepseek-v4-pro&quot;, &quot;name&quot;: &quot;DeepSeek V4 Pro&quot; },
+          { &quot;id&quot;: &quot;qwen-3.8-max&quot;, &quot;name&quot;: &quot;Qwen 3.8 Max&quot; }
+        ]
+      }
+    }
+  },
+  &quot;agents&quot;: {
+    &quot;defaults&quot;: {
+      &quot;model&quot;: {
+        &quot;primary&quot;: &quot;ratecloud/glm-5.3&quot;
+      }
+    }
+  }
+}
+</code></pre></div>
+<p>Este exemplo usa os campos da documentação atual de provedor personalizado do OpenClaw e o exemplo da Rate Cloud: <code>baseUrl</code>, <code>apiKey</code>, <code>api</code>, <code>models</code> e <code>agents.defaults.model.primary</code>. Ele não afirma limite de contexto, suporte a imagens, compatibilidade de ferramentas nem comportamento de raciocínio. Deixe esses itens sem especificação, a menos que os tenha verificado para o endpoint e o modelo.</p>
+<h2 id="seleção-e-solução-de-problemas">Seleção e solução de problemas</h2>
+<p>Reinicie o Gateway após salvar a configuração e escolha o modelo Rate Cloud configurado. Para uma verificação estática, confirme que a referência do modelo principal corresponde exatamente a um ID de provedor/modelo na configuração. Não use comandos de listagem ou geração ao vivo, a menos que pretenda fazer uma solicitação autenticada à API.</p>
+<ul>
+<li><strong>Provedor/modelo desconhecido:</strong> confira se <code>models.providers.ratecloud.models[]</code> contém o ID exato sem prefixo e se a referência selecionada é <code>ratecloud/&lt;mesmo-id&gt;</code>.</li>
+<li><strong>Não autorizado:</strong> confirme que o processo Gateway consegue ler <code>RATE_CLOUD_API_KEY</code>, que a chave está ativa e que suas restrições de IP permitem o host do Gateway.</li>
+<li><strong>Acesso negado:</strong> verifique permissões de modelo da chave e acesso de teste/assinatura para aquele modelo.</li>
+<li><strong>Falha de ferramentas ou imagens:</strong> o protocolo genérico não garante todos os recursos. Não adicione <code>reasoning</code>, <code>input</code>, <code>contextWindow</code> ou substituições de compatibilidade sem que o endpoint/modelo realmente os suporte.</li>
+<li><strong>Configuração antiga do OpenClaw:</strong> a documentação pode mudar. Consulte a referência atual de provedores personalizados em vez de copiar um esquema legado <code>models.json</code> para <code>openclaw.json</code>.</li>
+</ul>
+<p>Remova credenciais e prompts privados antes de compartilhar diagnósticos. Os exemplos documentam apenas a configuração; nenhuma chamada à API foi executada.</p>
+<p>Versão em russo: <a href="/RateCloud/ru/guides/openclaw/">Conectar o OpenClaw à Rate Cloud</a>. Voltar para <a href="/RateCloud/pt/guides/">todos os guias em português</a>.</p>
+<p><a href="https://docs.openclaw.ai/help/environment">Referência</a></p></article><aside class="toc" aria-label="Nesta página"><h2>Nesta página</h2><div class="toc-list">
+<ul>
+<li><a href="#requisitos-e-acesso">Requisitos e acesso</a></li>
+<li><a href="#forneça-a-chave-sem-colocá-la-na-configuração">Forneça a chave sem colocá-la na configuração</a></li>
+<li><a href="#adicione-o-provedor-personalizado">Adicione o provedor personalizado</a></li>
+<li><a href="#seleção-e-solução-de-problemas">Seleção e solução de problemas</a></li>
+</ul>
+</div>
+</aside></div><footer class="page-footer"><p>Informações públicas consultadas em 3 de novembro de 2026. Confira as condições atuais no site principal.</p><div><a href="/RateCloud/pt/raw/guides/openclaw.md">Ler Markdown</a> · <a href="https://github.com/shaitor52/RateCloud/blob/main/pt/guides/openclaw.md">Ver fonte</a></div><p><a href="https://rate-cloud.com/pt">Site principal ↗</a> · <a href="https://rate-cloud.com/user/instructions">Abrir painel ↗</a></p></footer></main></div>
+        <dialog id="search-dialog" aria-labelledby="search-title"><div class="search-dialog-header"><h2 id="search-title">Buscar documentação</h2><button class="icon-button" id="search-close" aria-label="Fechar">×</button></div><label class="sr-only" for="search-input">Buscar documentação</label><input id="search-input" placeholder="Buscar artigos, modelos ou ferramentas" type="search" autocomplete="off"><ul id="search-results" aria-live="polite" data-empty="Nenhuma página encontrada."></ul></dialog></body></html>

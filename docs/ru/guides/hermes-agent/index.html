@@ -1,0 +1,79 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Подключение Hermes Agent к Rate Cloud | Rate Cloud Docs</title><meta name="description" content="Hermes Agent поддерживает собственные OpenAI-совместимые API. В этом руководстве используется документированная конфигурация собственного провайдера Hermes и совместимый с OpenAI адрес /v1 Rate C"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://shaitor52.github.io/RateCloud/ru/guides/hermes-agent/"><link rel="alternate" hreflang="en" href="https://shaitor52.github.io/RateCloud/en/guides/hermes-agent/"><link rel="alternate" hreflang="ru" href="https://shaitor52.github.io/RateCloud/ru/guides/hermes-agent/"><link rel="alternate" hreflang="es" href="https://shaitor52.github.io/RateCloud/es/guides/hermes-agent/"><link rel="alternate" hreflang="pt" href="https://shaitor52.github.io/RateCloud/pt/guides/hermes-agent/"><link rel="alternate" hreflang="de" href="https://shaitor52.github.io/RateCloud/de/guides/hermes-agent/"><link rel="alternate" hreflang="fr" href="https://shaitor52.github.io/RateCloud/fr/guides/hermes-agent/"><link rel="alternate" hreflang="x-default" href="https://shaitor52.github.io/RateCloud/en/guides/hermes-agent/"><meta name="theme-color" content="#151719"><meta property="og:type" content="article"><meta property="og:title" content="Подключение Hermes Agent к Rate Cloud | Rate Cloud Docs"><meta property="og:description" content="Hermes Agent поддерживает собственные OpenAI-совместимые API. В этом руководстве используется документированная конфигурация собственного провайдера Hermes и совместимый с OpenAI адрес /v1 Rate C"><meta property="og:url" content="https://shaitor52.github.io/RateCloud/ru/guides/hermes-agent/"><meta property="og:image" content="https://shaitor52.github.io/RateCloud/assets/brand-hero.webp"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/RateCloud/assets/brand-logo.png"><link rel="stylesheet" href="/RateCloud/assets/docs.css?v=ab6226e88a62"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Подключение Hermes Agent к Rate Cloud", "description": "Hermes Agent поддерживает собственные OpenAI-совместимые API. В этом руководстве используется документированная конфигурация собственного провайдера Hermes и совместимый с OpenAI адрес /v1 Rate C", "inLanguage": "ru", "url": "https://shaitor52.github.io/RateCloud/ru/guides/hermes-agent/", "isPartOf": {"@type": "WebSite", "name": "Rate Cloud Documentation", "url": "https://shaitor52.github.io/RateCloud/"}, "publisher": {"@type": "Organization", "name": "Rate Cloud", "url": "https://rate-cloud.com/"}}</script><script src="/RateCloud/assets/docs.js?v=3d9193980cec" defer></script></head>
+        <body data-base="/RateCloud/" data-lang="ru" data-copy="Копировать" data-copied="Скопировано"><a class="skip-link" href="#main">Перейти к содержимому</a><header class="topbar"><a class="brand" href="/RateCloud/ru/"><img class="brand-mark" src="/RateCloud/assets/brand-logo.png" width="32" height="32" alt=""><span>Rate Cloud<small>Документация</small></span></a><div class="header-actions"><button id="menu-toggle" class="icon-button" aria-label="Меню" aria-controls="sidebar" aria-expanded="false" data-open-label="Меню" data-close-label="Закрыть">☰</button><button class="icon-button" data-search-open aria-label="Поиск по документации"><span>⌕</span><span class="search-label">Поиск по документации</span><kbd class="search-shortcut">⌘ K</kbd></button><label class="sr-only" for="language-switch">Язык</label><select id="language-switch"><option value="/RateCloud/en/guides/hermes-agent/">English</option><option value="/RateCloud/ru/guides/hermes-agent/" selected>Русский</option><option value="/RateCloud/es/guides/hermes-agent/">Español</option><option value="/RateCloud/pt/guides/hermes-agent/">Português</option><option value="/RateCloud/de/guides/hermes-agent/">Deutsch</option><option value="/RateCloud/fr/guides/hermes-agent/">Français</option></select><a class="header-site" href="https://rate-cloud.com/">Основной сайт ↗</a></div></header>
+        <div class="layout"><nav id="sidebar" class="sidebar" aria-label="Документация"><div class="sidebar-group"><h2>Обзор</h2><a class="nav-link" href="/RateCloud/ru/">Обзор</a></div><div class="sidebar-group"><h2>О сервисе Rate Cloud</h2><a class="nav-link" href="/RateCloud/ru/articles/about-rate-cloud/">Что предлагает Rate Cloud</a><a class="nav-link" href="/RateCloud/ru/articles/models/">Модели и выбор подходящей</a><a class="nav-link" href="/RateCloud/ru/articles/routing-and-quantization/">Как работают интеллектуальная маршрутизация и квантование</a><a class="nav-link" href="/RateCloud/ru/articles/performance/">Скорость и производительность Rate Cloud</a><a class="nav-link" href="/RateCloud/ru/articles/api-and-integrations/">Подключение инструментов и приложений к Rate Cloud</a><a class="nav-link" href="/RateCloud/ru/articles/privacy-and-reliability/">Конфиденциальность, обработка данных и доступность</a><a class="nav-link" href="/RateCloud/ru/articles/white-label/">White Label: сервис подписки на ИИ под вашим брендом</a><a class="nav-link" href="/RateCloud/ru/articles/cost-and-service-comparison/">Rate Cloud и официальные API: фиксированная цена при постоянной нагрузке</a><a class="nav-link" href="/RateCloud/ru/articles/unlimited-use-cases/">Где полезен доступ без суммарной квоты токенов: 20 рабочих сценариев</a></div><div class="sidebar-group"><h2>Подключение программ</h2><a class="nav-link" href="/RateCloud/ru/guides/claude-code/">Подключение Claude Code к Rate Cloud</a><a class="nav-link" href="/RateCloud/ru/guides/continue/">Подключение Continue к Rate Cloud</a><a class="nav-link" href="/RateCloud/ru/guides/deepseek-harness/">Подключение DeepSeek Harness к Rate Cloud</a><a class="nav-link active" href="/RateCloud/ru/guides/hermes-agent/" aria-current="page">Подключение Hermes Agent к Rate Cloud</a><a class="nav-link" href="/RateCloud/ru/guides/http-python/">Доступ через HTTP и Python</a><a class="nav-link" href="/RateCloud/ru/guides/openclaw/">Подключение OpenClaw к Rate Cloud</a><a class="nav-link" href="/RateCloud/ru/guides/opencode/">Подключение OpenCode к Rate Cloud</a></div><div class="sidebar-group"><h2>Источники и данные</h2><a class="nav-link" href="/RateCloud/ru/faq/">Rate Cloud: частые вопросы</a></div><div class="sidebar-group"><a class="nav-link" href="/RateCloud/en/sources/">Источники и данные</a><a class="nav-link" href="https://github.com/shaitor52/RateCloud">GitHub ↗</a></div></nav><main id="main" class=""><div class="breadcrumb"><a href="/RateCloud/ru/">Документация</a><span>/</span>Подключение программ</div><p class="eyebrow">RATE CLOUD / Документация</p><h1 class="page-title">Подключение Hermes Agent к Rate Cloud</h1><div class="article-grid"><article class="article-content"><p>Hermes Agent поддерживает собственные OpenAI-совместимые API. В этом руководстве используется документированная конфигурация собственного провайдера Hermes и совместимый с OpenAI адрес <code>/v1</code> Rate Cloud для Chat Completions.</p>
+<p><strong>Документация проверена:</strong> 3 ноября 2026 года. Примеры соответствуют опубликованным инструкциям Hermes и Rate Cloud, но не проверялись живой установкой Hermes Agent или аккаунтом. Документация Hermes обновляется; на просмотренных страницах не указана минимальная версия Hermes для этой настройки. Конфигурация провайдеров менялась, поэтому ниже используются текущие имена полей.</p>
+<p>Официальные источники: <a href="https://rate-cloud.com/docs">инструкция Rate Cloud</a>, <a href="https://github.com/NousResearch/hermes-agent/blob/main/website/docs/integrations/providers.md">раздел провайдеров Hermes Agent</a>, <a href="https://github.com/NousResearch/hermes-agent/blob/main/website/docs/reference/environment-variables.md">переменные окружения Hermes</a> и <a href="https://hermes-agent.nousresearch.com/docs">файлы конфигурации Hermes</a>.</p>
+<h2 id="подготовьте-доступ">Подготовьте доступ</h2>
+<p>Создайте API-ключ в кабинете Rate Cloud, разрешите ему нужную модель и проверьте активный пробный доступ или подписку. Полный ключ показывается только при создании. Не храните его в исходном коде и не отправляйте в поддержку.</p>
+<p>Общий совместимый адрес Rate Cloud:</p>
+<div class="code-block"><button class="code-copy" data-error-label="Копировать" type="button">Копировать</button><pre><code class="language-text">https://llm.rate-cloud.com/v1
+</code></pre></div>
+<p>Используйте прямой ID модели без префикса. Для Hermes не нужен префикс <code>ratecloud/</code>, используемый некоторыми другими клиентами.</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead>
+<tr>
+<th>Модель</th>
+<th>ID прямого API</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GLM 5.3</td>
+<td><code>glm-5.3</code></td>
+</tr>
+<tr>
+<td>GLM 5.3 Flash</td>
+<td><code>glm-5.3-flash</code></td>
+</tr>
+<tr>
+<td>DeepSeek V4.1 Flash</td>
+<td><code>deepseek-v4.1-flash</code></td>
+</tr>
+<tr>
+<td>DeepSeek V4 Pro</td>
+<td><code>deepseek-v4-pro</code></td>
+</tr>
+<tr>
+<td>Qwen 3.8 Max</td>
+<td><code>qwen-3.8-max</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="сохраните-секрет-в-локальном-файле-окружения-hermes">Сохраните секрет в локальном файле окружения Hermes</h2>
+<p>В актуальной документации Hermes пользовательские секреты хранятся в <code>~/.hermes/.env</code>. Добавьте эту строку локально, заменив заполнитель на свой ключ:</p>
+<div class="code-block"><button class="code-copy" data-error-label="Копировать" type="button">Копировать</button><pre><code class="language-dotenv">RATE_CLOUD_API_KEY=&lt;ваш-ключ&gt;
+</code></pre></div>
+<p>В Windows используйте <code>%USERPROFILE%\.hermes\.env</code>. Не добавляйте файл в репозиторий и не вставляйте настоящий ключ в общий пример. Hermes также читает переменную из окружения процесса; поле <code>key_env</code> ниже указывает её имя.</p>
+<h2 id="настройте-собственный-адрес-api">Настройте собственный адрес API</h2>
+<p>Измените <code>~/.hermes/config.yaml</code> в macOS/Linux или <code>%USERPROFILE%\.hermes\config.yaml</code> в Windows. Объедините эти параметры с существующей секцией <code>model</code>, не стирая остальные настройки:</p>
+<div class="code-block"><button class="code-copy" data-error-label="Копировать" type="button">Копировать</button><pre><code class="language-yaml">model:
+  default: glm-5.3
+  provider: custom
+  base_url: https://llm.rate-cloud.com/v1
+  key_env: RATE_CLOUD_API_KEY
+</code></pre></div>
+<p>Используются документированные для Hermes поля собственного API: <code>provider: custom</code>, <code>base_url</code> и <code>key_env</code>. API работает через Chat Completions; не меняйте его на транспорт Anthropic Messages или Responses. Не указывайте размер контекста без проверенного значения для сервиса и модели.</p>
+<p>Чтобы выбрать другую модель Rate Cloud, замените <code>model.default</code> точным ID из таблицы. Оставьте <code>provider: custom</code> и базовый адрес Rate Cloud.</p>
+<h2 id="необязательная-интерактивная-настройка">Необязательная интерактивная настройка</h2>
+<p>В документации Hermes команда <code>hermes model</code> открывает мастер для собственного API. Он запрашивает базовый адрес, API-ключ и модель, затем сохраняет выбор. Если используете мастер, укажите <code>https://llm.rate-cloud.com/v1</code> и ID без префикса из таблицы. Ручная настройка выше предпочтительна, если вы не хотите сохранять буквальный ключ в <code>config.yaml</code>.</p>
+<h2 id="если-не-работает">Если не работает</h2>
+<ul>
+<li><strong>Нет учётных данных:</strong> проверьте, что <code>RATE_CLOUD_API_KEY</code> задан в <code>~/.hermes/.env</code> или окружении процесса, а имя в <code>key_env</code> совпадает с ним.</li>
+<li><strong>Ошибка соединения:</strong> укажите базовый адрес с <code>/v1</code>, но без <code>/v1/chat/completions</code>. Клиент добавляет путь API сам.</li>
+<li><strong>Неизвестная модель или отказ доступа:</strong> укажите точный прямой ID. В кабинете проверьте разрешённые модели ключа и пробный доступ или подписку.</li>
+<li><strong>Вызовы инструментов возвращаются обычным текстом:</strong> OpenAI-совместимый транспорт не гарантирует, что любая модель и любой API поддерживают вызовы инструментов в формате агента. Проверьте реальные возможности модели, прежде чем полагаться на инструменты.</li>
+<li><strong>Неверно определяется контекст:</strong> Hermes может читать сведения из <code>/v1/models</code>, но документация не гарантирует наличие всех параметров в этом каталоге. Не вписывайте непроверенный размер контекста.</li>
+<li><strong>Нашёлся старый пример:</strong> в прежней документации могут встречаться <code>api_key</code> и другая схема. Сверьте поля с текущим руководством Hermes и версией установленного клиента.</li>
+</ul>
+<p>При подготовке руководства не запускались API-запросы и установщики.</p>
+<p>English version: <a href="/RateCloud/en/guides/hermes-agent/">Connect Hermes Agent to Rate Cloud</a>. К списку <a href="/RateCloud/ru/guides/">русских инструкций</a>.</p></article><aside class="toc" aria-label="На этой странице"><h2>На этой странице</h2><div class="toc-list">
+<ul>
+<li><a href="#подготовьте-доступ">Подготовьте доступ</a></li>
+<li><a href="#сохраните-секрет-в-локальном-файле-окружения-hermes">Сохраните секрет в локальном файле окружения Hermes</a></li>
+<li><a href="#настройте-собственный-адрес-api">Настройте собственный адрес API</a></li>
+<li><a href="#необязательная-интерактивная-настройка">Необязательная интерактивная настройка</a></li>
+<li><a href="#если-не-работает">Если не работает</a></li>
+</ul>
+</div>
+</aside></div><footer class="page-footer"><p>Публичный снимок информации: 3 ноября 2026 года. Действующие условия проверяйте на основном сайте.</p><div><a href="/RateCloud/ru/raw/guides/hermes-agent.md">Читать Markdown</a> · <a href="https://github.com/shaitor52/RateCloud/blob/main/ru/guides/hermes-agent.md">Исходный файл</a></div><p><a href="https://rate-cloud.com/">Основной сайт ↗</a> · <a href="https://rate-cloud.com/user/instructions">Открыть кабинет ↗</a></p></footer></main></div>
+        <dialog id="search-dialog" aria-labelledby="search-title"><div class="search-dialog-header"><h2 id="search-title">Поиск по документации</h2><button class="icon-button" id="search-close" aria-label="Закрыть">×</button></div><label class="sr-only" for="search-input">Поиск по документации</label><input id="search-input" placeholder="Поиск статей, моделей и программ" type="search" autocomplete="off"><ul id="search-results" aria-live="polite" data-empty="Подходящие страницы не найдены."></ul></dialog></body></html>

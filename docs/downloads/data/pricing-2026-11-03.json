@@ -1,0 +1,75 @@
+{
+  "checked_date": "2026-11-03",
+  "currency": "USD",
+  "unit": "per 1 million tokens",
+  "input_fraction": 0.8,
+  "output_fraction": 0.2,
+  "notes": "USD-only snapshot. Official uncached real-time text API rates. Rate Cloud USD display prices retrieved from the public display-currency endpoint on 2026-11-03; displayed equivalents can change before checkout. Excludes taxes, tools, batch, cache writes, long-context surcharges and special discounts. GPT is a different-model alternative.",
+  "providers": [
+    {
+      "label": "Z.ai GLM-5.3",
+      "input_usd": 1.4,
+      "output_usd": 4.4,
+      "cached_input_usd": 0.26,
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "ratecloud_30_day_usd": 34.38
+    },
+    {
+      "label": "Z.ai GLM-5.3-Flash",
+      "input_usd": 0.15,
+      "output_usd": 0.5,
+      "cached_input_usd": 0.03,
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "ratecloud_30_day_usd": 30.16
+    },
+    {
+      "label": "DeepSeek Flash off-peak",
+      "input_usd": 0.15,
+      "output_usd": 0.6,
+      "cached_input_usd": 0.003,
+      "source": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "ratecloud_30_day_usd": 30.16
+    },
+    {
+      "label": "DeepSeek Flash peak",
+      "input_usd": 0.3,
+      "output_usd": 1.2,
+      "cached_input_usd": 0.006,
+      "source": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "ratecloud_30_day_usd": 30.16
+    },
+    {
+      "label": "DeepSeek Pro off-peak",
+      "input_usd": 0.66,
+      "output_usd": 1.98,
+      "cached_input_usd": 0.022,
+      "source": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "ratecloud_30_day_usd": 27.56
+    },
+    {
+      "label": "DeepSeek Pro peak",
+      "input_usd": 1.32,
+      "output_usd": 3.96,
+      "cached_input_usd": 0.044,
+      "source": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "ratecloud_30_day_usd": 27.56
+    },
+    {
+      "label": "QwenCloud Qwen3.8-Max Singapore",
+      "input_usd": 2,
+      "output_usd": 6,
+      "cached_input_usd": 0.25,
+      "source": "https://www.qwencloud.com/models/qwen3.8-max",
+      "ratecloud_30_day_usd": 31.49
+    },
+    {
+      "label": "OpenAI GPT-6.1 Sol Standard",
+      "input_usd": 2,
+      "output_usd": 10,
+      "cached_input_usd": 0.1,
+      "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+      "ratecloud_30_day_usd": null
+    }
+  ],
+  "ratecloud_display_source": "https://rate-cloud.com/api/public/display-currency"
+}

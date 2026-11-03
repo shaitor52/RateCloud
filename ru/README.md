@@ -1,5 +1,7 @@
 # Rate Cloud
 
+[Открыть сайт документации](https://shaitor52.github.io/RateCloud/ru/)
+
 [English](../README.md) · Русский · [Español](../es/README.md) · [Português](../pt/README.md) · [Deutsch](../de/README.md) · [Français](../fr/README.md)
 
 **Ваши модели. Безлимитные токены. Одна подписка.**

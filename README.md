@@ -1,5 +1,7 @@
 # Rate Cloud
 
+[Read the documentation website](https://shaitor52.github.io/RateCloud/)
+
 **Languages:** English · [Русский](ru/README.md) · [Español](es/README.md) · [Português](pt/README.md) · [Deutsch](de/README.md) · [Français](fr/README.md)
 
 **Your models. Unlimited tokens. One subscription.**

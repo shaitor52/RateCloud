@@ -2,6 +2,11 @@
 
 > Multilingual public reference (English, Russian, Spanish, Portuguese, German, French) for Rate Cloud, a subscription-based API service for GLM, DeepSeek, and Qwen. Source snapshot: November 3, 2026.
 
+## Documentation website
+
+- [Rate Cloud documentation](https://shaitor52.github.io/RateCloud/): HTML pages and language navigation.
+- [Documentation index](https://shaitor52.github.io/RateCloud/llms.txt): direct links to every page.
+
 ## Official website
 
 - [Rate Cloud](https://rate-cloud.com/): Product, models, subscriptions, and published performance.

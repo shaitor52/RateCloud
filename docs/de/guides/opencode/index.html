@@ -1,0 +1,106 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>OpenCode mit Rate Cloud verbinden | Rate Cloud Docs</title><meta name="description" content="Diese Anleitung konfiguriert OpenCode für die OpenAI-kompatible API von Rate Cloud. Sie behandelt das dokumentierte Format von OpenCode v1. Die aktuelle Verbindungsseite von Rate Cloud unterschei"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://shaitor52.github.io/RateCloud/de/guides/opencode/"><link rel="alternate" hreflang="en" href="https://shaitor52.github.io/RateCloud/en/guides/opencode/"><link rel="alternate" hreflang="ru" href="https://shaitor52.github.io/RateCloud/ru/guides/opencode/"><link rel="alternate" hreflang="es" href="https://shaitor52.github.io/RateCloud/es/guides/opencode/"><link rel="alternate" hreflang="pt" href="https://shaitor52.github.io/RateCloud/pt/guides/opencode/"><link rel="alternate" hreflang="de" href="https://shaitor52.github.io/RateCloud/de/guides/opencode/"><link rel="alternate" hreflang="fr" href="https://shaitor52.github.io/RateCloud/fr/guides/opencode/"><link rel="alternate" hreflang="x-default" href="https://shaitor52.github.io/RateCloud/en/guides/opencode/"><meta name="theme-color" content="#151719"><meta property="og:type" content="article"><meta property="og:title" content="OpenCode mit Rate Cloud verbinden | Rate Cloud Docs"><meta property="og:description" content="Diese Anleitung konfiguriert OpenCode für die OpenAI-kompatible API von Rate Cloud. Sie behandelt das dokumentierte Format von OpenCode v1. Die aktuelle Verbindungsseite von Rate Cloud unterschei"><meta property="og:url" content="https://shaitor52.github.io/RateCloud/de/guides/opencode/"><meta property="og:image" content="https://shaitor52.github.io/RateCloud/assets/brand-hero.webp"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/RateCloud/assets/brand-logo.png"><link rel="stylesheet" href="/RateCloud/assets/docs.css?v=ab6226e88a62"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "OpenCode mit Rate Cloud verbinden", "description": "Diese Anleitung konfiguriert OpenCode für die OpenAI-kompatible API von Rate Cloud. Sie behandelt das dokumentierte Format von OpenCode v1. Die aktuelle Verbindungsseite von Rate Cloud unterschei", "inLanguage": "de", "url": "https://shaitor52.github.io/RateCloud/de/guides/opencode/", "isPartOf": {"@type": "WebSite", "name": "Rate Cloud Documentation", "url": "https://shaitor52.github.io/RateCloud/"}, "publisher": {"@type": "Organization", "name": "Rate Cloud", "url": "https://rate-cloud.com/"}}</script><script src="/RateCloud/assets/docs.js?v=3d9193980cec" defer></script></head>
+        <body data-base="/RateCloud/" data-lang="de" data-copy="Kopieren" data-copied="Kopiert"><a class="skip-link" href="#main">Zum Inhalt</a><header class="topbar"><a class="brand" href="/RateCloud/de/"><img class="brand-mark" src="/RateCloud/assets/brand-logo.png" width="32" height="32" alt=""><span>Rate Cloud<small>Dokumentation</small></span></a><div class="header-actions"><button id="menu-toggle" class="icon-button" aria-label="Menü" aria-controls="sidebar" aria-expanded="false" data-open-label="Menü" data-close-label="Schließen">☰</button><button class="icon-button" data-search-open aria-label="Dokumentation durchsuchen"><span>⌕</span><span class="search-label">Dokumentation durchsuchen</span><kbd class="search-shortcut">⌘ K</kbd></button><label class="sr-only" for="language-switch">Sprache</label><select id="language-switch"><option value="/RateCloud/en/guides/opencode/">English</option><option value="/RateCloud/ru/guides/opencode/">Русский</option><option value="/RateCloud/es/guides/opencode/">Español</option><option value="/RateCloud/pt/guides/opencode/">Português</option><option value="/RateCloud/de/guides/opencode/" selected>Deutsch</option><option value="/RateCloud/fr/guides/opencode/">Français</option></select><a class="header-site" href="https://rate-cloud.com/de">Hauptwebsite ↗</a></div></header>
+        <div class="layout"><nav id="sidebar" class="sidebar" aria-label="Dokumentation"><div class="sidebar-group"><h2>Überblick</h2><a class="nav-link" href="/RateCloud/de/">Überblick</a></div><div class="sidebar-group"><h2>Rate Cloud entdecken</h2><a class="nav-link" href="/RateCloud/de/articles/about-rate-cloud/">Das Angebot von Rate Cloud</a><a class="nav-link" href="/RateCloud/de/articles/models/">Modelle und Auswahl</a><a class="nav-link" href="/RateCloud/de/articles/routing-and-quantization/">Intelligentes Routing und Quantisierung</a><a class="nav-link" href="/RateCloud/de/articles/performance/">Geschwindigkeit und Leistung verstehen</a><a class="nav-link" href="/RateCloud/de/articles/api-and-integrations/">Tools und Anwendungen mit Rate Cloud verbinden</a><a class="nav-link" href="/RateCloud/de/articles/privacy-and-reliability/">Datenschutz, Datenverarbeitung und Verfügbarkeit</a><a class="nav-link" href="/RateCloud/de/articles/white-label/">White Label: ein KI-Abonnementdienst unter Ihrer Marke</a><a class="nav-link" href="/RateCloud/de/articles/cost-and-service-comparison/">Rate Cloud im Vergleich zu offiziellen APIs: feste Kosten bei intensiver Nutzung</a><a class="nav-link" href="/RateCloud/de/articles/unlimited-use-cases/">Wo Zugang ohne kumulatives Tokenkontingent hilft: 20 praktische Abläufe</a></div><div class="sidebar-group"><h2>Tools verbinden</h2><a class="nav-link" href="/RateCloud/de/guides/claude-code/">Claude Code mit Rate Cloud verbinden</a><a class="nav-link" href="/RateCloud/de/guides/continue/">Continue mit Rate Cloud verbinden</a><a class="nav-link" href="/RateCloud/de/guides/deepseek-harness/">DeepSeek Harness mit Rate Cloud verbinden</a><a class="nav-link" href="/RateCloud/de/guides/hermes-agent/">Hermes Agent mit Rate Cloud verbinden</a><a class="nav-link" href="/RateCloud/de/guides/http-python/">HTTP- und Python-Zugriff</a><a class="nav-link" href="/RateCloud/de/guides/openclaw/">OpenClaw mit Rate Cloud verbinden</a><a class="nav-link active" href="/RateCloud/de/guides/opencode/" aria-current="page">OpenCode mit Rate Cloud verbinden</a></div><div class="sidebar-group"><h2>Quellen und Daten</h2><a class="nav-link" href="/RateCloud/de/faq/">Rate Cloud: häufig gestellte Fragen</a></div><div class="sidebar-group"><a class="nav-link" href="/RateCloud/en/sources/">Quellen und Daten</a><a class="nav-link" href="https://github.com/shaitor52/RateCloud">GitHub ↗</a></div></nav><main id="main" class=""><div class="breadcrumb"><a href="/RateCloud/de/">Dokumentation</a><span>/</span>Tools verbinden</div><p class="eyebrow">RATE CLOUD / Dokumentation</p><h1 class="page-title">OpenCode mit Rate Cloud verbinden</h1><div class="article-grid"><article class="article-content"><p>Diese Anleitung konfiguriert OpenCode für die OpenAI-kompatible API von Rate Cloud. Sie behandelt das dokumentierte Format von OpenCode v1. Die aktuelle Verbindungsseite von Rate Cloud unterscheidet v1 und v2. Für v2 verwenden Sie das aktuelle v2-Beispiel im Dashboard und fügen kein v1-Format ein.</p>
+<p>Offizielle Quellen: <a href="https://rate-cloud.com/docs">Rate-Cloud-Verbindungsanleitung</a> und <a href="https://opencode.ai/docs/config/">OpenCode-Konfiguration</a>.</p>
+<h2 id="vor-dem-start">Vor dem Start</h2>
+<ol>
+<li>Melden Sie sich bei Rate Cloud an und erstellen Sie unter <strong>Einstellungen → API-Schlüssel</strong> einen Schlüssel. Kopieren Sie ihn sofort, da das vollständige Geheimnis nur bei der Erstellung angezeigt wird.</li>
+<li>Prüfen Sie, ob der Schlüssel das gewünschte Modell erlaubt und ein Testzugang oder Abonnement aktiv ist. Die Modellliste allein gewährt keinen Ausführungszugang.</li>
+<li>OpenCode v1 verwendet bei Auswahl des konfigurierten Anbieters das Präfix <code>ratecloud/</code>. Dieses Präfix ist clientseitig. Die direkte HTTP-API verwendet die Modell-ID ohne Präfix.</li>
+</ol>
+<div class="table-scroll" tabindex="0"><table>
+<thead>
+<tr>
+<th>Modell</th>
+<th>Direkte API-ID</th>
+<th>Auswahl in OpenCode v1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GLM 5.3</td>
+<td><code>glm-5.3</code></td>
+<td><code>ratecloud/glm-5.3</code></td>
+</tr>
+<tr>
+<td>GLM 5.3 Flash</td>
+<td><code>glm-5.3-flash</code></td>
+<td><code>ratecloud/glm-5.3-flash</code></td>
+</tr>
+<tr>
+<td>DeepSeek V4.1 Flash</td>
+<td><code>deepseek-v4.1-flash</code></td>
+<td><code>ratecloud/deepseek-v4.1-flash</code></td>
+</tr>
+<tr>
+<td>DeepSeek V4 Pro</td>
+<td><code>deepseek-v4-pro</code></td>
+<td><code>ratecloud/deepseek-v4-pro</code></td>
+</tr>
+<tr>
+<td>Qwen 3.8 Max</td>
+<td><code>qwen-3.8-max</code></td>
+<td><code>ratecloud/qwen-3.8-max</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="schlüssel-in-der-shell-setzen">Schlüssel in der Shell setzen</h2>
+<p>Die Beispiele lesen den Schlüssel ohne Anzeige. Wählen Sie Bash oder zsh, die Standardshell von macOS. Geben Sie das Geheimnis an der Eingabeaufforderung ein. Programme aus dieser Shell erben die Variable. Schließen Sie das Terminal oder entfernen Sie sie mit <code>unset</code>.</p>
+<div class="code-block"><button class="code-copy" data-error-label="Kopieren" type="button">Kopieren</button><pre><code class="language-sh"># Bash
+read -r -s -p 'Rate Cloud API key: ' RATE_CLOUD_API_KEY
+printf '\n'
+export RATE_CLOUD_API_KEY
+</code></pre></div>
+<div class="code-block"><button class="code-copy" data-error-label="Kopieren" type="button">Kopieren</button><pre><code class="language-sh"># zsh
+read -r -s 'RATE_CLOUD_API_KEY?Rate Cloud API key: '
+printf '\n'
+export RATE_CLOUD_API_KEY
+</code></pre></div>
+<p>Fügen Sie den Schlüssel nicht in gemeinsam genutzte Konfigurationsdateien, Quellcode, Screenshots oder Supportnachrichten ein. Setzen Sie ihn unter Windows in der Umgebung, aus der OpenCode gestartet wird, und verwenden Sie Ihre übliche sichere lokale Methode zur Geheimnisverwaltung.</p>
+<h2 id="opencode-v1-konfigurieren">OpenCode v1 konfigurieren</h2>
+<p>Öffnen Sie unter macOS/Linux <code>~/.config/opencode/opencode.json</code>. Bewahren Sie vorhandene Anbieter und Einstellungen. Fügen Sie den Eintrag <code>provider</code> in das vorhandene Objekt ein und setzen oder ergänzen Sie <code>model</code> auf oberster Ebene. Für eine neue Datei ist dies ein vollständiges Minimalbeispiel für GLM 5.3:</p>
+<div class="code-block"><button class="code-copy" data-error-label="Kopieren" type="button">Kopieren</button><pre><code class="language-json">{
+  &quot;$schema&quot;: &quot;https://opencode.ai/config.json&quot;,
+  &quot;model&quot;: &quot;ratecloud/glm-5.3&quot;,
+  &quot;provider&quot;: {
+    &quot;ratecloud&quot;: {
+      &quot;npm&quot;: &quot;@ai-sdk/openai-compatible&quot;,
+      &quot;name&quot;: &quot;Rate Cloud&quot;,
+      &quot;options&quot;: {
+        &quot;baseURL&quot;: &quot;https://llm.rate-cloud.com/v1&quot;,
+        &quot;apiKey&quot;: &quot;{env:RATE_CLOUD_API_KEY}&quot;
+      },
+      &quot;models&quot;: {
+        &quot;glm-5.3&quot;: { &quot;name&quot;: &quot;GLM 5.3&quot; },
+        &quot;glm-5.3-flash&quot;: { &quot;name&quot;: &quot;GLM 5.3 Flash&quot; },
+        &quot;deepseek-v4.1-flash&quot;: { &quot;name&quot;: &quot;DeepSeek V4.1 Flash&quot; },
+        &quot;deepseek-v4-pro&quot;: { &quot;name&quot;: &quot;DeepSeek V4 Pro&quot; },
+        &quot;qwen-3.8-max&quot;: { &quot;name&quot;: &quot;Qwen 3.8 Max&quot; }
+      }
+    }
+  }
+}
+</code></pre></div>
+<p>OpenCode ersetzt <code>{env:RATE_CLOUD_API_KEY}</code> beim Laden durch die Umgebungsvariable. Ist sie nicht gesetzt, wird ein leerer Wert eingesetzt. Exportieren Sie den Schlüssel also vor dem Start. Die Konfiguration enthält nur den Variablenverweis, nicht das Geheimnis.</p>
+<p>Unter Windows lautet der dokumentierte Benutzerpfad <code>%USERPROFILE%\.config\opencode\opencode.json</code>. OpenCode v1 und v2 haben unterschiedliche Anbieterstrukturen. Für v2 verwenden Sie das separate manuelle Beispiel aus dem Rate-Cloud-Dashboard.</p>
+<h2 id="modell-wählen-und-verbindung-prüfen">Modell wählen und Verbindung prüfen</h2>
+<p>Starten Sie OpenCode nach der Änderung neu, öffnen Sie die Modellauswahl (<code>/models</code> im TUI) und wählen Sie ein Rate-Cloud-Modell. Beginnen Sie mit einer kurzen Anfrage ohne vertrauliche Inhalte. Verwenden Sie die genaue v1-Auswahl aus der Tabelle.</p>
+<h2 id="fehlerbehebung">Fehlerbehebung</h2>
+<ul>
+<li><strong>Rate Cloud fehlt in der Liste:</strong> Prüfen Sie Speicherort, gültiges JSON sowie die Position von <code>provider.ratecloud</code> und <code>model</code> auf oberster Ebene.</li>
+<li><strong>Nicht autorisiert oder abgelehnt:</strong> Exportieren Sie <code>RATE_CLOUD_API_KEY</code> in derselben Shell, aus der OpenCode gestartet wird. Prüfen Sie Ablaufdatum, IP-Beschränkungen, Modellrechte und aktiven Testzugang oder Tarif.</li>
+<li><strong>Schlüssel scheint leer:</strong> Eine nicht gesetzte Variable wird zu einem leeren Wert. Setzen Sie sie vor dem Start und starten Sie den Client neu.</li>
+<li><strong>Modell abgelehnt:</strong> Nutzen Sie die exakte kleingeschriebene ID samt Satzzeichen. Katalogsichtbarkeit allein beweist keinen Zugang.</li>
+<li><strong>OpenCode v2:</strong> Verwenden Sie das <code>providers</code>-Format aus dem Dashboard, nicht dieses v1-Format mit <code>provider</code>.</li>
+</ul>
+<p>Teilen Sie dem Support Clientversion, Betriebssystem, Modell-ID, Zeitpunkt und Fehlermeldung mit. Entfernen Sie API-Schlüssel, Autorisierungsheader und private Anfrageinhalte.</p></article><aside class="toc" aria-label="Auf dieser Seite"><h2>Auf dieser Seite</h2><div class="toc-list">
+<ul>
+<li><a href="#vor-dem-start">Vor dem Start</a></li>
+<li><a href="#schlüssel-in-der-shell-setzen">Schlüssel in der Shell setzen</a></li>
+<li><a href="#opencode-v1-konfigurieren">OpenCode v1 konfigurieren</a></li>
+<li><a href="#modell-wählen-und-verbindung-prüfen">Modell wählen und Verbindung prüfen</a></li>
+<li><a href="#fehlerbehebung">Fehlerbehebung</a></li>
+</ul>
+</div>
+</aside></div><footer class="page-footer"><p>Öffentlicher Informationsstand: 3. November 2026. Aktuelle Bedingungen stehen auf der Hauptwebsite.</p><div><a href="/RateCloud/de/raw/guides/opencode.md">Markdown lesen</a> · <a href="https://github.com/shaitor52/RateCloud/blob/main/de/guides/opencode.md">Quelldatei</a></div><p><a href="https://rate-cloud.com/de">Hauptwebsite ↗</a> · <a href="https://rate-cloud.com/user/instructions">Dashboard öffnen ↗</a></p></footer></main></div>
+        <dialog id="search-dialog" aria-labelledby="search-title"><div class="search-dialog-header"><h2 id="search-title">Dokumentation durchsuchen</h2><button class="icon-button" id="search-close" aria-label="Schließen">×</button></div><label class="sr-only" for="search-input">Dokumentation durchsuchen</label><input id="search-input" placeholder="Artikel, Modelle oder Tools suchen" type="search" autocomplete="off"><ul id="search-results" aria-live="polite" data-empty="Keine passenden Seiten gefunden."></ul></dialog></body></html>

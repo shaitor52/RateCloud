@@ -1,0 +1,86 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Connect DeepSeek Harness to Rate Cloud | Rate Cloud Docs</title><meta name="description" content="DeepSeek Harness has a documented Custom model API form for OpenAI-compatible gateways. Rate Cloud documents an OpenAI-compatible Chat Completions endpoint. The setup below uses that protocol and"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://shaitor52.github.io/RateCloud/en/guides/deepseek-harness/"><link rel="alternate" hreflang="en" href="https://shaitor52.github.io/RateCloud/en/guides/deepseek-harness/"><link rel="alternate" hreflang="ru" href="https://shaitor52.github.io/RateCloud/ru/guides/deepseek-harness/"><link rel="alternate" hreflang="es" href="https://shaitor52.github.io/RateCloud/es/guides/deepseek-harness/"><link rel="alternate" hreflang="pt" href="https://shaitor52.github.io/RateCloud/pt/guides/deepseek-harness/"><link rel="alternate" hreflang="de" href="https://shaitor52.github.io/RateCloud/de/guides/deepseek-harness/"><link rel="alternate" hreflang="fr" href="https://shaitor52.github.io/RateCloud/fr/guides/deepseek-harness/"><link rel="alternate" hreflang="x-default" href="https://shaitor52.github.io/RateCloud/en/guides/deepseek-harness/"><meta name="theme-color" content="#151719"><meta property="og:type" content="article"><meta property="og:title" content="Connect DeepSeek Harness to Rate Cloud | Rate Cloud Docs"><meta property="og:description" content="DeepSeek Harness has a documented Custom model API form for OpenAI-compatible gateways. Rate Cloud documents an OpenAI-compatible Chat Completions endpoint. The setup below uses that protocol and"><meta property="og:url" content="https://shaitor52.github.io/RateCloud/en/guides/deepseek-harness/"><meta property="og:image" content="https://shaitor52.github.io/RateCloud/assets/brand-hero.webp"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/RateCloud/assets/brand-logo.png"><link rel="stylesheet" href="/RateCloud/assets/docs.css?v=ab6226e88a62"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Connect DeepSeek Harness to Rate Cloud", "description": "DeepSeek Harness has a documented Custom model API form for OpenAI-compatible gateways. Rate Cloud documents an OpenAI-compatible Chat Completions endpoint. The setup below uses that protocol and", "inLanguage": "en", "url": "https://shaitor52.github.io/RateCloud/en/guides/deepseek-harness/", "isPartOf": {"@type": "WebSite", "name": "Rate Cloud Documentation", "url": "https://shaitor52.github.io/RateCloud/"}, "publisher": {"@type": "Organization", "name": "Rate Cloud", "url": "https://rate-cloud.com/"}}</script><script src="/RateCloud/assets/docs.js?v=3d9193980cec" defer></script></head>
+        <body data-base="/RateCloud/" data-lang="en" data-copy="Copy" data-copied="Copied"><a class="skip-link" href="#main">Skip to content</a><header class="topbar"><a class="brand" href="/RateCloud/"><img class="brand-mark" src="/RateCloud/assets/brand-logo.png" width="32" height="32" alt=""><span>Rate Cloud<small>Documentation</small></span></a><div class="header-actions"><button id="menu-toggle" class="icon-button" aria-label="Menu" aria-controls="sidebar" aria-expanded="false" data-open-label="Menu" data-close-label="Close">☰</button><button class="icon-button" data-search-open aria-label="Search documentation"><span>⌕</span><span class="search-label">Search documentation</span><kbd class="search-shortcut">⌘ K</kbd></button><label class="sr-only" for="language-switch">Language</label><select id="language-switch"><option value="/RateCloud/en/guides/deepseek-harness/" selected>English</option><option value="/RateCloud/ru/guides/deepseek-harness/">Русский</option><option value="/RateCloud/es/guides/deepseek-harness/">Español</option><option value="/RateCloud/pt/guides/deepseek-harness/">Português</option><option value="/RateCloud/de/guides/deepseek-harness/">Deutsch</option><option value="/RateCloud/fr/guides/deepseek-harness/">Français</option></select><a class="header-site" href="https://rate-cloud.com/en">Main website ↗</a></div></header>
+        <div class="layout"><nav id="sidebar" class="sidebar" aria-label="Documentation"><div class="sidebar-group"><h2>Overview</h2><a class="nav-link" href="/RateCloud/">Overview</a></div><div class="sidebar-group"><h2>Explore Rate Cloud</h2><a class="nav-link" href="/RateCloud/en/articles/about-rate-cloud/">What Rate Cloud offers</a><a class="nav-link" href="/RateCloud/en/articles/models/">Models and choosing the right one</a><a class="nav-link" href="/RateCloud/en/articles/routing-and-quantization/">How intelligent routing and quantization work</a><a class="nav-link" href="/RateCloud/en/articles/performance/">Understanding Rate Cloud speed and performance</a><a class="nav-link" href="/RateCloud/en/articles/api-and-integrations/">Connecting tools and applications to Rate Cloud</a><a class="nav-link" href="/RateCloud/en/articles/privacy-and-reliability/">Privacy, data handling, and availability</a><a class="nav-link" href="/RateCloud/en/articles/white-label/">White Label: an AI subscription service under your brand</a><a class="nav-link" href="/RateCloud/en/articles/cost-and-service-comparison/">Rate Cloud vs official APIs: fixed cost for sustained work</a><a class="nav-link" href="/RateCloud/en/articles/unlimited-use-cases/">Where unlimited-token access is useful: 20 practical workflows</a></div><div class="sidebar-group"><h2>Connect your tools</h2><a class="nav-link" href="/RateCloud/en/guides/claude-code/">Connect Claude Code to Rate Cloud</a><a class="nav-link" href="/RateCloud/en/guides/continue/">Connect Continue to Rate Cloud</a><a class="nav-link active" href="/RateCloud/en/guides/deepseek-harness/" aria-current="page">Connect DeepSeek Harness to Rate Cloud</a><a class="nav-link" href="/RateCloud/en/guides/hermes-agent/">Connect Hermes Agent to Rate Cloud</a><a class="nav-link" href="/RateCloud/en/guides/http-python/">Generic HTTP and Python access</a><a class="nav-link" href="/RateCloud/en/guides/openclaw/">Connect OpenClaw to Rate Cloud</a><a class="nav-link" href="/RateCloud/en/guides/opencode/">Connect OpenCode to Rate Cloud</a></div><div class="sidebar-group"><h2>Sources and data</h2><a class="nav-link" href="/RateCloud/en/faq/">Rate Cloud: frequently asked questions</a></div><div class="sidebar-group"><a class="nav-link" href="/RateCloud/en/sources/">Sources and data</a><a class="nav-link" href="https://github.com/shaitor52/RateCloud">GitHub ↗</a></div></nav><main id="main" class=""><div class="breadcrumb"><a href="/RateCloud/">Documentation</a><span>/</span>Connect your tools</div><p class="eyebrow">RATE CLOUD / Documentation</p><h1 class="page-title">Connect DeepSeek Harness to Rate Cloud</h1><div class="article-grid"><article class="article-content"><p>DeepSeek Harness has a documented <strong>Custom model API</strong> form for OpenAI-compatible gateways. Rate Cloud documents an OpenAI-compatible Chat Completions endpoint. The setup below uses that protocol and manual model IDs.</p>
+<p><strong>Documentation checked:</strong> November 3, 2026. DeepSeek Harness identifies itself as a developer preview with breaking changes. This guide follows its published Web UI docs and Rate Cloud docs; it is a static compatibility mapping, not a live-tested integration. No installation or API request was run.</p>
+<p>Official references: <a href="https://rate-cloud.com/docs">Rate Cloud connection guide</a>, <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness repository and preview notice</a>, <a href="https://deepseek-harness.github.io/deepseek-harness/en/guide/providers">DeepSeek Harness model configuration</a>, <a href="https://deepseek-harness.github.io/deepseek-harness/en/guide/quickstart">DeepSeek Harness quickstart</a>, and <a href="https://deepseek-harness.github.io/deepseek-harness/en/reference/config-catalog">plugin configuration catalog</a>.</p>
+<h2 id="compatibility-boundary">Compatibility boundary</h2>
+<p>Rate Cloud documents these endpoints and direct model IDs:</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead>
+<tr>
+<th>Purpose</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Base URL</td>
+<td><code>https://llm.rate-cloud.com/v1</code></td>
+</tr>
+<tr>
+<td>Chat Completions route</td>
+<td><code>POST /v1/chat/completions</code></td>
+</tr>
+<tr>
+<td>GLM 5.3</td>
+<td><code>glm-5.3</code></td>
+</tr>
+<tr>
+<td>GLM 5.3 Flash</td>
+<td><code>glm-5.3-flash</code></td>
+</tr>
+<tr>
+<td>DeepSeek V4.1 Flash</td>
+<td><code>deepseek-v4.1-flash</code></td>
+</tr>
+<tr>
+<td>DeepSeek V4 Pro</td>
+<td><code>deepseek-v4-pro</code></td>
+</tr>
+<tr>
+<td>Qwen 3.8 Max</td>
+<td><code>qwen-3.8-max</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>Harness documents custom providers with a user-supplied base URL, protocol, credential, and model list. For this endpoint select <strong>OpenAI Chat Completions</strong>. Do not select Responses or Anthropic Messages for this example. The published docs do not establish a Harness built-in Rate Cloud provider or live-tested compatibility.</p>
+<h2 id="prepare-account-and-key-permissions">Prepare account and key permissions</h2>
+<p>In the Rate Cloud dashboard, create an API key, allow the model you will use, and confirm that the account has active trial or subscription access to that model. The full key is shown once when created. A visible catalog entry does not prove the key can call the model.</p>
+<h2 id="add-a-custom-model-api-in-the-web-ui">Add a custom model API in the Web UI</h2>
+<p>This is a UI-only configuration walkthrough. It does not run an installer or send a model request.</p>
+<ol>
+<li>Start the Harness Web UI using the steps in its official README. This guide does not reproduce install commands.</li>
+<li>Open <strong>Settings → Models</strong>, then choose <strong>Add model provider</strong>.</li>
+<li>Switch the form to <strong>Custom model API</strong>.</li>
+<li>Set a lowercase provider ID such as <code>ratecloud</code>. Harness documents this ID as permanent because sessions, defaults, requests, and credential references use it.</li>
+<li>Set the display name to <code>Rate Cloud</code> and the Base URL to <code>https://llm.rate-cloud.com/v1</code>.</li>
+<li>Choose <strong>OpenAI Chat Completions</strong> as the API protocol.</li>
+<li>Enter the Rate Cloud key in the form's credential field. Harness documents that saved keys are write-only in the UI; the credential is stored under <code>$DSH_HOME/.credentials.yaml</code> and settings keep a credential reference. Do not put the key in a repository or public issue.</li>
+<li>Add a model manually using one of the exact IDs in the table. Give it a readable display name. Leave context-window, maximum-output, image-input, and reasoning options unset unless you have a verified value or capability for that model.</li>
+<li>Save the provider, then select the configured model in the model picker to make it the default for new sessions.</li>
+</ol>
+<p>You can add more models to the same provider using their exact bare IDs. Do not add a client prefix such as <code>ratecloud/</code> to the model ID entered in this custom API form.</p>
+<h2 id="optional-model-discovery">Optional model discovery</h2>
+<p>Harness can fetch a model list using the provider's URL, protocol, and credential. That action sends an authenticated HTTP request to the endpoint. Discovery is optional and not guaranteed to work with every listing format. For a no-request setup, add the model IDs manually as above. No discovery request was made while preparing this guide.</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<ul>
+<li><strong><code>MISSING_CREDENTIAL</code>:</strong> confirm that a key was saved for the provider or that its configured credential reference is available.</li>
+<li><strong><code>UNKNOWN_MODEL</code>:</strong> add the model ID to the custom provider, then select that configured entry. Use the exact lowercase ID and punctuation.</li>
+<li><strong>HTTP 401:</strong> verify the key, expiry, and model permission in Rate Cloud. The model-list UI is not an access check.</li>
+<li><strong>HTTP 404 or route mismatch:</strong> use <code>https://llm.rate-cloud.com/v1</code> as Base URL and select OpenAI Chat Completions. Do not include <code>/chat/completions</code> in the Base URL.</li>
+<li><strong>A fetch-models action returns no entries:</strong> the endpoint's listing format may not be one Harness discovery recognizes. Add a model ID manually; do not treat a failed discovery call as proof that inference is unavailable.</li>
+<li><strong>Tool calls, images, or reasoning fail:</strong> declaring these capabilities in Harness does not test or create API support. Configure only capabilities documented for the selected model and confirmed by actual compatibility work.</li>
+<li><strong>Configuration paths differ:</strong> Harness is in developer preview and may change quickly. Use its current model configuration page and generated plugin config catalog for the installed version.</li>
+</ul>
+<p>No live request was made, so endpoint authentication and feature behavior remain unverified in Harness itself.</p>
+<p>Russian version: <a href="/RateCloud/ru/guides/deepseek-harness/">Подключение DeepSeek Harness к Rate Cloud</a>. Back to <a href="/RateCloud/en/guides/">all English guides</a>.</p></article><aside class="toc" aria-label="On this page"><h2>On this page</h2><div class="toc-list">
+<ul>
+<li><a href="#compatibility-boundary">Compatibility boundary</a></li>
+<li><a href="#prepare-account-and-key-permissions">Prepare account and key permissions</a></li>
+<li><a href="#add-a-custom-model-api-in-the-web-ui">Add a custom model API in the Web UI</a></li>
+<li><a href="#optional-model-discovery">Optional model discovery</a></li>
+<li><a href="#troubleshooting">Troubleshooting</a></li>
+</ul>
+</div>
+</aside></div><footer class="page-footer"><p>Public information snapshot: November 3, 2026. Check current terms on the main website.</p><div><a href="/RateCloud/en/raw/guides/deepseek-harness.md">Read Markdown</a> · <a href="https://github.com/shaitor52/RateCloud/blob/main/guides/deepseek-harness.md">View source</a></div><p><a href="https://rate-cloud.com/en">Main website ↗</a> · <a href="https://rate-cloud.com/user/instructions">Open dashboard ↗</a></p></footer></main></div>
+        <dialog id="search-dialog" aria-labelledby="search-title"><div class="search-dialog-header"><h2 id="search-title">Search documentation</h2><button class="icon-button" id="search-close" aria-label="Close">×</button></div><label class="sr-only" for="search-input">Search documentation</label><input id="search-input" placeholder="Search articles, models, or tools" type="search" autocomplete="off"><ul id="search-results" aria-live="polite" data-empty="No matching pages found."></ul></dialog></body></html>

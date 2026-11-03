@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /RateCloud/
+Sitemap: https://shaitor52.github.io/RateCloud/sitemap.xml

@@ -1,0 +1,79 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Connect Hermes Agent to Rate Cloud | Rate Cloud Docs</title><meta name="description" content="Hermes Agent supports OpenAI-compatible custom endpoints. This guide uses its documented custom provider configuration with Rate Cloud&#x27;s OpenAI-compatible /v1 Chat Completions endpoint."><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://shaitor52.github.io/RateCloud/en/guides/hermes-agent/"><link rel="alternate" hreflang="en" href="https://shaitor52.github.io/RateCloud/en/guides/hermes-agent/"><link rel="alternate" hreflang="ru" href="https://shaitor52.github.io/RateCloud/ru/guides/hermes-agent/"><link rel="alternate" hreflang="es" href="https://shaitor52.github.io/RateCloud/es/guides/hermes-agent/"><link rel="alternate" hreflang="pt" href="https://shaitor52.github.io/RateCloud/pt/guides/hermes-agent/"><link rel="alternate" hreflang="de" href="https://shaitor52.github.io/RateCloud/de/guides/hermes-agent/"><link rel="alternate" hreflang="fr" href="https://shaitor52.github.io/RateCloud/fr/guides/hermes-agent/"><link rel="alternate" hreflang="x-default" href="https://shaitor52.github.io/RateCloud/en/guides/hermes-agent/"><meta name="theme-color" content="#151719"><meta property="og:type" content="article"><meta property="og:title" content="Connect Hermes Agent to Rate Cloud | Rate Cloud Docs"><meta property="og:description" content="Hermes Agent supports OpenAI-compatible custom endpoints. This guide uses its documented custom provider configuration with Rate Cloud&#x27;s OpenAI-compatible /v1 Chat Completions endpoint."><meta property="og:url" content="https://shaitor52.github.io/RateCloud/en/guides/hermes-agent/"><meta property="og:image" content="https://shaitor52.github.io/RateCloud/assets/brand-hero.webp"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/RateCloud/assets/brand-logo.png"><link rel="stylesheet" href="/RateCloud/assets/docs.css?v=ab6226e88a62"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Connect Hermes Agent to Rate Cloud", "description": "Hermes Agent supports OpenAI-compatible custom endpoints. This guide uses its documented custom provider configuration with Rate Cloud's OpenAI-compatible /v1 Chat Completions endpoint.", "inLanguage": "en", "url": "https://shaitor52.github.io/RateCloud/en/guides/hermes-agent/", "isPartOf": {"@type": "WebSite", "name": "Rate Cloud Documentation", "url": "https://shaitor52.github.io/RateCloud/"}, "publisher": {"@type": "Organization", "name": "Rate Cloud", "url": "https://rate-cloud.com/"}}</script><script src="/RateCloud/assets/docs.js?v=3d9193980cec" defer></script></head>
+        <body data-base="/RateCloud/" data-lang="en" data-copy="Copy" data-copied="Copied"><a class="skip-link" href="#main">Skip to content</a><header class="topbar"><a class="brand" href="/RateCloud/"><img class="brand-mark" src="/RateCloud/assets/brand-logo.png" width="32" height="32" alt=""><span>Rate Cloud<small>Documentation</small></span></a><div class="header-actions"><button id="menu-toggle" class="icon-button" aria-label="Menu" aria-controls="sidebar" aria-expanded="false" data-open-label="Menu" data-close-label="Close">☰</button><button class="icon-button" data-search-open aria-label="Search documentation"><span>⌕</span><span class="search-label">Search documentation</span><kbd class="search-shortcut">⌘ K</kbd></button><label class="sr-only" for="language-switch">Language</label><select id="language-switch"><option value="/RateCloud/en/guides/hermes-agent/" selected>English</option><option value="/RateCloud/ru/guides/hermes-agent/">Русский</option><option value="/RateCloud/es/guides/hermes-agent/">Español</option><option value="/RateCloud/pt/guides/hermes-agent/">Português</option><option value="/RateCloud/de/guides/hermes-agent/">Deutsch</option><option value="/RateCloud/fr/guides/hermes-agent/">Français</option></select><a class="header-site" href="https://rate-cloud.com/en">Main website ↗</a></div></header>
+        <div class="layout"><nav id="sidebar" class="sidebar" aria-label="Documentation"><div class="sidebar-group"><h2>Overview</h2><a class="nav-link" href="/RateCloud/">Overview</a></div><div class="sidebar-group"><h2>Explore Rate Cloud</h2><a class="nav-link" href="/RateCloud/en/articles/about-rate-cloud/">What Rate Cloud offers</a><a class="nav-link" href="/RateCloud/en/articles/models/">Models and choosing the right one</a><a class="nav-link" href="/RateCloud/en/articles/routing-and-quantization/">How intelligent routing and quantization work</a><a class="nav-link" href="/RateCloud/en/articles/performance/">Understanding Rate Cloud speed and performance</a><a class="nav-link" href="/RateCloud/en/articles/api-and-integrations/">Connecting tools and applications to Rate Cloud</a><a class="nav-link" href="/RateCloud/en/articles/privacy-and-reliability/">Privacy, data handling, and availability</a><a class="nav-link" href="/RateCloud/en/articles/white-label/">White Label: an AI subscription service under your brand</a><a class="nav-link" href="/RateCloud/en/articles/cost-and-service-comparison/">Rate Cloud vs official APIs: fixed cost for sustained work</a><a class="nav-link" href="/RateCloud/en/articles/unlimited-use-cases/">Where unlimited-token access is useful: 20 practical workflows</a></div><div class="sidebar-group"><h2>Connect your tools</h2><a class="nav-link" href="/RateCloud/en/guides/claude-code/">Connect Claude Code to Rate Cloud</a><a class="nav-link" href="/RateCloud/en/guides/continue/">Connect Continue to Rate Cloud</a><a class="nav-link" href="/RateCloud/en/guides/deepseek-harness/">Connect DeepSeek Harness to Rate Cloud</a><a class="nav-link active" href="/RateCloud/en/guides/hermes-agent/" aria-current="page">Connect Hermes Agent to Rate Cloud</a><a class="nav-link" href="/RateCloud/en/guides/http-python/">Generic HTTP and Python access</a><a class="nav-link" href="/RateCloud/en/guides/openclaw/">Connect OpenClaw to Rate Cloud</a><a class="nav-link" href="/RateCloud/en/guides/opencode/">Connect OpenCode to Rate Cloud</a></div><div class="sidebar-group"><h2>Sources and data</h2><a class="nav-link" href="/RateCloud/en/faq/">Rate Cloud: frequently asked questions</a></div><div class="sidebar-group"><a class="nav-link" href="/RateCloud/en/sources/">Sources and data</a><a class="nav-link" href="https://github.com/shaitor52/RateCloud">GitHub ↗</a></div></nav><main id="main" class=""><div class="breadcrumb"><a href="/RateCloud/">Documentation</a><span>/</span>Connect your tools</div><p class="eyebrow">RATE CLOUD / Documentation</p><h1 class="page-title">Connect Hermes Agent to Rate Cloud</h1><div class="article-grid"><article class="article-content"><p>Hermes Agent supports OpenAI-compatible custom endpoints. This guide uses its documented custom provider configuration with Rate Cloud's OpenAI-compatible <code>/v1</code> Chat Completions endpoint.</p>
+<p><strong>Documentation checked:</strong> November 3, 2026. The examples follow the current published Hermes and Rate Cloud docs and have not been live-tested against an installed Hermes Agent or an account. Hermes docs are rolling documentation; no minimum Hermes version for this setup was stated in the pages checked. Its provider configuration has changed over time, so follow the current field names below rather than older snippets.</p>
+<p>Official references: <a href="https://rate-cloud.com/docs">Rate Cloud connection guide</a>, <a href="https://github.com/NousResearch/hermes-agent/blob/main/website/docs/integrations/providers.md">Hermes Agent providers guide</a>, <a href="https://github.com/NousResearch/hermes-agent/blob/main/website/docs/reference/environment-variables.md">Hermes environment variables</a>, and <a href="https://hermes-agent.nousresearch.com/docs">Hermes configuration files</a>.</p>
+<h2 id="prepare-access">Prepare access</h2>
+<p>Create a Rate Cloud API key in the dashboard, allow the model you plan to use, and confirm the account has active trial or subscription access. The full key is shown only at creation. Keep it out of source code and support messages.</p>
+<p>Rate Cloud's generic compatible endpoint is:</p>
+<div class="code-block"><button class="code-copy" data-error-label="Copy" type="button">Copy</button><pre><code class="language-text">https://llm.rate-cloud.com/v1
+</code></pre></div>
+<p>The model ID is the bare direct API identifier. Hermes does not require the <code>ratecloud/</code> prefix used by some other clients.</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Direct API ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GLM 5.3</td>
+<td><code>glm-5.3</code></td>
+</tr>
+<tr>
+<td>GLM 5.3 Flash</td>
+<td><code>glm-5.3-flash</code></td>
+</tr>
+<tr>
+<td>DeepSeek V4.1 Flash</td>
+<td><code>deepseek-v4.1-flash</code></td>
+</tr>
+<tr>
+<td>DeepSeek V4 Pro</td>
+<td><code>deepseek-v4-pro</code></td>
+</tr>
+<tr>
+<td>Qwen 3.8 Max</td>
+<td><code>qwen-3.8-max</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="store-the-secret-in-hermes-local-environment-file">Store the secret in Hermes' local environment file</h2>
+<p>The current Hermes docs place user-managed secrets in <code>~/.hermes/.env</code>. Add this line locally, replacing the placeholder with your key:</p>
+<div class="code-block"><button class="code-copy" data-error-label="Copy" type="button">Copy</button><pre><code class="language-dotenv">RATE_CLOUD_API_KEY=&lt;your-key&gt;
+</code></pre></div>
+<p>On Windows, use <code>%USERPROFILE%\.hermes\.env</code>. Do not commit this file or paste a real key into a shared example. Hermes also supports a process environment variable; the <code>key_env</code> setting below names it.</p>
+<h2 id="configure-one-custom-endpoint">Configure one custom endpoint</h2>
+<p>Edit <code>~/.hermes/config.yaml</code> on macOS/Linux or <code>%USERPROFILE%\.hermes\config.yaml</code> on Windows. Merge these fields into the existing <code>model</code> section rather than replacing unrelated settings:</p>
+<div class="code-block"><button class="code-copy" data-error-label="Copy" type="button">Copy</button><pre><code class="language-yaml">model:
+  default: glm-5.3
+  provider: custom
+  base_url: https://llm.rate-cloud.com/v1
+  key_env: RATE_CLOUD_API_KEY
+</code></pre></div>
+<p>This uses Hermes' documented custom endpoint keys: <code>provider: custom</code>, <code>base_url</code>, and <code>key_env</code>. The endpoint speaks Chat Completions; do not change it to an Anthropic Messages or Responses transport. Do not add a context limit unless you have a verified value for the service and model.</p>
+<p>To select another Rate Cloud model, change <code>model.default</code> to one of the other exact IDs in the table. Keep <code>provider: custom</code> and the Rate Cloud base URL.</p>
+<h2 id="optional-interactive-setup">Optional interactive setup</h2>
+<p>Hermes documents <code>hermes model</code> as its custom endpoint setup wizard. The wizard asks for the base URL, API key, and model name and persists its choice. If using it, enter <code>https://llm.rate-cloud.com/v1</code> and a bare ID from the table. Prefer the environment-file/manual configuration above when you want to avoid saving the literal key in <code>config.yaml</code>.</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<ul>
+<li><strong>Missing credential:</strong> confirm that <code>RATE_CLOUD_API_KEY</code> is defined in <code>~/.hermes/.env</code> or the process environment and that <code>key_env</code> has the same spelling.</li>
+<li><strong>Connection error:</strong> use the base URL ending in <code>/v1</code>, not <code>/v1/chat/completions</code>; the client appends its API route.</li>
+<li><strong>Unknown model or access denied:</strong> use the exact direct ID. Check model permissions on the key and active trial or subscription access in Rate Cloud.</li>
+<li><strong>Tools are returned as text:</strong> OpenAI-compatible transport does not guarantee that every model and endpoint supports tool calls in the form the agent expects. Check the model's actual capability before relying on tool use.</li>
+<li><strong>Context limit looks wrong:</strong> Hermes can infer metadata from <code>/v1/models</code>, but that listing is not guaranteed to provide every detail. Do not copy an unverified context length into the config.</li>
+<li><strong>You found an older example:</strong> older docs may show <code>api_key</code> or another custom-provider shape. Use the current Hermes provider guide and confirm config fields for your installed release.</li>
+</ul>
+<p>No API request or installation was run while preparing this guide.</p>
+<p>Russian version: <a href="/RateCloud/ru/guides/hermes-agent/">Подключение Hermes Agent к Rate Cloud</a>. Back to <a href="/RateCloud/en/guides/">all English guides</a>.</p></article><aside class="toc" aria-label="On this page"><h2>On this page</h2><div class="toc-list">
+<ul>
+<li><a href="#prepare-access">Prepare access</a></li>
+<li><a href="#store-the-secret-in-hermes-local-environment-file">Store the secret in Hermes' local environment file</a></li>
+<li><a href="#configure-one-custom-endpoint">Configure one custom endpoint</a></li>
+<li><a href="#optional-interactive-setup">Optional interactive setup</a></li>
+<li><a href="#troubleshooting">Troubleshooting</a></li>
+</ul>
+</div>
+</aside></div><footer class="page-footer"><p>Public information snapshot: November 3, 2026. Check current terms on the main website.</p><div><a href="/RateCloud/en/raw/guides/hermes-agent.md">Read Markdown</a> · <a href="https://github.com/shaitor52/RateCloud/blob/main/guides/hermes-agent.md">View source</a></div><p><a href="https://rate-cloud.com/en">Main website ↗</a> · <a href="https://rate-cloud.com/user/instructions">Open dashboard ↗</a></p></footer></main></div>
+        <dialog id="search-dialog" aria-labelledby="search-title"><div class="search-dialog-header"><h2 id="search-title">Search documentation</h2><button class="icon-button" id="search-close" aria-label="Close">×</button></div><label class="sr-only" for="search-input">Search documentation</label><input id="search-input" placeholder="Search articles, models, or tools" type="search" autocomplete="off"><ul id="search-results" aria-live="polite" data-empty="No matching pages found."></ul></dialog></body></html>

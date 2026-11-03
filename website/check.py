@@ -2,7 +2,7 @@
 import json
 import csv
 import html
-from decimal import Decimal
+from decimal import Decimal, ROUND_HALF_UP
 import re
 from html.parser import HTMLParser
 from pathlib import Path
@@ -26,7 +26,7 @@ class Page(HTMLParser):
         if tag in ('a','link') and a.get('href'):self.links.append(a['href'])
         if tag in ('img','script') and a.get('src'):self.links.append(a['src'])
         if tag=='link' and a.get('rel')=='canonical':self.canonical.append(a.get('href'))
-        if tag=='link' and a.get('rel')=='alternate':self.alternates[a['hreflang']]=a['href']
+        if tag=='link' and a.get('rel')=='alternate' and a.get('hreflang'):self.alternates[a['hreflang']]=a['href']
         if tag=='meta' and a.get('name')=='description':self.descriptions.append(a.get('content'))
         if tag=='script' and a.get('type')=='application/ld+json':self.in_schema=True;self.schema=''
     def handle_data(self,data):
@@ -49,6 +49,8 @@ def main():
             expected=ORIGIN+BASE+(relative+'/' if relative!='.' else '')
             assert page.canonical[0]==expected,(file,'canonical')
             assert page.schemas,(file,'structured data')
+            assert '<meta name="robots" content="index,follow,max-image-preview:large">' in text,(file,'indexable')
+            assert re.search(r'<link rel="alternate" type="text/markdown" href="[^"]+">|<link rel="alternate" type="text/markdown" href="[^"]+" title="Markdown source">',text),(file,'machine-readable Markdown alternate')
             assert 'https://rate-cloud.com/register' in page.links,(file,'registration CTA')
             assert BASE+page.lang+'/articles/referral-program/' in page.links,(file,'referral link')
             if file.parent==OUTPUT or file.parent.relative_to(OUTPUT).as_posix() in ['ru','es','pt','de','fr']:
@@ -98,7 +100,26 @@ def main():
         home=OUTPUT/('index.html' if locale=='en' else locale+'/index.html')
         assert 'continuous-work' in pages[home].ids,(locale,'homepage workflow link')
     measurements={row['api_id']:row for row in csv.DictReader((ROOT/'data/performance-2026-11-03.csv').open())}
-    expected_prices={'en':['34.38','30.16','30.16','27.56','31.49'], 'ru':['2784','2442','2442','2232','2550']}
+    rub_data=json.loads((ROOT/'ru/data/subscriptions-2026-11-03.json').read_text())
+    usd_data=json.loads((ROOT/'data/subscriptions-2026-11-03.json').read_text())
+    assert rub_data['currency']=='RUB' and usd_data['currency']=='USD'
+    # Observed public homepage dialog amounts, ordered as 3/7/30 days.
+    observed={
+        'glm-5.3':['835.20','1392.00','2784.00'],
+        'glm-5.3-flash':['732.60','1221.00','2442.00'],
+        'deepseek-v4.1-flash':['732.60','1221.00','2442.00'],
+        'deepseek-v4-pro':['669.60','1116.00','2232.00'],
+        'qwen-3.8-max':['765.00','1275.00','2550.00'],
+    }
+    observed_usd_monthly=['34.38','30.16','30.16','27.56','31.49']
+    for index,(rub,usd) in enumerate(zip(rub_data['models'],usd_data['models'])):
+        assert rub['id']==usd['id']
+        assert [rub['periods'][period] for period in ['3','7','30']]==observed[rub['id']]
+        assert usd['periods']['30']==observed_usd_monthly[index]
+        for period in ['3','7']:
+            expected=(Decimal(rub['periods'][period])/Decimal('80.9734')).quantize(Decimal('.01'),rounding=ROUND_HALF_UP)
+            assert Decimal(usd['periods'][period])==expected
+    labels=json.loads((ROOT/'website/overview.json').read_text())
     order=['glm-5.3','glm-5.3-flash','deepseek-v4.1-flash','deepseek-v4-pro','qwen-3.8-max']
     for locale in ['en','ru','es','pt','de','fr']:
         home=OUTPUT/('index.html' if locale=='en' else locale+'/index.html')
@@ -107,10 +128,19 @@ def main():
         assert re.match(r'\s*<section class="product-overview"',after_hero),(locale,'product is second screen')
         cards=re.findall(r'<article class="model-card" data-model="([^"]+)">(.*?)</article>',text,re.S)
         assert [model for model,body in cards]==order,(locale,'five models')
-        for i,(model,body) in enumerate(cards):
-            price=html.unescape(re.search(r'class="model-price"><strong>(.*?)</strong>',body).group(1))
-            numeric=re.sub(r'[^0-9,.]','',price).replace(',','.')
-            assert Decimal(numeric)==Decimal(expected_prices['ru' if locale=='ru' else 'en'][i]),(locale,model,'price')
+        dataset=ROOT/('ru/data/subscriptions-2026-11-03.json' if locale=='ru' else 'data/subscriptions-2026-11-03.json')
+        prices={row['id']:row['periods'] for row in json.loads(dataset.read_text())['models']}
+        source=ROOT/('README.md' if locale=='en' else locale+'/README.md')
+        raw_home=source.read_text()
+        assert labels[locale]['unlimited_title'] in text,(locale,'unlimited headline')
+        for model,body in cards:
+            price_rows=re.findall(r'<div data-period="(\d+)"><dt>(.*?)</dt><dd>(.*?)</dd></div>',body)
+            assert [days for days,_,_ in price_rows]==['3','7','30'],(locale,model,'three prices')
+            for days,period,price in price_rows:
+                numeric=re.sub(r'[^0-9,.]','',html.unescape(price)).replace(',','.')
+                assert Decimal(numeric)==Decimal(prices[model][days]),(locale,model,days,'price')
+                assert html.unescape(price) in raw_home,(locale,model,days,'README price parity')
+            assert re.search(r'class="model-trial-link" href="https://rate-cloud.com/register" aria-label="[^"]+"',body),(locale,model,'accessible model trial')
             for classname,field in [('response-value','typical_complete_response_seconds'),('speed-value','typical_effective_tokens_per_second')]:
                 value=re.search(r'class="'+classname+r'">([0-9,.]+)',body).group(1).replace(',','.')
                 assert Decimal(value)==Decimal(measurements[model][field]),(locale,model,field)
@@ -118,6 +148,12 @@ def main():
         trial=re.search(r'<aside class="trial-panel">(.*?)</aside>',text,re.S).group(1)
         assert 'https://rate-cloud.com/register' in trial,(locale,'trial registration')
         assert 'models-and-plans' in pages[home].ids,(locale,'product anchor')
+    llms=(OUTPUT/'llms.txt').read_text()
+    for file,page in pages.items():
+        if file.name=='404.html':continue
+        assert page.canonical[0] in llms,(file,'AI index canonical')
+        markdown_url=re.search(r'<link rel="alternate" type="text/markdown" href="([^"]+)"',file.read_text()).group(1)
+        assert ORIGIN+markdown_url in llms,(file,'AI index Markdown')
     assert (OUTPUT/'.nojekyll').is_file()
     print(f'PASS: {len(pages)-1} content pages, {refs} local links/assets/anchors, 6 search indexes, reciprocal language metadata, currencies and sitemap')
 

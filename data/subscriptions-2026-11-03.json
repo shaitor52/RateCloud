@@ -1,0 +1,51 @@
+{
+  "checked_date": "2026-11-03",
+  "currency": "USD",
+  "models": [
+    {
+      "id": "glm-5.3",
+      "periods": {
+        "3": "10.31",
+        "7": "17.19",
+        "30": "34.38"
+      }
+    },
+    {
+      "id": "glm-5.3-flash",
+      "periods": {
+        "3": "9.05",
+        "7": "15.08",
+        "30": "30.16"
+      }
+    },
+    {
+      "id": "deepseek-v4.1-flash",
+      "periods": {
+        "3": "9.05",
+        "7": "15.08",
+        "30": "30.16"
+      }
+    },
+    {
+      "id": "deepseek-v4-pro",
+      "periods": {
+        "3": "8.27",
+        "7": "13.78",
+        "30": "27.56"
+      }
+    },
+    {
+      "id": "qwen-3.8-max",
+      "periods": {
+        "3": "9.45",
+        "7": "15.75",
+        "30": "31.49"
+      }
+    }
+  ],
+  "provenance": {
+    "3_7_day_rub_prices": "https://rate-cloud.com/ (prices shown in the public subscription dialog, observed 2026-11-03)",
+    "30_day_usd_prices": "https://rate-cloud.com/api/public/display-currency (public display-currency API, observed 2026-11-03)",
+    "usd_conversion": "The 3-day and 7-day USD display amounts are converted from the exact RUB prices shown in the public subscription dialog using rub_per_usd=80.9734 from the public display-currency API on 2026-11-03, rounded half-up to USD 0.01. This is a dated converted display-price snapshot; current displayed prices may change."
+  }
+}

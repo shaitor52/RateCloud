@@ -23,24 +23,30 @@ def number(value, lang):
 def render_product(lang, base):
     labels = json.loads((ROOT/'website/overview.json').read_text())[lang]
     rows = {row['api_id']: row for row in csv.DictReader((ROOT/'data/performance-2026-11-03.csv').open())}
-    pricing_file = ROOT/('ru/data/pricing-2026-11-03.json' if lang=='ru' else 'data/pricing-2026-11-03.json')
-    prices = {row['label']: row for row in json.loads(pricing_file.read_text())['providers']}
+    subscription_file = ROOT/('ru/data/subscriptions-2026-11-03.json' if lang=='ru' else 'data/subscriptions-2026-11-03.json')
+    subscription_prices = {row['id']: row['periods'] for row in json.loads(subscription_file.read_text())['models']}
     esc = lambda value: html.escape(str(value), quote=True)
     website = 'https://rate-cloud.com/' + ('' if lang=='ru' else lang+'/')
     model_cards = []
-    for model_id, price_label in MODEL_PRICES.items():
+    for model_id in MODEL_PRICES:
         row = rows[model_id]
-        if lang == 'ru':
-            amount = prices[price_label]['ratecloud_30_day_rub']
-            price = f'{int(amount):,}'.replace(',', ' ') + ' ₽'
-        else:
-            amount = prices[price_label]['ratecloud_30_day_usd']
-            price = '$' + number(amount, lang)
+        def format_subscription_price(days):
+            amount = subscription_prices[model_id][str(days)]
+            if lang == 'ru':
+                rub = Decimal(str(amount))
+                formatted = f'{rub:,.2f}'.replace(',', ' ').replace('.', ',')
+                return formatted + ' ₽'
+            return '$' + number(amount, lang)
         seconds = number(row['typical_complete_response_seconds'], lang)
         speed = number(row['typical_effective_tokens_per_second'], lang)
+        subscription_rows = ''.join(
+            f'<div data-period="{days}"><dt>{esc(labels[f"period_{days}"])}</dt><dd>{esc(format_subscription_price(days))}</dd></div>'
+            for days in (3, 7, 30)
+        )
         model_cards.append(f'''<article class="model-card" data-model="{model_id}">
 <h3>{esc(row['model'])}</h3><p class="model-role">{esc(labels['roles'][model_id])}</p>
-<p class="model-price"><strong>{esc(price)}</strong><small>{esc(labels['monthly_label'])}</small></p>
+<dl class="model-subscription-prices">{subscription_rows}</dl>
+<a class="model-trial-link" href="https://rate-cloud.com/register" aria-label="{esc(labels['trial_link'])}: {esc(row['model'])}">{esc(labels['try_label'])} ↗</a>
 <dl class="model-metrics"><div><dt>{esc(labels['response_label'])}</dt><dd class="response-value">{seconds} <span>{esc(labels['seconds_unit'])}</span></dd></div><div><dt>{esc(labels['speed_label'])}</dt><dd class="speed-value">{speed} <span>{esc(labels['tps_unit'])}</span></dd></div></dl></article>''')
     periods = ''.join(f'<span class="period-chip">{esc(labels[key])}</span>' for key in ['period_3','period_7','period_30'])
     badges = ''.join(f'<span>{esc(labels[key])}</span>' for key in ['badge_tokens','badge_slots','badge_api'])

@@ -4,7 +4,7 @@
 
 ## Documentation website
 
-- [Rate Cloud documentation](https://shaitor52.github.io/RateCloud/): HTML pages and language navigation.
+- [Rate Cloud documentation](https://shaitor52.github.io/RateCloud/): HTML pages and language navigation. The English homepage source is [README.md](README.md).
 - [Documentation index](https://shaitor52.github.io/RateCloud/llms.txt): direct links to every page.
 
 ## Official website
@@ -40,9 +40,12 @@
 - [French overview](fr/README.md)
 - [Official API cost comparison](articles/08-cost-and-service-comparison.md)
 - [20 unlimited-token workflows](articles/09-unlimited-use-cases.md)
+- [Dated subscriptions dataset](data/subscriptions-2026-11-03.json): model-specific 3-, 7-, and 30-day USD display prices checked November 3, 2026. Three- and seven-day values are converted from the public subscription dialog using the dated public display-currency API rate; 30-day USD values come from that API. Confirm current displayed prices.
 - [Performance and pricing datasets](data/README.md)
 
 ## Interpretation
+
+The Markdown overview summarizes the public offers, trial, subscription durations, and concurrency. The generated documentation homepage also renders the localized offer cards from the product data.
 
 Unlimited tokens means no cumulative token quota during an active subscription. Context, deadlines, concurrency, and availability remain finite. Historical performance is not guaranteed. Architectural descriptions are not an independent production audit. Refer to the live website and applicable terms for current conditions.
 

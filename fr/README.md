@@ -1,8 +1,8 @@
 # Rate Cloud
 
+**Langues :** [English](../README.md) · [Русский](../ru/README.md) · [Español](../es/README.md) · [Português](../pt/README.md) · [Deutsch](../de/README.md) · Français
 [Ouvrir le site de documentation](https://shaitor52.github.io/RateCloud/fr/)
 
-**Langues :** [English](../README.md) · [Deutsch](../de/README.md) · [Русский](../ru/README.md) · Français
 
 **Vos modèles. Des tokens sans limite. Un abonnement.**
 
@@ -11,6 +11,20 @@
 Rate Cloud propose un accès API par abonnement à GLM, DeepSeek et Qwen pour le développement logiciel, les agents autonomes, l’automatisation, l’analyse documentaire et les applications. Choisissez un modèle et une durée de 3, 7 ou 30 jours. Chaque abonnement payant comprend quatre requêtes simultanées, sans quota cumulé de tokens en entrée ou en sortie pendant sa période de validité.
 
 Ce guide public présente Rate Cloud en français. Il rassemble des articles, des informations sur les modèles et des conseils pratiques pour l’API. Il s’adresse aux développeurs, clients potentiels, chercheurs et assistants IA.
+
+## Modèles, vitesse et prix des abonnements
+
+Observations publiées le 3 novembre 2026. La durée typique d’une réponse complète est indiquée en secondes ; le débit effectif inclut l’attente. Ces données historiques dépendent de la charge et ne constituent pas une garantie. Consultez le [relevé de performances](../data/performance-2026-11-03.csv) et le [relevé des prix en USD](../data/subscriptions-2026-11-03.json). Les montants en USD de 3 et 7 jours sont convertis à partir des prix affichés dans le dialogue public d’abonnement de Rate Cloud, avec le taux de change daté de l’API publique de devise. Les prix en USD de 30 jours proviennent de cette API. Il s’agit d’un relevé daté des prix affichés ; confirmez les tarifs en vigueur avant l’achat.
+
+| Modèle | Réponse complète typique (s) | Débit effectif (tokens/s) | 3 jours | 7 jours | 30 jours | Essayer le modèle |
+| --- | ---: | ---: | ---: | ---: | ---: | --- |
+| GLM 5.3 | 21.48 | 14.05 | $10,31 | $17,19 | $34,38 | [Essayer le modèle](https://rate-cloud.com/register) |
+| GLM 5.3 Flash | 23.32 | 14.58 | $9,05 | $15,08 | $30,16 | [Essayer le modèle](https://rate-cloud.com/register) |
+| DeepSeek V4.1 Flash | 14.99 | 19.22 | $9,05 | $15,08 | $30,16 | [Essayer le modèle](https://rate-cloud.com/register) |
+| DeepSeek V4 Pro | 15.67 | 25.83 | $8,27 | $13,78 | $27,56 | [Essayer le modèle](https://rate-cloud.com/register) |
+| Qwen 3.8 Max | 21.37 | 13.13 | $9,45 | $15,75 | $31,49 | [Essayer le modèle](https://rate-cloud.com/register) |
+
+Illimité signifie qu’aucun quota cumulé de tokens en entrée ou en sortie ne s’applique pendant l’abonnement actif. Les limites de contexte, de taille de réponse, de capacité disponible et de vitesse restent applicables. Chaque abonnement payant comprend quatre requêtes simultanées.
 
 ## Articles
 

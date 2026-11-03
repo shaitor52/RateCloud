@@ -1,11 +1,11 @@
 {
   "en": {
     "eyebrow": "PRODUCT OVERVIEW",
-    "title": "Your models. No token meter.",
-    "intro": "Choose GLM, DeepSeek, or Qwen and subscribe to the model you need. API access has no cumulative input or output token quota during the active period.",
-    "unlimited_title": "No cumulative token quota",
+    "title": "Your models. Unlimited tokens. One subscription.",
+    "intro": "Unlimited tokens: choose GLM, DeepSeek, or Qwen and subscribe to the model you need. There is no cumulative input or output token quota during the active period.",
+    "unlimited_title": "Unlimited tokens",
     "unlimited_text": "Paid model subscriptions have no cumulative input or output token quota while active. Context limits, response size, available capacity, and speed still apply.",
-    "badge_tokens": "No cumulative token quota",
+    "badge_tokens": "Unlimited tokens",
     "badge_slots": "4 concurrent requests per subscription",
     "badge_api": "API access",
     "response_label": "Typical full-response time",
@@ -17,7 +17,7 @@
     "performance_link": "Performance methodology",
     "models_link": "Model details",
     "plans_title": "Choose an access period",
-    "plans_text": "Paid 3-, 7-, and 30-day subscriptions provide four concurrent requests per model and no cumulative token quota while active. Limits and availability apply. Confirm the current price before purchase.",
+    "plans_text": "Unlimited tokens with paid 3-, 7-, and 30-day subscriptions. Each model includes four concurrent requests while active; context limits, response size, capacity, and availability still apply. Confirm the current price before purchase.",
     "period_3": "3 days",
     "period_7": "7 days",
     "period_30": "30 days",
@@ -32,15 +32,16 @@
       "deepseek-v4-pro": "Complex reasoning",
       "qwen-3.8-max": "Large context and documents"
     },
-    "trial_duration": "3 hours"
+    "trial_duration": "3 hours",
+    "try_label": "Try it"
   },
   "ru": {
     "eyebrow": "ОБЗОР ПРОДУКТА",
-    "title": "Ваши модели. Без счётчика токенов.",
-    "intro": "Выберите GLM, DeepSeek или Qwen и оформите подписку на нужную модель. API-доступ предоставляется без суммарной квоты входных и выходных токенов на оплаченный период.",
-    "unlimited_title": "Без суммарной квоты токенов",
+    "title": "Ваши модели. Безлимитные токены. Одна подписка.",
+    "intro": "Безлимитные токены: выберите GLM, DeepSeek или Qwen и оформите подписку на нужную модель. В период действия нет суммарной квоты входных и выходных токенов.",
+    "unlimited_title": "Безлимитные токены",
     "unlimited_text": "В платной подписке на модель нет суммарной квоты входных и выходных токенов на период действия. Ограничения контекста, размера ответа, доступной мощности и скорости сохраняются.",
-    "badge_tokens": "Без суммарной квоты токенов",
+    "badge_tokens": "Безлимитные токены",
     "badge_slots": "4 параллельных запроса на подписку",
     "badge_api": "Доступ к API",
     "response_label": "Типичное время полного ответа",
@@ -52,7 +53,7 @@
     "performance_link": "Методика показателей",
     "models_link": "Подробнее о моделях",
     "plans_title": "Выберите срок доступа",
-    "plans_text": "Платные подписки на 3, 7 и 30 дней дают четыре одновременных запроса на модель и не имеют суммарной квоты токенов в период действия. Действуют ограничения и условия доступности. Перед покупкой проверьте актуальную цену.",
+    "plans_text": "Безлимитные токены в платных подписках на 3, 7 и 30 дней. Для каждой модели доступны четыре одновременных запроса; действуют ограничения контекста, размера ответа, мощности и доступности. Перед покупкой проверьте актуальную цену.",
     "period_3": "3 дня",
     "period_7": "7 дней",
     "period_30": "30 дней",
@@ -67,15 +68,16 @@
       "deepseek-v4-pro": "Сложные рассуждения",
       "qwen-3.8-max": "Большой контекст и документы"
     },
-    "trial_duration": "3 часа"
+    "trial_duration": "3 часа",
+    "try_label": "Попробовать"
   },
   "es": {
     "eyebrow": "RESUMEN DEL PRODUCTO",
-    "title": "Tus modelos. Sin contador de tokens.",
-    "intro": "Elige GLM, DeepSeek o Qwen y suscríbete al modelo que necesitas. El acceso API no tiene cuota acumulada de tokens de entrada y salida durante el período activo.",
-    "unlimited_title": "Sin cuota acumulada de tokens",
+    "title": "Tus modelos. Tokens ilimitados. Una suscripción.",
+    "intro": "Tokens ilimitados: elige GLM, DeepSeek o Qwen y suscríbete al modelo que necesitas. No hay una cuota acumulada de tokens de entrada o salida durante el periodo activo.",
+    "unlimited_title": "Tokens ilimitados",
     "unlimited_text": "Las suscripciones de pago a modelos no tienen una cuota acumulada de tokens de entrada o salida durante su vigencia. Siguen aplicándose límites de contexto, tamaño de respuesta, capacidad disponible y velocidad.",
-    "badge_tokens": "Sin cuota acumulada de tokens",
+    "badge_tokens": "Tokens ilimitados",
     "badge_slots": "4 solicitudes simultáneas por suscripción",
     "badge_api": "Acceso a la API",
     "response_label": "Tiempo típico de respuesta completa",
@@ -87,7 +89,7 @@
     "performance_link": "Metodología de rendimiento",
     "models_link": "Detalles de los modelos",
     "plans_title": "Elige un periodo de acceso",
-    "plans_text": "Las suscripciones de pago de 3, 7 y 30 días ofrecen cuatro solicitudes simultáneas por modelo y no tienen una cuota acumulada de tokens durante su vigencia. Se aplican límites y condiciones de disponibilidad. Confirma el precio vigente antes de comprar.",
+    "plans_text": "Tokens ilimitados en las suscripciones de pago de 3, 7 y 30 días. Cada modelo permite cuatro solicitudes simultáneas; se aplican límites de contexto, tamaño de respuesta, capacidad y disponibilidad. Confirma el precio vigente antes de comprar.",
     "period_3": "3 días",
     "period_7": "7 días",
     "period_30": "30 días",
@@ -102,15 +104,16 @@
       "deepseek-v4-pro": "Razonamiento complejo",
       "qwen-3.8-max": "Contexto extenso y documentos"
     },
-    "trial_duration": "3 horas"
+    "trial_duration": "3 horas",
+    "try_label": "Probar"
   },
   "pt": {
     "eyebrow": "VISÃO GERAL DO PRODUTO",
-    "title": "Seus modelos. Sem contador de tokens.",
-    "intro": "Escolha GLM, DeepSeek ou Qwen e assine o modelo de que precisa. O acesso à API não tem cota acumulada de tokens de entrada e saída durante o período ativo.",
-    "unlimited_title": "Sem cota acumulada de tokens",
+    "title": "Seus modelos. Tokens ilimitados. Uma assinatura.",
+    "intro": "Tokens ilimitados: escolha GLM, DeepSeek ou Qwen e assine o modelo de que precisa. Não há cota acumulada de tokens de entrada ou saída durante o período ativo.",
+    "unlimited_title": "Tokens ilimitados",
     "unlimited_text": "Assinaturas pagas de modelos não têm cota acumulada de tokens de entrada ou saída durante a vigência. Ainda se aplicam limites de contexto, tamanho da resposta, capacidade disponível e velocidade.",
-    "badge_tokens": "Sem cota acumulada de tokens",
+    "badge_tokens": "Tokens ilimitados",
     "badge_slots": "4 solicitações simultâneas por assinatura",
     "badge_api": "Acesso à API",
     "response_label": "Tempo típico da resposta completa",
@@ -122,7 +125,7 @@
     "performance_link": "Metodologia de desempenho",
     "models_link": "Detalhes dos modelos",
     "plans_title": "Escolha um período de acesso",
-    "plans_text": "Assinaturas pagas de 3, 7 e 30 dias oferecem quatro solicitações simultâneas por modelo e não têm cota acumulada de tokens durante a vigência. Aplicam-se limites e condições de disponibilidade. Confirme o preço atual antes da compra.",
+    "plans_text": "Tokens ilimitados nas assinaturas pagas de 3, 7 e 30 dias. Cada modelo permite quatro solicitações simultâneas; aplicam-se limites de contexto, tamanho da resposta, capacidade e disponibilidade. Confirme o preço atual antes da compra.",
     "period_3": "3 dias",
     "period_7": "7 dias",
     "period_30": "30 dias",
@@ -137,15 +140,16 @@
       "deepseek-v4-pro": "Raciocínio complexo",
       "qwen-3.8-max": "Contexto longo e documentos"
     },
-    "trial_duration": "3 horas"
+    "trial_duration": "3 horas",
+    "try_label": "Experimentar"
   },
   "de": {
     "eyebrow": "PRODUKTÜBERSICHT",
-    "title": "Ihre Modelle. Ohne Tokenzähler.",
-    "intro": "Wählen Sie GLM, DeepSeek oder Qwen und abonnieren Sie das gewünschte Modell. Während der Laufzeit gibt es kein Gesamtkontingent für Eingabe- und Ausgabetokens im API-Zugang.",
-    "unlimited_title": "Kein kumuliertes Tokenkontingent",
+    "title": "Ihre Modelle. Unbegrenzte Tokens. Ein Abonnement.",
+    "intro": "Unbegrenzte Tokens: Wählen Sie GLM, DeepSeek oder Qwen und abonnieren Sie das gewünschte Modell. Während der Laufzeit gibt es kein kumuliertes Kontingent für Ein- oder Ausgabetokens.",
+    "unlimited_title": "Unbegrenzte Tokens",
     "unlimited_text": "Bezahlte Modellabonnements haben während ihrer Laufzeit kein kumuliertes Kontingent für Ein- oder Ausgabetokens. Grenzen für Kontext, Antwortlänge, verfügbare Kapazität und Geschwindigkeit gelten weiterhin.",
-    "badge_tokens": "Kein kumuliertes Tokenkontingent",
+    "badge_tokens": "Unbegrenzte Tokens",
     "badge_slots": "4 gleichzeitige Anfragen je Abonnement",
     "badge_api": "API-Zugang",
     "response_label": "Typische Zeit bis zur vollständigen Antwort",
@@ -157,7 +161,7 @@
     "performance_link": "Methodik der Leistungswerte",
     "models_link": "Modelldetails",
     "plans_title": "Zugriffszeitraum wählen",
-    "plans_text": "Bezahlte Abonnements für 3, 7 und 30 Tage bieten vier gleichzeitige Anfragen je Modell und während der Laufzeit kein kumuliertes Tokenkontingent. Grenzen und Verfügbarkeit gelten. Bitte bestätigen Sie den aktuellen Preis vor dem Kauf.",
+    "plans_text": "Unbegrenzte Tokens in kostenpflichtigen Abonnements für 3, 7 und 30 Tage. Je Modell sind vier gleichzeitige Anfragen möglich; Grenzen für Kontext, Antwortlänge, Kapazität und Verfügbarkeit gelten weiterhin. Bitte bestätigen Sie den aktuellen Preis vor dem Kauf.",
     "period_3": "3 Tage",
     "period_7": "7 Tage",
     "period_30": "30 Tage",
@@ -172,15 +176,16 @@
       "deepseek-v4-pro": "Komplexe Schlussfolgerungen",
       "qwen-3.8-max": "Langer Kontext und Dokumente"
     },
-    "trial_duration": "3 Stunden"
+    "trial_duration": "3 Stunden",
+    "try_label": "Testen"
   },
   "fr": {
     "eyebrow": "APERÇU DU PRODUIT",
-    "title": "Vos modèles. Sans compteur de tokens.",
-    "intro": "Choisissez GLM, DeepSeek ou Qwen et abonnez-vous au modèle souhaité. L’accès API ne comporte pas de quota total de tokens d’entrée et de sortie pendant la période active.",
-    "unlimited_title": "Aucun quota cumulé de tokens",
+    "title": "Vos modèles. Tokens illimités. Un abonnement.",
+    "intro": "Tokens illimités : choisissez GLM, DeepSeek ou Qwen et abonnez-vous au modèle souhaité. Aucun quota cumulé de tokens en entrée ou en sortie ne s’applique pendant la période active.",
+    "unlimited_title": "Tokens illimités",
     "unlimited_text": "Les abonnements payants aux modèles n’ont pas de quota cumulé de tokens d’entrée ou de sortie pendant leur période active. Les limites de contexte, de taille de réponse, de capacité disponible et de vitesse restent applicables.",
-    "badge_tokens": "Aucun quota cumulé de tokens",
+    "badge_tokens": "Tokens illimités",
     "badge_slots": "4 requêtes simultanées par abonnement",
     "badge_api": "Accès API",
     "response_label": "Durée typique de la réponse complète",
@@ -192,7 +197,7 @@
     "performance_link": "Méthodologie des performances",
     "models_link": "Détails des modèles",
     "plans_title": "Choisissez une durée d’accès",
-    "plans_text": "Les abonnements payants de 3, 7 et 30 jours offrent quatre requêtes simultanées par modèle et aucun quota cumulé de tokens pendant la période active. Des limites et conditions de disponibilité s’appliquent. Confirmez le prix en vigueur avant l’achat.",
+    "plans_text": "Tokens illimités avec les abonnements payants de 3, 7 et 30 jours. Chaque modèle comprend quatre requêtes simultanées ; les limites de contexte, de taille de réponse, de capacité et de disponibilité restent applicables. Confirmez le prix en vigueur avant l’achat.",
     "period_3": "3 jours",
     "period_7": "7 jours",
     "period_30": "30 jours",
@@ -207,6 +212,7 @@
       "deepseek-v4-pro": "Raisonnement complexe",
       "qwen-3.8-max": "Contexte long et documents"
     },
-    "trial_duration": "3 heures"
+    "trial_duration": "3 heures",
+    "try_label": "Essayer"
   }
 }

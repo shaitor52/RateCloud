@@ -1,0 +1,51 @@
+{
+  "checked_date": "2026-11-03",
+  "currency": "RUB",
+  "models": [
+    {
+      "id": "glm-5.3",
+      "periods": {
+        "3": "835.20",
+        "7": "1392.00",
+        "30": "2784.00"
+      }
+    },
+    {
+      "id": "glm-5.3-flash",
+      "periods": {
+        "3": "732.60",
+        "7": "1221.00",
+        "30": "2442.00"
+      }
+    },
+    {
+      "id": "deepseek-v4.1-flash",
+      "periods": {
+        "3": "732.60",
+        "7": "1221.00",
+        "30": "2442.00"
+      }
+    },
+    {
+      "id": "deepseek-v4-pro",
+      "periods": {
+        "3": "669.60",
+        "7": "1116.00",
+        "30": "2232.00"
+      }
+    },
+    {
+      "id": "qwen-3.8-max",
+      "periods": {
+        "3": "765.00",
+        "7": "1275.00",
+        "30": "2550.00"
+      }
+    }
+  ],
+  "provenance": {
+    "3_7_day_prices": "https://rate-cloud.com/ (prices shown in the public subscription dialog, observed 2026-11-03)",
+    "30_day_prices": "https://rate-cloud.com/api/public/display-currency (public display-currency API, observed 2026-11-03)",
+    "note": "Dated public display-price snapshot. Prices and display currencies may change; confirm the current amount in the Rate Cloud account before purchase."
+  }
+}

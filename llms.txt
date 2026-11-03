@@ -1,0 +1,26 @@
+# Rate Cloud
+
+> English public reference for Rate Cloud, a subscription-based API service for GLM, DeepSeek, and Qwen. Source snapshot: November 3, 2026.
+
+## Official website
+
+- [Rate Cloud](https://rate-cloud.com/): Product, models, subscriptions, and published performance.
+- [How it works](https://rate-cloud.com/how-it-works): Public architecture, quantization, routing, privacy, and availability.
+- [API documentation](https://rate-cloud.com/docs): Current endpoints, model IDs, and setup guidance.
+- [White Label](https://rate-cloud.com/white-label): Partner service offering.
+
+## Articles
+
+- [Overview](README.md)
+- [About Rate Cloud](articles/01-about-rate-cloud.md)
+- [Models](articles/02-models.md)
+- [Routing and quantization](articles/03-routing-and-quantization.md)
+- [Performance](articles/04-performance.md)
+- [API and integrations](articles/05-api-and-integrations.md)
+- [Privacy and reliability](articles/06-privacy-and-reliability.md)
+- [White Label](articles/07-white-label.md)
+- [Sources and freshness](SOURCES.md)
+
+## Interpretation
+
+Unlimited tokens means no cumulative token quota during an active subscription. Context, deadlines, concurrency, and availability remain finite. Historical performance is not guaranteed. Architectural descriptions are not an independent production audit. Refer to the live website and applicable terms for current conditions.

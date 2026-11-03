@@ -10,6 +10,7 @@ from urllib.parse import quote, unquote, urlsplit
 from xml.etree import ElementTree as ET
 
 import markdown
+from product import render_product
 from markdown.extensions.toc import slugify_unicode
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -126,7 +127,8 @@ def main():
         if is_home:
             article_pages=[p for p in pages if p['lang']==lang and p['rel'].startswith('articles/')]
             guide_pages=[p for p in pages if p['lang']==lang and p['rel'].startswith('guides/') and p['rel']!='guides/README.md']
-            content=f'''<section class="home-hero"><div class="hero-copy"><p class="eyebrow">RATE CLOUD / {escape(t['docs'])}</p><h1 class="page-title">{escape(t['hero'])}</h1><p class="page-description">{escape(t['intro'])}</p><div class="hero-actions"><a class="button primary" href="https://rate-cloud.com/register">{escape(promo['trial'])} ↗</a><a class="button" href="{url(lang+'/guides/')}">{escape(t['api'])} →</a></div><p class="trial-note">{escape(promo['trial_text'])}</p><div class="hero-facts"><span>GLM · DeepSeek · Qwen</span><span>API · ∞ tokens</span></div></div><div class="hero-visual"><img src="{url('assets/brand-hero.webp')}" alt="Rate Cloud" width="1024" height="1024" fetchpriority="high"></div></section>
+            content=f'''<section class="home-hero"><div class="hero-copy"><p class="eyebrow">RATE CLOUD / {escape(t['docs'])}</p><h1 class="page-title">{escape(t['hero'])}</h1><p class="page-description">{escape(t['intro'])}</p><div class="hero-actions"><a class="button primary" href="https://rate-cloud.com/register">{escape(promo['trial'])} ↗</a><a class="button" href="#models-and-plans">{escape(UI[lang]['explore'])} →</a></div><p class="trial-note">{escape(promo['trial_text'])}</p><div class="hero-facts"><span>GLM · DeepSeek · Qwen</span><span>API · ∞ tokens</span></div></div><div class="hero-visual"><img src="{url('assets/brand-hero.webp')}" alt="Rate Cloud" width="1024" height="1024" fetchpriority="high"></div></section>
+            {render_product(lang, base)}
             <section class="infrastructure-banner" id="our-infrastructure"><h2>{escape(promo['infra_title'])}</h2><p>{escape(promo['infra_text'])}</p><a href="{url(lang+'/articles/infrastructure/')}">{escape(promo['infra_link'])} →</a></section>
             <h2 class="section-heading">{escape(promo['offers_title'])}</h2><section class="offers-grid" id="get-started" aria-label="{escape(promo['offers_title'])}"><article class="offer-card"><h3>{escape(promo['trial_title'])}</h3><p>{escape(promo['trial_text'])}</p><div class="offer-actions"><a class="button primary" href="https://rate-cloud.com/register">{escape(promo['trial_link'])} ↗</a></div></article><article class="offer-card"><h3>{escape(promo['ref_title'])}</h3><p>{escape(promo['ref_text'])}</p><div class="offer-actions"><a href="{url(lang+'/articles/referral-program/')}">{escape(promo['ref_link'])} →</a></div></article><article class="offer-card"><h3>{escape(promo['white_title'])}</h3><p>{escape(promo['white_text'])}</p><div class="offer-actions"><a href="{url(lang+'/articles/white-label/')}">White Label →</a><a href="{white_url}">{escape(promo['white_link'])} ↗</a></div></article></section>
             <section class="infrastructure-banner use-cases-banner" id="continuous-work"><h2>{escape(promo['cases_title'])}</h2><p>{escape(promo['cases_text'])}</p><a href="{url(lang+'/articles/unlimited-use-cases/')}">{escape(promo['cases_link'])} →</a></section>

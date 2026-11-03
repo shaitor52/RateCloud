@@ -1,5 +1,8 @@
 """Validate generated Pages output without network access or API credentials."""
 import json
+import csv
+import html
+from decimal import Decimal
 import re
 from html.parser import HTMLParser
 from pathlib import Path
@@ -94,6 +97,27 @@ def main():
         assert rendered.read_text().count('class="case-trial-cta"')>=20,(locale,'visible case CTAs')
         home=OUTPUT/('index.html' if locale=='en' else locale+'/index.html')
         assert 'continuous-work' in pages[home].ids,(locale,'homepage workflow link')
+    measurements={row['api_id']:row for row in csv.DictReader((ROOT/'data/performance-2026-11-03.csv').open())}
+    expected_prices={'en':['34.38','30.16','30.16','27.56','31.49'], 'ru':['2784','2442','2442','2232','2550']}
+    order=['glm-5.3','glm-5.3-flash','deepseek-v4.1-flash','deepseek-v4-pro','qwen-3.8-max']
+    for locale in ['en','ru','es','pt','de','fr']:
+        home=OUTPUT/('index.html' if locale=='en' else locale+'/index.html')
+        text=home.read_text()
+        after_hero=text.split('<section class="home-hero">',1)[1].split('</section>',1)[1]
+        assert re.match(r'\s*<section class="product-overview"',after_hero),(locale,'product is second screen')
+        cards=re.findall(r'<article class="model-card" data-model="([^"]+)">(.*?)</article>',text,re.S)
+        assert [model for model,body in cards]==order,(locale,'five models')
+        for i,(model,body) in enumerate(cards):
+            price=html.unescape(re.search(r'class="model-price"><strong>(.*?)</strong>',body).group(1))
+            numeric=re.sub(r'[^0-9,.]','',price).replace(',','.')
+            assert Decimal(numeric)==Decimal(expected_prices['ru' if locale=='ru' else 'en'][i]),(locale,model,'price')
+            for classname,field in [('response-value','typical_complete_response_seconds'),('speed-value','typical_effective_tokens_per_second')]:
+                value=re.search(r'class="'+classname+r'">([0-9,.]+)',body).group(1).replace(',','.')
+                assert Decimal(value)==Decimal(measurements[model][field]),(locale,model,field)
+        assert text.count('class="period-chip"')==3,(locale,'3 periods')
+        trial=re.search(r'<aside class="trial-panel">(.*?)</aside>',text,re.S).group(1)
+        assert 'https://rate-cloud.com/register' in trial,(locale,'trial registration')
+        assert 'models-and-plans' in pages[home].ids,(locale,'product anchor')
     assert (OUTPUT/'.nojekyll').is_file()
     print(f'PASS: {len(pages)-1} content pages, {refs} local links/assets/anchors, 6 search indexes, reciprocal language metadata, currencies and sitemap')
 

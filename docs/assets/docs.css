@@ -248,3 +248,10 @@ pre code { padding: 0; border: 0; color: inherit; background: transparent; font-
 }
 
 .hero-copy p.trial-note { max-width: 46rem; margin: .8rem 0 0; color: var(--muted); font-size: .78rem; line-height: 1.55; }
+
+/* Long workflow collections keep their section index within the viewport. */
+.toc { max-height: calc(100vh - 8rem); max-height: calc(100dvh - 8rem); overflow-y: auto; scrollbar-width: thin; }
+.use-cases-banner { border-color: rgb(50 229 255 / 38%); background: linear-gradient(115deg, rgb(50 229 255 / 6%), transparent 70%), #1b1e20; }
+
+.case-trial-cta { margin: 1.5rem 0 2.5rem; padding: 1rem 1.1rem; border-left: 3px solid var(--lime); border-radius: 0 .55rem .55rem 0; background: rgb(145 200 50 / 6%); font-size: .9rem; }
+.case-trial-cta p { margin: 0; }

@@ -79,6 +79,21 @@ def main():
             target=OUTPUT/item['url'].removeprefix(BASE)/'index.html';assert target.is_file(),item
     sitemap=ET.parse(OUTPUT/'sitemap.xml')
     assert len(sitemap.getroot())==129
+    for locale in ['en','ru','es','pt','de','fr']:
+        source=ROOT/('articles/09-unlimited-use-cases.md' if locale=='en' else locale+'/articles/09-unlimited-use-cases.md')
+        text=source.read_text()
+        cases=re.findall(r'^## (\d{2})\. .+?(?=^## |\Z)',text,re.M|re.S)
+        assert cases==[f'{i:02d}' for i in range(1,21)],(locale,'20 ordered cases')
+        sections=re.split(r'^## \d{2}\. ',text,flags=re.M)[1:]
+        for i,section in enumerate(sections,1):
+            # Stop the last case at the article-wide operating guidance.
+            section=re.split(r'^## ',section,flags=re.M)[0]
+            assert 'https://rate-cloud.com/register' in section,(locale,i,'case trial CTA')
+            assert '../guides/README.md' in section,(locale,i,'case connection guide')
+        rendered=OUTPUT/locale/'articles/unlimited-use-cases/index.html'
+        assert rendered.read_text().count('class="case-trial-cta"')>=20,(locale,'visible case CTAs')
+        home=OUTPUT/('index.html' if locale=='en' else locale+'/index.html')
+        assert 'continuous-work' in pages[home].ids,(locale,'homepage workflow link')
     assert (OUTPUT/'.nojekyll').is_file()
     print(f'PASS: {len(pages)-1} content pages, {refs} local links/assets/anchors, 6 search indexes, reciprocal language metadata, currencies and sitemap')
 

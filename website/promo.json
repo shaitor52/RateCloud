@@ -14,7 +14,10 @@
     "white_link": "Explore White Label",
     "register": "Create an account",
     "trial": "Start the trial",
-    "offers_title": "Ways to get started"
+    "offers_title": "Ways to get started",
+    "cases_title": "Put recurring work in an AI assistant’s hands",
+    "cases_text": "Code reviews after every push, security triage, news and market alerts, email drafts, daily planning, and analytics. Explore 20 detailed workflows and see where fixed model subscription pricing helps.",
+    "cases_link": "Explore 20 detailed workflows"
   },
   "ru": {
     "infra_title": "Сами арендуем мощности и запускаем модели",
@@ -31,7 +34,10 @@
     "white_link": "Узнать о White Label",
     "register": "Создать аккаунт",
     "trial": "Начать пробный доступ",
-    "offers_title": "Как начать работу"
+    "offers_title": "Как начать работу",
+    "cases_title": "Поручите повторяющуюся работу AI-помощнику",
+    "cases_text": "Ревью каждого push, анализ безопасности, новости и активы, почта, планирование дня и аналитика. В 20 подробных сценариях показано, где фиксированная цена доступа к модели особенно полезна.",
+    "cases_link": "Открыть 20 подробных сценариев"
   },
   "es": {
     "infra_title": "Alquilamos capacidad y operamos los modelos",
@@ -48,7 +54,10 @@
     "white_link": "Descubrir White Label",
     "register": "Crear una cuenta",
     "trial": "Iniciar la prueba",
-    "offers_title": "Formas de empezar"
+    "offers_title": "Formas de empezar",
+    "cases_title": "Deja el trabajo recurrente en manos de un asistente de IA",
+    "cases_text": "Revisiones después de cada push, análisis de seguridad, noticias y mercados, borradores de correo, planificación y analítica. Descubre 20 flujos detallados y cuándo ayuda una suscripción de modelo con precio fijo.",
+    "cases_link": "Explorar 20 flujos detallados"
   },
   "pt": {
     "infra_title": "Alugamos capacidade e operamos os modelos",
@@ -65,7 +74,10 @@
     "white_link": "Conheça o White Label",
     "register": "Criar uma conta",
     "trial": "Iniciar o teste",
-    "offers_title": "Formas de começar"
+    "offers_title": "Formas de começar",
+    "cases_title": "Entregue o trabalho recorrente a um assistente de IA",
+    "cases_text": "Revisões a cada push, análise de segurança, notícias e mercados, rascunhos de e-mail, planejamento e análise de dados. Veja 20 fluxos detalhados e onde a assinatura de modelo com preço fixo ajuda.",
+    "cases_link": "Explorar 20 fluxos detalhados"
   },
   "de": {
     "infra_title": "Wir mieten Rechenleistung und betreiben Modelle",
@@ -82,7 +94,10 @@
     "white_link": "White Label ansehen",
     "register": "Konto erstellen",
     "trial": "Test starten",
-    "offers_title": "Möglichkeiten für den Einstieg"
+    "offers_title": "Möglichkeiten für den Einstieg",
+    "cases_title": "Wiederkehrende Arbeit an einen KI-Assistenten übergeben",
+    "cases_text": "Code-Reviews nach jedem Push, Sicherheitsanalyse, Nachrichten und Marktmeldungen, E-Mail-Entwürfe, Tagesplanung und Analysen. Entdecken Sie 20 konkrete Abläufe und die Vorteile fester Modellabonnementkosten.",
+    "cases_link": "20 detaillierte Abläufe entdecken"
   },
   "fr": {
     "infra_title": "Nous louons le calcul et exploitons les modèles",
@@ -99,6 +114,9 @@
     "white_link": "Découvrir White Label",
     "register": "Créer un compte",
     "trial": "Démarrer l’essai",
-    "offers_title": "Comment commencer"
+    "offers_title": "Comment commencer",
+    "cases_title": "Confiez le travail récurrent à un assistant IA",
+    "cases_text": "Revue de chaque push, analyse de sécurité, actualités et marchés, brouillons d’e-mails, organisation et analyses. Découvrez 20 scénarios détaillés et les avantages d’un abonnement au modèle à prix fixe.",
+    "cases_link": "Découvrir 20 scénarios détaillés"
   }
 }

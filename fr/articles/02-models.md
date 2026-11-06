@@ -14,7 +14,7 @@ Le catalogue publié par Rate Cloud comprend cinq modèles. Chacun a son propre 
 | GLM 5.3 Flash | `glm-5.3-flash` | Requêtes fréquentes, programmation quotidienne, automatisation, sous-agents | Oui | $30,16 |
 | DeepSeek V4.1 Flash | `deepseek-v4.1-flash` | Agents de programmation et tâches parallèles | Oui | $30,16 |
 | DeepSeek V4 Pro | `deepseek-v4-pro` | Raisonnement en plusieurs étapes, architecture et revue de code | Non | $27,56 |
-| Qwen 3.8 Max | `qwen-3.8-max` | Grands dépôts, documents, recherche et contexte long | Oui | $31,49 |
+| Qwen 3.8 Max | `qwen-3.8-max` | Grands dépôts, documents, recherche et contexte long | Non | $31,49 |
 
 L’affichage en USD du site a été vérifié le 3 novembre 2026. Tarifs et fonctionnalités peuvent évoluer ; l’affichage en USD ne garantit pas un prix fixe avant le paiement. Vérifiez les conditions actuelles dans l’espace client. Chaque abonnement payant indiqué comprend quatre requêtes simultanées et aucun quota cumulé de tokens pendant sa durée. La prise en charge des images en entrée signifie que le modèle accepte des images, pas qu’il en génère.
 

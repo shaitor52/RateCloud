@@ -14,7 +14,7 @@ Rate Cloud's published catalog contains five models. Each has a separate subscri
 | GLM 5.3 Flash | `glm-5.3-flash` | Frequent requests, daily coding, automation, subagents | Yes | $30.16 |
 | DeepSeek V4.1 Flash | `deepseek-v4.1-flash` | Coding agents and parallel programming tasks | Yes | $30.16 |
 | DeepSeek V4 Pro | `deepseek-v4-pro` | Multistep reasoning, architecture, and code review | No | $27.56 |
-| Qwen 3.8 Max | `qwen-3.8-max` | Large repositories, documents, research, and long context | Yes | $31.49 |
+| Qwen 3.8 Max | `qwen-3.8-max` | Large repositories, documents, research, and long context | No | $31.49 |
 
 USD display prices come from the [public currency endpoint](https://rate-cloud.com/api/public/display-currency), retrieved November 3, 2026. They are dated display equivalents and can change before checkout. Capabilities reflect the website on the same date. Confirm current purchase conditions in the dashboard. Each listed paid subscription includes four concurrent requests and no cumulative token quota during its term. Image input means the model accepts images; it does not imply image generation.
 

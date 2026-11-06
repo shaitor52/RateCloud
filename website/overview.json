@@ -33,7 +33,12 @@
       "qwen-3.8-max": "Large context and documents"
     },
     "trial_duration": "3 hours",
-    "try_label": "Try it"
+    "try_label": "Try it",
+    "full_model_title": "Full model",
+    "full_model_intro": "All five current models in one plan.",
+    "full_model_prices": "One package: $45.45 / 30 days, $22.72 / 7 days, or $13.63 / 3 days. A 10% code lowers the prices to $40.90, $20.45, and $12.27, using the public display-currency snapshot dated Nov 3, 2026.",
+    "full_model_slots": "One slot per model per package. Quantities stack equally across all models and cannot be reassigned. Two packages allow two simultaneous requests per model. Additional purchases add slots; renewing a chosen quantity extends its term without changing slots. Individual subscriptions remain independent. First-purchase offers apply under usual rules. Manual renewal is a new order and may use promo codes or bonuses when the account meets usual eligibility rules. Automatic renewal through Whop is charged at the full agreed price without repeating the introductory discount.",
+    "full_model_link": "Plan details and current prices"
   },
   "ru": {
     "eyebrow": "ОБЗОР ПРОДУКТА",
@@ -69,7 +74,12 @@
       "qwen-3.8-max": "Большой контекст и документы"
     },
     "trial_duration": "3 часа",
-    "try_label": "Попробовать"
+    "try_label": "Попробовать",
+    "full_model_title": "Full model",
+    "full_model_intro": "Все пять текущих моделей в одном плане.",
+    "full_model_prices": "Один пакет: 3 680 ₽ / 30 дней, 1 840 ₽ / 7 дней или 1 104 ₽ / 3 дня. Промокод 10% снижает цены до 3 312 ₽, 1 656 ₽ и 993,60 ₽.",
+    "full_model_slots": "Один слот на модель в каждом пакете. Пакеты складываются одинаково для всех моделей, слоты нельзя перераспределить. Два пакета дают два одновременных запроса на модель. Дополнительная покупка добавляет слоты; продление выбранного количества пакетов продлевает срок без изменения слотов. Отдельные подписки независимы. Для первой покупки действуют обычные правила промокодов, реферальной скидки и бонусов. Ручное продление является новым заказом и может использовать промокод или бонусы при соответствии обычным правилам доступности. Автоматическое продление через Whop оплачивается по полной согласованной цене без повторной вводной скидки.",
+    "full_model_link": "Состав пакета и актуальные цены"
   },
   "es": {
     "eyebrow": "RESUMEN DEL PRODUCTO",
@@ -105,7 +115,12 @@
       "qwen-3.8-max": "Contexto extenso y documentos"
     },
     "trial_duration": "3 horas",
-    "try_label": "Probar"
+    "try_label": "Probar",
+    "full_model_title": "Full model",
+    "full_model_intro": "Los cinco modelos actuales en un plan.",
+    "full_model_prices": "Un paquete: $45.45 / 30 días, $22.72 / 7 días o $13.63 / 3 días. Un código del 10% reduce los precios a $40.90, $20.45 y $12.27, con la conversión pública del 3 nov 2026.",
+    "full_model_slots": "Un espacio por modelo en cada paquete. Las cantidades se acumulan por igual para todos los modelos y no se reasignan. Dos paquetes permiten dos solicitudes simultáneas por modelo. Las compras adicionales añaden espacios; renovar una cantidad elegida amplía el periodo sin cambiar los espacios. Las suscripciones individuales son independientes. Las ofertas de primera compra siguen las reglas habituales. La renovación manual es un nuevo pedido y puede usar códigos promocionales o bonos si la cuenta cumple las reglas habituales de elegibilidad. La renovación automática a través de Whop se cobra al precio total acordado, sin repetir el descuento inicial.",
+    "full_model_link": "Detalles del plan y precios actuales"
   },
   "pt": {
     "eyebrow": "VISÃO GERAL DO PRODUTO",
@@ -141,7 +156,12 @@
       "qwen-3.8-max": "Contexto longo e documentos"
     },
     "trial_duration": "3 horas",
-    "try_label": "Experimentar"
+    "try_label": "Experimentar",
+    "full_model_title": "Full model",
+    "full_model_intro": "Os cinco modelos atuais num único plano.",
+    "full_model_prices": "Um pacote: $45.45 / 30 dias, $22.72 / 7 dias ou $13.63 / 3 dias. Um código de 10% reduz os preços para $40.90, $20.45 e $12.27, segundo a conversão pública de 3 nov 2026.",
+    "full_model_slots": "Um slot por modelo em cada pacote. As quantidades acumulam-se igualmente para todos os modelos e não são redistribuídas. Dois pacotes permitem dois pedidos simultâneos por modelo. Compras adicionais acrescentam slots; renovar uma quantidade escolhida prolonga o prazo sem alterar os slots. As subscrições individuais são independentes. As ofertas da primeira compra seguem as regras habituais. A renovação manual é uma nova encomenda e pode usar um código promocional ou bónus se a conta cumprir as regras habituais de elegibilidade. A renovação automática através da Whop é cobrada pelo preço total acordado, sem repetir o desconto inicial.",
+    "full_model_link": "Detalhes do plano e preços atuais"
   },
   "de": {
     "eyebrow": "PRODUKTÜBERSICHT",
@@ -177,7 +197,12 @@
       "qwen-3.8-max": "Langer Kontext und Dokumente"
     },
     "trial_duration": "3 Stunden",
-    "try_label": "Testen"
+    "try_label": "Testen",
+    "full_model_title": "Full model",
+    "full_model_intro": "Alle fünf aktuellen Modelle in einem Plan.",
+    "full_model_prices": "Ein Paket: $45.45 / 30 Tage, $22.72 / 7 Tage oder $13.63 / 3 Tage. Ein 10%-Code senkt die Preise auf $40.90, $20.45 und $12.27, anhand des öffentlichen Kursstands vom 3. Nov. 2026.",
+    "full_model_slots": "Ein Slot je Modell und Paket. Mengen stapeln sich gleichmäßig über alle Modelle und sind nicht übertragbar. Zwei Pakete erlauben zwei gleichzeitige Anfragen pro Modell. Zusätzliche Käufe fügen Slots hinzu; die Verlängerung der gewählten Menge verlängert die Laufzeit ohne Änderung der Slots. Einzelabos sind unabhängig. Angebote beim ersten Kauf folgen den üblichen Regeln. Eine manuelle Verlängerung ist eine neue Bestellung und kann einen Gutscheincode oder Boni verwenden, wenn das Konto die üblichen Voraussetzungen erfüllt. Die automatische Verlängerung über Whop wird zum vollen vereinbarten Preis berechnet, ohne den Einführungsrabatt erneut anzuwenden.",
+    "full_model_link": "Plandetails und aktuelle Preise"
   },
   "fr": {
     "eyebrow": "APERÇU DU PRODUIT",
@@ -213,6 +238,11 @@
       "qwen-3.8-max": "Contexte long et documents"
     },
     "trial_duration": "3 heures",
-    "try_label": "Essayer"
+    "try_label": "Essayer",
+    "full_model_title": "Full model",
+    "full_model_intro": "Les cinq modèles actuels dans un seul forfait.",
+    "full_model_prices": "Un pack : $45.45 / 30 jours, $22.72 / 7 jours ou $13.63 / 3 jours. Un code de 10 % réduit les prix à $40.90, $20.45 et $12.27, selon le taux public du 3 nov. 2026.",
+    "full_model_slots": "Un emplacement par modèle et par pack. Les quantités s’additionnent pour tous les modèles sans transfert possible. Deux packs autorisent deux requêtes simultanées par modèle. Les achats supplémentaires ajoutent des emplacements ; renouveler la quantité choisie prolonge la durée sans changer les emplacements. Les abonnements individuels sont indépendants. Les offres du premier achat suivent les règles habituelles. Le renouvellement manuel constitue une nouvelle commande et peut utiliser un code promo ou des bonus si le compte respecte les règles habituelles d’éligibilité. Le renouvellement automatique via Whop est facturé au plein tarif convenu, sans répéter la remise de bienvenue.",
+    "full_model_link": "Détails du forfait et tarifs actuels"
   }
 }

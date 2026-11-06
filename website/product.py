@@ -54,6 +54,7 @@ def render_product(lang, base):
 <div class="product-heading"><p class="eyebrow">{esc(labels['eyebrow'])}</p><h2 id="product-title">{esc(labels['title'])}</h2><p>{esc(labels['intro'])}</p></div>
 <div class="unlimited-strip"><strong class="unlimited-symbol" aria-hidden="true">∞</strong><div><h3>{esc(labels['unlimited_title'])}</h3><p>{esc(labels['unlimited_text'])}</p></div><div class="product-badges">{badges}</div></div>
 <div class="model-grid">{''.join(model_cards)}</div>
+<aside class="subscription-panel full-model-panel" aria-labelledby="full-model-title"><h3 id="full-model-title">{esc(labels['full_model_title'])}</h3><p>{esc(labels['full_model_intro'])}</p><p>{esc(labels['full_model_prices'])}</p><p>{esc(labels['full_model_slots'])}</p><div class="product-actions"><a href="{website}pricing">{esc(labels['full_model_link'])} ↗</a></div></aside>
 <p class="performance-note">{esc(labels['performance_note'])} <a href="{base}{lang}/articles/performance/">{esc(labels['performance_link'])} →</a></p>
 <div class="subscription-layout"><div class="subscription-panel"><h3>{esc(labels['plans_title'])}</h3><p>{esc(labels['plans_text'])}</p><div class="period-options">{periods}</div><div class="product-actions"><a href="{website}pricing">{esc(labels['pricing_link'])} ↗</a></div></div>
 <aside class="trial-panel"><strong class="trial-duration">{esc(labels['trial_duration'])}</strong><h3>{esc(labels['trial_title'])}</h3><p>{esc(labels['trial_text'])}</p><a class="button primary" href="https://rate-cloud.com/register">{esc(labels['trial_link'])} ↗</a></aside></div>

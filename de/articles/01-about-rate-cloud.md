@@ -33,3 +33,11 @@ Rate Cloud kann als Modellebene für Programmieragenten, interne Assistenten, Bo
 Der Dienst verkauft API-Zugang. Eine vertraute Anwendung zu verbinden macht das gewählte GLM-, DeepSeek- oder Qwen-Modell nicht zu einem eigenen Modell des Anwendungsanbieters.
 
 Quellen: [Rate-Cloud-Startseite](https://rate-cloud.com/) und [Funktionsweise](https://rate-cloud.com/how-it-works). Stand: 3. November 2026. [Zur Übersicht](../README.md).
+
+## Full model
+
+Full model umfasst die fünf aktuellen Modelle: GLM 5.3, GLM 5.3 Flash, DeepSeek V4.1 Flash, DeepSeek V4 Pro und Qwen 3.8 Max.
+
+Ein Paket kostet $45.45 für 30 Tage, $22.72 für 7 Tage oder $13.63 für 3 Tage. Ein 10%-Code senkt die Beträge auf $40.90, $20.45 und $12.27, anhand des öffentlichen Wechselkursstands vom 3. November 2026. Prüfen Sie den Bestellbetrag vor der Zahlung.
+
+Jedes Paket fügt jedem Modell einen parallelen Slot hinzu. Paketmengen stapeln sich gleichmäßig über alle Modelle und können nicht umverteilt werden: Zwei Pakete erlauben zwei gleichzeitige Anfragen je Modell. Ein zusätzlicher Kauf fügt Slots für die bezahlte Laufzeit hinzu. Die Verlängerung der gewählten Paketmenge verlängert die Laufzeit ohne Änderung der Slotzahl. Einzelabos bieten unabhängige Kapazität. Für den ersten Kauf gelten die üblichen Regeln für Gutscheine, Empfehlungen und Boni. Eine manuelle Verlängerung ist eine neue Bestellung und kann einen Gutscheincode oder Boni verwenden, wenn das Konto die üblichen Voraussetzungen erfüllt. Die automatische Verlängerung über Whop wird zum vollen vereinbarten Preis berechnet, ohne den Einführungsrabatt erneut anzuwenden.

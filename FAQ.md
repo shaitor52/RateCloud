@@ -20,6 +20,10 @@ No. A paid subscription allows four requests to run at the same time. Completed 
 
 The public offer allows combining subscriptions. Two subscriptions to the same model provide eight slots for that model. Different model subscriptions provide their own model-specific pools.
 
+## Full model
+
+Full model includes all five current models: GLM 5.3, GLM 5.3 Flash, DeepSeek V4.1 Flash, DeepSeek V4 Pro, and Qwen 3.8 Max. One package costs $45.45 for 30 days, $22.72 for 7 days, or $13.63 for 3 days. A 10% code lowers those amounts to $40.90, $20.45, and $12.27, using the public display-currency snapshot dated November 3, 2026. Confirm the live order total before paying. Each package adds one concurrent slot to each of the five models. Package quantities stack equally across every model and cannot be reassigned: two packages provide two simultaneous requests per model. An additional purchase adds slots for its paid term. Renewal of the selected package quantity extends the term without changing slot counts. Individual model subscriptions add independent capacity. First-purchase promo, referral-discount, and bonus-credit rules apply. Manual renewals are new orders and may use promo codes or bonuses when the account meets the usual eligibility rules. Automatic renewal through Whop is charged at the full agreed price without repeating the introductory discount.
+
 ## Which models can I use?
 
 The published catalog lists GLM 5.3, GLM 5.3 Flash, DeepSeek V4.1 Flash, DeepSeek V4 Pro, and Qwen 3.8 Max. See [the dated catalog](articles/02-models.md) for exact API IDs, prices, positioning, and image-input support.

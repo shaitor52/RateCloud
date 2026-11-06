@@ -73,7 +73,8 @@ def main():
             pages.append(page); routes[source.resolve()] = route
     for source, route in [(ROOT/'SOURCES.md','en/sources/'), (ROOT/'data/README.md','en/data/'), (ROOT/'ru/data/README.md','ru/data/')]:
         raw = source.read_text(); lang = 'ru' if route.startswith('ru/') else 'en'
-        page = dict(source=source, lang=lang, rel='shared/' + source.parent.name + '/' + source.name, route=route, raw=raw, title=re.search(r'^# (.+)$',raw,re.M).group(1), desc=UI[lang]['snapshot'])
+        stable_parent = 'RateCloud' if source.parent == ROOT else source.parent.name
+        page = dict(source=source, lang=lang, rel='shared/' + stable_parent + '/' + source.name, route=route, raw=raw, title=re.search(r'^# (.+)$',raw,re.M).group(1), desc=UI[lang]['snapshot'])
         pages.append(page);routes[source.resolve()] = route
 
     def url(route): return base + route

@@ -31,3 +31,11 @@ Rate Cloud puede servir como capa de modelos para agentes de programación, asis
 El servicio ofrece acceso a API. Conectar una aplicación conocida no convierte el modelo GLM, DeepSeek o Qwen seleccionado en un modelo propio de primera parte de esa aplicación.
 
 Fuentes: [página principal de Rate Cloud](https://rate-cloud.com/) y [cómo funciona](https://rate-cloud.com/how-it-works). Consulta de fuentes: 3 de noviembre de 2026. [Volver al índice](../README.md).
+
+## Full model
+
+Full model reúne los cinco modelos actuales: GLM 5.3, GLM 5.3 Flash, DeepSeek V4.1 Flash, DeepSeek V4 Pro y Qwen 3.8 Max.
+
+Un paquete cuesta $45.45 por 30 días, $22.72 por 7 días o $13.63 por 3 días. Un código promocional del 10% reduce los importes a $40.90, $20.45 y $12.27, según la conversión pública del 3 de noviembre de 2026. Confirma el total del pedido antes de pagar.
+
+Cada paquete añade un espacio simultáneo a cada modelo. Las cantidades se acumulan por igual en todos los modelos y no se pueden reasignar: dos paquetes permiten dos solicitudes simultáneas por modelo. Una compra adicional añade espacios durante su periodo pagado. Renovar la cantidad elegida amplía el periodo sin cambiar los espacios. Las suscripciones individuales añaden capacidad independiente. La primera compra sigue las reglas normales de códigos promocionales, recomendación y bonos. La renovación manual es un nuevo pedido y puede usar códigos promocionales o bonos si la cuenta cumple las reglas habituales de elegibilidad. La renovación automática a través de Whop se cobra al precio total acordado, sin repetir el descuento inicial.

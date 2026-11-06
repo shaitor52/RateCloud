@@ -25,6 +25,11 @@ Published observations from November 3, 2026. Typical full response is measured 
 | DeepSeek V4 Pro | 15.67 | 25.83 | $8.27 | $13.78 | $27.56 | [Try model](https://rate-cloud.com/register) |
 | Qwen 3.8 Max | 21.37 | 13.13 | $9.45 | $15.75 | $31.49 | [Try model](https://rate-cloud.com/register) |
 
+
+### Full model bundle
+
+The Full model plan covers all five current models with one concurrent slot per model. It costs $45.45 for 30 days, $22.72 for 7 days, or $13.63 for 3 days using the public display-currency snapshot dated November 3, 2026. A 10% promo code reduces the converted prices to $40.90, $20.45, and $12.27. The number of packages sets the same slot count for every model, and slots cannot be reassigned: two packages allow two concurrent requests to each model. An additional Full model purchase adds slots. Renewing the selected package quantity extends its term without changing the slot count. Individual-model subscriptions add independent capacity. First-purchase promo, referral-discount, and bonus-credit rules apply. Manual renewals are new orders and may use promo codes or bonuses when the account meets the usual eligibility rules. Automatic renewal through Whop is charged at the full agreed price without repeating the introductory discount. Confirm the live order total before purchasing.
+
 Unlimited means no cumulative input or output token quota during the active subscription. Context limits, response size, available capacity, and speed still apply. Each paid subscription includes four concurrent requests.
 
 ## Read the articles

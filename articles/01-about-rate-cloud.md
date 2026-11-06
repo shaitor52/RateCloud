@@ -20,6 +20,15 @@ A developer might use all four slots for a main agent and three subagents, four 
 
 Subscriptions can be combined. Two subscriptions to the same model provide eight slots for that model. Subscriptions to two different models provide separate pools: for example, four GLM slots and four DeepSeek slots. A workflow must send its requests to the appropriate model to use those pools.
 
+
+## Full model subscription
+
+Full model includes all five current models: GLM 5.3, GLM 5.3 Flash, DeepSeek V4.1 Flash, DeepSeek V4 Pro, and Qwen 3.8 Max. Using the public display-currency snapshot dated November 3, 2026, the listed prices convert to $45.45 for 30 days, $22.72 for 7 days, and $13.63 for 3 days. A 10% promo code reduces those amounts to $40.90, $20.45, and $12.27. The live order total is authoritative before purchase.
+
+One Full model package provides one concurrent slot for each of the five models. The number of packages sets the same number of slots for every model; slots cannot be reassigned. For example, two packages allow two concurrent requests to each model. An additional Full model purchase adds slots. Renewing the selected package quantity extends its access period without changing the slot count. Separate subscriptions to individual models remain independent and add their own paid capacity.
+
+The first purchase follows the normal promo-code, referral-discount, and bonus-credit rules. A manual renewal is a new order and may use promo codes or bonuses when the account meets the usual eligibility rules. Automatic renewal through Whop is charged at the full agreed price without repeating the introductory discount. Check the current order total before payment.
+
 ## Access periods and getting started
 
 The website offers 3-, 7-, and 30-day subscriptions. New users can test the models during the first three hours after registration and the required email and Telegram verification, with one concurrent slot. Trial access and paid subscriptions have different allowances.

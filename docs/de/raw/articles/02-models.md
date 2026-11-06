@@ -4,6 +4,8 @@
 
 Der veröffentlichte Katalog von Rate Cloud enthält fünf Modelle. Für jedes gibt es ein eigenes Abonnement und eine genaue Kennung für direkte HTTP-Anfragen. Wählen Sie nach Ihrer Aufgabe und testen Sie typische Eingaben.
 
+**Full model ist ein kommerzielles Paket aus diesen fünf nativen API-Modellen, kein sechstes Modell und keine zusätzliche API-ID.** Jedes Paket fügt jedem der unten aufgeführten Modelle einen parallelen Slot hinzu. Die Paketanzahl gilt gleichmäßig für alle fünf Modelle; Slots lassen sich nicht umverteilen. Zwei Pakete bieten daher zwei parallele Slots je Modell. Details und Preise finden Sie unter [Full model](01-about-rate-cloud.md).
+
 ## Veröffentlichter Katalog
 
 | Modell | Direkte API-ID | Schwerpunkt | Bildeingabe | Preis für 30 Tage, veröffentlicht |

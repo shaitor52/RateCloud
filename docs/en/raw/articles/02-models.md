@@ -4,6 +4,8 @@ English · [Русский](../ru/articles/02-models.md)
 
 Rate Cloud's published catalog contains five models. Each has a separate subscription and an exact identifier for direct HTTP requests. Select a model by the work you need it to perform, then test representative inputs.
 
+**Full model is a commercial bundle of these five native API models, not a sixth model or API ID.** Each package adds one concurrent slot to every model listed below. Package quantities apply equally to all five models and cannot be reassigned, so two packages provide two concurrent slots per model. See the [Full model details and pricing](01-about-rate-cloud.md).
+
 ## Published catalog
 
 | Model | Direct API ID | Main positioning | Image input | Published 30-day price |

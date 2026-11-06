@@ -2,6 +2,8 @@
 
 El catálogo publicado de Rate Cloud contiene cinco modelos. Cada uno tiene una suscripción independiente y un identificador exacto para solicitudes HTTP directas. Elige un modelo según el trabajo que necesitas y pruébalo con entradas representativas.
 
+**Full model es un paquete comercial que reúne estos cinco modelos nativos de la API; no es un sexto modelo ni un ID de API.** Cada paquete añade un espacio simultáneo a cada modelo de la lista. La cantidad de paquetes se aplica por igual a los cinco modelos y los espacios no se pueden reasignar: dos paquetes ofrecen dos espacios simultáneos por modelo. Consulta las [condiciones y precios de Full model](01-about-rate-cloud.md).
+
 ## Catálogo publicado
 
 | Modelo | ID de API directa | Enfoque principal | Entrada de imagen | Precio publicado por 30 días |

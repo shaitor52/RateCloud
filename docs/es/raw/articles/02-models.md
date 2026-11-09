@@ -14,6 +14,7 @@ El catálogo publicado de Rate Cloud contiene cinco modelos. Cada uno tiene una 
 | DeepSeek V4 Pro | `deepseek-v4-pro` | Razonamiento en varios pasos, arquitectura y revisión de código | No | $27,56 USD |
 | Qwen 3.8 Max | `qwen-3.8-max` | Repositorios grandes, documentos, investigación y contexto largo | No | $31,49 USD |
 
+Según los datos comunicados por el propietario el 9 de noviembre de 2026, el contexto de estos modelos es de aproximadamente 200.000 tokens. Es un valor aproximado; confirma los límites reales de las solicitudes en la documentación vigente.
 Los precios en USD y las capacidades reflejan la visualización de moneda del sitio el 3 de noviembre de 2026. Los precios pueden cambiar antes de pagar; comprueba el panel antes de comprar. Cada suscripción de pago indicada incluye cuatro solicitudes simultáneas y no tiene una cuota acumulada de tokens durante su vigencia. La entrada de imagen significa que el modelo acepta imágenes; no implica generación de imágenes.
 
 ## Elegir un modelo para tu flujo de trabajo
@@ -22,7 +23,7 @@ GLM 5.3 está orientado al trabajo sostenido en proyectos de software complejos,
 
 DeepSeek V4.1 Flash está orientado a generar y modificar código, agentes de programación y cargas de trabajo con muchas tareas de programación. DeepSeek V4 Pro destaca el razonamiento y el análisis profundo, incluidas las decisiones de arquitectura y las revisiones en las que la calidad importa más que reducir al mínimo la demora.
 
-Qwen 3.8 Max se presenta para grandes volúmenes de material, incluidos repositorios y documentos. La referencia a contexto largo no es una especificación numérica de la ventana de contexto. Antes de diseñar flujos con entradas grandes, consulta la documentación vigente y los límites reales de las solicitudes.
+Qwen 3.8 Max se presenta para grandes volúmenes de material, incluidos repositorios y documentos. Consulta la documentación vigente y los límites reales antes de diseñar flujos con entradas grandes.
 
 Son casos de uso del producto, no una clasificación universal ni una garantía de que un modelo gane en todas las tareas. Una evaluación útil incluye la corrección de la tarea, el seguimiento de instrucciones, el comportamiento de las llamadas a herramientas, los requisitos de imágenes, el tiempo de respuesta y la cantidad de correcciones manuales necesarias.
 

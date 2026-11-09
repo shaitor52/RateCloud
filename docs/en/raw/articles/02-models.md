@@ -16,6 +16,7 @@ Rate Cloud's published catalog contains five models. Each has a separate subscri
 | DeepSeek V4 Pro | `deepseek-v4-pro` | Multistep reasoning, architecture, and code review | No | $27.56 |
 | Qwen 3.8 Max | `qwen-3.8-max` | Large repositories, documents, research, and long context | No | $31.49 |
 
+Owner-reported context is approximately 200,000 tokens across these models, dated November 9, 2026. Treat this as an approximate value and confirm actual request limits in the live documentation.
 USD display prices come from the [public currency endpoint](https://rate-cloud.com/api/public/display-currency), retrieved November 3, 2026. They are dated display equivalents and can change before checkout. Capabilities reflect the website on the same date. Confirm current purchase conditions in the dashboard. Each listed paid subscription includes four concurrent requests and no cumulative token quota during its term. Image input means the model accepts images; it does not imply image generation.
 
 ## Matching a model to a workflow
@@ -24,7 +25,7 @@ GLM 5.3 is positioned for sustained work on complex software projects, repositor
 
 DeepSeek V4.1 Flash is positioned for generating and changing code, coding agents, and workloads with many programming tasks. DeepSeek V4 Pro emphasizes reasoning and deeper analysis, including architectural decisions and reviews where answer quality matters more than minimizing delay.
 
-Qwen 3.8 Max is positioned for larger bodies of material, including repositories and documents. Long-context positioning is not a numerical context-window specification. Check the live documentation and actual request limits before designing large-input workflows.
+Qwen 3.8 Max is positioned for larger bodies of material, including repositories and documents. The owner reports approximately 200,000 tokens of context across the catalog as of November 9, 2026. This is approximate; check the live documentation and actual request limits before designing large-input workflows.
 
 These are product use cases, not a universal ranking or a guarantee that one model wins on every task. A useful evaluation includes task correctness, adherence to instructions, tool-call behavior, image requirements, response time, and the amount of manual correction needed.
 

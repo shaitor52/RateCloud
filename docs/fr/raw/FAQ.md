@@ -50,7 +50,7 @@ La présence au catalogue ne prouve pas l’autorisation d’exécution. Vérifi
 
 ## Quelle est la vitesse de Rate Cloud ?
 
-Le site publie un tableau historique de performances mesurant la latence complète et les débits effectifs, attente comprise. Votre tâche peut différer. Voir [performances et méthodologie](articles/04-performance.md) ; ces chiffres ne constituent ni un SLA garanti ni un benchmark contrôlé sur des consignes identiques.
+Le tableau actuel présente séparément le délai avant le premier texte et la vitesse de génération, communiqués par le propriétaire le 9 novembre 2026, ainsi que le contexte approximatif. Voir [performances et méthodologie](articles/04-performance.md). Ce ne sont ni des garanties ni des comparaisons contrôlées à requêtes identiques.
 
 ## Les consignes servent-elles à entraîner les modèles ?
 

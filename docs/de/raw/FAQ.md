@@ -50,7 +50,7 @@ Ein Katalogeintrag bestätigt keinen Ausführungszugang. Prüfen Sie Testzugang 
 
 ## Wie schnell ist Rate Cloud?
 
-Die Website veröffentlicht eine historische Leistungstabelle. Sie misst die vollständige Antwortzeit und effektive Tokenraten einschließlich Wartezeit. Ihre Aufgabe kann anders ausfallen. Siehe [Leistung und Methodik](articles/04-performance.md); die Werte sind weder SLA noch kontrollierter Vergleich identischer Prompts.
+Die aktuelle Tabelle zeigt getrennt die vom Eigentümer am 9. November 2026 gemeldete Zeit bis zum ersten Text und die Antwortgenerierung sowie den ungefähren Kontext. Siehe [Leistung und Methodik](articles/04-performance.md). Dies sind weder Garantien noch kontrollierte Vergleiche identischer Prompts.
 
 ## Werden Prompts zum Training verwendet?
 

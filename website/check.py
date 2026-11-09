@@ -111,7 +111,15 @@ def main():
         assert rendered.read_text().count('class="case-trial-cta"')>=20,(locale,'visible case CTAs')
         home=OUTPUT/('index.html' if locale=='en' else locale+'/index.html')
         assert 'continuous-work' in pages[home].ids,(locale,'homepage workflow link')
-    measurements={row['api_id']:row for row in csv.DictReader((ROOT/'data/performance-2026-11-03.csv').open())}
+    measurements={row['api_id']:row for row in csv.DictReader((ROOT/'data/performance-2026-11-09.csv').open())}
+    expected_measurements={
+        'glm-5.3':('15.6','52.7'),
+        'glm-5.3-flash':('18.9','50.7'),
+        'deepseek-v4.1-flash':('11.2','150.8'),
+        'deepseek-v4-pro':('10.0','142.6'),
+        'qwen-3.8-max':('13.0-13.5','59.0-63.4'),
+    }
+    assert {model:(row['time_to_first_text_seconds'],row['output_generation_tokens_per_second']) for model,row in measurements.items()}==expected_measurements,'Current performance CSV values'
     rub_data=json.loads((ROOT/'ru/data/subscriptions-2026-11-03.json').read_text())
     usd_data=json.loads((ROOT/'data/subscriptions-2026-11-03.json').read_text())
     assert rub_data['currency']=='RUB' and usd_data['currency']=='USD'
@@ -153,9 +161,12 @@ def main():
                 assert Decimal(numeric)==Decimal(prices[model][days]),(locale,model,days,'price')
                 assert html.unescape(price) in raw_home,(locale,model,days,'README price parity')
             assert re.search(r'class="model-trial-link" href="https://rate-cloud.com/register" aria-label="[^"]+"',body),(locale,model,'accessible model trial')
-            for classname,field in [('response-value','typical_complete_response_seconds'),('speed-value','typical_effective_tokens_per_second')]:
-                value=re.search(r'class="'+classname+r'">([0-9,.]+)',body).group(1).replace(',','.')
-                assert Decimal(value)==Decimal(measurements[model][field]),(locale,model,field)
+            assert labels[locale]['response_label'] in body,(locale,model,'time-to-first-text label')
+            assert labels[locale]['speed_label'] in body,(locale,model,'output-generation label')
+            for classname,field in [('response-value','time_to_first_text_seconds'),('speed-value','output_generation_tokens_per_second')]:
+                value=re.search(r'class="'+classname+r'">([0-9,.-]+)',body).group(1)
+                expected=measurements[model][field] if locale=='en' else measurements[model][field].replace('.',',')
+                assert value==expected,(locale,model,field,value,expected)
         assert text.count('class="period-chip"')==3,(locale,'3 periods')
         full_panel=re.search(r'<aside class="subscription-panel full-model-panel"[^>]*>(.*?)</aside>',text,re.S)
         assert full_panel,(locale,'separate Full model panel')

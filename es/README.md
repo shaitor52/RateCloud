@@ -4,7 +4,6 @@
 
 [Abrir el sitio de documentación](https://shaitor52.github.io/RateCloud/es/)
 
-
 **Tus modelos. Tokens ilimitados. Una suscripción.**
 
 [Sitio web](https://rate-cloud.com/) · [Cómo funciona](https://rate-cloud.com/how-it-works) · [Documentación de API](https://rate-cloud.com/docs) · [White Label](https://rate-cloud.com/white-label)
@@ -15,15 +14,15 @@ Este repositorio público explica el servicio en español. Contiene artículos, 
 
 ## Modelos, velocidad y precios de suscripción
 
-Observaciones publicadas el 3 de noviembre de 2026. El tiempo típico de respuesta completa se mide en segundos; la velocidad efectiva incluye la espera. Son datos históricos que dependen de la carga y no constituyen una garantía. Consulta el [snapshot de rendimiento](../data/performance-2026-11-03.csv) y el [snapshot de precios en USD](../data/subscriptions-2026-11-03.json). Los importes en USD de 3 y 7 días se convierten a partir de los precios del cuadro público de suscripción de Rate Cloud usando el tipo de cambio fechado de la API pública de moneda. Los precios en USD de 30 días proceden de esa API. Es una instantánea fechada de precios mostrados; confirma los precios actuales antes de comprar.
+Datos de rendimiento comunicados por el propietario el 9 de noviembre de 2026. El tiempo hasta el primer texto y la velocidad de generación son métricas distintas; el contexto de entrada es de aproximadamente 200.000 tokens. Los resultados dependen de la carga de trabajo. Los precios son una instantánea separada del 3 de noviembre de 2026: [precios en USD](../data/subscriptions-2026-11-03.json). Confirma el precio vigente antes de comprar. [Datos actuales en CSV](../data/performance-2026-11-09.csv).
 
-| Modelo | Respuesta completa típica (s) | Velocidad efectiva (tokens/s) | 3 días | 7 días | 30 días | Probar modelo |
-| --- | ---: | ---: | ---: | ---: | ---: | --- |
-| GLM 5.3 | 21.48 | 14.05 | $10,31 | $17,19 | $34,38 | [Probar modelo](https://rate-cloud.com/register) |
-| GLM 5.3 Flash | 23.32 | 14.58 | $9,05 | $15,08 | $30,16 | [Probar modelo](https://rate-cloud.com/register) |
-| DeepSeek V4.1 Flash | 14.99 | 19.22 | $9,05 | $15,08 | $30,16 | [Probar modelo](https://rate-cloud.com/register) |
-| DeepSeek V4 Pro | 15.67 | 25.83 | $8,27 | $13,78 | $27,56 | [Probar modelo](https://rate-cloud.com/register) |
-| Qwen 3.8 Max | 21.37 | 13.13 | $9,45 | $15,75 | $31,49 | [Probar modelo](https://rate-cloud.com/register) |
+| Modelo | Tiempo hasta el primer texto (s) | Generación de respuesta (tokens/s) | 3 días | 7 días | 30 días | Probar modelo |
+| --- | --- | --- | --- | --- | --- | --- |
+| GLM 5.3 | 15,6 | 52,7 | $10,31 | $17,19 | $34,38 | [Probar modelo](https://rate-cloud.com/register) |
+| GLM 5.3 Flash | 18,9 | 50,7 | $9,05 | $15,08 | $30,16 | [Probar modelo](https://rate-cloud.com/register) |
+| DeepSeek V4.1 Flash | 11,2 | 150,8 | $9,05 | $15,08 | $30,16 | [Probar modelo](https://rate-cloud.com/register) |
+| DeepSeek V4 Pro | 10,0 | 142,6 | $8,27 | $13,78 | $27,56 | [Probar modelo](https://rate-cloud.com/register) |
+| Qwen 3.8 Max | 13,0-13,5 | 59,0-63,4 | $9,45 | $15,75 | $31,49 | [Probar modelo](https://rate-cloud.com/register) |
 
 Ilimitado significa que no hay una cuota acumulada de tokens de entrada o salida durante la suscripción activa. Siguen aplicándose límites de contexto, tamaño de respuesta, capacidad disponible y velocidad. Cada suscripción de pago incluye cuatro solicitudes simultáneas.
 

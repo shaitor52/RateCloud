@@ -14,6 +14,7 @@ O catálogo publicado da Rate Cloud contém cinco modelos. Cada um tem uma assin
 | DeepSeek V4 Pro | `deepseek-v4-pro` | Raciocínio em várias etapas, arquitetura e revisão de código | Não | $27,56 USD |
 | Qwen 3.8 Max | `qwen-3.8-max` | Grandes repositórios, documentos, pesquisa e contexto longo | Não | $31,49 USD |
 
+Segundo os dados informados pelo proprietário em 9 de novembro de 2026, o contexto desses modelos é de aproximadamente 200.000 tokens. É um valor aproximado; confirme os limites reais das solicitações na documentação atual.
 Os preços em USD e recursos acima refletem a exibição de moeda do site em 3 de novembro de 2026. Os preços podem mudar antes do pagamento; confira o painel antes de comprar. Cada assinatura paga listada inclui quatro solicitações simultâneas e não tem cota acumulada de tokens durante sua vigência. Entrada de imagem significa que o modelo aceita imagens; não significa geração de imagens.
 
 ## Escolha um modelo para seu fluxo de trabalho
@@ -22,7 +23,7 @@ GLM 5.3 é indicado para trabalho prolongado em projetos de software complexos, 
 
 DeepSeek V4.1 Flash é indicado para gerar e alterar código, agentes de programação e cargas com muitas tarefas de programação. DeepSeek V4 Pro enfatiza raciocínio e análise aprofundada, inclusive decisões de arquitetura e revisões em que a qualidade da resposta importa mais que a menor demora.
 
-Qwen 3.8 Max é apresentado para grandes volumes de material, incluindo repositórios e documentos. A indicação de contexto longo não é uma especificação numérica da janela de contexto. Consulte a documentação atual e os limites reais das solicitações antes de projetar fluxos com entradas grandes.
+Qwen 3.8 Max é apresentado para grandes volumes de material, incluindo repositórios e documentos. Consulte a documentação atual e os limites reais antes de planejar fluxos com entradas grandes.
 
 Esses são casos de uso do produto, não uma classificação universal nem uma garantia de que um modelo seja melhor em todas as tarefas. Uma avaliação útil considera correção, cumprimento de instruções, comportamento de chamadas de ferramentas, requisitos de imagem, tempo de resposta e quantidade de correção manual necessária.
 

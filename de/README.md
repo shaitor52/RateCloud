@@ -4,7 +4,6 @@
 
 [Dokumentationswebsite öffnen](https://shaitor52.github.io/RateCloud/de/)
 
-
 **Ihre Modelle. Unbegrenzte Tokens. Ein Abonnement.**
 
 [Website](https://rate-cloud.com/) · [Funktionsweise](https://rate-cloud.com/how-it-works) · [API-Dokumentation](https://rate-cloud.com/docs) · [White Label](https://rate-cloud.com/white-label)
@@ -15,15 +14,15 @@ Dieses öffentliche Nachschlagewerk beschreibt Rate Cloud auf Deutsch. Es enthä
 
 ## Modelle, Geschwindigkeit und Abonnementpreise
 
-Am 3. November 2026 veröffentlichte Beobachtungen. Die typische vollständige Antwortzeit wird in Sekunden angegeben; die effektive Geschwindigkeit schließt Wartezeit ein. Historische, arbeitslastabhängige Werte ohne Garantie. Siehe den [Leistungsdatensatz](../data/performance-2026-11-03.csv) und den [USD-Preissnapshot](../data/subscriptions-2026-11-03.json). Die USD-Beträge für 3 und 7 Tage werden aus den Preisen im öffentlichen Abonnementdialog von Rate Cloud mit dem datierten Wechselkurs der öffentlichen Währungs-API umgerechnet. Die USD-Preise für 30 Tage stammen aus dieser API. Dies ist ein datierter Snapshot der angezeigten Preise. Bitte bestätigen Sie die aktuellen Preise vor dem Kauf.
+Leistungsdaten, vom Eigentümer am 9. November 2026 bereitgestellt. Zeit bis zum ersten Text und Antwortgenerierung sind getrennte Kennzahlen; der Eingabekontext beträgt ungefähr 200.000 Tokens. Ergebnisse hängen von der Arbeitslast ab. Die Preise sind ein separater Snapshot vom 3. November 2026: [USD-Preise](../data/subscriptions-2026-11-03.json). Bitte bestätigen Sie den aktuellen Preis vor dem Kauf. [Aktuelle Leistungsdaten als CSV](../data/performance-2026-11-09.csv).
 
-| Modell | Typische vollständige Antwort (s) | Effektive Geschwindigkeit (Tokens/s) | 3 Tage | 7 Tage | 30 Tage | Modell testen |
-| --- | ---: | ---: | ---: | ---: | ---: | --- |
-| GLM 5.3 | 21.48 | 14.05 | $10,31 | $17,19 | $34,38 | [Modell testen](https://rate-cloud.com/register) |
-| GLM 5.3 Flash | 23.32 | 14.58 | $9,05 | $15,08 | $30,16 | [Modell testen](https://rate-cloud.com/register) |
-| DeepSeek V4.1 Flash | 14.99 | 19.22 | $9,05 | $15,08 | $30,16 | [Modell testen](https://rate-cloud.com/register) |
-| DeepSeek V4 Pro | 15.67 | 25.83 | $8,27 | $13,78 | $27,56 | [Modell testen](https://rate-cloud.com/register) |
-| Qwen 3.8 Max | 21.37 | 13.13 | $9,45 | $15,75 | $31,49 | [Modell testen](https://rate-cloud.com/register) |
+| Modell | Zeit bis zum ersten Text (s) | Antwortgenerierung (Tokens/s) | 3 Tage | 7 Tage | 30 Tage | Modell testen |
+| --- | --- | --- | --- | --- | --- | --- |
+| GLM 5.3 | 15,6 | 52,7 | $10,31 | $17,19 | $34,38 | [Modell testen](https://rate-cloud.com/register) |
+| GLM 5.3 Flash | 18,9 | 50,7 | $9,05 | $15,08 | $30,16 | [Modell testen](https://rate-cloud.com/register) |
+| DeepSeek V4.1 Flash | 11,2 | 150,8 | $9,05 | $15,08 | $30,16 | [Modell testen](https://rate-cloud.com/register) |
+| DeepSeek V4 Pro | 10,0 | 142,6 | $8,27 | $13,78 | $27,56 | [Modell testen](https://rate-cloud.com/register) |
+| Qwen 3.8 Max | 13,0-13,5 | 59,0-63,4 | $9,45 | $15,75 | $31,49 | [Modell testen](https://rate-cloud.com/register) |
 
 Unbegrenzt bedeutet, dass während des aktiven Abonnements kein kumuliertes Kontingent für Ein- oder Ausgabetokens gilt. Grenzen für Kontext, Antwortlänge, verfügbare Kapazität und Geschwindigkeit bleiben bestehen. Jedes kostenpflichtige Abonnement umfasst vier gleichzeitige Anfragen.
 
@@ -34,7 +33,7 @@ Unbegrenzt bedeutet, dass während des aktiven Abonnements kein kumuliertes Kont
 | [Das Angebot von Rate Cloud](articles/01-about-rate-cloud.md) | Abonnements, unbegrenzte Tokens, parallele Slots und Einsatzmöglichkeiten |
 | [Modelle und Auswahl](articles/02-models.md) | Fünf Modelle, API-IDs, Bildeingabe und Auswahlkriterien |
 | [Intelligentes Routing und Quantisierung](articles/03-routing-and-quantization.md) | Präzisionsprofile, Qualitätsprüfung, Replikatauswahl und Wiederherstellung |
-| [Geschwindigkeit und Leistung](articles/04-performance.md) | Gesamtlatenz, effektiver Durchsatz und veröffentlichte Messwerte |
+| [Geschwindigkeit und Leistung](articles/04-performance.md) | Zeit bis zum ersten Text, Antwortgenerierung, ungefährer Kontext und Parallelität |
 | [Tools und Anwendungen verbinden](articles/05-api-and-integrations.md) | Endpunkte, erste Anfrage, Schlüssel und kompatible Clients |
 | [Datenschutz, Datenverarbeitung und Verfügbarkeit](articles/06-privacy-and-reliability.md) | Temporäre Puffer, Cache-Isolierung und Dienstgrenzen |
 | [White-Label-Angebote](articles/07-white-label.md) | Ein KI-Abonnementgeschäft unter eigener Marke |

@@ -54,7 +54,7 @@ Catalog visibility does not establish execution access. Check an active trial or
 
 ## How fast is Rate Cloud?
 
-The website publishes a historical performance table. It measures complete-request latency and effective token rates including waiting. Your task can differ. See [performance and methodology](articles/04-performance.md); the figures are not a guaranteed SLA or controlled identical-prompt benchmark.
+The public table reports separate owner-reported figures for time to first text and output generation speed, dated November 9, 2026, plus approximate context. See [performance and methodology](articles/04-performance.md). These are not guarantees or controlled comparisons on identical prompts.
 
 ## Are prompts used to train models?
 

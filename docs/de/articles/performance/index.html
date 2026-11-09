@@ -1,105 +1,56 @@
 <!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Geschwindigkeit und Leistung verstehen | Rate Cloud Docs</title><meta name="description" content="Die relevante Leistungsfrage lautet: Wie lange dauert es, bis Ihre Aufgabe ein brauchbares Ergebnis liefert? Eine hohe Tokenrate während der Generierung beschreibt das Gesamterlebnis nicht. Warte"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://shaitor52.github.io/RateCloud/de/articles/performance/"><link rel="alternate" hreflang="en" href="https://shaitor52.github.io/RateCloud/en/articles/performance/"><link rel="alternate" hreflang="ru" href="https://shaitor52.github.io/RateCloud/ru/articles/performance/"><link rel="alternate" hreflang="es" href="https://shaitor52.github.io/RateCloud/es/articles/performance/"><link rel="alternate" hreflang="pt" href="https://shaitor52.github.io/RateCloud/pt/articles/performance/"><link rel="alternate" hreflang="de" href="https://shaitor52.github.io/RateCloud/de/articles/performance/"><link rel="alternate" hreflang="fr" href="https://shaitor52.github.io/RateCloud/fr/articles/performance/"><link rel="alternate" hreflang="x-default" href="https://shaitor52.github.io/RateCloud/en/articles/performance/"><link rel="alternate" type="text/markdown" href="/RateCloud/de/raw/articles/04-performance.md" title="Markdown source"><meta name="theme-color" content="#151719"><meta property="og:type" content="article"><meta property="og:title" content="Geschwindigkeit und Leistung verstehen | Rate Cloud Docs"><meta property="og:description" content="Die relevante Leistungsfrage lautet: Wie lange dauert es, bis Ihre Aufgabe ein brauchbares Ergebnis liefert? Eine hohe Tokenrate während der Generierung beschreibt das Gesamterlebnis nicht. Warte"><meta property="og:url" content="https://shaitor52.github.io/RateCloud/de/articles/performance/"><meta property="og:image" content="https://shaitor52.github.io/RateCloud/assets/brand-hero.webp"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/RateCloud/assets/brand-logo.png"><link rel="stylesheet" href="/RateCloud/assets/docs.css?v=5842cb2ebc3a"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Geschwindigkeit und Leistung verstehen", "description": "Die relevante Leistungsfrage lautet: Wie lange dauert es, bis Ihre Aufgabe ein brauchbares Ergebnis liefert? Eine hohe Tokenrate während der Generierung beschreibt das Gesamterlebnis nicht. Warte", "inLanguage": "de", "url": "https://shaitor52.github.io/RateCloud/de/articles/performance/", "isPartOf": {"@type": "WebSite", "name": "Rate Cloud Documentation", "url": "https://shaitor52.github.io/RateCloud/"}, "publisher": {"@type": "Organization", "name": "Rate Cloud", "url": "https://rate-cloud.com/"}}</script><script src="/RateCloud/assets/docs.js?v=3d9193980cec" defer></script></head>
         <body data-base="/RateCloud/" data-lang="de" data-copy="Kopieren" data-copied="Kopiert"><a class="skip-link" href="#main">Zum Inhalt</a><header class="topbar"><a class="brand" href="/RateCloud/de/"><img class="brand-mark" src="/RateCloud/assets/brand-logo.png" width="32" height="32" alt=""><span>Rate Cloud<small>Dokumentation</small></span></a><div class="header-actions"><button id="menu-toggle" class="icon-button" aria-label="Menü" aria-controls="sidebar" aria-expanded="false" data-open-label="Menü" data-close-label="Schließen">☰</button><button class="icon-button" data-search-open aria-label="Dokumentation durchsuchen"><span>⌕</span><span class="search-label">Dokumentation durchsuchen</span><kbd class="search-shortcut">⌘ K</kbd></button><label class="sr-only" for="language-switch">Sprache</label><select id="language-switch"><option value="/RateCloud/en/articles/performance/">English</option><option value="/RateCloud/ru/articles/performance/">Русский</option><option value="/RateCloud/es/articles/performance/">Español</option><option value="/RateCloud/pt/articles/performance/">Português</option><option value="/RateCloud/de/articles/performance/" selected>Deutsch</option><option value="/RateCloud/fr/articles/performance/">Français</option></select><a class="header-site" href="https://rate-cloud.com/de">Hauptwebsite ↗</a></div></header>
         <div class="layout"><nav id="sidebar" class="sidebar" aria-label="Dokumentation"><div class="sidebar-group"><h2>Überblick</h2><a class="nav-link" href="/RateCloud/de/">Überblick</a></div><div class="sidebar-group"><h2>Rate Cloud entdecken</h2><a class="nav-link" href="/RateCloud/de/articles/about-rate-cloud/">Das Angebot von Rate Cloud</a><a class="nav-link" href="/RateCloud/de/articles/models/">Modelle und Auswahl</a><a class="nav-link" href="/RateCloud/de/articles/routing-and-quantization/">Intelligentes Routing und Quantisierung</a><a class="nav-link active" href="/RateCloud/de/articles/performance/" aria-current="page">Geschwindigkeit und Leistung verstehen</a><a class="nav-link" href="/RateCloud/de/articles/api-and-integrations/">Tools und Anwendungen mit Rate Cloud verbinden</a><a class="nav-link" href="/RateCloud/de/articles/privacy-and-reliability/">Datenschutz, Datenverarbeitung und Verfügbarkeit</a><a class="nav-link" href="/RateCloud/de/articles/white-label/">White Label: ein KI-Abonnementdienst unter Ihrer Marke</a><a class="nav-link" href="/RateCloud/de/articles/cost-and-service-comparison/">Rate Cloud im Vergleich zu offiziellen APIs: feste Kosten bei intensiver Nutzung</a><a class="nav-link" href="/RateCloud/de/articles/unlimited-use-cases/">20 KI-Abläufe für Automatisierung rund um die Uhr</a><a class="nav-link" href="/RateCloud/de/articles/infrastructure/">Unsere Infrastruktur: Wir mieten Rechenkapazität, stellen Modelle bereit und betreiben Inferenz</a><a class="nav-link" href="/RateCloud/de/articles/referral-program/">Empfehlungsprogramm: Andere zum Testen von Rate Cloud einladen</a></div><div class="sidebar-group"><h2>Tools verbinden</h2><a class="nav-link" href="/RateCloud/de/guides/claude-code/">Claude Code mit Rate Cloud verbinden</a><a class="nav-link" href="/RateCloud/de/guides/continue/">Continue mit Rate Cloud verbinden</a><a class="nav-link" href="/RateCloud/de/guides/deepseek-harness/">DeepSeek Harness mit Rate Cloud verbinden</a><a class="nav-link" href="/RateCloud/de/guides/hermes-agent/">Hermes Agent mit Rate Cloud verbinden</a><a class="nav-link" href="/RateCloud/de/guides/http-python/">HTTP- und Python-Zugriff</a><a class="nav-link" href="/RateCloud/de/guides/openclaw/">OpenClaw mit Rate Cloud verbinden</a><a class="nav-link" href="/RateCloud/de/guides/opencode/">OpenCode mit Rate Cloud verbinden</a></div><div class="sidebar-group"><h2>Quellen und Daten</h2><a class="nav-link" href="/RateCloud/de/faq/">Rate Cloud: häufig gestellte Fragen</a></div><div class="sidebar-group"><a class="nav-link" href="/RateCloud/en/sources/">Quellen und Daten</a><a class="nav-link" href="https://github.com/shaitor52/RateCloud">GitHub ↗</a></div></nav><main id="main" class=""><div class="breadcrumb"><a href="/RateCloud/de/">Dokumentation</a><span>/</span>Rate Cloud entdecken</div><p class="eyebrow">RATE CLOUD / Dokumentation</p><h1 class="page-title">Geschwindigkeit und Leistung verstehen</h1><div class="article-grid"><article class="article-content"><p>Die relevante Leistungsfrage lautet: Wie lange dauert es, bis Ihre Aufgabe ein brauchbares Ergebnis liefert? Eine hohe Tokenrate während der Generierung beschreibt das Gesamterlebnis nicht. Wartezeit, Eingabeverarbeitung, Antwortlänge und Wiederherstellung zählen ebenfalls.</p>
-<h2 id="veröffentlichte-leistungsmomentaufnahme">Veröffentlichte Leistungsmomentaufnahme</h2>
-<p>Die folgenden Werte wurden am 3. November 2026 auf der Rate-Cloud-Startseite angezeigt. Das Datum bezeichnet den Abruf, nicht einen unabhängig ermittelten Messzeitraum.</p>
+<h2 id="aktuelle-leistungsdaten">Aktuelle Leistungsdaten</h2>
+<p>Die Werte wurden vom Eigentümer am 9. November 2026 gemeldet. Zeit bis zum ersten Text und Antwortgenerierung sind getrennte Kennzahlen. Der Eingabekontext beträgt ungefähr 200.000 Tokens; Ergebnisse hängen von der Arbeitslast ab.</p>
 <div class="table-scroll" tabindex="0"><table>
 <thead>
 <tr>
 <th>Modell</th>
-<th style="text-align: right;">Typische vollständige Antwort, Sekunden</th>
-<th style="text-align: right;">Typische effektive Tokens/Sekunde, einschließlich Wartezeit</th>
-<th style="text-align: right;">Effektive Tokens/Sekunde bei schnellen Antworten, einschließlich Wartezeit</th>
+<th style="text-align: right;">Zeit bis zum ersten Text (s)</th>
+<th style="text-align: right;">Antwortgenerierung (Tokens/s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>GLM 5.3</td>
-<td style="text-align: right;">21,48</td>
-<td style="text-align: right;">14,05</td>
-<td style="text-align: right;">58,47</td>
+<td style="text-align: right;">15,6</td>
+<td style="text-align: right;">52,7</td>
 </tr>
 <tr>
 <td>GLM 5.3 Flash</td>
-<td style="text-align: right;">23,32</td>
-<td style="text-align: right;">14,58</td>
-<td style="text-align: right;">61,92</td>
-</tr>
-<tr>
-<td>DeepSeek V4 Pro</td>
-<td style="text-align: right;">15,67</td>
-<td style="text-align: right;">25,83</td>
-<td style="text-align: right;">127,84</td>
+<td style="text-align: right;">18,9</td>
+<td style="text-align: right;">50,7</td>
 </tr>
 <tr>
 <td>DeepSeek V4.1 Flash</td>
-<td style="text-align: right;">14,99</td>
-<td style="text-align: right;">19,22</td>
-<td style="text-align: right;">78,38</td>
+<td style="text-align: right;">11,2</td>
+<td style="text-align: right;">150,8</td>
+</tr>
+<tr>
+<td>DeepSeek V4 Pro</td>
+<td style="text-align: right;">10,0</td>
+<td style="text-align: right;">142,6</td>
 </tr>
 <tr>
 <td>Qwen 3.8 Max</td>
-<td style="text-align: right;">21,37</td>
-<td style="text-align: right;">13,13</td>
-<td style="text-align: right;">80,68</td>
+<td style="text-align: right;">13,0-13,5</td>
+<td style="text-align: right;">59,0-63,4</td>
 </tr>
 </tbody>
 </table></div>
-<p>Dies sind veröffentlichte Dienstbeobachtungen, keine garantierten Antwortzeiten, festen Hardware-Benchmarks oder kontrollierten Vergleiche mit identischen Prompts. Die Startseite nennt neben dieser Tabelle weder Stichprobengröße noch vollständigen Messzeitraum. Die Werte belegen daher keine dauerhafte Verfügbarkeit und kein SLA.</p>
-<h2 id="bedeutung-der-spalten">Bedeutung der Spalten</h2>
-<p>Die vollständige Antwortzeit reicht vom Absenden der Anfrage bis zum fertigen Ergebnis. Sie enthält Wartezeit, Verarbeitung der Eingabe und Erstellung der Antwort.</p>
-<p>Laut Website bezeichnet „typisch“ den Median: Die Hälfte der Ergebnisse ist schneller, die andere langsamer. Die effektiven Tokenraten schließen die gesamte Anfrage samt Wartezeit ein. Sie dürfen nicht als reine Decodiergeschwindigkeit oder Zeit bis zum ersten Token bezeichnet werden.</p>
-<p>Die Spalte für schnelle Antworten zeigt die schnellsten zehn von hundert Anfragen. Sie veranschaulicht das schnellere Ende der beobachteten Verteilung und verspricht diese Rate nicht für neue Anfragen. Multiplizieren Sie unabhängig zusammengefasste Latenz- und Durchsatzwerte nicht, um eine mittlere Antwortlänge abzuleiten.</p>
+<p><a href="/RateCloud/downloads/data/performance-2026-11-09.csv">Aktuelle Leistungsdaten als CSV</a>. Die Qwen-Bereiche umfassen zwei Durchläufe.</p>
+<p>Der <a href="/RateCloud/downloads/data/performance-2026-11-03.csv">CSV-Snapshot vom 3. November</a> bleibt als historische Datei erhalten.</p>
 <h2 id="warum-ihre-aufgabe-länger-dauern-kann">Warum Ihre Aufgabe länger dauern kann</h2>
 <p>Ein langes Dokument benötigt mehr Eingabeverarbeitung als eine kurze Frage. Eine ausführliche Antwort braucht länger als eine knappe. Werkzeugbasierte Agenten können mehrere Aufrufe benötigen. Aktuelle Auslastung, Profilverfügbarkeit, Bereitschaft des Replikats und Wiederherstellung beeinflussen ebenfalls die Dauer.</p>
-<p>Ein für häufige oder schnelle Arbeit beworbenes Modell kann in den beobachteten Daten eine höhere mediane Antwortzeit als ein anderes Modell haben, wenn sich die Anfragegruppen unterscheiden. Die Tabelle isoliert weder Modellgeschwindigkeit von Aufgabenkomplexität und Antwortlänge noch das Nutzerverhalten.</p>
 <h2 id="parallelität-und-gesamtdurchsatz">Parallelität und Gesamtdurchsatz</h2>
 <p>Vier kostenpflichtige Slots ermöglichen unabhängige Vorgänge gleichzeitig. Sie machen eine einzelne Anfrage nicht viermal schneller. Parallelität hilft, wenn sich Arbeit teilen lässt; eine sequenzielle Schlussfolgerungs- oder Werkzeugkette wartet weiterhin auf ihre Abhängigkeiten.</p>
 <p>Messen Sie für einen praktischen Vergleich Ihre eigene Zeit bis zu einem brauchbaren Ergebnis, Korrektheit, unvollständige Anfragen, Fehler und Wiederholungsbedarf. Notieren Sie Modell, Eingabe- und Ausgabegröße, Parallelität und Beobachtungszeitraum.</p>
-<p>Quelle: <a href="https://rate-cloud.com/">veröffentlichte Leistungstabelle von Rate Cloud</a>. Siehe auch <a href="https://rate-cloud.com/docs">API-Dokumentation</a>. <a href="/RateCloud/de/">Zur Übersicht</a>.</p>
-<h2 id="alle-verfügbaren-öffentlichen-ergebnisse-und-datendownload">Alle verfügbaren öffentlichen Ergebnisse und Datendownload</h2>
-<p>Die obige Tabelle enthält alle 15 Zahlenwerte der Leistungstabelle für fünf Modelle, die bei Abruf auf der Startseite veröffentlicht waren. Eine <a href="/RateCloud/downloads/data/performance-2026-11-03.csv">CSV-Momentaufnahme</a> bewahrt Modell-IDs, Einheiten, Abrufdatum und Quell-URL zur Wiederverwendung. Für diese Datei wurde kein neuer Benchmark durchgeführt.</p>
-<div class="table-scroll" tabindex="0"><table>
-<thead>
-<tr>
-<th>Nachweis</th>
-<th>In dieser Momentaufnahme vorhanden?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Typische vollständige Antwortdauer für alle fünf Modelle</td>
-<td>Ja, Tabelle und CSV</td>
-</tr>
-<tr>
-<td>Typische effektive Tokenrate einschließlich Wartezeit für alle fünf Modelle</td>
-<td>Ja, Tabelle und CSV</td>
-</tr>
-<tr>
-<td>Effektive Tokenrate des schnellsten Zehntels für alle fünf Modelle</td>
-<td>Ja, Tabelle und CSV</td>
-</tr>
-<tr>
-<td>Rohzeiten je Anfrage, Stichprobengröße und Beobachtungszeitraum</td>
-<td>In Verbindung mit der öffentlichen Tabelle nicht angegeben</td>
-</tr>
-<tr>
-<td>Zeit bis zum ersten Token, reine Decodiergeschwindigkeit, Latenzperzentile</td>
-<td>In der öffentlichen Tabelle nicht angegeben</td>
-</tr>
-<tr>
-<td>Kontrollierter Vergleich derselben Arbeitslast mit offiziellen Anbietern</td>
-<td>In diesem Repository nicht verfügbar</td>
-</tr>
-</tbody>
-</table></div>
-<p>Die Startseite verlinkt die Methodik auf <code>/docs#statistics</code>; zum Abrufzeitpunkt enthielt die aktuelle Verbindungsdokumentation keinen passenden ausführlichen Statistikabschnitt. Diese Beleglücke bleibt offen, statt zusätzliche Ergebnisse zu erfinden. Zum Preisvergleich siehe <a href="/RateCloud/de/articles/cost-and-service-comparison/">Vergleich offizieller APIs</a>.</p></article><aside class="toc" aria-label="Auf dieser Seite"><h2>Auf dieser Seite</h2><div class="toc-list">
+<p>Quelle: <a href="https://rate-cloud.com/">veröffentlichte Leistungstabelle von Rate Cloud</a>. Siehe auch <a href="https://rate-cloud.com/docs">API-Dokumentation</a>. <a href="/RateCloud/de/">Zur Übersicht</a>.</p></article><aside class="toc" aria-label="Auf dieser Seite"><h2>Auf dieser Seite</h2><div class="toc-list">
 <ul>
-<li><a href="#veröffentlichte-leistungsmomentaufnahme">Veröffentlichte Leistungsmomentaufnahme</a></li>
-<li><a href="#bedeutung-der-spalten">Bedeutung der Spalten</a></li>
+<li><a href="#aktuelle-leistungsdaten">Aktuelle Leistungsdaten</a></li>
 <li><a href="#warum-ihre-aufgabe-länger-dauern-kann">Warum Ihre Aufgabe länger dauern kann</a></li>
 <li><a href="#parallelität-und-gesamtdurchsatz">Parallelität und Gesamtdurchsatz</a></li>
-<li><a href="#alle-verfügbaren-öffentlichen-ergebnisse-und-datendownload">Alle verfügbaren öffentlichen Ergebnisse und Datendownload</a></li>
 </ul>
 </div>
 </aside></div><section class="article-cta" aria-label="Modelle vor einem Abonnement testen"><h2>Modelle vor einem Abonnement testen</h2><p>Der Einführungstest bietet nach der Bestätigung von E-Mail-Adresse und Telegram-Konto drei Stunden Zugriff mit einem gleichzeitigen Slot. Verfügbarkeit und aktuelle Bedingungen zeigt Rate Cloud an.</p><div class="offer-actions"><a class="button primary" href="https://rate-cloud.com/register">Konto erstellen ↗</a><a href="/RateCloud/de/articles/referral-program/">Details zum Empfehlungsprogramm →</a><a href="https://rate-cloud.com/de/white-label">White Label ↗</a></div></section><footer class="page-footer"><p>Öffentlicher Informationsstand: 3. November 2026. Aktuelle Bedingungen stehen auf der Hauptwebsite.</p><div><a href="/RateCloud/de/raw/articles/04-performance.md">Markdown lesen</a> · <a href="https://github.com/shaitor52/RateCloud/blob/main/de/articles/04-performance.md">Quelldatei</a></div><p><a href="https://rate-cloud.com/de">Hauptwebsite ↗</a> · <a href="https://rate-cloud.com/user/instructions">Dashboard öffnen ↗</a></p></footer></main></div>

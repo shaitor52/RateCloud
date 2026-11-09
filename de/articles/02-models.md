@@ -16,6 +16,7 @@ Der veröffentlichte Katalog von Rate Cloud enthält fünf Modelle. Für jedes g
 | DeepSeek V4 Pro | `deepseek-v4-pro` | Mehrstufiges Schlussfolgern, Architektur und Code-Review | Nein | $27,56 |
 | Qwen 3.8 Max | `qwen-3.8-max` | Große Repositories, Dokumente, Recherche und langer Kontext | Nein | $31,49 |
 
+Laut den vom Eigentümer am 9. November 2026 gemeldeten Daten beträgt der Kontext dieser Modelle ungefähr 200.000 Tokens. Dies ist ein Näherungswert; prüfen Sie die tatsächlichen Anfragegrenzen in der aktuellen Dokumentation.
 Die USD-Anzeige auf der Website wurde am 3. November 2026 geprüft. Preise und Funktionen können sich ändern; die USD-Anzeige ist vor dem Checkout nicht als Festpreis garantiert. Prüfen Sie die aktuellen Kaufbedingungen im Dashboard. Jedes aufgeführte kostenpflichtige Abonnement umfasst vier gleichzeitige Anfragen ohne kumulatives Tokenkontingent während der Laufzeit. Bildeingabe bedeutet, dass das Modell Bilder annimmt, nicht dass es Bilder erzeugt.
 
 ## Modell und Arbeitsablauf abstimmen
@@ -24,7 +25,7 @@ GLM 5.3 ist für längere Arbeit an komplexen Softwareprojekten, Repository-Anal
 
 DeepSeek V4.1 Flash ist für Codegenerierung und -änderung, Programmieragenten und viele parallele Programmieraufgaben vorgesehen. DeepSeek V4 Pro betont Schlussfolgerungen und vertiefte Analyse, etwa Architekturentscheidungen und Reviews, bei denen Qualität wichtiger ist als minimale Verzögerung.
 
-Qwen 3.8 Max ist für umfangreiches Material wie Repositories und Dokumente positioniert. Die Aussage zu langem Kontext ist keine numerische Spezifikation der Kontextgröße. Prüfen Sie Dokumentation und tatsächliche Anfragegrenzen, bevor Sie große Eingaben planen.
+Qwen 3.8 Max ist für umfangreiches Material wie Repositories und Dokumente positioniert. Der Eigentümer meldet für den Katalog einen ungefähren Kontext von 200.000 Tokens, Stand 9. November 2026. Prüfen Sie vor der Planung großer Eingaben dennoch die aktuelle Dokumentation und tatsächlichen Anfragegrenzen.
 
 Dies sind beschriebene Einsatzbereiche, keine allgemeine Rangliste oder Garantie, dass ein Modell bei jeder Aufgabe gewinnt. Bewerten Sie Korrektheit, Befolgung von Anweisungen, Werkzeugaufrufe, Bildbedarf, Antwortzeit und manuellen Korrekturaufwand.
 

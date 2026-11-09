@@ -1,0 +1,6 @@
+model,api_id,time_to_first_text_seconds,output_generation_tokens_per_second,approx_context_tokens,reported_date,source
+GLM 5.3,glm-5.3,15.6,52.7,~200000,2026-11-09,owner-reported
+GLM 5.3 Flash,glm-5.3-flash,18.9,50.7,~200000,2026-11-09,owner-reported
+DeepSeek V4.1 Flash,deepseek-v4.1-flash,11.2,150.8,~200000,2026-11-09,owner-reported
+DeepSeek V4 Pro,deepseek-v4-pro,10.0,142.6,~200000,2026-11-09,owner-reported
+Qwen 3.8 Max,qwen-3.8-max,13.0-13.5,59.0-63.4,~200000,2026-11-09,owner-reported

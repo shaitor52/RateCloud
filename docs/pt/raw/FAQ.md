@@ -50,7 +50,7 @@ A presença no catálogo não comprova acesso à execução. Verifique teste ou 
 
 ## Qual é a velocidade da Rate Cloud?
 
-O site publica uma tabela histórica de desempenho. Ela mede a latência da solicitação completa e taxas efetivas de tokens que incluem a espera. Sua tarefa pode ser diferente. Consulte [desempenho e metodologia](articles/04-performance.md); os números não são um SLA garantido nem uma comparação controlada com prompts idênticos.
+A tabela atual apresenta separadamente o tempo até o primeiro texto e a velocidade de geração, informados pelo proprietário em 9 de novembro de 2026, além do contexto aproximado. Consulte [desempenho e metodologia](articles/04-performance.md). Não são garantias nem comparações controladas com solicitações idênticas.
 
 ## Os prompts são usados para treinar modelos?
 

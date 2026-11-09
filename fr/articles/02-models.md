@@ -16,6 +16,7 @@ Le catalogue publié par Rate Cloud comprend cinq modèles. Chacun a son propre 
 | DeepSeek V4 Pro | `deepseek-v4-pro` | Raisonnement en plusieurs étapes, architecture et revue de code | Non | $27,56 |
 | Qwen 3.8 Max | `qwen-3.8-max` | Grands dépôts, documents, recherche et contexte long | Non | $31,49 |
 
+Selon les données communiquées par le propriétaire le 9 novembre 2026, le contexte de ces modèles est d’environ 200 000 tokens. Il s’agit d’une valeur approximative ; vérifiez les limites réelles des requêtes dans la documentation actuelle.
 L’affichage en USD du site a été vérifié le 3 novembre 2026. Tarifs et fonctionnalités peuvent évoluer ; l’affichage en USD ne garantit pas un prix fixe avant le paiement. Vérifiez les conditions actuelles dans l’espace client. Chaque abonnement payant indiqué comprend quatre requêtes simultanées et aucun quota cumulé de tokens pendant sa durée. La prise en charge des images en entrée signifie que le modèle accepte des images, pas qu’il en génère.
 
 ## Choisir selon le flux de travail
@@ -24,7 +25,7 @@ GLM 5.3 est présenté pour les projets logiciels complexes, l’analyse de dép
 
 DeepSeek V4.1 Flash est destiné à la génération et à la modification de code, aux agents de programmation et aux charges comportant de nombreuses tâches parallèles. DeepSeek V4 Pro met l’accent sur le raisonnement et l’analyse approfondie, notamment les décisions d’architecture et les revues où la qualité compte davantage que la latence minimale.
 
-Qwen 3.8 Max est positionné pour les contenus volumineux, tels que dépôts et documents. La mention du contexte long ne constitue pas une valeur numérique de fenêtre de contexte. Vérifiez la documentation et les limites réelles avant de concevoir des flux avec de grandes entrées.
+Qwen 3.8 Max est positionné pour les contenus volumineux, tels que dépôts et documents. Le propriétaire indique un contexte approximatif de 200 000 tokens pour le catalogue, au 9 novembre 2026. Vérifiez néanmoins la documentation actuelle et les limites réelles avant de concevoir des flux avec de grandes entrées.
 
 Ces usages ne forment ni un classement universel ni une garantie qu’un modèle sera supérieur pour chaque tâche. Évaluez l’exactitude, le respect des consignes, les appels d’outils, les besoins d’image, le délai et le travail de correction manuelle.
 

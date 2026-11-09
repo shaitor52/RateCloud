@@ -3,7 +3,6 @@
 **Langues :** [English](../README.md) · [Русский](../ru/README.md) · [Español](../es/README.md) · [Português](../pt/README.md) · [Deutsch](../de/README.md) · Français
 [Ouvrir le site de documentation](https://shaitor52.github.io/RateCloud/fr/)
 
-
 **Vos modèles. Des tokens sans limite. Un abonnement.**
 
 [Site web](https://rate-cloud.com/) · [Fonctionnement](https://rate-cloud.com/how-it-works) · [Documentation API](https://rate-cloud.com/docs) · [White Label](https://rate-cloud.com/white-label)
@@ -14,15 +13,15 @@ Ce guide public présente Rate Cloud en français. Il rassemble des articles, de
 
 ## Modèles, vitesse et prix des abonnements
 
-Observations publiées le 3 novembre 2026. La durée typique d’une réponse complète est indiquée en secondes ; le débit effectif inclut l’attente. Ces données historiques dépendent de la charge et ne constituent pas une garantie. Consultez le [relevé de performances](../data/performance-2026-11-03.csv) et le [relevé des prix en USD](../data/subscriptions-2026-11-03.json). Les montants en USD de 3 et 7 jours sont convertis à partir des prix affichés dans le dialogue public d’abonnement de Rate Cloud, avec le taux de change daté de l’API publique de devise. Les prix en USD de 30 jours proviennent de cette API. Il s’agit d’un relevé daté des prix affichés ; confirmez les tarifs en vigueur avant l’achat.
+Données de performance communiquées par le propriétaire le 9 novembre 2026. Le délai avant le premier texte et la vitesse de génération sont deux mesures distinctes ; le contexte d’entrée est d’environ 200 000 tokens. Les résultats dépendent de la charge de travail. Les tarifs constituent un relevé distinct du 3 novembre 2026 : [prix en USD](../data/subscriptions-2026-11-03.json). Confirmez le tarif en vigueur avant l’achat. [Données actuelles au format CSV](../data/performance-2026-11-09.csv).
 
-| Modèle | Réponse complète typique (s) | Débit effectif (tokens/s) | 3 jours | 7 jours | 30 jours | Essayer le modèle |
-| --- | ---: | ---: | ---: | ---: | ---: | --- |
-| GLM 5.3 | 21.48 | 14.05 | $10,31 | $17,19 | $34,38 | [Essayer le modèle](https://rate-cloud.com/register) |
-| GLM 5.3 Flash | 23.32 | 14.58 | $9,05 | $15,08 | $30,16 | [Essayer le modèle](https://rate-cloud.com/register) |
-| DeepSeek V4.1 Flash | 14.99 | 19.22 | $9,05 | $15,08 | $30,16 | [Essayer le modèle](https://rate-cloud.com/register) |
-| DeepSeek V4 Pro | 15.67 | 25.83 | $8,27 | $13,78 | $27,56 | [Essayer le modèle](https://rate-cloud.com/register) |
-| Qwen 3.8 Max | 21.37 | 13.13 | $9,45 | $15,75 | $31,49 | [Essayer le modèle](https://rate-cloud.com/register) |
+| Modèle | Délai avant le premier texte (s) | Génération de réponse (tokens/s) | 3 jours | 7 jours | 30 jours | Essayer le modèle |
+| --- | --- | --- | --- | --- | --- | --- |
+| GLM 5.3 | 15,6 | 52,7 | $10,31 | $17,19 | $34,38 | [Essayer le modèle](https://rate-cloud.com/register) |
+| GLM 5.3 Flash | 18,9 | 50,7 | $9,05 | $15,08 | $30,16 | [Essayer le modèle](https://rate-cloud.com/register) |
+| DeepSeek V4.1 Flash | 11,2 | 150,8 | $9,05 | $15,08 | $30,16 | [Essayer le modèle](https://rate-cloud.com/register) |
+| DeepSeek V4 Pro | 10,0 | 142,6 | $8,27 | $13,78 | $27,56 | [Essayer le modèle](https://rate-cloud.com/register) |
+| Qwen 3.8 Max | 13,0-13,5 | 59,0-63,4 | $9,45 | $15,75 | $31,49 | [Essayer le modèle](https://rate-cloud.com/register) |
 
 Illimité signifie qu’aucun quota cumulé de tokens en entrée ou en sortie ne s’applique pendant l’abonnement actif. Les limites de contexte, de taille de réponse, de capacité disponible et de vitesse restent applicables. Chaque abonnement payant comprend quatre requêtes simultanées.
 
@@ -33,7 +32,7 @@ Illimité signifie qu’aucun quota cumulé de tokens en entrée ou en sortie ne
 | [L’offre Rate Cloud](articles/01-about-rate-cloud.md) | Abonnements, tokens sans quota cumulé, créneaux parallèles et usages |
 | [Modèles et choix](articles/02-models.md) | Cinq modèles, identifiants API, images en entrée et critères de choix |
 | [Routage intelligent et quantification](articles/03-routing-and-quantization.md) | Profils de précision, contrôle qualité, choix des réplicas et reprise |
-| [Vitesse et performances](articles/04-performance.md) | Latence totale, débit effectif et mesures publiées |
+| [Vitesse et performances](articles/04-performance.md) | Délai avant le premier texte, vitesse de génération, contexte approximatif et concurrence |
 | [Connecter outils et applications](articles/05-api-and-integrations.md) | Points d’accès, première requête, clés et clients compatibles |
 | [Confidentialité, traitement des données et disponibilité](articles/06-privacy-and-reliability.md) | Tampons temporaires, isolation du cache et limites du service |
 | [Offres White Label](articles/07-white-label.md) | Créer une activité d’abonnement IA sous sa propre marque |

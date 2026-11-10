@@ -16,6 +16,10 @@ There is no cumulative input or output token quota during an active subscription
 
 No. A paid subscription allows four requests to run at the same time. Completed requests free their slots for new work. Several API keys on the same account use the relevant model's shared slot pool.
 
+## Is there a requests-per-minute limit?
+
+Yes. The account may start 20 new LLM requests in any rolling 60-second window. This limit is shared across all models, API keys, subscriptions, Full model packages, and both service origins. Additional subscriptions and Full model packages add concurrent slots, not requests-per-minute capacity. A 429 rate-limit response means the account reached its rolling request allowance; a 429 slot-limit response means all applicable concurrent slots are occupied. These limits are separate.
+
 ## Can I add more parallel capacity?
 
 The public offer allows combining subscriptions. Two subscriptions to the same model provide eight slots for that model. Different model subscriptions provide their own model-specific pools.

@@ -7,6 +7,8 @@
 <p>There is no cumulative input or output token quota during an active subscription. A single operation still has finite context capacity, a deadline, and technical constraints. Actual processing volume depends on speed, input and output lengths, available slots, and service availability.</p>
 <h2 id="does-four-slots-mean-only-four-requests">Does four slots mean only four requests?</h2>
 <p>No. A paid subscription allows four requests to run at the same time. Completed requests free their slots for new work. Several API keys on the same account use the relevant model's shared slot pool.</p>
+<h2 id="is-there-a-requests-per-minute-limit">Is there a requests-per-minute limit?</h2>
+<p>Yes. The account may start 20 new LLM requests in any rolling 60-second window. This limit is shared across all models, API keys, subscriptions, Full model packages, and both service origins. Additional subscriptions and Full model packages add concurrent slots, not requests-per-minute capacity. A 429 rate-limit response means the account reached its rolling request allowance; a 429 slot-limit response means all applicable concurrent slots are occupied. These limits are separate.</p>
 <h2 id="can-i-add-more-parallel-capacity">Can I add more parallel capacity?</h2>
 <p>The public offer allows combining subscriptions. Two subscriptions to the same model provide eight slots for that model. Different model subscriptions provide their own model-specific pools.</p>
 <h2 id="full-model">Full model</h2>
@@ -45,6 +47,7 @@
 <li><a href="#what-is-rate-cloud">What is Rate Cloud?</a></li>
 <li><a href="#is-there-a-token-limit">Is there a token limit?</a></li>
 <li><a href="#does-four-slots-mean-only-four-requests">Does four slots mean only four requests?</a></li>
+<li><a href="#is-there-a-requests-per-minute-limit">Is there a requests-per-minute limit?</a></li>
 <li><a href="#can-i-add-more-parallel-capacity">Can I add more parallel capacity?</a></li>
 <li><a href="#full-model">Full model</a></li>
 <li><a href="#which-models-can-i-use">Which models can I use?</a></li>

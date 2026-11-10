@@ -16,6 +16,10 @@ Während eines aktiven Abonnements gibt es kein kumulatives Kontingent für Ein-
 
 Nein. Ein kostenpflichtiges Abonnement erlaubt vier gleichzeitig laufende Anfragen. Abgeschlossene Anfragen geben ihre Slots frei. Mehrere API-Schlüssel desselben Kontos nutzen den gemeinsamen Slot-Pool des jeweiligen Modells.
 
+## Wie hoch ist das Anfragelimit pro Minute?
+
+Das Konto kann in jedem gleitenden 60-Sekunden-Zeitraum 20 neue LLM-Anfragen starten. Das Limit gilt gemeinsam für alle Modelle, API-Schlüssel, Abonnements, Full-model-Pakete und beide Service-Origins. Weitere Abonnements und Full-model-Pakete erhöhen die gleichzeitigen Slots, nicht das Anfragelimit pro Minute. Eine 429-Antwort wegen des Ratenlimits bedeutet, dass das Konto sein Kontingent im gleitenden Zeitfenster erreicht hat; eine 429-Antwort wegen des Slotlimits bedeutet, dass alle zutreffenden gleichzeitigen Slots belegt sind. Das sind getrennte Limits.
+
 ## Kann ich die Parallelität erhöhen?
 
 Laut öffentlichem Angebot lassen sich Abonnements kombinieren. Zwei Abonnements desselben Modells ergeben acht Slots für dieses Modell. Verschiedene Modellabonnements haben eigene Pools.

@@ -14,6 +14,8 @@ O volume mensal real de processamento depende do modelo, do tamanho da entrada e
 
 Cada assinatura paga oferece quatro solicitações simultâneas para seu modelo. Um slot representa uma solicitação em processamento. Quando a operação termina, o slot fica disponível novamente. Não é um limite de quatro solicitações por dia ou mês.
 
+Além disso, há um limite de frequência para toda a conta: 20 novas solicitações a LLM em qualquer janela móvel de 60 segundos. Ele é compartilhado entre todos os modelos, chaves de API, assinaturas, pacotes Full model e as duas origens do serviço. Assinaturas ou pacotes Full model adicionais aumentam os slots simultâneos descritos abaixo, mas não elevam esse limite de frequência. Uma resposta 429 por limite de frequência significa que a conta atingiu sua cota de solicitações na janela móvel. Uma resposta 429 por limite de slots significa que todos os slots simultâneos aplicáveis estão ocupados. São limites distintos.
+
 Um desenvolvedor pode usar os quatro slots para um agente principal e três subagentes, quatro sessões de trabalho separadas ou tarefas independentes de automação. As chaves de API da mesma conta compartilham o conjunto de slots do modelo correspondente. Criar chaves adicionais não aumenta a capacidade.
 
 É possível combinar assinaturas. Duas assinaturas do mesmo modelo oferecem oito slots para esse modelo. Assinaturas de modelos diferentes têm conjuntos separados: por exemplo, quatro slots de GLM e quatro de DeepSeek. O fluxo de trabalho deve enviar as solicitações ao modelo adequado para usar cada conjunto.

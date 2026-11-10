@@ -7,6 +7,8 @@
 <p>Während eines aktiven Abonnements gibt es kein kumulatives Kontingent für Ein- oder Ausgabetokens. Kontext einer einzelnen Operation, Frist und technische Einschränkungen bleiben begrenzt. Das verarbeitete Volumen hängt von Geschwindigkeit, Länge der Eingabe und Antwort, freien Slots und Verfügbarkeit ab.</p>
 <h2 id="bedeutet-vier-slots-nur-vier-anfragen">Bedeutet vier Slots nur vier Anfragen?</h2>
 <p>Nein. Ein kostenpflichtiges Abonnement erlaubt vier gleichzeitig laufende Anfragen. Abgeschlossene Anfragen geben ihre Slots frei. Mehrere API-Schlüssel desselben Kontos nutzen den gemeinsamen Slot-Pool des jeweiligen Modells.</p>
+<h2 id="wie-hoch-ist-das-anfragelimit-pro-minute">Wie hoch ist das Anfragelimit pro Minute?</h2>
+<p>Das Konto kann in jedem gleitenden 60-Sekunden-Zeitraum 20 neue LLM-Anfragen starten. Das Limit gilt gemeinsam für alle Modelle, API-Schlüssel, Abonnements, Full-model-Pakete und beide Service-Origins. Weitere Abonnements und Full-model-Pakete erhöhen die gleichzeitigen Slots, nicht das Anfragelimit pro Minute. Eine 429-Antwort wegen des Ratenlimits bedeutet, dass das Konto sein Kontingent im gleitenden Zeitfenster erreicht hat; eine 429-Antwort wegen des Slotlimits bedeutet, dass alle zutreffenden gleichzeitigen Slots belegt sind. Das sind getrennte Limits.</p>
 <h2 id="kann-ich-die-parallelität-erhöhen">Kann ich die Parallelität erhöhen?</h2>
 <p>Laut öffentlichem Angebot lassen sich Abonnements kombinieren. Zwei Abonnements desselben Modells ergeben acht Slots für dieses Modell. Verschiedene Modellabonnements haben eigene Pools.</p>
 <h2 id="welche-modelle-gibt-es">Welche Modelle gibt es?</h2>
@@ -44,6 +46,7 @@
 <li><a href="#was-ist-rate-cloud">Was ist Rate Cloud?</a></li>
 <li><a href="#gibt-es-ein-tokenlimit">Gibt es ein Tokenlimit?</a></li>
 <li><a href="#bedeutet-vier-slots-nur-vier-anfragen">Bedeutet vier Slots nur vier Anfragen?</a></li>
+<li><a href="#wie-hoch-ist-das-anfragelimit-pro-minute">Wie hoch ist das Anfragelimit pro Minute?</a></li>
 <li><a href="#kann-ich-die-parallelität-erhöhen">Kann ich die Parallelität erhöhen?</a></li>
 <li><a href="#welche-modelle-gibt-es">Welche Modelle gibt es?</a></li>
 <li><a href="#ist-flash-dasselbe-modell-wie-pro">Ist Flash dasselbe Modell wie Pro?</a></li>

@@ -7,6 +7,8 @@
 <p>Un abonnement actif n’impose pas de quota cumulé de tokens en entrée ou en sortie. Le contexte d’une opération, son délai et les contraintes techniques restent finis. Le volume traité dépend de la vitesse, de la longueur des entrées et sorties, des créneaux disponibles et de la disponibilité du service.</p>
 <h2 id="quatre-créneaux-signifient-ils-seulement-quatre-requêtes">Quatre créneaux signifient-ils seulement quatre requêtes ?</h2>
 <p>Non. Un abonnement payant permet quatre requêtes simultanées. Chaque opération terminée libère son créneau. Les différentes clés API d’un même compte partagent le pool du modèle concerné.</p>
+<h2 id="quelle-est-la-limite-de-requêtes-par-minute">Quelle est la limite de requêtes par minute ?</h2>
+<p>Le compte peut démarrer 20 nouvelles requêtes LLM dans toute fenêtre glissante de 60 secondes. Cette limite est partagée entre tous les modèles, clés API, abonnements, forfaits Full model et les deux origines du service. Les abonnements et forfaits Full model supplémentaires ajoutent des créneaux simultanés, pas de capacité de requêtes par minute. Une réponse 429 due à la limite de fréquence signifie que le compte a atteint son quota dans la fenêtre glissante ; une réponse 429 due aux créneaux signifie que tous les créneaux simultanés applicables sont occupés. Ces limites sont distinctes.</p>
 <h2 id="puis-je-augmenter-le-parallélisme">Puis-je augmenter le parallélisme ?</h2>
 <p>L’offre publique permet de cumuler des abonnements. Deux abonnements au même modèle fournissent huit créneaux pour ce modèle. Les abonnements à des modèles différents ont chacun leur pool.</p>
 <h2 id="quels-modèles-puis-je-utiliser">Quels modèles puis-je utiliser ?</h2>
@@ -44,6 +46,7 @@
 <li><a href="#quest-ce-que-rate-cloud">Qu’est-ce que Rate Cloud ?</a></li>
 <li><a href="#existe-t-il-une-limite-de-tokens">Existe-t-il une limite de tokens ?</a></li>
 <li><a href="#quatre-créneaux-signifient-ils-seulement-quatre-requêtes">Quatre créneaux signifient-ils seulement quatre requêtes ?</a></li>
+<li><a href="#quelle-est-la-limite-de-requêtes-par-minute">Quelle est la limite de requêtes par minute ?</a></li>
 <li><a href="#puis-je-augmenter-le-parallélisme">Puis-je augmenter le parallélisme ?</a></li>
 <li><a href="#quels-modèles-puis-je-utiliser">Quels modèles puis-je utiliser ?</a></li>
 <li><a href="#flash-est-il-le-même-modèle-que-pro">Flash est-il le même modèle que Pro ?</a></li>

@@ -16,6 +16,10 @@ Durante uma assinatura ativa, não há cota acumulada de tokens de entrada ou sa
 
 Não. Uma assinatura paga permite executar quatro solicitações ao mesmo tempo. Quando uma operação termina, libera seu slot para novos trabalhos. Várias chaves de API da mesma conta usam o conjunto compartilhado do modelo correspondente.
 
+## Qual é o limite de solicitações por minuto?
+
+A conta pode iniciar 20 novas solicitações a LLM em qualquer janela móvel de 60 segundos. O limite é compartilhado entre todos os modelos, chaves de API, assinaturas, pacotes Full model e as duas origens do serviço. Assinaturas e pacotes Full model adicionais aumentam os slots simultâneos, não o limite de solicitações por minuto. Uma resposta 429 por limite de frequência significa que a conta atingiu sua cota na janela móvel; uma resposta 429 por limite de slots significa que todos os slots simultâneos aplicáveis estão ocupados. São limites distintos.
+
 ## Posso aumentar a capacidade paralela?
 
 A oferta pública permite combinar assinaturas. Duas assinaturas do mesmo modelo oferecem oito slots para ele. Assinaturas de modelos diferentes têm conjuntos próprios.

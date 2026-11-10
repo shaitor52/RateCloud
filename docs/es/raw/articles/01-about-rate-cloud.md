@@ -14,6 +14,8 @@ El volumen mensual real de procesamiento depende del modelo, la longitud de la e
 
 Cada suscripción de pago ofrece cuatro solicitudes simultáneas para su modelo. Un espacio representa una solicitud que se está procesando. Cuando termina, el espacio vuelve a estar disponible. No es un límite de cuatro solicitudes al día o al mes.
 
+Además, hay un límite de frecuencia para toda la cuenta: 20 solicitudes nuevas a LLM en cualquier ventana móvil de 60 segundos. Se comparte entre todos los modelos, claves API, suscripciones, paquetes Full model y ambos orígenes del servicio. Las suscripciones o paquetes Full model adicionales aumentan los espacios simultáneos descritos abajo, pero no elevan este límite de frecuencia. Una respuesta 429 por límite de frecuencia significa que la cuenta alcanzó su cupo de solicitudes en la ventana móvil. Una respuesta 429 por límite de espacios significa que todos los espacios simultáneos aplicables están ocupados. Son límites distintos.
+
 Un desarrollador podría usar los cuatro espacios para un agente principal y tres subagentes, cuatro sesiones de trabajo distintas o tareas de automatización independientes. Las claves de API de una misma cuenta comparten el conjunto de espacios del modelo correspondiente. Crear más claves no aumenta la capacidad.
 
 Se pueden combinar suscripciones. Dos suscripciones al mismo modelo ofrecen ocho espacios para ese modelo. Las suscripciones a modelos distintos tienen conjuntos separados: por ejemplo, cuatro espacios de GLM y cuatro de DeepSeek. El flujo de trabajo debe enviar las solicitudes al modelo correspondiente para usar cada conjunto.

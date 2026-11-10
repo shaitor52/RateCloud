@@ -16,6 +16,8 @@ Actual monthly processing volume depends on the model, input length, output leng
 
 Each paid subscription supplies four concurrent requests for its model. A slot represents one request currently being processed. Once that operation finishes, the slot becomes available again. It is not a limit of four requests per day or month.
 
+Separately, the account-wide rate limit is 20 new LLM requests in any rolling 60-second window. It is shared across all models, API keys, subscriptions, Full model packages, and both service origins. Additional subscriptions or Full model packages add concurrent slots as described below; they do not increase this rate limit. A 429 rate-limit response means the account reached its rolling request allowance. A 429 slot-limit response means all applicable concurrent slots are occupied. These are separate limits.
+
 A developer might use all four slots for a main agent and three subagents, four separate work sessions, or independent automation jobs. API keys belonging to the same account share the relevant model's slot pool. Creating additional keys does not create additional capacity.
 
 Subscriptions can be combined. Two subscriptions to the same model provide eight slots for that model. Subscriptions to two different models provide separate pools: for example, four GLM slots and four DeepSeek slots. A workflow must send its requests to the appropriate model to use those pools.

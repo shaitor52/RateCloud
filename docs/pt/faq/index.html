@@ -7,6 +7,8 @@
 <p>Durante uma assinatura ativa, não há cota acumulada de tokens de entrada ou saída. Cada operação ainda tem capacidade finita de contexto, prazo e limitações técnicas. O volume real de processamento depende da velocidade, do tamanho das entradas e saídas, dos slots disponíveis e da disponibilidade do serviço.</p>
 <h2 id="quatro-slots-significam-apenas-quatro-solicitações">Quatro slots significam apenas quatro solicitações?</h2>
 <p>Não. Uma assinatura paga permite executar quatro solicitações ao mesmo tempo. Quando uma operação termina, libera seu slot para novos trabalhos. Várias chaves de API da mesma conta usam o conjunto compartilhado do modelo correspondente.</p>
+<h2 id="qual-é-o-limite-de-solicitações-por-minuto">Qual é o limite de solicitações por minuto?</h2>
+<p>A conta pode iniciar 20 novas solicitações a LLM em qualquer janela móvel de 60 segundos. O limite é compartilhado entre todos os modelos, chaves de API, assinaturas, pacotes Full model e as duas origens do serviço. Assinaturas e pacotes Full model adicionais aumentam os slots simultâneos, não o limite de solicitações por minuto. Uma resposta 429 por limite de frequência significa que a conta atingiu sua cota na janela móvel; uma resposta 429 por limite de slots significa que todos os slots simultâneos aplicáveis estão ocupados. São limites distintos.</p>
 <h2 id="posso-aumentar-a-capacidade-paralela">Posso aumentar a capacidade paralela?</h2>
 <p>A oferta pública permite combinar assinaturas. Duas assinaturas do mesmo modelo oferecem oito slots para ele. Assinaturas de modelos diferentes têm conjuntos próprios.</p>
 <h2 id="quais-modelos-posso-usar">Quais modelos posso usar?</h2>
@@ -44,6 +46,7 @@
 <li><a href="#o-que-é-a-rate-cloud">O que é a Rate Cloud?</a></li>
 <li><a href="#há-limite-de-tokens">Há limite de tokens?</a></li>
 <li><a href="#quatro-slots-significam-apenas-quatro-solicitações">Quatro slots significam apenas quatro solicitações?</a></li>
+<li><a href="#qual-é-o-limite-de-solicitações-por-minuto">Qual é o limite de solicitações por minuto?</a></li>
 <li><a href="#posso-aumentar-a-capacidade-paralela">Posso aumentar a capacidade paralela?</a></li>
 <li><a href="#quais-modelos-posso-usar">Quais modelos posso usar?</a></li>
 <li><a href="#um-modelo-flash-é-igual-a-um-pro">Um modelo Flash é igual a um Pro?</a></li>

@@ -16,6 +16,8 @@ Das tatsächliche monatliche Volumen hängt vom Modell, der Länge von Eingabe u
 
 Jedes kostenpflichtige Abonnement stellt vier gleichzeitige Anfragen für sein Modell bereit. Ein Slot steht für eine gerade verarbeitete Anfrage. Nach deren Abschluss wird er wieder frei. Es handelt sich nicht um ein Limit von vier Anfragen pro Tag oder Monat.
 
+Zusätzlich gilt ein kontoweites Ratenlimit: 20 neue LLM-Anfragen in jedem gleitenden 60-Sekunden-Zeitraum. Es gilt gemeinsam für alle Modelle, API-Schlüssel, Abonnements, Full-model-Pakete und beide Service-Origins. Weitere Abonnements oder Full-model-Pakete erhöhen die unten beschriebenen gleichzeitigen Slots, aber nicht dieses Ratenlimit. Eine 429-Antwort wegen des Ratenlimits bedeutet, dass das Konto sein Anfragekontingent im gleitenden Zeitfenster erreicht hat. Eine 429-Antwort wegen des Slotlimits bedeutet, dass alle zutreffenden gleichzeitigen Slots belegt sind. Das sind getrennte Limits.
+
 Ein Entwickler kann die Slots für einen Hauptagenten und drei Unteragenten, vier getrennte Arbeitssitzungen oder unabhängige Automatisierungen verwenden. API-Schlüssel desselben Kontos teilen sich den Slot-Pool des betreffenden Modells. Zusätzliche Schlüssel schaffen keine zusätzliche Kapazität.
 
 Abonnements lassen sich kombinieren. Zwei Abonnements desselben Modells ergeben acht Slots für dieses Modell. Abonnements für unterschiedliche Modelle haben getrennte Pools, zum Beispiel vier GLM- und vier DeepSeek-Slots. Die Anfragen müssen an das jeweilige Modell gesendet werden.

@@ -7,6 +7,8 @@
 <p>Durante una suscripción activa no hay una cuota acumulada de tokens de entrada o salida. Cada operación sigue teniendo una capacidad finita de contexto, un plazo y limitaciones técnicas. El volumen real de procesamiento depende de la velocidad, las longitudes de entrada y salida, los espacios disponibles y la disponibilidad del servicio.</p>
 <h2 id="cuatro-espacios-significan-solo-cuatro-solicitudes">¿Cuatro espacios significan solo cuatro solicitudes?</h2>
 <p>No. Una suscripción de pago permite ejecutar cuatro solicitudes al mismo tiempo. Cuando una termina, libera su espacio para otro trabajo. Varias claves de API de la misma cuenta usan el conjunto compartido del modelo correspondiente.</p>
+<h2 id="cuál-es-el-límite-de-solicitudes-por-minuto">¿Cuál es el límite de solicitudes por minuto?</h2>
+<p>La cuenta puede iniciar 20 solicitudes nuevas a LLM en cualquier ventana móvil de 60 segundos. El límite se comparte entre todos los modelos, claves API, suscripciones, paquetes Full model y ambos orígenes del servicio. Las suscripciones y paquetes Full model adicionales aumentan los espacios simultáneos, pero no el límite de solicitudes por minuto. Una respuesta 429 por límite de frecuencia significa que la cuenta alcanzó su cupo en la ventana móvil; una respuesta 429 por límite de espacios significa que todos los espacios simultáneos aplicables están ocupados. Son límites distintos.</p>
 <h2 id="puedo-añadir-más-capacidad-paralela">¿Puedo añadir más capacidad paralela?</h2>
 <p>La oferta pública permite combinar suscripciones. Dos suscripciones al mismo modelo ofrecen ocho espacios para ese modelo. Las suscripciones a modelos distintos tienen conjuntos propios.</p>
 <h2 id="qué-modelos-puedo-usar">¿Qué modelos puedo usar?</h2>
@@ -44,6 +46,7 @@
 <li><a href="#qué-es-rate-cloud">¿Qué es Rate Cloud?</a></li>
 <li><a href="#hay-un-límite-de-tokens">¿Hay un límite de tokens?</a></li>
 <li><a href="#cuatro-espacios-significan-solo-cuatro-solicitudes">¿Cuatro espacios significan solo cuatro solicitudes?</a></li>
+<li><a href="#cuál-es-el-límite-de-solicitudes-por-minuto">¿Cuál es el límite de solicitudes por minuto?</a></li>
 <li><a href="#puedo-añadir-más-capacidad-paralela">¿Puedo añadir más capacidad paralela?</a></li>
 <li><a href="#qué-modelos-puedo-usar">¿Qué modelos puedo usar?</a></li>
 <li><a href="#un-modelo-flash-es-igual-que-uno-pro">¿Un modelo Flash es igual que uno Pro?</a></li>

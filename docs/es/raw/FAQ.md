@@ -16,6 +16,10 @@ Durante una suscripción activa no hay una cuota acumulada de tokens de entrada 
 
 No. Una suscripción de pago permite ejecutar cuatro solicitudes al mismo tiempo. Cuando una termina, libera su espacio para otro trabajo. Varias claves de API de la misma cuenta usan el conjunto compartido del modelo correspondiente.
 
+## ¿Cuál es el límite de solicitudes por minuto?
+
+La cuenta puede iniciar 20 solicitudes nuevas a LLM en cualquier ventana móvil de 60 segundos. El límite se comparte entre todos los modelos, claves API, suscripciones, paquetes Full model y ambos orígenes del servicio. Las suscripciones y paquetes Full model adicionales aumentan los espacios simultáneos, pero no el límite de solicitudes por minuto. Una respuesta 429 por límite de frecuencia significa que la cuenta alcanzó su cupo en la ventana móvil; una respuesta 429 por límite de espacios significa que todos los espacios simultáneos aplicables están ocupados. Son límites distintos.
+
 ## ¿Puedo añadir más capacidad paralela?
 
 La oferta pública permite combinar suscripciones. Dos suscripciones al mismo modelo ofrecen ocho espacios para ese modelo. Las suscripciones a modelos distintos tienen conjuntos propios.

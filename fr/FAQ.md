@@ -16,6 +16,10 @@ Un abonnement actif n’impose pas de quota cumulé de tokens en entrée ou en s
 
 Non. Un abonnement payant permet quatre requêtes simultanées. Chaque opération terminée libère son créneau. Les différentes clés API d’un même compte partagent le pool du modèle concerné.
 
+## Quelle est la limite de requêtes par minute ?
+
+Le compte peut démarrer 20 nouvelles requêtes LLM dans toute fenêtre glissante de 60 secondes. Cette limite est partagée entre tous les modèles, clés API, abonnements, forfaits Full model et les deux origines du service. Les abonnements et forfaits Full model supplémentaires ajoutent des créneaux simultanés, pas de capacité de requêtes par minute. Une réponse 429 due à la limite de fréquence signifie que le compte a atteint son quota dans la fenêtre glissante ; une réponse 429 due aux créneaux signifie que tous les créneaux simultanés applicables sont occupés. Ces limites sont distinctes.
+
 ## Puis-je augmenter le parallélisme ?
 
 L’offre publique permet de cumuler des abonnements. Deux abonnements au même modèle fournissent huit créneaux pour ce modèle. Les abonnements à des modèles différents ont chacun leur pool.
